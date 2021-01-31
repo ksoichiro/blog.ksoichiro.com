@@ -11,7 +11,13 @@ module.exports = {
       description: 'Webアプリ開発などを中心としたITに関するメモのブログです。',
     }
   },
+  plugins: [
+    [
+      '@vuepress/last-updated'
+    ]
+  ],
   themeConfig: {
+    lastUpdated: true,
     locales: {
       '/': {
         label: 'English',
@@ -20,6 +26,7 @@ module.exports = {
 
         // Custom messages
         readMore: 'Read more...',
+        lastUpdated: 'Last Updated',
       },
       '/ja/': {
         label: '日本語',
@@ -28,6 +35,7 @@ module.exports = {
 
         // Custom messages
         readMore: '続きを読む...',
+        lastUpdated: '最終更新',
       }
     }
   },

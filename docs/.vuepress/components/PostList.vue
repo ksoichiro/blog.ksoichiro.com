@@ -2,6 +2,10 @@
   <div>
     <div v-for="post in posts">
       <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
+      <div class="last-updated">
+        <span>{{$themeConfig.locales[$localePath].lastUpdated}}:</span>
+        <span>{{$page.lastUpdated}}</span>
+      </div>
       <p>{{post.frontmatter.description}}</p>
       <a v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
     </div>
