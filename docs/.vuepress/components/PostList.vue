@@ -8,10 +8,15 @@
         <span>{{$page.lastUpdated}}</span>
       </div>
       <p>{{post.frontmatter.description}}</p>
-      <a v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
+      <a class="read-more" v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
     </div>
   </div>
 </template>
+
+<style lang="stylus" scoped>
+.read-more
+  font-size smaller
+</style>
 
 <script>
 import TimeOutlineIcon from 'vue-ionicons/dist/md-time.vue'
