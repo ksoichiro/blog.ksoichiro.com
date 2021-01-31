@@ -1,8 +1,7 @@
 ---
+title: Migrating my blog and implementing with VuePress
 description: I decided to migrate my blog from Blogger, and implemented with VuePress.
 ---
-# Migrating my blog and implementing with VuePress
-
 ## Background
 
 I decided to migrate my blog from Blogger, and implemented with [VuePress](https://vuepress.vuejs.org/).

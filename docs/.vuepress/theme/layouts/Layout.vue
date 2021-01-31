@@ -6,12 +6,6 @@
   </ParentLayout>
 </template>
 
-<style>
-.page-edit {
-  display: none;
-}
-</style>
-
 <script>
 import ParentLayout from '@parent-theme/layouts/Layout.vue'
 import Footer from '../../components/Footer.vue'

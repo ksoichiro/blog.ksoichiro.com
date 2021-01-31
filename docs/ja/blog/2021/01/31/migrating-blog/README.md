@@ -1,8 +1,7 @@
 ---
+title: ブログの移行と VuePress による実装
 description: 長年使っていた Blogger からブログを移行し、VuePress でブログを実装してみることにした。
 ---
-# ブログの移行と VuePress による実装
-
 ## 背景
 
 長年使っていた Blogger からブログを移行し、 [VuePress](https://vuepress.vuejs.org/) でブログを実装してみることにした。
@@ -120,3 +119,27 @@ module.exports = {
 ```
 
 `vuepress dev` で起動している場合は再起動する必要がある。
+
+### フッターの設定
+
+ここで説明されている方法で、フッターをカスタマイズして copyright 表記を追加。
+https://github.com/vuejs/vuepress/issues/339#issuecomment-692419404
+
+## デプロイ
+
+動作確認できたらデプロイする。
+
+```
+firebase deploy
+```
+
+## カスタムドメインでのアクセス
+
+Google Domains でドメインを購入。
+
+Firebase Hosting 上でカスタムドメインを設定し、アクセスできるようになるのを待つ。
+
+---
+
+以上で基本的な部分の設定ができた。
+過去の記事の移行や記事のリンクなどは今後対応していく。
