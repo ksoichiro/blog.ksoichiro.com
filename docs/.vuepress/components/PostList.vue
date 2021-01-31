@@ -29,7 +29,7 @@ export default {
     posts () {
       return this.$site.pages
         .filter(post => post.path.startsWith(this.$localePath + 'blog/'))
-        .sort((a, b) => a.path > b.path)
+        .sort((a, b) => new Date(a.frontmatter.date) > new Date(b.frontmatter.date))
     }
   }
 }
