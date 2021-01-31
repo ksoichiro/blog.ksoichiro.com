@@ -3,6 +3,7 @@
     <div v-for="post in posts">
       <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
       <div class="last-updated">
+        <TimeOutlineIcon />
         <span>{{$themeConfig.locales[$localePath].lastUpdated}}:</span>
         <span>{{$page.lastUpdated}}</span>
       </div>
@@ -13,7 +14,12 @@
 </template>
 
 <script>
+import TimeOutlineIcon from 'vue-ionicons/dist/md-time.vue'
+
 export default {
+  components: {
+    TimeOutlineIcon,
+  },
   computed: {
     posts () {
       return this.$site.pages

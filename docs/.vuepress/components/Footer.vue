@@ -1,11 +1,26 @@
 <template>
-  <div class="copyright">
-    &copy; 2021 ksoichiro
+  <div class="footer">
+    <p class="copyright">&copy; 2021 ksoichiro</p>
+    <p class="links">
+      <a href="https://github.com/ksoichiro" target="_blank">
+        <LogoGitHubIcon />
+      </a>
+    </p>
   </div>
 </template>
 
 <style scoped>
-div {
+.footer {
   text-align: center;
 }
 </style>
+
+<script>
+import LogoGitHubIcon from 'vue-ionicons/dist/logo-github.vue'
+
+export default {
+  components: {
+    LogoGitHubIcon
+  }
+}
+</script>

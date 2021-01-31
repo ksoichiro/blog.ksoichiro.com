@@ -5,6 +5,7 @@
         "docs:build": "vuepress build docs"
     },
     "devDependencies": {
+        "vue-ionicons": "^3.0.5",
         "vuepress": "^1.8.0"
     }
 }
