@@ -1,5 +1,5 @@
 <template>
-  <div class="page-attributes" v-if="page.lastUpdated">
+  <div class="page-attributes" v-if="!page.frontmatter.noPageAttributes && page.lastUpdated">
     <TimeOutlineIcon />
     <span>{{$themeConfig.locales[$localePath].lastUpdated}}:</span>
     <span>{{page.lastUpdated}}</span>
