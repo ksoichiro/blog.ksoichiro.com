@@ -23,6 +23,9 @@ module.exports = {
         label: 'English',
         selectText: 'Languages',
         ariaLabel: 'Languages',
+        nav: [
+          { text: 'Tags', link: '/tags/' }
+        ],
 
         // Custom messages
         readMore: 'Read more...',
@@ -32,6 +35,9 @@ module.exports = {
         label: '日本語',
         selectText: '言語',
         ariaLabel: '言語',
+        nav: [
+          { text: 'タグ', link: '/ja/tags/' }
+        ],
 
         // Custom messages
         readMore: '続きを読む...',
