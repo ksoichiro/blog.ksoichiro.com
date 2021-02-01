@@ -2,6 +2,7 @@
 title: ブログの移行と VuePress による実装
 description: 長年使っていた Blogger からブログを移行し、VuePress でブログを実装してみることにした。
 date: 2021-01-31
+tags: ["VuePress"]
 ---
 ## 背景
 

@@ -2,6 +2,7 @@
 title: Migrating my blog and implementing with VuePress
 description: I decided to migrate my blog from Blogger, and implemented with VuePress.
 date: 2021-01-31
+tags: ["VuePress"]
 ---
 ## Background
 

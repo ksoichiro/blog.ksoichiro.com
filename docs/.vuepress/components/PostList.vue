@@ -2,11 +2,7 @@
   <div>
     <div v-for="post in posts">
       <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
-      <div class="last-updated">
-        <TimeOutlineIcon />
-        <span>{{$themeConfig.locales[$localePath].lastUpdated}}:</span>
-        <span>{{$page.lastUpdated}}</span>
-      </div>
+      <PageAttributes :page="post" />
       <p>{{post.frontmatter.description}}</p>
       <a class="read-more" v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
     </div>
@@ -19,11 +15,11 @@
 </style>
 
 <script>
-import TimeOutlineIcon from 'vue-ionicons/dist/md-time.vue'
+import PageAttributes from './PageAttributes.vue'
 
 export default {
   components: {
-    TimeOutlineIcon,
+    PageAttributes,
   },
   computed: {
     posts () {

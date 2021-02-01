@@ -4,11 +4,7 @@
 
     <div class="theme-default-content">
       <h1>{{$page.title}}</h1>
-      <div class="last-updated">
-        <TimeOutlineIcon />
-        <span>{{$themeConfig.locales[$localePath].lastUpdated}}:</span>
-        <span>{{$page.lastUpdated}}</span>
-      </div>
+      <PageAttributes :page="$page" />
 
       <Content />
     </div>
@@ -25,13 +21,13 @@
 <script>
 // import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
-import TimeOutlineIcon from 'vue-ionicons/dist/md-time.vue'
+import PageAttributes from '../../components/PageAttributes.vue'
 
 export default {
   components: {
     // PageEdit,
     PageNav,
-    TimeOutlineIcon,
+    PageAttributes,
   },
   props: ['sidebarItems']
 }
