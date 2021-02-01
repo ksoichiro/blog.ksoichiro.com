@@ -24,7 +24,7 @@ export default {
   computed: {
     posts () {
       return this.$site.pages
-        .filter(post => post.path.startsWith(this.$localePath + 'blog/'))
+        .filter(post => post.path.startsWith(this.$localePath + 'post/'))
         .sort((a, b) => new Date(a.frontmatter.date) > new Date(b.frontmatter.date))
     }
   }
