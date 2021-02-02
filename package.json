@@ -1,9 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs",
-        "start": "npm run docs:dev"
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs",
+        "start": "npm run dev"
     },
     "devDependencies": {
         "vue-ionicons": "^3.0.5",
