@@ -21,6 +21,7 @@ module.exports = {
   ],
   themeConfig: {
     lastUpdated: true,
+    sidebar: 'auto',
     locales: {
       '/': {
         label: 'English',
