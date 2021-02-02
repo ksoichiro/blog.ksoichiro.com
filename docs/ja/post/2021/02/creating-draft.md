@@ -3,7 +3,6 @@ title: VuePress でドラフト保存できるようにする
 description: このブログはまだ移行途中で、VuePress でやりたいことがある程度できるかを確認している。
 date: 2021-02-02 23:00
 tags: ["VuePress"]
-layout: Draft
 ---
 
 このブログはまだ移行途中で、VuePress でやりたいことがある程度できるかを確認している。
@@ -27,7 +26,7 @@ VuePress などで自前で用意すると Git リポジトリ上のファイル
 テーマをカスタマイズしていなければ、デフォルトの "404" がそのまま使えるかもしれない。
 `.vuepress/theme` を作ってカスタマイズしている状態においては、`layout: 404` が動作しなかったので、継承して作成することにした。
 
-以下のように、404.vue を `@parent-theme` の指定で import して定義し `.vuepress/theme/layouts/Draft.vue` として作成する。
+以下のように、 `404.vue` を `@parent-theme` の指定で import して定義し `.vuepress/theme/layouts/Draft.vue` として作成する。
 
 ```vue
 <template>
@@ -61,7 +60,7 @@ layout: Draft
 
 ページ一覧やタグのページからページをフィルタリングしてリンクしている場合、そちらで下書きを除外する必要がある。
 
-例えば以下のようにページの一覧を作っている部分で frontmatter.layout を参照したフィルタを追加すればOK。
+例えば以下のようにページの一覧を作っている部分で `frontmatter.layout` を参照したフィルタを追加すればOK。
 
 ```js
 const pages = this.$site.pages
