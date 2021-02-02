@@ -26,7 +26,7 @@ export default {
       return this.$site.pages
         .filter(post => post.path.startsWith(this.$localePath + 'post/'))
         .filter(post => post.frontmatter.layout !== 'Draft')
-        .sort((a, b) => new Date(a.frontmatter.date) > new Date(b.frontmatter.date))
+        .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
     }
   }
 }
