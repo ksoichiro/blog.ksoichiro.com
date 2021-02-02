@@ -20,6 +20,7 @@ export default {
     tags () {
       const pages = this.$site.pages
         .filter(post => post.path.startsWith(this.$localePath + 'post/'))
+        .filter(post => post.frontmatter.layout !== 'Draft')
         .sort((a, b) => new Date(a.frontmatter.date) > new Date(b.frontmatter.date))
       let tags = {}
       for (let page of pages) {
