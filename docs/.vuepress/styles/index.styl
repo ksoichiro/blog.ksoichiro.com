@@ -1,3 +1,6 @@
+html, body
+  background-color $backgroundColor
+
 body
   font-family Roboto,'M PLUS 1p','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Verdana, Meiryo, "M+ 1p", sans-serif;
   font-display swap
@@ -6,17 +9,38 @@ code, kbd, .line-number
   font-family 'Roboto Mono',source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
   font-display swap
 
+.sidebar,
+.navbar
+.navbar div.links
+  background-color $backgroundColor
+  border-color $borderColor
+
+div.search-box
+  input
+    color $inputTextColor
+    background-color $inputBackgroundColor
+    &:focus
+      border-color $inputBorderColor
+  ul.suggestions
+    background-color $secondaryBackgroundColor
+  li.suggestion.focused
+    background-color $tertiaryBackgroundColor
+
+.dropdown-wrapper ul.nav-dropdown
+  background-color $secondaryBackgroundColor
+  border-color $secondaryBorderColor
+
 .home
   .hero
     p.description
-      color $nord9
+      color $homeDescriptionTextColor
       font-size: 1.4rem
 
 .footer-home
   margin-top 2rem
 
 .page-attributes
-  color $nord3
+  color $secondaryTextColor
   font-size smaller
   span
     display inline-block
@@ -25,13 +49,17 @@ code, kbd, .line-number
     display inline-block
     vertical-align middle
 
+.theme-default-content code
+  color $codeTextColor
+  background-color $codeBackgroundColor
+
 .footer
-  color $nord3
+  color $secondaryTextColor
   .copyright
     font-size smaller
   .links
     a
-      color $nord3
+      color $secondaryTextColor
       font-size 1.4rem
     a:hover
       color $accentColor
@@ -43,3 +71,15 @@ code, kbd, .line-number
 
 p
   overflow-wrap break-word
+
+::-webkit-scrollbar
+  width 8px
+
+::-webkit-scrollbar:horizontal
+  height 8px
+
+::-webkit-scrollbar-thumb
+  background-color $scrollbarThumbColor
+
+::-webkit-scrollbar-track
+  background-color $scrollbarTrackColor
