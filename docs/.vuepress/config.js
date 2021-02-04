@@ -3,7 +3,13 @@ module.exports = {
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
     ['script', {}, `
       WebFontConfig = {
-        google: { families: ['Noto Sans JP:400,700&display=swap'] },
+        google: {
+          families: [
+            'Roboto:300,500',
+            'Roboto Mono:300,500',
+            'M PLUS 1p:400,700&display=swap',
+          ]
+        },
         active: function() {
           sessionStorage.fonts = true;
         }
