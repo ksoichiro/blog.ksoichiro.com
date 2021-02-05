@@ -2,3 +2,4 @@
 /docs/.vuepress/dist/
 .firebaserc
 /.firebase/
+.DS_Store
