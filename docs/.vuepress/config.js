@@ -5,9 +5,9 @@ module.exports = {
       WebFontConfig = {
         google: {
           families: [
-            'Roboto:300,500',
+            'Rubik:400,500',
             'Roboto Mono:300,500',
-            'M PLUS 1p:400,700&display=swap',
+            'M PLUS 1p:400,500&display=swap',
           ]
         },
         active: function() {

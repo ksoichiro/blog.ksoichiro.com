@@ -2,7 +2,7 @@ html, body
   background-color $backgroundColor
 
 body
-  font-family Roboto,'M PLUS 1p','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Verdana, Meiryo, "M+ 1p", sans-serif;
+  font-family Rubik,'M PLUS 1p','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Verdana, Meiryo, "M+ 1p", sans-serif;
   font-display swap
 
 code, kbd, .line-number
@@ -34,7 +34,9 @@ div.search-box
   .hero
     p.description
       color $homeDescriptionTextColor
-      font-size: 1.4rem
+      font-size: 1.2rem
+      font-weight: 300
+      max-width: 90%
 
 .footer-home
   margin-top 2rem
@@ -52,6 +54,7 @@ div.search-box
 .theme-default-content code
   color $codeTextColor
   background-color $codeBackgroundColor
+  padding 0.15rem 0.3rem
 
 .footer
   color $secondaryTextColor
@@ -69,8 +72,19 @@ div.search-box
   svg
     fill currentColor
 
+li a.sidebar-link
+  font-weight: 300
+  &.active
+    font-weight: 500
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 500
+
 p
   overflow-wrap break-word
+
+ul li::marker
+  color $listBulletColor
 
 ::-webkit-scrollbar
   width 8px
