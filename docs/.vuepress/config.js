@@ -21,13 +21,6 @@ module.exports = {
         s.parentNode.insertBefore(wf, s);
       })(document);
     `],
-    // The core Firebase JS SDK is always required and must be listed first
-    ['script', { src: '/__/firebase/8.2.6/firebase-app.js' }],
-    // Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-    ['script', { src: '/__/firebase/8.2.6/firebase-analytics.js' }],
-    // Initialize Firebase
-    ['script', { src: '/__/firebase/init.js' }],
     // favicon
     ['link', {rel: 'apple-touch-icon', type: 'image/png', href: '/apple-touch-icon-180x180.png'}],
     ['link', {rel: 'icon', type: 'image/png', href: '/icon-192x192.png'}],

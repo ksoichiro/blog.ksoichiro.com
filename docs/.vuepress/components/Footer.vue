@@ -6,6 +6,7 @@
         <LogoGitHubIcon />
       </a>
     </p>
+    <Analytics />
   </div>
 </template>
 
@@ -17,10 +18,12 @@
 
 <script>
 import LogoGitHubIcon from 'vue-ionicons/dist/logo-github.vue'
+import Analytics from './Analytics.vue'
 
 export default {
   components: {
-    LogoGitHubIcon
+    LogoGitHubIcon,
+    Analytics,
   }
 }
 </script>
