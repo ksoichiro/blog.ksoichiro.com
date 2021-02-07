@@ -2,7 +2,7 @@
   <div class="footer">
     <p class="copyright">&copy; 2021 ksoichiro</p>
     <p class="links">
-      <a href="https://github.com/ksoichiro" target="_blank">
+      <a href="https://github.com/ksoichiro" target="_blank" rel="noopener">
         <LogoGitHubIcon />
       </a>
     </p>
