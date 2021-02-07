@@ -10,38 +10,7 @@
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        window.cookieconsent.initialise({
-          palette: {
-            popup: {
-              "background": "#D8DEE9",
-              "text": "#2E3440"
-            },
-            button: {
-              "background": "#5E81AC"
-            }
-          },
-          onInitialise: function(status) {
-            if (this.hasConsented()) {
-              if (typeof firebase !== 'undefined') {
-                firebase.analytics();
-              }
-            }
-          },
-          onStatusChange: function (status) {
-            if (this.hasConsented()) {
-              if (typeof firebase !== 'undefined') {
-                firebase.analytics();
-              }
-            }
-          },
-          type: "opt-out"
-        });
-      });
-    </script>
+    <!-- Start Analytics -->
+    <script>firebase.analytics();</script>
   </div>
 </template>
