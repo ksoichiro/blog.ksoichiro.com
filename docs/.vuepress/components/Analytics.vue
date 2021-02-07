@@ -1,16 +1,32 @@
 <template>
-  <div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.6/firebase-app.js"></script>
-
-    <!-- Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.6/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
-    <!-- Start Analytics -->
-    <script>firebase.analytics();</script>
-  </div>
+  <div />
 </template>
+
+<script>
+export default {
+  async mounted () {
+    // The core Firebase JS SDK is always required and must be listed first
+    await this.insertScript('/__/firebase/8.2.6/firebase-app.js')
+    // Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    await this.insertScript('/__/firebase/8.2.6/firebase-analytics.js')
+    // Initialize Firebase
+    await this.insertScript('/__/firebase/init.js')
+    if (typeof firebase !== "undefined") {
+      firebase.analytics();
+    }
+  },
+  methods: {
+    insertScript (src) {
+      return new Promise(resolve => {
+        let externalScript = document.createElement('script')
+        externalScript.setAttribute('src', src)
+        document.head.appendChild(externalScript)
+        externalScript.onload = function () {
+          resolve()
+        }
+      })
+    }
+  }
+}
+</script>
