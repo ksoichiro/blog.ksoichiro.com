@@ -37,6 +37,7 @@ jobs:
           node test.js
           npm run build
 
-      # - name: Deploy
-      #   run: |
+      - name: Deploy
+        run: |
+          grep "Last Updated" docs/.vuepress/dist/index.html
       #     npx firebase deploy --token=${{ secrets.FIREBASE_TOKEN }} --project=${{ secrets.FIREBASE_PROJECT_ID }}
