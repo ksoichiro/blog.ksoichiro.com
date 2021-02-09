@@ -39,7 +39,17 @@ module.exports = {
   },
   plugins: [
     [
-      '@vuepress/last-updated'
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          const dayjs = require('dayjs')
+          const utc = require('dayjs/plugin/utc')
+          const timezone = require('dayjs/plugin/timezone')
+          dayjs.extend(utc)
+          dayjs.extend(timezone)
+          return dayjs(timestamp).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mmZ')
+        }
+      }
     ],
     [
       '@vuepress/google-analytics',
