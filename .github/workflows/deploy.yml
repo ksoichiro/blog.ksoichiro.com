@@ -35,6 +35,7 @@ jobs:
           ls -al
           ls -l .git
           node test.js
+          git log -1 --format='%at' docs/README.md | cat
           npm run build
 
       - name: Deploy
