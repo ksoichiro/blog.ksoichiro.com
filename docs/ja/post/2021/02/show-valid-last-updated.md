@@ -2,7 +2,7 @@
 title: VuePress で正しい最終更新日を表示する
 description: ローカルでビルドしている限りは問題なかったのだが、 GitHub Actions でビルドして Firebase Hosting にデプロイするように変更したところ、最終更新日が現在日時になってしまったので対処した。
 date: 2021-02-10 00:00
-tags: ["VuePress"]
+tags: ["VuePress", "GitHub Actions"]
 ---
 ローカルでビルドしている限りは問題なかったのだが、 GitHub Actions でビルドして Firebase Hosting にデプロイするように変更したところ、最終更新日が現在日時になってしまったので対処した。
 
