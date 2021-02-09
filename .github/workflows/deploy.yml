@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - debug
 
 jobs:
   build:
@@ -31,8 +31,11 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
-
-      - name: Deploy
         run: |
-          npx firebase deploy --token=${{ secrets.FIREBASE_TOKEN }} --project=${{ secrets.FIREBASE_PROJECT_ID }}
+          ls -al
+          ls -l .git
+          npm run build
+
+      # - name: Deploy
+      #   run: |
+      #     npx firebase deploy --token=${{ secrets.FIREBASE_TOKEN }} --project=${{ secrets.FIREBASE_PROJECT_ID }}
