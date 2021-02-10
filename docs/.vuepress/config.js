@@ -40,29 +40,9 @@ module.exports = {
   plugins: [
     [
       require('./plugins/created'),
-      {
-        transformer: (timestamp, lang) => {
-          const dayjs = require('dayjs')
-          const utc = require('dayjs/plugin/utc')
-          const timezone = require('dayjs/plugin/timezone')
-          dayjs.extend(utc)
-          dayjs.extend(timezone)
-          return dayjs(timestamp).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mmZ')
-        }
-      }
     ],
     [
       '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          const dayjs = require('dayjs')
-          const utc = require('dayjs/plugin/utc')
-          const timezone = require('dayjs/plugin/timezone')
-          dayjs.extend(utc)
-          dayjs.extend(timezone)
-          return dayjs(timestamp).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mmZ')
-        }
-      }
     ],
     [
       '@vuepress/google-analytics',
@@ -85,6 +65,7 @@ module.exports = {
 
         // Custom messages
         readMore: 'Read more...',
+        created: 'Created',
         lastUpdated: 'Last Updated',
       },
       '/ja/': {
@@ -97,6 +78,7 @@ module.exports = {
 
         // Custom messages
         readMore: '続きを読む...',
+        created: '作成',
         lastUpdated: '最終更新',
       }
     }
