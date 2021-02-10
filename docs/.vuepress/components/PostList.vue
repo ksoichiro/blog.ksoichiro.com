@@ -44,7 +44,7 @@ export default {
     const pages = this.$site.pages
       .filter(post => post.path.startsWith(this.$localePath + 'post/'))
       .filter(post => post.frontmatter.layout !== 'Draft')
-      .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
+      .sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime())
     for (let page of pages) {
       this.allPages.push(page)
     }

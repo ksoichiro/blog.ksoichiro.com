@@ -1,7 +1,6 @@
 ---
 title: Show valid lastUpdated with VuePress
 description: When I was building this blog on my local environment, there was no issue around date, but after I changed the workflow to deploy the blog from local to GitHub Actions, it seems last updated date became current date, so I fixed it.
-date: 2021-02-10 00:00
 tags: ["VuePress", "GitHub Actions"]
 ---
 When I was building this blog on my local environment, there was no issue around date, but after I changed the workflow to deploy the blog from local to GitHub Actions, it seems last updated date became current date, so I fixed it.

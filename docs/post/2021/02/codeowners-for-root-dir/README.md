@@ -1,7 +1,6 @@
 ---
 title: Set CODEOWNERS to the project root on GitHub
 description: There are important files in the project root dirctory that affect to the whole project such as configuration files which names start with `.`.
-date: 2021-02-07 00:00
 tags: ["GitHub", "GitHub Actions"]
 ---
 There are important files in the project root dirctory that affect to the whole project such as configuration files which names start with `.`.

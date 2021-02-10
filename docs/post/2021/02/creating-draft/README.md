@@ -1,7 +1,6 @@
 ---
 title: Creating draft with VuePress
 description: I'm still migrating my blog, and I'm on my way to confirm that whether or not what I want to do can be achieved with VuePress.
-date: 2021-02-02 23:00
 tags: ["VuePress"]
 ---
 

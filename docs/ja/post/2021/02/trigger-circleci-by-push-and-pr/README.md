@@ -1,7 +1,6 @@
 ---
 title: CircleCI 2.1 の pipeline を push と pull request で実行する
 description: CircleCI は、デフォルトでは push をトリガーにしてビルドするようになっている。
-date: 2021-02-05 00:00
 tags: ["CircleCI"]
 ---
 

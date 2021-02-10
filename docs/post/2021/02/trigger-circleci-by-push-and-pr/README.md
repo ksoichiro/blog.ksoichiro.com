@@ -1,7 +1,6 @@
 ---
 title: Trigger CircleCI 2.1 pipeline by both push and pull request
 description: CircleCI's pipelines can be triggered by push by default.
-date: 2021-02-05 00:00
 tags: ["CircleCI"]
 ---
 

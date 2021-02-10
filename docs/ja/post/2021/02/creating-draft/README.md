@@ -1,7 +1,6 @@
 ---
 title: VuePress でドラフト保存できるようにする
 description: このブログはまだ移行途中で、VuePress でやりたいことがある程度できるかを確認している。
-date: 2021-02-02 23:00
 tags: ["VuePress"]
 ---
 
