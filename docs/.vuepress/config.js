@@ -44,12 +44,6 @@ module.exports = {
     [
       '@vuepress/last-updated',
     ],
-    [
-      '@vuepress/google-analytics',
-      {
-        'ga': '' // UA-00000000-0
-      }
-    ]
   ],
   themeConfig: {
     lastUpdated: true,
