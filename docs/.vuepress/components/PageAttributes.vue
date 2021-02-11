@@ -2,8 +2,8 @@
   <div class="page-attributes" v-if="!page.frontmatter.noPageAttributes && page.lastUpdated">
     <TimeOutlineIcon />
     <span :title="$themeConfig.locales[$localePath].created + ': ' + longDate(page.created)">{{shortDate(page.created)}}</span>
-    <CreateOutlineIcon />
-    <span :title="$themeConfig.locales[$localePath].lastUpdated + ': ' + longDate(page.lastUpdated)">{{shortDate(page.lastUpdated)}}</span>
+    <CreateOutlineIcon v-if="page.created !== page.lastUpdated" />
+    <span :title="$themeConfig.locales[$localePath].lastUpdated + ': ' + longDate(page.lastUpdated)" v-if="page.created !== page.lastUpdated">{{shortDate(page.lastUpdated)}}</span>
     <PageTags :frontmatter="page.frontmatter" />
   </div>
 </template>
