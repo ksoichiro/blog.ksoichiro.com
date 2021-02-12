@@ -12,7 +12,7 @@ GitHubのリポジトリで静的なサイトを作る場合にどうしたら�
 
 ### ブランチはどうする？
 
-ユーザのページを作るにはユーザ名.github.ioというリポジトリを作るとか、
+ユーザのページを作るには `ユーザ名.github.io` というリポジトリを作るとか、
 プロジェクトのページはgh-pagesブランチにすれば良いというのは分かっていたが、今回の場合はGitHub Pagesしか必要ないプロジェクトなので、リポジトリのページにアクセスした時はGitHub Pagesの内容が表示されるようにしたかった。
 
 masterブランチをpushしたときにJekyllでGitHub Pagesを生成してくれれば良いのだが…と思っていたが、これは単にGitHubのリポジトリ設定画面でgh-pagesをDefault branchとして設定すればOKだった。
@@ -60,11 +60,11 @@ http://jekyllrb.com/docs/structure/
 ローカルで動作確認すると、`http://localhost:4000`というURLで起動するが、ここで動くように書くとルートから指定するようになってしまう。
 （`/index.html`など）
 実際にはGitHubのプロジェクト名が間に入るため、`/project/index.html`というパスになり、リンク切れ状態になってしまう。
-これを解決するには、`{{ site.github.url }}`を使えば良い。
+これを解決するには、 <code v-pre>{ site.github.url }}</code> を使えば良い。
 例えば以下のような形。
 
-* `{{ site.github.url }}/`
-* `{{ site.github.url }}/css/syntax.css`
+* <code v-pre>{{ site.github.url }}/</code>
+* <code v-pre>{{ site.github.url }}/css/syntax.css</code>
 
 ### ハイライトはできる？
 

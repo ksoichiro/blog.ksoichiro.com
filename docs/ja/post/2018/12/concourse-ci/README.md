@@ -25,7 +25,7 @@ builds コマンドでは着色されていたりするので、環境的な問�
 
 そのままだと以下のようなエラーが発生して実行できない。
 
-``` hljs vbscript
+```
 Backend error: Exit status: 500, message: {"Type":"","Message":"runc exec: exit status 1: exec failed: container_linux.go:348: starting container process caused \"exec: \\\"./task-scripts/task_show_uname.sh\\\": permission denied\"\n","Handle":"","ProcessID":"","Binary":""}
 ```
 

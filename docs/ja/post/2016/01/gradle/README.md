@@ -35,7 +35,7 @@ samples/
 素直に除外設定を書こうとすると次のようになってしまい
 サンプルが増えるためにメンテナンスしなければならない。
 
-```gradle
+```groovy
 idea.module.excludeDirs += [
     file('a/.gradle'),
     file('a/build'),
@@ -48,7 +48,7 @@ idea.module.excludeDirs += [
 
 a, b, cがGradleのプロジェクトなら次のように書ける(かもしれない。未確認)のだが・・
 
-```gradle
+```groovy
 subprojects {
     idea.module.excludeDirs += [
         project.file('.gradle'),
@@ -63,7 +63,7 @@ subprojects {
 
 そこで解決策として以下のように設定してみたところ、うまくいった。
 
-```gradle
+```groovy
 fileTree(dir: "samples").visit { details ->
     if (details.name in ['.gradle', 'build']) {
         idea.module.excludeDirs << details.file

@@ -15,7 +15,7 @@ tags: ["Java","Spring Boot"]
 `build.gradle`に以下を追記する。
 Webアプリ側でSpring Securityを既に追加しているなら、taskだけ書き足してIDEにimportを補ってもらうだけで済むはず。
 
-```gradle
+```groovy
 import org.springframework.security.crypto.password.StandardPasswordEncoder
 
 :

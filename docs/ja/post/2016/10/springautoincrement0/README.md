@@ -167,7 +167,7 @@ Spring Bootは `data-プラットフォーム名.sql` を認識するので、`d
 
 `build.gradle` に、以下のようなタスクを追記して、`set `で開始するステートメントをH2向けには出力しないようにする。
 
-```gradle
+```groovy
 task processSql << {
     def sqlFile = file("src/main/sql/data.sql")
     file("src/main/resources/data-h2.sql").withWriter { writer ->
@@ -187,7 +187,7 @@ task processSql << {
 
 `resources` のファイルを処理するタスクである `processResources` の前に実行されるようにしておく。
 
-```gradle
+```groovy
 processResources.dependsOn 'processSql'
 ```
 

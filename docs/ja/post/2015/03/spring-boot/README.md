@@ -26,7 +26,7 @@ Spring Bootで(というかSpring Securityのような気もするが)
 `build.gradle`の`dependencies`に`spring-boot-starter-security`を追加する。
 (バージョンは適切なものを選ぶ)
 
-```gradle
+```groovy
 dependencies {
     :
     compile 'org.springframework.boot:spring-boot-starter-security:1.2.2.RELEASE'

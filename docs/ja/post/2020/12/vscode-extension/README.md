@@ -49,24 +49,33 @@ extension のデバッグのウィンドウ(Extension Development Host)の場合
 
 起動とともに有効にしてほしいextensionなので、アクティベーションのイベントはすべて(`*`)。
 
-```prism  json
-"activationEvents": [  "*"],
+```json
+"activationEvents": [
+  "*"
+],
 ```
 
 activate の function で statusBarItem を作って登録する。
 
 位置の制御のために優先度を示す整数値を与えるが、他のextensionがあっても基本的に一番左に表示したいという意味で大きい値を設定している。
 
-```prism  typescript
-myStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 10000);context.subscriptions.push(myStatusBarItem);
+```js
+myStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 10000);
+context.subscriptions.push(myStatusBarItem);
 ```
 
 あとは表示するitemを組み立てるだけ。
 
 前述の通り Extension Development Hostかどうかという判定は [https://github.com/microsoft/vscode/issues/10272](https://github.com/microsoft/vscode/issues/10272) のworkaroundに頼っているが、それ以外は単純にworkspace名とアイコンを文字列で設定しているだけ。アイコンについては [Product Icon Reference](https://code.visualstudio.com/api/references/icons-in-labels) で説明されているが、 `$(project)` という文字列表現だけで簡単に設定できる。
 
-```prism  typescript
-const isDevelopment = vscode.env.sessionId === 'someValue.sessionId';const icon = isDevelopment ? '$(debug)' : '$(project)';const name = vscode.workspace.name;if (name) {	myStatusBarItem.text = `${icon} ${name}`;	myStatusBarItem.show();}
+```js
+const isDevelopment = vscode.env.sessionId === 'someValue.sessionId';
+const icon = isDevelopment ? '$(debug)' : '$(project)';
+const name = vscode.workspace.name;
+if (name) {
+	myStatusBarItem.text = `${icon} ${name}`;
+	myStatusBarItem.show();
+}
 ```
 
 ## リリース

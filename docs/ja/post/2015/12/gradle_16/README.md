@@ -5,7 +5,7 @@ tags: ["Gradle"]
 ---
 Gradleのあるプロジェクトが、あるdependencyを**直接**持っているかどうかは以下で確認できる。
 
-```gradle
+```groovy
 boolean hasDependency(Project project, String group, String module) {
     project.configurations.compile.incoming.resolutionResult.allComponents.any {
         it.group == group && it.name == module
@@ -17,7 +17,7 @@ boolean hasDependency(Project project, String group, String module) {
 つまり、「このプロジェクトにはライブラリAが含まれているか？」を判定したい場合に、「ライブラリAに依存しているライブラリB」を使用している場合は、上記の判定メソッドは false を返してしまう。
 この推移的依存関係も判定するには次のようにする。
 
-```gradle
+```groovy
 boolean hasDependency(Project project, String group, String module) {
     project.configurations.compile.incoming.resolutionResult.allComponents.findAll {
         it.getId() instanceof ModuleComponentIdentifier
@@ -32,7 +32,7 @@ boolean hasDependency(Project project, String group, String module) {
 いずれの場合も、プロジェクトが評価された後でなければ動作しない。  
 つまり以下のようにafterEvaluateを使う必要がある。
 
-```gradle
+```groovy
 afterEvaluate { Project project ->
     if (hasDependency(project, 'com.example', 'awesomelib')) {
         // 'com.example:awesomelib'が含まれていた場合の処理

@@ -7,7 +7,7 @@ tags: ["JPA","Thymeleaf","Spring Boot"]
 
 ### Thymeleafでの型変換
 
-Thymeleafでは、SpringのConverterが定義されていれば`${{variable}}`の形式で書くことでConverterで変換した結果を出力してくれる。
+Thymeleafでは、SpringのConverterが定義されていれば<code v-pre>${{variable}}</code>の形式で書くことでConverterで変換した結果を出力してくれる。
 なので、HTML上で分岐を書いたり独自の変換用のBeanを定義するよりはこの仕組みを使ったほうがいい。
 
 例えば以下のような列挙型を定義していたとする。
@@ -69,7 +69,7 @@ public class TaskStatusToStringConverter implements Converter<TaskStatusEnum, St
 }
 ```
 
-その上で、以下のように `th:text="${{entity.status}}"`の書き方をすれば、上記のConverterを使って文字列を変換してくれる。
+その上で、以下のように <code v-pre>th:text="${{entity.status}}"</code> の書き方をすれば、上記のConverterを使って文字列を変換してくれる。
 
 ```html
     <tr th:each="entity : ${tasks}">
