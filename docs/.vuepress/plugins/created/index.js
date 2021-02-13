@@ -2,6 +2,7 @@ const path = require('path')
 const spawn = require('cross-spawn')
 
 module.exports = (options = {}, context) => ({
+  name: 'created',
   extendPageData ($page) {
     const { transformer, dateOptions } = options
     const timestamp = getGitCreatedTimeStamp($page._filePath)
