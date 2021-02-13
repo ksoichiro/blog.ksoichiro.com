@@ -3,7 +3,9 @@
     <div v-for="post in posts">
       <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
       <PageAttributes :page="post" />
-      <p v-html="post.description"></p>
+      <ClientOnly>
+        <p v-html="post.description"></p>
+      </ClientOnly>
       <a class="read-more" v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
     </div>
     <Paginate
