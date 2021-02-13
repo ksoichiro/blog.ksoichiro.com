@@ -1,3 +1,10 @@
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
 module.exports = {
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
@@ -46,6 +53,29 @@ module.exports = {
     ],
     [
       '@vuepress/last-updated',
+    ],
+    [
+      'seo',
+      {
+        type: $page => {
+          if ($page.frontmatter.home) {
+            return 'website'
+          }
+          return 'article'
+        },
+        publishedAt: $page => {
+          if (!$page.created) {
+            return null
+          }
+          return dayjs($page.created).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        },
+        modifiedAt: $page => {
+          if (!$page.lastUpdated) {
+            return null
+          }
+          return dayjs($page.lastUpdated).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        }
+      }
     ],
   ],
   themeConfig: {

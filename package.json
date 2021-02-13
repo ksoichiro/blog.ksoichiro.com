@@ -12,6 +12,7 @@
         "firebase-tools": "^9.3.0",
         "vue-ionicons": "^3.0.5",
         "vuejs-paginate": "^2.1.0",
-        "vuepress": "^1.8.0"
+        "vuepress": "^1.8.0",
+        "vuepress-plugin-seo": "^0.1.4"
     }
 }
