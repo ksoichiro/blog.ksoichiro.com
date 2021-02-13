@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="post in posts">
+    <div v-for="post in posts" class="post">
       <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
       <PageAttributes :page="post" />
       <ClientOnly>
@@ -21,6 +21,9 @@
 </template>
 
 <style lang="stylus" scoped>
+.post:not(:first-child)
+  margin-top 4rem
+
 .read-more
   font-size smaller
 </style>

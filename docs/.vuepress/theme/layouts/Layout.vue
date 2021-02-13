@@ -1,10 +1,16 @@
 <template>
   <ParentLayout>
     <template #page-bottom>
-      <Footer class="theme-default-content content__default" />
+      <Footer/>
     </template>
   </ParentLayout>
 </template>
+
+<style lang="stylus" scoped>
+.footer
+  padding 2.5rem
+  border-top 1px solid $borderColor
+</style>
 
 <script>
 import ParentLayout from '@parent-theme/layouts/Layout.vue'
