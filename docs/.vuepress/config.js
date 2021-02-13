@@ -42,6 +42,9 @@ module.exports = {
       require('./plugins/created'),
     ],
     [
+      require('./plugins/description'),
+    ],
+    [
       '@vuepress/last-updated',
     ],
   ],
