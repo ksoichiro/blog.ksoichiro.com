@@ -4,7 +4,8 @@
         "dev": "vuepress dev docs",
         "build": "vuepress build docs",
         "deploy": "firebase deploy",
-        "start": "npm run dev"
+        "start": "npm run dev",
+        "blogger:convert": "cd tools/converter; go run main.go -f blogger.xml"
     },
     "devDependencies": {
         "dayjs": "^1.10.4",
