@@ -5,7 +5,7 @@ module.exports = (options = {}, context) => ({
   name: 'created',
   extendPageData ($page) {
     const { transformer, dateOptions } = options
-    const timestamp = getGitCreatedTimeStamp($page._filePath)
+    const timestamp = $page.frontmatter.created || getGitCreatedTimeStamp($page._filePath)
     const $lang = $page._computed.$lang
     if (timestamp) {
       const created = typeof transformer === 'function'
