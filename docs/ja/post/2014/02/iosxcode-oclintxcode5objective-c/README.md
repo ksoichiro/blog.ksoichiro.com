@@ -7,7 +7,7 @@ Xcodeでは標準でもAnalyzeでClangによる静的解析ができますが、
 [http://oclint.org/](http://oclint.org/)
 
 Xcode 5.0.2で試したところ、上記サイトで説明されている手順では導入できず苦戦したので、うまくいった手順を記録しておきます。
-
+<!--more-->
 まず、環境です。
 マシン：Mac Book Air
 OS：OS X 10.9.1

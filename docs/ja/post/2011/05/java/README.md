@@ -4,7 +4,7 @@ created: 2011-05-03T12:35:00.000+09:00
 tags: ["Java"]
 ---
 リフレクションでフィールドを取得すると、フィールドの順番が何に基づいているのか分からない結果となりました。
-
+<!--more-->
 Java API仕様を見ると、確かに順序は決まっていないという記述がありました。
 
 [Class#getFields()](http://java.sun.com/javase/ja/6/docs/ja/api/java/lang/Class.html#getFields())

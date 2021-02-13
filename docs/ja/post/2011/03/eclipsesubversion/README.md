@@ -8,7 +8,7 @@ PCを新しく購入したのですが(Windows7)、以前のPC(Windows XP)で使
 ```
 svn: Unable to open an ra_local session to URLsvn: Unable to open repository 'file:///L:/svn/～'
 ```
-
+<!--more-->
 原因はわかりませんが、どうやらドライブ名を記述しているのがいけないようで、以下のようにディスク名を指定するとアクセスできるようになりました。
 
 ```

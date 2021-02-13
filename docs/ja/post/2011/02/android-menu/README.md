@@ -4,7 +4,7 @@ created: 2011-02-19T21:45:00.001+09:00
 tags: ["サンプル","Android"]
 ---
 メニューのサンプルを作成しました。
-
+<!--more-->
 実行イメージ：
 
 [![](http://3.bp.blogspot.com/-hKybjVnWf_M/TV-3_XwsyFI/AAAAAAAAFag/9oWXdrRKFXY/s200/WS000004.JPG)](http://3.bp.blogspot.com/-hKybjVnWf_M/TV-3_XwsyFI/AAAAAAAAFag/9oWXdrRKFXY/s1600/WS000004.JPG)

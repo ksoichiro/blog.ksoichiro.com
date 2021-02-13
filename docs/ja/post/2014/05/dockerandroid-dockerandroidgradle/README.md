@@ -7,7 +7,7 @@ tags: ["Dockerfile","Docker","Android"]
 さらに色々なパターンのテストを試していこうと
 Vagranfile, Dockerfileに続きAndroidのテスト集を作成(以前からあったがいくつか追加)。
 [https://github.com/ksoichiro/android-tests](https://github.com/ksoichiro/android-tests)
-
+<!--more-->
 以下は、Docker上のAndroidエミュレータでテストをする例。
 [https://github.com/ksoichiro/android-tests/tree/master/docker-emulator](https://github.com/ksoichiro/android-tests/tree/master/docker-emulator)
 比較のために通常のGradleによるインストールなども記載してるが

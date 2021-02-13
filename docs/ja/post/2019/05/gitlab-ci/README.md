@@ -7,7 +7,7 @@ tags: ["GitLab","CI","Docker"]
 
 ただのセットアップは公式のマニュアルなどで確認できるので、ここでは実際にビルド、テスト、レビューで活用できるようにするためのことを書く。
 かなりの長文なので注意。
-
+<!--more-->
 ## 事前準備
 
 検証には [gitlab-i18n-patch](https://github.com/ksoichiro/gitlab-i18n-patch) を利用して Vagrant の GitLab v11.9.8 の VM を使用する。

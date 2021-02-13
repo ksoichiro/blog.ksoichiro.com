@@ -6,7 +6,7 @@ tags: ["eclipse","インストール","Android"]
 Eclipseで開発するには、SDKスターターパッケージの他、ADT(Android Development Tools)プラグインというものも必要のようです。
 
 Eclipseなしでも開発できますが、上記developerサイトでも推奨されているのでEclipseを利用します。
-
+<!--more-->
 Eclipseもやや古い3.4までしか導入していなかったので
 
 3.5を下記よりダウンロードしました。

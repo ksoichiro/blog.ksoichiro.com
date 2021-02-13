@@ -6,7 +6,7 @@ tags: ["eclipse","インストール","Android"]
 AVD(仮想デバイス)を作成します。
 
 Eclipseで作成します。
-
+<!--more-->
 [Android SDK and AVD Manager]から作成します。
 
 [![](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QVaEvAJpI/AAAAAAAAFJU/D0Q4hoKIjXY/s320/WS000004.BMP)](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QVaEvAJpI/AAAAAAAAFJU/D0Q4hoKIjXY/s1600/WS000004.BMP)

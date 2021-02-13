@@ -6,7 +6,7 @@ tags: ["Nexus5","Android"]
 Nexus5を購入しました。2013/11/2の8時半にGoogle Playで購入し、11/7に届きました。
 
 [![](http://4.bp.blogspot.com/-gSSoPdPAhuw/UnufMdGBmtI/AAAAAAAAL1M/KZO8tAlExcg/s320/2013-11-07+13.37.18.png)](http://4.bp.blogspot.com/-gSSoPdPAhuw/UnufMdGBmtI/AAAAAAAAL1M/KZO8tAlExcg/s1600/2013-11-07+13.37.18.png)
-
+<!--more-->
 バンパーケースも購入しました。
 赤と黄色しか選べなかったので赤を購入。以下のような感じです。
 

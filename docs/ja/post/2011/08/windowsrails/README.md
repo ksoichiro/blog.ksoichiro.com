@@ -6,7 +6,7 @@ tags: ["Linux","Ubuntu","Ruby on Rails","VMware Player"]
 Ruby on Railsの開発をWindowsでしようとすると、速度の遅さが気になります。
 railsコマンドを使う度に数分間待たされたりして、生産性に関わる遅さです。
 加えて、コマンドライン操作をすることが多いですが使えるものが限られていて、grepするためにCygwinを使っていて、ではCygwinに切り替えられないかと思うとRubyのバージョンが古い…という状況です。
-
+<!--more-->
 まず以下のサイトなどを参考にさせていただきました。
 [http://tobysoft.net/wiki/index.php?Ruby%2FWindows%A4%C7Ruby%A4%AC%C3%D9%A4%A4%B7%EF](http://tobysoft.net/wiki/index.php?Ruby%2FWindows%A4%C7Ruby%A4%AC%C3%D9%A4%A4%B7%EF)
 [http://d.hatena.ne.jp/miau/20110404/1301916045](http://d.hatena.ne.jp/miau/20110404/1301916045)

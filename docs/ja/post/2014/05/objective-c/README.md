@@ -7,7 +7,7 @@ Objective-CにはLintツールとして既にOCLintがあるが、
 OS Xでなくても手軽にチェックできる仕組みが  
 欲しいと考えて作ってみた。  
 [fint](https://github.com/ksoichiro/fint)
-
+<!--more-->
 以前に[Run Scriptを利用して簡単なチェックができる](http://ksoichiro.blogspot.jp/2014/03/iosxcode-xcode.html)
 というエントリを書いたが、これをツールとして整備したもの。
 

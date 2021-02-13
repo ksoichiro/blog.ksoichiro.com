@@ -10,6 +10,7 @@ http://gradle.org/feature-spotlight-continuous-build/
 https://docs.gradle.org/current/userguide/continuous_build.html
 
 少し長いので、順序立てて説明。
+<!--more-->
 
 ### 背景
 

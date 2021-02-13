@@ -6,7 +6,7 @@ tags: ["UI","Android"]
 TextViewに文字列や数値を表示する画面を作りました。
 正しくレイアウトのXMLを記述して、プロジェクトも再ビルドして、R.javaにIDは存在しているはずなのに
 Resources$NotFoundExceptionが出てしまいました…。
-
+<!--more-->
 しばらく例外メッセージの中の「見つからない」と言われているIDを見ていて、気づきました。
 
 TextViewにはsetText(CharSequence text)だけでなくsetText(int resid)があるのです。

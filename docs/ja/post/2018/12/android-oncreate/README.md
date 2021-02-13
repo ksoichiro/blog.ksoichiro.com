@@ -9,7 +9,7 @@ tags: ["Android"]
 
 ただ、どうもアプリの起動が遅くなっているように見える。
 各 Activity の onCreate でナイトモードを設定するような方法で実装。
-
+<!--more-->
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)

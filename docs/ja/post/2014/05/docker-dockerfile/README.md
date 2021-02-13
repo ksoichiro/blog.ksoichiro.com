@@ -9,7 +9,7 @@ tags: ["Java","Dockerfile","JDK","Docker","Android"]
 さらに最後には index.docker.io に登録してみた。
 
 以下その内容。
-
+<!--more-->
 ## OpenJDK7
 
 Javaが使えるというだけですが・・。

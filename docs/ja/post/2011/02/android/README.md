@@ -4,7 +4,7 @@ created: 2011-02-22T21:47:00.000+09:00
 tags: ["Android"]
 ---
 以下のページを参考に、ライブ壁紙の設定画面(PreferenceActivity)を作成しました。
-
+<!--more-->
 [http://developer.android.com/resources/samples/CubeLiveWallpaper/AndroidManifest.html](http://developer.android.com/resources/samples/CubeLiveWallpaper/AndroidManifest.html)
 
 この場合、設定画面の背景が半透明になり、後ろの画面が透けて見えます。

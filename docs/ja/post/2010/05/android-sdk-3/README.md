@@ -6,7 +6,7 @@ tags: ["eclipse","インストール","Android"]
 ADTプラグインをEclipseに導入した後は、Android SDKのコンポーネントを追加する必要があります。
 
 Eclipseにて、[Window] > [Android SDK and AVD Manager]を選び、[Available Packages]をクリックすると利用可能なコンポーネントが表示されます。
-
+<!--more-->
 「AVD」とはAndroid Virtual Devicesのことのようです。
 
 [![](http://2.bp.blogspot.com/_rtlYXd55yO0/S-QIcmzdPYI/AAAAAAAAFII/nVWZ1Mt6dco/s400/WS000000.BMP)](http://2.bp.blogspot.com/_rtlYXd55yO0/S-QIcmzdPYI/AAAAAAAAFII/nVWZ1Mt6dco/s1600/WS000000.BMP)

@@ -4,7 +4,7 @@ created: 2015-11-06T01:49:00.001+09:00
 tags: ["Gradle"]
 ---
 全然知らなかったのだけど、Gradleのプロジェクトでは、buildSrcというディレクトリを作ればビルド専用のクラスなどを定義できる。
-
+<!--more-->
 例えば buildSrc/src/main/groovy/Foo.groovy というファイルを作りclass Fooとか定義すれば、build.gradleから普通に new Foo()というふうに参照できる。
 classpathとか書く必要はない。
 

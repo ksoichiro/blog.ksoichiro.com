@@ -7,7 +7,7 @@ ListViewをカスタマイズして以下のような行のレイアウトを作
 クリックできなくなってしまいました。
 ListView#setOnItemClickListener()を使っても、クリックのイベントに反応しなくなったのです。
 しかしなぜか ListView#setOnItemLongClickListener() は有効でした。
-
+<!--more-->
 レイアウトは以下です。
 
 ```xml

@@ -4,7 +4,7 @@ created: 2010-06-20T15:38:00.000+09:00
 tags: ["eclipse"]
 ---
 最近まで使ったことなかったのですが、データベースやアプリケーションサーバを使いながら開発するとき、通常のEclipseよりも遥かに便利でした。
-
+<!--more-->
 アプリケーションサーバなら、「Servers」ビューからTomcatなどのサーバを起動・停止できます。
 
 [![](http://1.bp.blogspot.com/_rtlYXd55yO0/TB22M59W2KI/AAAAAAAAFRk/4IaCCI6Ux7U/s320/WS000028.BMP)](http://1.bp.blogspot.com/_rtlYXd55yO0/TB22M59W2KI/AAAAAAAAFRk/4IaCCI6Ux7U/s1600/WS000028.BMP)

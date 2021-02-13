@@ -6,7 +6,7 @@ tags: ["Ubuntu","VIM","Vagrant","Android"]
 Vagrantfileやセットアップ用のスクリプトを
 テンプレートとしてGitHubにいくつか登録してみた。
 [https://github.com/ksoichiro/vagrant-templates](https://github.com/ksoichiro/vagrant-templates)
-
+<!--more-->
 セットアップは基本的にすべてシェルスクリプト。
 (結果的に、Dockerで書きたくなったときに移植しやすいので良かったかも)
 

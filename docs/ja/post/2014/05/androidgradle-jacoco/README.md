@@ -17,7 +17,7 @@ Android Studioがリリースされて以来、Gradleプラグインをしばら
 今回は、そんな条件であってもJaCoCoによるカバレッジ計測を可能にし、
 [Travis CI](https://travis-ci.org/) でビルドして [Coveralls](https://coveralls.io/) でカバレッジを表示するところまで試してみた
 という内容。※長いです。
-
+<!--more-->
 Androidライブラリの [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer) でこれを試し、
 以下のようなバッジを表示することがゴール。
 

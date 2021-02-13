@@ -20,7 +20,7 @@ tags: ["yEd"]
 ![](https://lh3.googleusercontent.com/6kHbpHvpI5Fq7tjYBYylbP11t2RNFUVcfZiqJOriLMHqACQIk-YL83bNH9RoN_2rMmrnpzqJffCCmw=s0)
 
 レイアウトをいろいろとうまくやってくれるのが yEd の良いところのようなので試してみる。今回はEdge Routing。
-
+<!--more-->
 ## Edge Routing
 
 オブジェクトを結ぶ線の引き方のことと思われる。

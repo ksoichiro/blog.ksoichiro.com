@@ -12,6 +12,7 @@ tags: ["iOS","プロビジョニングプロファイル","AdHoc","AppStore"]
 
 の2種類があります。(2013/4/24現在のiOS Dev Center仕様)
 DistributionにはさらにApp Store用とAd Hoc用があります。
+<!--more-->
 自分の理解では
 
 - Developmentは、MacにiPhoneを接続して直接インストールする際の署名に使用するプロファイル

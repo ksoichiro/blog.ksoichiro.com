@@ -6,7 +6,7 @@ tags: ["iOS","UIScrollView","Storyboard","iPhone"]
 基本的なことかと思いますが、しばらく分からず時間を費やしてしまったのでメモします。
 UIScrollViewを使って何となくStoryboardでパーツをドラッグ＆ドロップするだけで作っていったところ、スクロールしませんでした。
 以下の構造を想定します。
-
+<!--more-->
 ```
 UIView
 └UIScrollView

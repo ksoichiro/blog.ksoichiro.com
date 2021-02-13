@@ -4,7 +4,7 @@ created: 2010-05-08T00:11:00.003+09:00
 tags: ["eclipse","Android"]
 ---
 Android Projectを作成して、デフォルトの状態のまま実行してみたのですが、何度実行しても下記のようなメッセージが表示され実行できません。
-
+<!--more-->
 ```
 [2010-05-07 23:55:23 - HelloWorld] Automatic Target Mode: launching new emulator with compatible AVD 'Android\_1\_6\_Device'
 [2010-05-07 23:55:23 - HelloWorld] Launching a new emulator with Virtual Device 'Android\_1\_6\_Device'

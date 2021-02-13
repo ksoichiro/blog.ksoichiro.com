@@ -7,7 +7,7 @@ GitHubでのような開発がしたい！ということでGitLabを利用。
 日本語には対応していないだが、英語に抵抗のあるメンバーもいるのでどうしても日本語化しておきたい・・・
 ということで(かなり強引な感じの)日本語化のパッチを作成した。
 [https://github.com/ksoichiro/gitlab-i18n-patch](https://github.com/ksoichiro/gitlab-i18n-patch)
-
+<!--more-->
 **追記(2014/05/11)**
 
 現時点で最新の6.8.1にも対応しています。

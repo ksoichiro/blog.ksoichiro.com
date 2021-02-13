@@ -6,7 +6,7 @@ tags: ["Preference","UI","Android"]
 カスタマイズしたPreferenceを作りました。
 しばらく画面内に1つしかそのPreferenceを使っていなかったのですが、
 数を増やしたところおかしなことになりました。
-
+<!--more-->
 増やしたもののうち、Dependencyを設定しているカスタムPreferenceがあるのですが
 依存先のチェックボックスを操作したところ
 そのカスタムPreferenceと他のカスタムPreferenceが入れ替わる現象が起こりました。

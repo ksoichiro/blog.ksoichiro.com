@@ -4,7 +4,7 @@ created: 2013-02-16T12:41:00.001+09:00
 tags: ["JUnit","Android"]
 ---
 Androidの画面遷移の自動テストをする方法として、ActivityInstrumentationTestCase2を使うサンプルを紹介してくださっているブログなどは見かけるのですが、 Fragmentを使った場合のものが見つからなかったのでサンプルを作ってみました。
-
+<!--more-->
 ## Fragmentインスタンスの取得方法
 
 ActivityではActivityMonitor#getLastActivity()などでモニタしているActivityのインスタンスを取得できますが、 Fragmentのインスタンスを取得しようとすると、そういったテスト用のメソッドがなく FragmentManager#findFragmentByTag()などで取得するしかなさそうです。

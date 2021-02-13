@@ -7,7 +7,7 @@ YouTubeの最近の新しい動画について、今朝通知メールがきて�
 フリルのFablicさんの事例紹介だった。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PZqzvs-AXYA" frameborder="0" allowfullscreen></iframe>
-
+<!--more-->
 マテリアルデザインを採用したらこんなに○○になった！というものだったが、マテリアルデザインのライブラリを作った自分としてはどんなものかチェックしなくては、と動画を観てみると…
 おや、この動きはもしかして…！
 ダウンロードしてみると、なんと使われてました！

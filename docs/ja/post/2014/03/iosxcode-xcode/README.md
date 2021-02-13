@@ -4,7 +4,7 @@ created: 2014-03-01T01:02:00.004+09:00
 tags: ["iOS","静的解析","Xcode","フォーマッタ"]
 ---
 前回の [OCLintでXcode5プロジェクトのObjective-Cソースコードを静的解析](http://ksoichiro.blogspot.jp/2014/02/iosxcode-oclintxcode5objective-c.html) で、コマンドの出力を整形すればソースコード上に警告表示できることを知ったので、簡単なフォーマットチェックができないか試してみました。
-
+<!--more-->
 作業はXcode 5.0.2で行なっています。
 
 まず、Targetを追加します。

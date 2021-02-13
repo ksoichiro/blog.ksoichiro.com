@@ -4,7 +4,7 @@ created: 2011-02-19T21:24:00.000+09:00
 tags: ["サンプル","Android"]
 ---
 Androidでリスト表示をするサンプルを作成しました。
-
+<!--more-->
 実行イメージ：
 
 [![](http://2.bp.blogspot.com/-6Oo92sDduP0/TV-1YgEm-BI/AAAAAAAAFaY/nnygkswTPfA/s200/WS000003.JPG)](http://2.bp.blogspot.com/-6Oo92sDduP0/TV-1YgEm-BI/AAAAAAAAFaY/nnygkswTPfA/s1600/WS000003.JPG)

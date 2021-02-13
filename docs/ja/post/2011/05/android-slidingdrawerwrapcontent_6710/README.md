@@ -6,7 +6,7 @@ tags: ["UI","Android"]
 SlidingDrawerを使って、「Gmailアプリでチェックボックスにチェックを入れたときに表示されるボタン群」のようなものをきれいに実現する方法です。
 
 ソースコードのポイントを解説します。
-
+<!--more-->
 ※完成イメージと、それに至るまでの問題は以下で説明しました。
 [Android SlidingDrawerでwrap\_contentを効かせつつ表示/非表示での高さを切り替える](http://ksoichiro.blogspot.com/2011/05/android-slidingdrawerwrapcontent.html)
 

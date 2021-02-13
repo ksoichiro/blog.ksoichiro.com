@@ -6,7 +6,7 @@ tags: ["eclipse","JDK","インストール","JavaFX"]
 デスクトップアプリケーションを作成するため、手軽に扱えそうな言語はないか…と探していましたが、
 
 以下の記事でJavaFXが良いかもしれないと思い、導入してみることにしました。
-
+<!--more-->
 [http://codezine.jp/article/detail/1448](http://codezine.jp/article/detail/1448)
 
 下記サイトからSDKをダウンロードします。

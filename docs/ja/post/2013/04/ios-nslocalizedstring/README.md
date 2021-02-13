@@ -6,7 +6,7 @@ tags: ["ローカライズ","EverForm","iOS","NSLocalizedString"]
 致命的なミスです。
 先日リリースした「 [EverForm for iOS](https://itunes.apple.com/jp/app/everform-for-ios/id630680690?mt=8)」ですが、英語のローカライズに失敗した状態でリリースしてしまいました。
 アップデート版は先ほど申請しました。
-
+<!--more-->
 何が問題かというと、NSLocalizedStringの第1引数に与えたキーがそのまま表示されてしまいます。 同じ問題にぶつかった人が検索しやすいように、キーワードを挙げておくと… NSLocalizedStringのkeyが表示される、ラベルのまま表示される、使われない、といったところでしょうか。
 
 EverForm for iOSの場合、言語をEnglishにしてビルド、実行すると発生しました。

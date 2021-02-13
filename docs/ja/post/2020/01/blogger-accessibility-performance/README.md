@@ -8,7 +8,7 @@ tags: ["Blogger"]
 なお、Chromeでログインして拡張機能でLighthouseを使っている場合、シークレットウィンドウからの実行を許可した上でシークレットウィンドウから実行しないと、キャッシュが使われてしまい正しい結果が出ない。
 
 lighthouse の npm コマンドで実行するのが無難。
-
+<!--more-->
 ## Accessibility: selectにlabelがついてない
 
 このブログには上部に blog apps github というリンクがあり、モバイルの場合は select になっている。ここに label が設定されていないというもの。

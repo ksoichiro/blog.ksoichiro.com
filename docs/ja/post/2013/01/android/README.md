@@ -5,7 +5,7 @@ tags: ["ライブラリ","Android","AndroidFormEnhancer"]
 ---
 Androidアプリ用の入力チェックのライブラリを作りました。
 [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer)
-
+<!--more-->
 使い方ですが、まずアノテーションで入力フォームの仕様を定義します。
 例えば、「名前」の入力欄を
 

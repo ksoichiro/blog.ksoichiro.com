@@ -6,7 +6,7 @@ tags: ["UI","Android"]
 他の部品を隠さずにSlidingDrawerを使い、コンテンツの大きさに合わせてSlidingDrawerをレイアウトする方法についてです。この説明もタイトルも、一言でうまく伝えられないので、まずは完成イメージをまず載せます。
 
 ソースコードは改めて投稿します。
-
+<!--more-->
 **完成イメージ**
 
 [![](http://4.bp.blogspot.com/--9rZmcFNCFA/TcAL1iGf4sI/AAAAAAAAFn0/j1iLadVg1Fg/s200/device001.png)](http://4.bp.blogspot.com/--9rZmcFNCFA/TcAL1iGf4sI/AAAAAAAAFn0/j1iLadVg1Fg/s1600/device001.png)

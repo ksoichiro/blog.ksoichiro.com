@@ -7,7 +7,7 @@ MacでInkscapeを使ってSVGのアイコンを作り、AndroidとiOSアプリ�
 タイトルの通り、1つのファイルから全サイズのアイコンファイルを一括生成します。
 (使う人いるでしょうか…もしいればコメントなど頂けると嬉しいです。)
 [https://github.com/ksoichiro/export\_icons](https://github.com/ksoichiro/export_icons)
-
+<!--more-->
 Illustratorとaiファイルや、Photoshopとpsdファイルではありません。
 Inkscapeとsvgファイルです。
 (GIMPとxcfファイルでもありません。)

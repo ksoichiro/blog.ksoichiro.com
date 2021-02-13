@@ -13,7 +13,7 @@ tags: ["ライブラリ","Node.js"]
 
 [Golang での ZIP 圧縮ライブラリ alexmullins/zip](https://github.com/alexmullins/zip) にパスワード付与を実装している [yeka/zip](https://github.com/yeka/zip) と、こちらの仕様を参考に実装。
 [https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT)
-
+<!--more-->
 archiver は汎用的なアーカイブ作成のライブラリになっており、プラグインのような仕組みとして拡張子とその処理を登録することができる。これを利用して、以下のように archiver を読み込み、追加の拡張子として パスワードつき ZIP を登録する構成としている。
 
 ```js

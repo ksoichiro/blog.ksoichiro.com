@@ -8,7 +8,7 @@ Ruby on Railsの話題です。
 Gemfileに修正を加えたのですが、
 Herokuにpushできなくなってしまいました。
 Gemfile.lockを削除してbundle installし直すなど試しましたが上手く行かず…
-
+<!--more-->
 環境は以下です。
 (どこまで書けば役に立つでしょうか。。)
 

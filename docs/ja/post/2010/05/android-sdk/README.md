@@ -6,7 +6,7 @@ tags: ["eclipse","xperia","インストール","Android"]
 AndroidのSDKをダウンロードし、開発環境を構築します。
 
 今回は、xperia向けのアプリということでAndroid 1.6用のSDKをダウンロードします。
-
+<!--more-->
 あれ、Downloadableとあるがファイルが見つからない…と思い探していると
 
 こんな注意がありました。

@@ -5,7 +5,7 @@ tags: ["keystore","Android"]
 ---
 AndroidというよりはJDKの話ですが、前のエントリの続きのメモです。
 keystoreの変更操作は、バックアップを取ってから実行した方が良いです。
-
+<!--more-->
 ## keystore内のエントリの確認方法
 
 ```

@@ -5,7 +5,7 @@ tags: ["UI","Android"]
 ---
 テーマに@android:style/Theme.Lightを使用すると、
 背景が白の明るい配色になり、文字色は黒系の色になります。
-
+<!--more-->
 @android:style/Themeの場合は逆です。こちらの場合は問題ないのですが、 @android:style/Theme.Lightを使うときにダイアログを独自のレイアウトで組み立てると、 背景色は黒なのに、文字色も黒系(グレー)になってしまいます。
 つまり、各TextViewに文字色を都度設定しなければならないようです。
 

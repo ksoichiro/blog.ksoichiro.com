@@ -6,7 +6,7 @@ tags: ["keystore","Android"]
 先日、個人で開発しているアプリのリリース用keystoreのパスワードが分からなくなるという(個人的に)とんでもない事態が起こりました。
 一応、解決できたので方法を書き留めておきます。
 ただし、解決できる条件は「エイリアスのパスワードは分かる」ということです。
-
+<!--more-->
 Antやkeytool、ADTのExportツールなどを使うとキーストアのパスワードが間違っているせいでエラーになっていましたが、実はエイリアスのパスワードは正しかったのです。
 というのは、Android Keystore Password Recoverを使って分かりました。
 [https://code.google.com/p/android-keystore-password-recover/](https://code.google.com/p/android-keystore-password-recover/)

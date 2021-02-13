@@ -7,6 +7,7 @@ tags: ["StackEdit","Blogger"]
 
 Bloggerへの投稿でMarkdownを使えたら良いな、と思い調べてみると
 [StackEdit](https://stackedit.io)が良いというのを見つけたので試してみた。
+<!--more-->
 
 Bloggerだとソースコードを貼付けたい場合に「作成」ビューで貼れば問題なく表示はできるが、
 スペースをすべて&amp;nbsp;に変換したりとかなり無駄ができている。

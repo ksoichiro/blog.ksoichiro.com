@@ -9,7 +9,7 @@ TextViewに含まれるURLをリンクにして、クリックするとブラウ
 ※もう一つのActivityは使用例です。
 [https://gist.github.com/3394338](https://gist.github.com/3394338)
 上記の抜粋ですが、使い方は以下のようになります。
-
+<!--more-->
 ```java
 String testStr = "URLの形式のみブラウザで開きます。http://www.yahoo.co.jp/とhttp://d.hatena.ne.jp/をリンク表示にしてクリック可能にしました。";
 

@@ -4,7 +4,7 @@ created: 2012-01-02T13:45:00.001+09:00
 tags: ["Google Maps","Android"]
 ---
 AndroidでGoogle Maps APIを使う場合に、次のようにIntentでMapActivityのサブクラスを起動するケースがあると思います。
-
+<!--more-->
 ```java
 Intent intent = new Intent().setClass(this, SampleMapActivity.class);
 ```

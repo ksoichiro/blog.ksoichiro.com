@@ -13,7 +13,7 @@ tags: ["yEd"]
 ![](https://lh3.googleusercontent.com/wd-NNWr9nHpDcs4xsPfaiTXjuK5HIpYGXzj1-g4zIxAYIbulZDbTI41uKufhN1zxmYG-CnjDV2Jh5g=s0)
 
 レイアウトといいながらEdge Routingから入ってしまったが、今回はメニューのLayout直下の項目を試す。
-
+<!--more-->
 ### Hierarchical
 
 階層構造。フローチャートに向いているかも。

@@ -10,7 +10,7 @@ JavaFXの導入に際し、以下の記事を参考にさせていただいて�
 そのため先日のエントリでJavaFXを「とりあえず」インストールする方法を書いたのですが、
 
 EclipseでJavaFXを扱う方法が本家サイトの下記ページに詳しく書いてありました。
-
+<!--more-->
 [Getting Started With JavaFX Technology Using Eclipse IDE](http://www.javafx.com/docs/gettingstarted/eclipse-plugin/index.jsp)
 
 JavaFX、Eclipseを組み合わせる場合、先日インストールしたバージョンでは対応していないようです…。

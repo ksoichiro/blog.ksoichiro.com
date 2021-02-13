@@ -5,7 +5,7 @@ tags: ["Fragment","ActionBarCompat","Android"]
 ---
 Android SDKに付属しているサンプルのActionBarCompatを少しだけ改良した ActionBarCompatRevというライブラリを作りました。
 [ActionBarCompatRev](https://bitbucket.org/ksoichiro/actionbarcompatrev/overview)
-
+<!--more-->
 ActionBarを使ったスタイルはAndroid 3.0以降で利用できますが、
 実際にアプリ開発をするとなると、まだまだAndroid 2.3などの下位バージョンを
 考慮する必要があり、デザイン・仕様を共通化するために前述のActionBarCompatなどを

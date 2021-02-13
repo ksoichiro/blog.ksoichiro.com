@@ -5,6 +5,7 @@ tags: ["GitHub","Android"]
 ---
 夜遅くに仕事から帰り、夜中にいつも通り(？)コーディングをしていると、意味不明な通知メールが・・・"Milestone achieved"  
 マイルストーン？？
+<!--more-->
 
 [見てみると](https://github.com/ksoichiro/Android-ObservableScrollView/issues/210)、なんとAndroid-ObservableScrollViewがWhatsApp Messengerに採用されてるよ！と、初期からいろいろフィードバックしてくれてご自身のアプリにも組み込んでくれたユーザの AkshayChordiya さんが知らせてくれたのだった。 
 

@@ -6,7 +6,7 @@ tags: ["SonyTablet","Android"]
 SonyTablet Sを、Windowsでは接続できましたがMacで接続できず試行錯誤していましたが、
 SONYのサイトに説明がありました。
 [http://www.sony.jp/support/tablet/products/info/sdk.html](http://www.sony.jp/support/tablet/products/info/sdk.html)
-
+<!--more-->
 単純に接続しただけでは以下のようになり、adbで認識されません。
 
 ```sh

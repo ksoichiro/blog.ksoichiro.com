@@ -4,7 +4,7 @@ created: 2013-04-24T01:17:00.001+09:00
 tags: ["UI","Android","ListView"]
 ---
 今さら書くものでもないですが、AndroidのListViewにおけるonClickやonItemClick、さらに項目にラジオボタンや チェックボックスがついていた時など毎回混乱するので「この仕様ならこれで動く」というパターンをメモします。
-
+<!--more-->
 以下は
 
 - ListViewにラジオボタンつき項目を表示

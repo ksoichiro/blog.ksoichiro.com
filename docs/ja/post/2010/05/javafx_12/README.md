@@ -10,7 +10,7 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
 ということでJavaFXのサイトにある以下のページを参考に作成します。
 
 [Creating Your First JavaFX Application Using Eclipse IDE](http://www.javafx.com/docs/gettingstarted/eclipse-plugin/create-first-javafx-app-eclipse.jsp)
-
+<!--more-->
 見た感じ、最初にしてはやや複雑な気がしますが…。
 
 1. Eclipseを起動します。

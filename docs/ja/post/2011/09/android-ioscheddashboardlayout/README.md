@@ -6,7 +6,7 @@ tags: ["Google","UI","Android"]
 Google I/Oのアプリ [iosched](http://code.google.com/p/iosched/) に含まれているDashboardLayoutをカスタムダイアログで適用しようとしましたが、タイトルバーを非表示にしたところ、レイアウトが崩れてしまいました。
 DashboardLayoutを使っているActivityのレイアウトファイルをそのまま使ったわけではなく、 Fragmentを使わないように書き換えたのですが、その際に誤って削ってしまった「android:layout\_weight="1"」が原因でした。
 以下、詳細のメモです。
-
+<!--more-->
 まず、最初にダイアログに使ったレイアウトです。
 
 ```xml

@@ -18,6 +18,7 @@ ERROR @ line 83: Gradient has no stop info
 ```
 
 のようなエラーが出て、グラデーションが適用されない。
+<!--more-->
 
 これは Inkscape が以下のように、実際に適用するグラデーションを分離して定義するせいで stop 要素のない linearGradient が作られてしまうのが原因と思われる。
 

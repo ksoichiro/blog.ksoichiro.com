@@ -4,7 +4,7 @@ created: 2010-05-07T19:08:00.004+09:00
 tags: []
 ---
 色々と投稿する前に、コードをハイライト表示できるようにしておきたいと思います。
-
+<!--more-->
 こちらを参考にBlogger Syntax Highlighterというものをこのブログに導入しました。
 
 [http://www.kuribo.info/2008/06/blogger-syntax-highlighter.html](http://www.kuribo.info/2008/06/blogger-syntax-highlighter.html)

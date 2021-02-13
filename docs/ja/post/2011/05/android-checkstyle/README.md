@@ -7,7 +7,7 @@ AndroidプロジェクトでのCheckStyle設定についてです。
 
 Android Open Source Projectのコードスタイルでは、フィールド名はmから開始する、
 などのルールがあります。
-
+<!--more-->
 [Code Style Guidelines for Contributors](http://source.android.com/source/code-style.html)
 
 これはコントリビューター向けのものではありますが、

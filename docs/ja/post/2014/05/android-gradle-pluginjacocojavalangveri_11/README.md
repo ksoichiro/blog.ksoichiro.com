@@ -10,7 +10,7 @@ Android Gradle PluginでJaCoCoを使ったカバレッジ計測を試したが
 通常の`Intent`による起動が失敗した。
 以下のようなパターンで、`testCoverageEnabled = true`となった
 ビルドでインストールしたアプリが`java.lang.VerifyError`によりクラッシュした。
-
+<!--more-->
 まずAndroidManifest.xml。
 途中は省略するが、トップ画面からメニューを開き
 「About」の項目をタップすると`AboutActivity`が開き

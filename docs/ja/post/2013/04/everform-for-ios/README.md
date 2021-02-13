@@ -6,7 +6,7 @@ tags: ["自作アプリ","iOS","Evernote","iPhone"]
 iPhoneアプリ『EverForm for iOS』をリリースしました。
 [https://itunes.apple.com/jp/app/id630680690](https://itunes.apple.com/jp/app/id630680690)
 [Android版](https://play.google.com/store/apps/details?id=com.sika524.android.everform) を既にリリースしていますが、今回はそのiOS版です。
-
+<!--more-->
 EverFormは、Evernoteでよく使うノートの形式をフォームとして管理するアプリです。
 Evernoteの使い方は様々だと思いますが、Webのクリップだけではなく、毎日何かの記録をするのに使っている人もいるのではないでしょうか。 EverFormは、そんな人におすすめできるアプリです。
 

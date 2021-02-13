@@ -6,7 +6,7 @@ tags: ["CI","Concourse CI"]
 [前回のエントリ](https://ksoichiro.blogspot.com/2018/12/ci.html) でふれた Concourse CI について。
 チュートリアルを試したのだが、いくつか躓くポイントがあったため記録しておく。
 ※Concourse CI を批判するわけではなく、単なる記録。
-
+<!--more-->
 環境としては Windows 10、Docker Toolbox の Docker で Concourse をインストールした。
 
 ### コンソール出力

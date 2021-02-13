@@ -6,7 +6,7 @@ tags: ["Intent","Android"]
 たまにやるとつい忘れてしまうのでメモです。
 
 IntentのExtraにテキストデータを入れて共有するとき、以下のようにすると思います。
-
+<!--more-->
 ```java
 Intent intent = new Intent();
 intent.setAction(Intent.ACTION_SEND);
