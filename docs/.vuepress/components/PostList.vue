@@ -6,7 +6,7 @@
       <ClientOnly>
         <p v-html="post.description"></p>
       </ClientOnly>
-      <a class="read-more" v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
+      <a class="read-more" v-if="post.hasMore" v-bind:href="post.path">{{ $themeConfig.locales[$localePath].readMore }}</a>
     </div>
     <Paginate
       v-if="pageCount > 1"

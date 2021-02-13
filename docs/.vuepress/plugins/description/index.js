@@ -8,7 +8,8 @@ module.exports = (options = {}, context) => ({
       // 404.html does not contain _strippedContent
       return
     }
-    content = content.split('<!--more-->')[0]
+    descriptionAndMore = content.split('<!--more-->')
+    content = descriptionAndMore[0]
 
     // Make headers' level lower
     let edited = []
@@ -22,5 +23,6 @@ module.exports = (options = {}, context) => ({
     })
     var result = md.render(edited.join('\n'))
     $page.description = result
+    $page.hasMore = descriptionAndMore.length > 1
   }
 })
