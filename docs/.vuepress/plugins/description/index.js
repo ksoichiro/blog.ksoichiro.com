@@ -4,6 +4,10 @@ module.exports = (options = {}, context) => ({
   name: 'description',
   extendPageData ($page) {
     let content = $page._strippedContent
+    if (!content) {
+      // 404.html does not contain _strippedContent
+      return
+    }
     content = content.split('<!--more-->')[0]
 
     // Make headers' level lower
