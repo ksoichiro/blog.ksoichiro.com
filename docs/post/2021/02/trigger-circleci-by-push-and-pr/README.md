@@ -1,6 +1,5 @@
 ---
 title: Trigger CircleCI 2.1 pipeline by both push and pull request
-description: CircleCI's pipelines can be triggered by push by default.
 tags: ["CircleCI"]
 ---
 
@@ -12,7 +11,7 @@ If you want to trigger pipelines only by pull requests, then you can do it by en
 It is notable that with this option, only pull requests to default branch, push to default branch and tags are the targets. It might be insufficient for your workflow.
 
 In this case, you can create pipelines using CircleCI API from GitHub Actions that is triggered by pull requests.
-
+<!--more-->
 ## Conditional execution of pipelines with parameters
 
 As of January 2021, version 2.1 is the latest version of CircleCI config.

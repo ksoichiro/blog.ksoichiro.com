@@ -1,6 +1,5 @@
 ---
 title: Remove .html suffix on VuePress and show created date
-description: I thought that each blog post having `.html` suffix is not good when I migrate my blog to other system in the future, so I investigated if there is an option to change this.
 tags: ["VuePress"]
 ---
 I thought that each blog post having `.html` suffix is not good when I migrate my blog to other system in the future, so I investigated if there is an option to change this.
@@ -11,7 +10,7 @@ I thought `markdown.pageSuffix` option fits this purpose, but it wasn't.
 It is an option for embedded URL inside Markdown, and actually `page.path` on the post list Component has `.html` suffix even if this option is set.
 There is an open issue [SEO friendly URLs · Issue #78 · vuejs/vuepress](https://github.com/vuejs/vuepress/issues/78), but it has not been proceeded.
 I found that there is a workaround for this, so I followed this steps: moving `path.md` to `path/README.md` to change the generated path from `path.html` to `path/index.html`.
-
+<!--more-->
 ## Follow renames and get created dates
 
 With this change, last updated dates of all posts change to the date and time when rename operation is committed.

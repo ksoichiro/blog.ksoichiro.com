@@ -1,6 +1,5 @@
 ---
 title: CircleCI 2.1 の pipeline を push と pull request で実行する
-description: CircleCI は、デフォルトでは push をトリガーにしてビルドするようになっている。
 tags: ["CircleCI"]
 ---
 
@@ -13,7 +12,7 @@ pull request でのみビルドしたい場合は、 `Only build pull requests` 
 push、pull request の両方を対象にビルドできるようにしたい。
 
 そんな場合は、GitHub Actions で pull request のイベントを hook して、そこから API で CircleCI の pipeline をトリガーすることができる。
-
+<!--more-->
 ## parameters による条件付き実行
 
 2021年1月現在、CircleCI の 2.1 が最新だが、API については 2.1 でジョブを起動することはできないと書かれている。

@@ -1,6 +1,5 @@
 ---
 title: Migrating my blog and implementing with VuePress
-description: I decided to migrate my blog from Blogger, and implemented with VuePress.
 tags: ["VuePress"]
 ---
 ## Background
@@ -12,7 +11,7 @@ So actually I considered migrating my blog several times.
 The main reason to this descision is that I wanted to write my blog in English.
 In my work, I don't have to speak English so far (though there are chances to do so if I want to try), but sometimes I have to write something in English, and such scenes are increasing day by day.
 I thought it's good for me to start writing something I want to write, and got an idea to write my blog in English.
-
+<!--more-->
 ## What I want to do
 
 My motivations are:

@@ -1,6 +1,5 @@
 ---
 title: Set CODEOWNERS to the project root on GitHub
-description: There are important files in the project root dirctory that affect to the whole project such as configuration files which names start with `.`.
 tags: ["GitHub", "GitHub Actions"]
 ---
 There are important files in the project root dirctory that affect to the whole project such as configuration files which names start with `.`.
@@ -10,7 +9,7 @@ I thought it might be meaningful to apply `CODEOWNERS` file to those project roo
 
 To test this, I need multiple users but I can't create another user that can be manually operatable on GitHub.
 GitHub allows us to create a machine user that can be used for CI, so I tested the expected files are required to be approved by code owner if the machine user create a pull request automatically.
-
+<!--more-->
 This time I set GitHub Action configuration to create a pull request by opening a new issue.
 
 I tried to configure a workflow using some actions, and I could successfully created a pull request by opening a issue.

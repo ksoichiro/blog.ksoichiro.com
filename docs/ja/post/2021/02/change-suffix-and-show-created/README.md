@@ -1,6 +1,5 @@
 ---
 title: VuePressの.htmlのsuffixを削除しつつ作成日を表示する
-description: VuePress 以外に移行することを考えたとき、末尾が `.html` なのは微妙かなと思い、変更できるオプションがないか探してみた。
 tags: ["VuePress"]
 ---
 VuePress 以外に移行することを考えたとき、末尾が `.html` なのは微妙かなと思い、変更できるオプションがないか探してみた。
@@ -10,7 +9,7 @@ VuePress 以外に移行することを考えたとき、末尾が `.html` な�
 `markdown.pageSuffix` というのがそれかと思ったが、これは Markdown の中に埋め込まれた URL に対しての指定のようで、ページ一覧を作る Component の中で `page.path` のようにパスを参照すると普通に `.html` という末尾になっていた。
 [SEO friendly URLs · Issue #78 · vuejs/vuepress](https://github.com/vuejs/vuepress/issues/78) という issue もあるが、進捗がない。
 `path.md` → `path.html` のかわりに `path/README.md` → `path/index.html` と変換するというのがワークアラウンドのようなので、その構成に変更してみることにした。
-
+<!--more-->
 ## renameをfollowして作成日を取得する
 
 ここで気になるのは最終更新日で、git でこの操作をするとすべての記事の最終更新日が rename の操作をした日時になってしまう。

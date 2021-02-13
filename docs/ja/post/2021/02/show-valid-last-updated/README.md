@@ -1,6 +1,5 @@
 ---
 title: VuePress で正しい最終更新日を表示する
-description: ローカルでビルドしている限りは問題なかったのだが、 GitHub Actions でビルドして Firebase Hosting にデプロイするように変更したところ、最終更新日が現在日時になってしまったので対処した。
 tags: ["VuePress", "GitHub Actions"]
 ---
 ローカルでビルドしている限りは問題なかったのだが、 GitHub Actions でビルドして Firebase Hosting にデプロイするように変更したところ、最終更新日が現在日時になってしまったので対処した。
@@ -12,7 +11,7 @@ tags: ["VuePress", "GitHub Actions"]
 ページ一覧にも手を入れていたのでそれを疑ったが、各ページを表示してみてもすべて同じ日付になっている。
 
 ローカルでは正しく表示されているので、ビルド周りがおかしいと考えた。
-
+<!--more-->
 ## @vuepress/plugin-last-updated を確認
 
 [@vuepress/plugin-last-updated のソースコード](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/plugin-last-updated/index.js)を確認して、最終更新日が `git log -1 --format="%at"` というコマンドから取得されているということがわかった。

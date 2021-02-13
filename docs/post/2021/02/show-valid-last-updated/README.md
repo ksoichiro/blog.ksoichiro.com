@@ -1,6 +1,5 @@
 ---
 title: Show valid lastUpdated with VuePress
-description: When I was building this blog on my local environment, there was no issue around date, but after I changed the workflow to deploy the blog from local to GitHub Actions, it seems last updated date became current date, so I fixed it.
 tags: ["VuePress", "GitHub Actions"]
 ---
 When I was building this blog on my local environment, there was no issue around date, but after I changed the workflow to deploy the blog from local to GitHub Actions, it seems last updated date became current date, so I fixed it.
@@ -12,7 +11,7 @@ On top page, all dates were the same.
 I first guessed that it was because I updated page list component, but each page also had the issue.
 
 It worked on my local environment, so I thought there is something wrong around build process.
-
+<!--more-->
 ## Confirm @vuepress/plugin-last-updated
 
 I checked the [source code of @vuepress/plugin-last-updated](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/plugin-last-updated/index.js) and I found that `lastUpdated` comes from `git log -1 --format="%at"`.

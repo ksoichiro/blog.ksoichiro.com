@@ -1,6 +1,5 @@
 ---
 title: Creating draft with VuePress
-description: I'm still migrating my blog, and I'm on my way to confirm that whether or not what I want to do can be achieved with VuePress.
 tags: ["VuePress"]
 ---
 
@@ -9,7 +8,7 @@ When I was writing my post with Blogger, I often thought that I want to write po
 I've used StackEdit to write them in Markdown, but I could not save a draft and edit on my smartphone.
 
 If I write my blog with something like VuePress, each post is just a file in a Git repository, so it's possible to share the file between serveral devices, but I found there is no feature like creating a post as a draft.
-
+<!--more-->
 Of course, it could be resolved by Git; create a branch, commit a file, and make a pull request when I finish editing or just merge the branch with git command.
 
 But, the committer of my blog repository is just me.
