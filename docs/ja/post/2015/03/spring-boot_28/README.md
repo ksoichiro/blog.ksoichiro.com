@@ -3,10 +3,10 @@ title: "Spring Bootのアプリ内にパスワード生成タスクを追加"
 created: 2015-03-28T17:42:00.001+09:00
 tags: ["Java","Spring Boot"]
 ---
-以前のエントリ [Play Frameworkのアプリ内にパスワード生成プロジェクトを追加](http://ksoichiro.blogspot.jp/2015/03/play-framework.html)のようなことをSpring Bootで行う方法について。
+以前のエントリ [Play Frameworkのアプリ内にパスワード生成プロジェクトを追加](https://blog.ksoichiro.com/ja/post/2015/03/play-framework/)のようなことをSpring Bootで行う方法について。
 上記エントリで書いたように、Gradleで簡単に定義できる。
 
-暗号化方法は、[Spring Bootでユーザ認証](http://ksoichiro.blogspot.jp/2015/03/spring-boot.html)で書いたように`WebSecurityConfigurerAdapter`の継承クラスで`new StandardPasswordEncoder()`を設定している前提。
+暗号化方法は、[Spring Bootでユーザ認証](https://blog.ksoichiro.com/ja/post/2015/03/spring-boot/)で書いたように`WebSecurityConfigurerAdapter`の継承クラスで`new StandardPasswordEncoder()`を設定している前提。
 他のEncoderを使う場合はタスクの内容を適宜書き換えれば良いはず。
 <!--more-->
 

@@ -3,7 +3,7 @@ title: "Spring BootでJavaScript/CSSライブラリにフィンガープリン�
 created: 2016-03-21T22:37:00.001+09:00
 tags: ["Spring Framework","Git","Gradle","Spring Boot"]
 ---
-もう1年近く経ってしまうが、[Spring Bootで静的コンテンツにフィンガープリントをつける](http://ksoichiro.blogspot.jp/2015/04/spring-boot_14.html) の続き。
+もう1年近く経ってしまうが、[Spring Bootで静的コンテンツにフィンガープリントをつける](https://blog.ksoichiro.com/ja/post/2015/04/spring-boot_14/) の続き。
 
 以前は、プロジェクト内で書いたCSSやJavaScriptに対して、コンテンツを基にしたハッシュ値によるバージョニングについて確認したが、Bowerなどのライブラリに対してバージョニングする部分は
 
@@ -130,4 +130,4 @@ Spring Bootで上記を試して一通り動かせるようにしてあるソー
 
 (2016/03/23 追記)
 今回の実装だと、パスのパターンが変わってしまうことにより認証対象外としたいリソースが認証対象になってしまう可能性がある。
-これについては次のエントリ [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける (2)](http://ksoichiro.blogspot.com/2016/03/spring-bootjavascriptcss-2.html) で補足。
+これについては次のエントリ [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける (2)](https://blog.ksoichiro.com/ja/post/2016/03/spring-bootjavascriptcss-2/) で補足。

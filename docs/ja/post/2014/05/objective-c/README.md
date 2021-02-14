@@ -6,7 +6,7 @@ tags: ["Objective-C","iOS","静的解析","OCLint","Xcode","フォーマッタ",
 Objective-CにはLintツールとして既にOCLintがあるが、OS Xでなくても手軽にチェックできる仕組みが欲しいと考えて作ってみた。  
 [fint](https://github.com/ksoichiro/fint)
 <!--more-->
-以前に[Run Scriptを利用して簡単なチェックができる](http://ksoichiro.blogspot.jp/2014/03/iosxcode-xcode.html)
+以前に[Run Scriptを利用して簡単なチェックができる](https://blog.ksoichiro.com/ja/post/2014/03/iosxcode-xcode/)
 というエントリを書いたが、これをツールとして整備したもの。
 
 例えば以下のように、普通のビルドエラーと同じように表示できる。  

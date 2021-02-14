@@ -48,7 +48,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 上記Showcaseアプリでは`application.yml`に定義した値を読み込ませていた。
 これはこれでいいが、バージョンの更新を忘れそう。
 Gitのコミットハッシュ値を自動的につけられるなら利用したいが…これはまた別の機会に考えてみる。
-(**2016/03追記**: ライブラリのバージョニングについてはこちら → [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](http://ksoichiro.blogspot.jp/2016/03/spring-bootjavascriptcss.html))
+(**2016/03追記**: ライブラリのバージョニングについてはこちら → [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](https://blog.ksoichiro.com/ja/post/2016/03/spring-bootjavascriptcss/))
 
 `addResourceLocations()`がバージョニングしたファイルを配置する場所を指定する(と思われる)。
 上記はバージョニングができることを確認したいだけだったのでごく簡潔な内容にとどめたが、実際にはアプリケーションのProfileによってキャッシュの設定を切り替えるのが良いようだ。

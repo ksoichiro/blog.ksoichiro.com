@@ -3,7 +3,7 @@ title: "[Docker][Android] AndroidアプリでHTTP通信を含むコードをDock
 created: 2014-05-02T22:36:00.000+09:00
 tags: ["Docker","Android"]
 ---
-[前回](http://ksoichiro.blogspot.jp/2014/05/dockerandroid-dockerandroidgradle.html) の続きで、DockerでAndroidの自動テストを試してみる。
+[前回](https://blog.ksoichiro.com/ja/post/2014/05/dockerandroid-dockerandroidgradle/) の続きで、DockerでAndroidの自動テストを試してみる。
 
 前回は単純なテストケース(中身がないといってもいい)だったが、実際のAndroidアプリなら大抵の場合は通信が発生するもの。
 <!--more-->

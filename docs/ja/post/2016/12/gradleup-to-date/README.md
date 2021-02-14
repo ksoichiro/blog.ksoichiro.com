@@ -35,7 +35,7 @@ result.task(":build").getOutcome() == TaskOutcome.UP_TO_DATE
 
 入出力を変更しながら、あるいは変更せずに、GradleRunnerを繰り返し実行すればこの遷移をテストすることができる。
 
-前のエントリ [Spockで複数ステップのテストを書く](http://ksoichiro.blogspot.jp/2016/12/spock.html) に書いたように、when: と then: を繰り返せば Spock でも表現できるので、例えば以下のように書ける。
+前のエントリ [Spockで複数ステップのテストを書く](https://blog.ksoichiro.com/ja/post/2016/12/spock/) に書いたように、when: と then: を繰り返せば Spock でも表現できるので、例えば以下のように書ける。
 
 ```groovy
 def foo() {

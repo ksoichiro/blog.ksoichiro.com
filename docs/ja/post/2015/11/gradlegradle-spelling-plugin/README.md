@@ -3,7 +3,7 @@ title: "Gradleで表記ゆれをチェックするプラグインgradle-spelling
 created: 2015-11-26T22:36:00.001+09:00
 tags: ["Gradle"]
 ---
-[GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin](http://ksoichiro.blogspot.jp/2015/10/gradlecoffeescriptlessbowergradle-web.html)に続き、Javaプロジェクトの開発で使えるGradleプラグイン [gradle-spelling-plugin](https://github.com/ksoichiro/gradle-spelling-plugin) を作ったので紹介。
+[GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin](https://blog.ksoichiro.com/ja/post/2015/10/gradlecoffeescriptlessbowergradle-web/)に続き、Javaプロジェクトの開発で使えるGradleプラグイン [gradle-spelling-plugin](https://github.com/ksoichiro/gradle-spelling-plugin) を作ったので紹介。
 
 これで何ができるかというと、ブラックリストに単語、表現を登録して、それを探していくだけ。
 見つけた場合は、代わりにこれを使ってね、と警告する。

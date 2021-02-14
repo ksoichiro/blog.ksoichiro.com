@@ -64,4 +64,4 @@ Organicと変わらない結果。適用範囲によっては変わるかもし�
 
 今回はここまで。
 
-続き： [yEdでジョブフロー図っぽいものを描く: Layout](https://ksoichiro.blogspot.com/2019/02/yed-layout.html)
+続き： [yEdでジョブフロー図っぽいものを描く: Layout](https://blog.ksoichiro.com/ja/post/2019/02/yed-layout/)

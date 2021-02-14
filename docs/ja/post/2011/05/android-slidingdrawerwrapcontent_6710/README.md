@@ -8,10 +8,10 @@ SlidingDrawerを使って、「Gmailアプリでチェックボックスにチ�
 ソースコードのポイントを解説します。
 <!--more-->
 ※完成イメージと、それに至るまでの問題は以下で説明しました。
-[Android SlidingDrawerでwrap\_contentを効かせつつ表示/非表示での高さを切り替える](http://ksoichiro.blogspot.com/2011/05/android-slidingdrawerwrapcontent.html)
+[Android SlidingDrawerでwrap\_contentを効かせつつ表示/非表示での高さを切り替える](https://blog.ksoichiro.com/ja/post/2011/05/android-slidingdrawerwrapcontent/)
 
 ※ソースコードは以下に掲載しました。
-[Android (ソースコード掲載) SlidingDrawerでwrap\_contentを効かせつつ表示/非表示での高さを切り替える](http://ksoichiro.blogspot.com/2011/05/android-slidingdrawerwrapcontent_04.html)
+[Android (ソースコード掲載) SlidingDrawerでwrap\_contentを効かせつつ表示/非表示での高さを切り替える](https://blog.ksoichiro.com/ja/post/2011/05/android-slidingdrawerwrapcontent_04/)
 
 **1\. SlidingDrawerのlayout\_height="wrap\_content"を有効にする**
 

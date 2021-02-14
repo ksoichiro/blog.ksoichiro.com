@@ -70,4 +70,4 @@ Bloggerのコメント投稿フォームはウィジェットとして簡単に�
 
 ## 最初に一瞬白くなる(未対応)
 
-おそらくテーマのデフォルトのCSSを先に読み込んでしまっているせいで、一瞬従来のライトモードの配色が反映されてしまう。 [パフォーマンス改善](https://ksoichiro.blogspot.com/2020/01/blogger-accessibility-performance.html) でCSSをHTMLに埋め込んだが、このCSSの中身もダークモード対応する必要がありそう。これは少し時間がかかりそうな気がするので一旦保留…。
+おそらくテーマのデフォルトのCSSを先に読み込んでしまっているせいで、一瞬従来のライトモードの配色が反映されてしまう。 [パフォーマンス改善](https://blog.ksoichiro.com/ja/post/2020/01/blogger-accessibility-performance.html) でCSS/に埋め込んだが、このCSSの中身もダークモード対応する必要がありそう。これは少し時間がかかりそうな気がするので一旦保留…。

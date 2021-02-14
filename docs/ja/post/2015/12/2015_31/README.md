@@ -10,7 +10,7 @@ tags: []
 
 #### 良かったこと
 
-[毎日コードを書くことと、それにまつわること](http://ksoichiro.blogspot.com/2015/07/blog-post.html)で書いた活動は、無事に続けられた。
+[毎日コードを書くことと、それにまつわること](https://blog.ksoichiro.com/ja/post/2015/07/blog-post/)で書いた活動は、無事に続けられた。
 これに関して良かったことは上記エントリの通り。
 リポジトリが増えていくと、エンハンス/メンテナンスすべきことも増えていくので、あまりネタに困ることはなくなってきた印象がある。
 
@@ -33,7 +33,7 @@ tags: []
 [Android-ObservableScrollView](https://github.com/ksoichiro/Android-ObservableScrollView)は4800スター以上にまで伸びた。
 [もう少しでClojureにも追いつく](https://github.com/search?p=4&q=language%3AJava+stars%3A%3E4500&ref=searchresults&type=Repositories&utf8=%E2%9C%93)！
 まあこれは自分の努力の結果、ではないかもしれないけど。
-[WhatsApp Messengerに採用され](http://ksoichiro.blogspot.com/2015/10/whatsapp.html)、[フリルにも採用された](http://ksoichiro.blogspot.com/2015/11/2.html)ことは個人的に感慨深い。
+[WhatsApp Messengerに採用され](https://blog.ksoichiro.com/ja/post/2015/10/whatsapp.html)、[フリルにも採用された](https://blog.ksoichiro.com/ja/post/2015/11/2/)ことは個人的に感慨深い。
 
 また、このリポジトリにつられてなのか、他のリポジトリもスターが増えた感じがする。GitHubでフォローしてくれる人が増えたということもあるだろうけど。
 やはり、いいものを作ったと思っても、作るだけでなく認知されるようにしないといけないなと思う。
@@ -96,7 +96,7 @@ Spring Bootで本当のRBAC(?)を実装したかったのだが上手い方法�
 
 初回コミット 2015/6/27。
 GradleからCoffeeScript、LESS、Bowerライブラリを使えるようにするGradleプラグイン。npmなどを手動でセットアップしておく必要はなく、すべて勝手にやってくれる。
-詳細は[こちらのエントリ](http://ksoichiro.blogspot.jp/2015/10/gradlecoffeescriptlessbowergradle-web.html)にも書いた。
+詳細は[こちらのエントリ](https://blog.ksoichiro.com/ja/post/2015/10/gradlecoffeescriptlessbowergradle-web/)にも書いた。
 最初はnode/npmを使っていたものを、RhinoとTriremeを使ってJVMで完結するようにした。また最初はGulpでCoffeeScript、LESS、Bowerを扱っていたが上記変更に伴ってGroovyのGParsで並列化して処理するように変更。
 処理速度やサイズなどまだ改善の余地はあるのだが、node関連の理解も少し深まり、個人的にはその課題解決の過程もなかなか面白かったプロジェクト。
 

@@ -142,7 +142,7 @@ Maven Centralなどのグローバルなリポジトリにリリースしたも�
 ## なぜ始めたか
 
 * アウトプットを増やしたかった。
-かといってブログだと、自分の場合はネタ作り自体が目的になりがち、だった。記事を書くことや教養をつけることが目的ではなく、判断力を培ったり意味のあるソフトウェアを作りたかった。(ブログ自体は今も書きたいし、少し前に[こんな](http://ksoichiro.blogspot.jp/2015/03/blog-post.html)ことも書いたのだが、正直なところ、手が回っていない・・・)
+かといってブログだと、自分の場合はネタ作り自体が目的になりがち、だった。記事を書くことや教養をつけることが目的ではなく、判断力を培ったり意味のあるソフトウェアを作りたかった。(ブログ自体は今も書きたいし、少し前に[こんな](https://blog.ksoichiro.com/ja/post/2015/03/blog-post/)ことも書いたのだが、正直なところ、手が回っていない・・・)
 * コードを書く機会が減っている気がして、コードを書く訓練をしたかった。
 * 少し前までは、Android/iOSアプリを作ることに注力していて、個人的にもいくつもリリースしていた。しかし、アプリを作ること自体はデベロッパー個人としてもチャンスなのだけど、やはり商業的な価値を見いだせないアプリだと露出が少ないし、結果としてフィードバックも少ない。アプリはアプリで、作ってくれてありがとうという声はたくさんもらったものの、何か違う気がした。
 * デベロッパー向けのものを作る方が、貢献している感じがあった。普段の仕事では、あまり自分のコードについて意見交換できる機会もないので自分の書いたコードもしくはライブラリに対してデベロッパーから意見をもらえることに刺激があった。
@@ -275,7 +275,7 @@ Maven Centralなどのグローバルなリポジトリにリリースしたも�
       社会人になりたての頃は、エンジニアたる前に社会人にならなくては！と意気込み「レバレッジ・リーディング」をきっかけに多読を目指して色々読んでいた。
 * <a href="http://www.amazon.co.jp/gp/product/4274067939/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4274067939&linkCode=as2&tag=soichiro0a-22">情熱プログラマー ソフトウェア開発者の幸せな生き方</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=soichiro0a-22&l=as2&o=9&a=4274067939" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     * これはこのブログを始めたきっかけになった本。  
-      [最初のエントリ](http://ksoichiro.blogspot.jp/2010/05/blog-post.html)で感想を書いたのでここでは省略。  
+      [最初のエントリ](https://blog.ksoichiro.com/ja/post/2010/05/blog-post/)で感想を書いたのでここでは省略。  
       この振り返りをするにあたり改めてさらっと読んでみたが、今でも何か掻き立てられる感じがする。
 * <a href="http://www.amazon.co.jp/gp/product/489100455X/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=489100455X&linkCode=as2&tag=soichiro0a-22">CODE COMPLETE 第2版 上</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=soichiro0a-22&l=as2&o=9&a=489100455X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, <a href="http://www.amazon.co.jp/gp/product/4891004568/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4891004568&linkCode=as2&tag=soichiro0a-22">CODE COMPLETE 第2版 下</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=soichiro0a-22&l=as2&o=9&a=4891004568" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     * コーディングの基本という意味では、この本か。  

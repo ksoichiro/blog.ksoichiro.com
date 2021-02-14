@@ -3,7 +3,7 @@ title: "Android Gradle PluginでJaCoCoを有効にしてテストするとjava.l
 created: 2014-05-11T17:08:00.001+09:00
 tags: ["Gradle","JaCoCo","Android"]
 ---
-Android Gradle PluginでJaCoCoを使ったカバレッジ計測を試したが[java.lang.VerifyErrorが発生したというエントリ](http://ksoichiro.blogspot.jp/2014/05/android-gradle-pluginjacocojavalangveri.html)を書いた。
+Android Gradle PluginでJaCoCoを使ったカバレッジ計測を試したが[java.lang.VerifyErrorが発生したというエントリ](https://blog.ksoichiro.com/ja/post/2014/05/android-gradle-pluginjacocojavalangveri/)を書いた。
 
 どうやらこの影響が及ぶのはリフレクションだけではないらしく、通常の`Intent`による起動が失敗した。
 以下のようなパターンで、`testCoverageEnabled = true`となったビルドでインストールしたアプリが`java.lang.VerifyError`によりクラッシュした。
