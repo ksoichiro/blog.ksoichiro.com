@@ -65,9 +65,7 @@ spring run elasticsearch.groovy
 
 http://localhost:9200/_cat/health などにアクセスすれば起動していることが確認できる。
 
-Groovyファイルの内容について、Controller機能はいらないのだが
-`@Component`で作るとアプリがサーバとして起動せず
-そのまま終了してしまうので、Webサーバとして起動するように
+Groovyファイルの内容について、Controller機能はいらないのだが`@Component`で作るとアプリがサーバとして起動せずそのまま終了してしまうので、Webサーバとして起動するように
 `@RestController`を使用している。
 
 なお、以下のようにすればjarファイルを作成することもできる。
@@ -102,19 +100,16 @@ class EsHealth implements CommandLineRunner {
 }
 ```
 
-起動して何かを実行して終了するだけのものなので、
-`CommandLineRunner` を使っている。
+起動して何かを実行して終了するだけのものなので、`CommandLineRunner` を使っている。
 
-また実行時にホスト・ポートくらいは指定できるように
-Spring Boot の `@ConfigurationProperties` を使っている。
+また実行時にホスト・ポートくらいは指定できるように Spring Boot の `@ConfigurationProperties` を使っている。
 これによって、例えば以下のようにパラメータを変更して起動することもできる。
 
 ```
 spring run eshealth.groovy -- --es.port=9201
 ```
 
-実行時にバナーやSpring Bootのログを出力したくなければ、
-以下のように`application.yml`を定義しておけばいい。
+実行時にバナーやSpring Bootのログを出力したくなければ、以下のように`application.yml`を定義しておけばいい。
 
 ```yaml
 spring:
@@ -222,8 +217,7 @@ import groovy.json.*
 
 ### ページネーション
 
-ここまででなんとなく動くように見えるのだが、
-ページの指定が正しくできていないためデフォルトの10件だけしか取得できない。
+ここまででなんとなく動くように見えるのだが、ページの指定が正しくできていないためデフォルトの10件だけしか取得できない。
 
 ここでは、リクエストパラメータに `from` と `size` を指定して、結果が0件になるまで `from` をずらしながら繰り返しリクエストするようにする。
 
@@ -266,17 +260,14 @@ void run(String... args) {
 }
 ```
 
-こういう「ロジック」っぽいコードが増えてくると、
-シェルスクリプトで書くよりいいかな？と思えてくる。
+こういう「ロジック」っぽいコードが増えてくると、シェルスクリプトで書くよりいいかな？と思えてくる。
 
 ### GroovyのみでのHTTPアクセス
 
-ここまでくると Spring Boot CLI は関係なくなってきているが
-curlを使わずにGroovyのみでHTTPアクセスもするように変更してみる。
+ここまでくると Spring Boot CLI は関係なくなってきているがcurlを使わずにGroovyのみでHTTPアクセスもするように変更してみる。
 
 これには、http-builder を使うのが簡単そう。
-Unitテストのことを考えると`RestTemplate`などを使ったほうが
-良いのかもしれないが、ここではhttp-builderの`RESTClient`にする。
+Unitテストのことを考えると`RestTemplate`などを使ったほうが良いのかもしれないが、ここではhttp-builderの`RESTClient`にする。
 
 この依存関係も Grab で取得して、importしておく。
 

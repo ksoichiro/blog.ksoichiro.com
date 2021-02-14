@@ -80,11 +80,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ### UserDetailsServiceを継承して認証ロジックをカスタマイズする
 
-デフォルトではログインに使用する`username`だけしか
-セッションに保管されないのだが、
-実際の`user`テーブルと関連を持つテーブルは`user.id`などで参照させると思う。
-これを取得するためにいちいちSELECTするのもおかしな話なので
-認証とともに`User`クラスをセッションに持たせるようにしたい。
+デフォルトではログインに使用する`username`だけしかセッションに保管されないのだが、実際の`user`テーブルと関連を持つテーブルは`user.id`などで参照させると思う。
+これを取得するためにいちいちSELECTするのもおかしな話なので認証とともに`User`クラスをセッションに持たせるようにしたい。
 つまり、以下のようにコントローラのアクションで`Principal`パラメータを持たせたら
 
 ```java

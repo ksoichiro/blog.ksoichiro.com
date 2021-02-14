@@ -13,28 +13,28 @@ Play Framework (2.3.8)では、Scalaでテンプレートを書くようにな�
 
 ### Viewの定義
 
- 上記のform部分は以下のような定義。(`todo.scala.html`)
+上記のform部分は以下のような定義。(`todo.scala.html`)
 CSSのクラスなどはBootstrap 3のためのもの。
 
 ```html
-    <div class="form-group">
-        @helper.form(routes.Todo.create(), 'id -> "newTodo", 'class -> "form-inline") {
-            @helper.CSRF.formField
-            @helper.inputText(form("title"), '_label -> "Title:", 'class -> "form-control", 'placeholder -> "Title")
-            @helper.inputText(form("note"), '_label -> "Note:", 'class -> "form-control", 'placeholder -> "Note")
-            @helper.select(form("todoStateId"), helper.options(TodoState.options), '_label -> "Status:", 'class -> "form-control")
-            <input type="submit" class="btn btn-primary" value="Save" />
-            @if(form.hasErrors) {
-            <div class="alert alert-warning">
-                @for(entry <- form.errors.entrySet){
-                    @for(error <- entry.getValue){
-                        @error.key: @Messages(error.message, error.arguments)
-                    }
+<div class="form-group">
+    @helper.form(routes.Todo.create(), 'id -> "newTodo", 'class -> "form-inline") {
+        @helper.CSRF.formField
+        @helper.inputText(form("title"), '_label -> "Title:", 'class -> "form-control", 'placeholder -> "Title")
+        @helper.inputText(form("note"), '_label -> "Note:", 'class -> "form-control", 'placeholder -> "Note")
+        @helper.select(form("todoStateId"), helper.options(TodoState.options), '_label -> "Status:", 'class -> "form-control")
+        <input type="submit" class="btn btn-primary" value="Save" />
+        @if(form.hasErrors) {
+        <div class="alert alert-warning">
+            @for(entry <- form.errors.entrySet){
+                @for(error <- entry.getValue){
+                    @error.key: @Messages(error.message, error.arguments)
                 }
-            </div>
             }
+        </div>
         }
-    </div>
+    }
+</div>
 ```
 
 ### Custom Field Constructorの作成

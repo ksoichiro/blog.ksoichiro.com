@@ -142,7 +142,7 @@ H2ではこれで動作するが、MySQL/MariaDBなどの場合はこれだけ�
 
 これをJDBCドライバで設定するなら、以下のようにsql_modeを指定する必要がある。
 
-```
+```yaml
 spring:
     datasource:
         platform: mariadb

@@ -9,9 +9,7 @@ tags: ["Gradle","Travis CI","Android"]
 テスト系のタスクだけもう少しログ出力させられないか？
 を解決する方法について紹介する。
 
-まず、テスト系限定でなく、すべてのタスクに対して
-INFOレベルでログ出力するのなら
-Gradle的には以下のように--infoなどをつければいい。
+まず、テスト系限定でなく、すべてのタスクに対してINFOレベルでログ出力するのならGradle的には以下のように--infoなどをつければいい。
 
 ```
 ./gradlew connectedCheck --info
@@ -21,13 +19,9 @@ Gradle的には以下のように--infoなどをつければいい。
 見づらくなるだけなので避けたい。
 <!--more-->
 
-Javaプラグインが適用できれば
-testクロージャにtestLoggingなどの設定を書くことで
-実現できるようなのだが、
-AndroidライブラリにJavaプラグインを適用するのは避けたい。
+Javaプラグインが適用できればtestクロージャにtestLoggingなどの設定を書くことで実現できるようなのだが、AndroidライブラリにJavaプラグインを適用するのは避けたい。
 
-結論としては次のように書けば
-テストの状況がログ出力されるようになる。
+結論としては次のように書けばテストの状況がログ出力されるようになる。
 
 ```groovy
 afterEvaluate { project ->
@@ -75,13 +69,9 @@ tasks.connectedDebugAndroidTest {
 connectedDebugAndroidTestはconnectedAndroidTestのうちDebugのBuildTypeに対応するタスク。
 
 しかしこれはうまくいかない。
-connectedDebugAndroidTestタスクが定義されるのは
-Gradleの評価(evaluation)が終わってからなので、
-上記を記述して実行するとビルド失敗する。
+connectedDebugAndroidTestタスクが定義されるのはGradleの評価(evaluation)が終わってからなので、上記を記述して実行するとビルド失敗する。
 
-そこで次のようにすれば、評価が終わって
-BuildTypeごとのタスクが定義された状態で
-アクセスできるので、正常に設定することができる。
+そこで次のようにすれば、評価が終わってBuildTypeごとのタスクが定義された状態でアクセスできるので、正常に設定することができる。
 
 ```groovy
 afterEvaluate { project ->
@@ -91,8 +81,7 @@ afterEvaluate { project ->
 }
 ```
 
-connectedDebugAndroidTestという特定のタスクを
-書きたくない(複数のBuildTypeやFlavorをテストしたい)という場合は、
+connectedDebugAndroidTestという特定のタスクを書きたくない(複数のBuildTypeやFlavorをテストしたい)という場合は、
 
 ```groovy
 afterEvaluate { project ->
@@ -102,11 +91,8 @@ afterEvaluate { project ->
 }
 ```
 
-とすればorg.gradle.api.tasks.VerificationTaskを
-実装したタスクに対してはすべて設定を適用できる。
+とすればorg.gradle.api.tasks.VerificationTaskを実装したタスクに対してはすべて設定を適用できる。
 ただし、Android Gradle Pluginの今後の仕様によっては使えなくなる可能性もあるかもしれない(VerificationTaskをimplementしなくなるかも)。
 上記の動作を確認したのはPluginのv1.5.0。
 
-なお、VerificationTaskの部分をAndroidTestTaskとしなかったのは、
-このタスクはcom.android.build.gradle.internal.tasksパッケージに
-属しており、外部から使うべきではないだろうと考えたため。
+なお、VerificationTaskの部分をAndroidTestTaskとしなかったのは、このタスクはcom.android.build.gradle.internal.tasksパッケージに属しており、外部から使うべきではないだろうと考えたため。

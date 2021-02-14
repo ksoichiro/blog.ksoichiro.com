@@ -7,11 +7,8 @@ Android SDKに付属しているサンプルのActionBarCompatを少しだけ改
 [ActionBarCompatRev](https://bitbucket.org/ksoichiro/actionbarcompatrev/overview)
 <!--more-->
 ActionBarを使ったスタイルはAndroid 3.0以降で利用できますが、
-実際にアプリ開発をするとなると、まだまだAndroid 2.3などの下位バージョンを
-考慮する必要があり、デザイン・仕様を共通化するために前述のActionBarCompatなどを
-使う必要があります。
-もちろん、既にActionBarSherlockのような非常に高機能なライブラリも出ていますが
-高機能ゆえにサイズも大きい、もしバグ(もしくは期待しない挙動)があったときに手を入れるのが難しい、など採用しにくいケースもあると思います。
+実際にアプリ開発をするとなると、まだまだAndroid 2.3などの下位バージョンを考慮する必要があり、デザイン・仕様を共通化するために前述のActionBarCompatなどを使う必要があります。
+もちろん、既にActionBarSherlockのような非常に高機能なライブラリも出ていますが高機能ゆえにサイズも大きい、もしバグ(もしくは期待しない挙動)があったときに手を入れるのが難しい、など採用しにくいケースもあると思います。
 
 そこで、規模が小さく内容を把握しやすいActionBarCompatを使おうと思ったのですが、問題だったのが、Tabを使ったレイアウトだとAndroid 2.xで動かした時に、タブ(=Fragment)を切り替えてもアクションボタンが切り替わらないということです。
 

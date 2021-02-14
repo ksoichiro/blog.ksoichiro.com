@@ -22,7 +22,7 @@ Spring Boot 1.3.0では、Automatic Restart、Live Reloadといった機能が D
 
 またこの機能が入ったことにより、bootRun タスクでは src/main/resources をクラスパスに含めないのがデフォルトとなったのだが、結局うまく動作しないので以下のように build.gradle に設定して、1.2.x までのようにクラスパスに入れてくれるようにしている。
 
-```
+```groovy
 bootRun {
     addResources = true
 }
@@ -71,7 +71,7 @@ processResourcesはデフォルトではbuild/resources/mainにファイルを�
 
 例えば、src/main/resources/messages.propertiesをnative2asciiする場合は以下のようにすればいい。
 
-```
+```groovy
 task native2ascii {
     inputs.files files("src/main/resources/messages.properties")
     doLast {
@@ -88,12 +88,9 @@ task native2ascii {
 ./gradlew -t native2ascii
 ```
 
-なお、これだけだと当然bootRunタスクは動かないので、
-別のターミナルでbootRunタスクを実行しておく必要がある。
+なお、これだけだと当然bootRunタスクは動かないので、別のターミナルでbootRunタスクを実行しておく必要がある。
 
-これで、bootRun.addResources = trueとしていなくても、
-アプリ実行中に静的リソースの編集→反映ができて開発効率も落ちず
-ソースコードレビューもしやすくなる。
+これで、bootRun.addResources = trueとしていなくても、アプリ実行中に静的リソースの編集→反映ができて開発効率も落ちずソースコードレビューもしやすくなる。
 
 ### 残りの問題
 

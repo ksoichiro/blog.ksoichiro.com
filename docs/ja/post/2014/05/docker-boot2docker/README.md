@@ -9,10 +9,8 @@ tags: ["boot2docker","Docker"]
 上記で紹介されているのが次のPull Requestで説明されている方法。
 [https://github.com/boot2docker/boot2docker/pull/284](https://github.com/boot2docker/boot2docker/pull/284)
 <!--more-->
-boot2docker initで入るイメージではなく、手を入れたisoに差し替えた上で、
-vboxsfを使うようにコマンドを実行しなければならない。
-これはboot2dockerを起動するたびに実行しなければいけないようなので
-.zshrcに以下のように書いてみた。
+boot2docker initで入るイメージではなく、手を入れたisoに差し替えた上で、vboxsfを使うようにコマンドを実行しなければならない。
+これはboot2dockerを起動するたびに実行しなければいけないようなので.zshrcに以下のように書いてみた。
 
 ```sh
 export DOCKER_HOST=tcp://localhost:4243

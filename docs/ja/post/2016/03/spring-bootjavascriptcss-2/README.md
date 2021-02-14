@@ -14,8 +14,7 @@ tags: ["Spring Framework","Spring Boot"]
 
 ### 分析
 
-このパターンに対処するには、
-前回のエントリで使った `addFixedVersionStrategy()` の実装を追っていくと答えが見えてくる。
+このパターンに対処するには、前回のエントリで使った `addFixedVersionStrategy()` の実装を追っていくと答えが見えてくる。
 
 `addFixedVersionStrategy()`の内部では`addVersionStrategy()`を呼び出しており、そこでは`FixedVersionStrategy`と`PrefixVersionPathStrategy`というクラスが使われている。
 これらを置き換えるような独自のストラテジを設定すればよさそう。
@@ -114,11 +113,11 @@ PrefixVersionPathStrategyを参考に、とりあえず動くようにした実�
 最後に、WebConfigでは
 
 ```java
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        VersionResourceResolver versionResolver = new VersionResourceResolver()
-            .addContentVersionStrategy("/css/**", "/js/**")
-            .addVersionStrategy(new PrefixAndFixedVersionStrategy("lib/", gitProperties.getCommitId()), "/lib/**");
+@Override
+public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    VersionResourceResolver versionResolver = new VersionResourceResolver()
+        .addContentVersionStrategy("/css/**", "/js/**")
+        .addVersionStrategy(new PrefixAndFixedVersionStrategy("lib/", gitProperties.getCommitId()), "/lib/**");
 ```
  
  というように、今回作成した`PrefixAndFixedVersionStrategy`を指定して`addVersionStrategy()`を呼び出すようにする(上記の最後の行)。
@@ -138,13 +137,13 @@ bootRunで実行するときにはうまくいったが、java -jarで実行す�
 removeVersion()の中身の
 
 ```java
-        return this.prefix + requestPath.substring(this.prefix.length() + this.version.length());
+return this.prefix + requestPath.substring(this.prefix.length() + this.version.length());
 ```
 
 の部分は
 
 ```java
-        return this.prefix + requestPath.substring((this.prefix + this.version + "/").length());
+return this.prefix + requestPath.substring((this.prefix + this.version + "/").length());
 ```
 
 とする必要がある。

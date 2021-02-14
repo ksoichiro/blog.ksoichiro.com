@@ -14,7 +14,6 @@ Eclipseにて、[Window] > [Android SDK and AVD Manager]を選び、[Available P
 必要なものを選択（チェック）して[Install Selected]をクリックします。
 
 インストールするパッケージの[Accept]を選択します。
-
 (全て選択しましたが、なかなか時間がかかります。)
 
 よく見ると分かりますが、OS毎に分かれているものもあります。

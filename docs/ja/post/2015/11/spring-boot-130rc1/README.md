@@ -38,10 +38,7 @@ Linuxサーバでサービスとして稼働させたい場合、スクリプト
 
 ### resourcesの扱いの変更
 
-Spring Boot 1.2まででは、
-Thymeleafテンプレートはsrc/main/resources/templatesに置いて
-プロファイルでspring.thymeleaf.cache = falseとすれば
-変更したものがSpring Bootの再起動なしで反映されていた。
+Spring Boot 1.2まででは、Thymeleafテンプレートはsrc/main/resources/templatesに置いてプロファイルでspring.thymeleaf.cache = falseとすれば変更したものがSpring Bootの再起動なしで反映されていた。
 これが、1.3.0.RC1から読み込まれないようになった。
 これまでと同じ動作をさせたかったら
 
@@ -55,8 +52,7 @@ bootRun {
 
 ### 文字化け
 
-これはM5で発生してRC1で修正されたが、
-エンコーディングのフィルタの順序が変わってしまい文字化けが発生していた。
+これはM5で発生してRC1で修正されたが、エンコーディングのフィルタの順序が変わってしまい文字化けが発生していた。
 こういう問題が入ってしまうことがあるのかと驚いた出来事でもあったが、修正も早くてよかった。
 
 ---

@@ -5,7 +5,7 @@ tags: ["AOP","Spring Boot"]
 ---
 APIだとAOPでロギングするのは割と簡単だが、画面の場合にうまいやり方が見つからず試行錯誤したのでメモ。
 
-```
+```java
 @Pointcut("@annotation(org.springframework.web.bind.annotation.RequestMapping)")
 ```
 
@@ -76,8 +76,7 @@ try {
 
 ### バリデーションエラー
 
-バリデーションエラーの情報は、以下のようなメソッドの定義であれば
-メソッドの引数の BindingResult から取得できる。
+バリデーションエラーの情報は、以下のようなメソッドの定義であればメソッドの引数の BindingResult から取得できる。
 
 ```java
 @RequestMapping("/projects/create")
@@ -164,19 +163,13 @@ message.error.param=パラメータ{0}を持つメッセージです
 ここまで出力できていると、ユーザに見えているエラーが大体ログからわかるはず。
 
 なお、BindingResultはProceedingJoinPointから取得しなくても、
-AOPのPointcutで`args(*,bindingResult,..)`などとすれば取得できるが
-BindingResultがある場合の`@Around`、ない場合の`@Around`
-とパターンが増えていってしまうので、ここではメソッド内で引数を取得する方法を選んだ。
+AOPのPointcutで`args(*,bindingResult,..)`などとすれば取得できるがBindingResultがある場合の`@Around`、ない場合の`@Around`とパターンが増えていってしまうので、ここではメソッド内で引数を取得する方法を選んだ。
 
 ### catchしてしまった例外
 
-「HTTP 500」のような共通のエラー画面に遷移するような状況を避けようと、
-Serviceがスローした例外全てをControllerの中でcatchしてしまい
-「システムエラー」などと表示していると、ログを見ても何が起きているのかわからない。
+「HTTP 500」のような共通のエラー画面に遷移するような状況を避けようと、Serviceがスローした例外全てをControllerの中でcatchしてしまい「システムエラー」などと表示していると、ログを見ても何が起きているのかわからない。
 
-もちろん、個別に例外スタックトレースを出力したりしておけばいいのだが、
-Controller個別にこういう処理を書かなければならない、というルールだと
-どうしても抜け漏れが発生する。
+もちろん、個別に例外スタックトレースを出力したりしておけばいいのだが、Controller個別にこういう処理を書かなければならない、というルールだとどうしても抜け漏れが発生する。
 ある程度共通化するにはどうするか。
 
 まず、HttpServletRequestのattributeに例外を保存しておく簡単なComponentを用意しておく。
@@ -218,8 +211,7 @@ public String create(...) {
 ```
 
 そしてLogAdviceの中でこのattributeから例外を取得する。
-BindingResultがあれば、「システムエラーが発生しました」のような
-汎用的なエラーメッセージはAOPで設定してしまうこともできる。
+BindingResultがあれば、「システムエラーが発生しました」のような汎用的なエラーメッセージはAOPで設定してしまうこともできる。
 
 ```java
 @Autowired

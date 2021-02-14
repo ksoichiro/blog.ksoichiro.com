@@ -6,7 +6,7 @@ tags: ["Elasticsearch","Spring Boot"]
 忘れがちなのでメモ。
 Spring Data ElasticsearchのローカルのノードにHTTPでアクセスするには、application.yml に以下を追加すればいい。
 
-```
+```yaml
 spring:
     data:
         elasticsearch:

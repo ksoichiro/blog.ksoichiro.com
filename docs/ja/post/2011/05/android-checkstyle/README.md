@@ -10,11 +10,9 @@ Android Open Source Projectのコードスタイルでは、フィールド名�
 <!--more-->
 [Code Style Guidelines for Contributors](http://source.android.com/source/code-style.html)
 
-これはコントリビューター向けのものではありますが、
-自分のアプリの書くコードもなるべくこれに沿っていた方が見やすいかなと思っています。
+これはコントリビューター向けのものではありますが、自分のアプリの書くコードもなるべくこれに沿っていた方が見やすいかなと思っています。
 
-\# 多くはCode Completeにあるような推奨されるor避けるべき書き方の話なので
-\# Android特有のルールというのは実は少ないかもしれません。
+> 多くはCode Completeにあるような推奨されるor避けるべき書き方の話なのでAndroid特有のルールというのは実は少ないかもしれません。
 
 そこでCheckStyleでチェックしようとしたのですが、ちょっと苦労したので載せておきます。
 Android用のCheckStyle設定を公開してくださっている方がいます。
@@ -35,8 +33,7 @@ C:\\eclipse\\tools\\android-checkstyle.xml
 C:\\eclipse\\workspace\\プロジェクト\\checkstyle.header
 C:\\eclipse\\workspace\\プロジェクト\\checkstyle\_suppressions.xml
 
-import-controlのファイルも用意しても良いですが、
-個人で開発しているのなら邪魔になるだけなのでやめておきます。
+import-controlのファイルも用意しても良いですが、個人で開発しているのなら邪魔になるだけなのでやめておきます。
 
 **ファイル内容**
 
@@ -48,8 +45,7 @@ C:\\eclipse\\tools\\android-checkstyle.xml
 publicフィールドは通常の命名、その他はmから開始する名前としています。
 実際にはこのままpublicフィールドを定義すると「privateにすべきです」と言われてしまうんですが。
 
-あとは、通常のJavaでの話ですが、日本語のJavadocを書くなら19行目のように
-JavadocStyleのプロパティで「。」が１文目の末尾に来ていいように変えたほうが良いです。
+あとは、通常のJavaでの話ですが、日本語のJavadocを書くなら19行目のようにJavadocStyleのプロパティで「。」が１文目の末尾に来ていいように変えたほうが良いです。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -193,9 +189,7 @@ JavadocStyleのプロパティで「。」が１文目の末尾に来ていい�
 C:\\eclipse\\workspace\\プロジェクト\\checkstyle.header
 
 各ファイルの先頭につけるヘッダです。
-これはプロジェクトごとに書いた方が良いと思いますので、
-上記のandroid-checkstyle.xmlの中でプロジェクトフォルダ以下(${project\_loc})
-に置くようにしています。
+これはプロジェクトごとに書いた方が良いと思いますので、上記のandroid-checkstyle.xmlの中でプロジェクトフォルダ以下(${project\_loc})に置くようにしています。
 
 ```java
 /*
@@ -206,12 +200,10 @@ C:\\eclipse\\workspace\\プロジェクト\\checkstyle.header
 C:\\eclipse\\workspace\\プロジェクト\\checkstyle\_suppressions.xml
 
 チェックを除外する設定です。
-自動生成されるR.javaをCheckStyleにかけるとひどいことになるので、
-これは除外しなければなりません。
+自動生成されるR.javaをCheckStyleにかけるとひどいことになるので、これは除外しなければなりません。
 それが6行目の記述です。
 また、上記のFred Grottさんの設定で動かなかったのは7行目です。
-「.\*\\.properties」とすべきところが「\*\\.properties」となっているので
-動作しませんでした。
+「.\*\\.properties」とすべきところが「\*\\.properties」となっているので動作しませんでした。
 
 ```xml
 <?xml version="1.0"?>

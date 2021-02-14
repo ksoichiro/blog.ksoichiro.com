@@ -180,8 +180,7 @@ public interface ExtendedEmployeeRepository extends JpaRepository<ExtendedEmploy
 }
 ```
 
-項目名を列挙しないといけないのは通常に比べると面倒ではあるものの、
-通常の native query と大差ない実装になった。
+項目名を列挙しないといけないのは通常に比べると面倒ではあるものの、通常の native query と大差ない実装になった。
 
 存在しないテーブルに対するEntityを定義するので、プロジェクトの中で混乱を生む可能性もあるが、パッケージを分けるとか工夫をすればいい。
 

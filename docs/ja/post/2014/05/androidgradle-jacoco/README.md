@@ -8,32 +8,24 @@ Android Studioがリリースされて以来、Gradleプラグインをしばら
 その一つが、カバレッジの計測。 4月末のAndroid Gradle Plugin 0.10.0のリリースでJaCoCoのサポートが追加され、ついにandroidプラグインでもカバレッジ計測ができるようになった。
 [http://tools.android.com/tech-docs/new-build-system](http://tools.android.com/tech-docs/new-build-system)
 
-気づいて早速使おうとしたものの、上記ページに書かれている他は
-ほとんど書かれているところがなくうまく動かず。。。
-また、動かそうとしたのが単純なAndroidアプリケーションプロジェクトでなく
-ライブラリプロジェクトであり、Eclipse互換の構造を保とうとしながら
-作っていたせいかもしれない。
+気づいて早速使おうとしたものの、上記ページに書かれている他はほとんど書かれているところがなくうまく動かず。。。
+また、動かそうとしたのが単純なAndroidアプリケーションプロジェクトでなくライブラリプロジェクトであり、Eclipse互換の構造を保とうとしながら作っていたせいかもしれない。
 
-今回は、そんな条件であってもJaCoCoによるカバレッジ計測を可能にし、
-[Travis CI](https://travis-ci.org/) でビルドして [Coveralls](https://coveralls.io/) でカバレッジを表示するところまで試してみた
+今回は、そんな条件であってもJaCoCoによるカバレッジ計測を可能にし、[Travis CI](https://travis-ci.org/) でビルドして [Coveralls](https://coveralls.io/) でカバレッジを表示するところまで試してみた
 という内容。※長いです。
 <!--more-->
-Androidライブラリの [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer) でこれを試し、
-以下のようなバッジを表示することがゴール。
+Androidライブラリの [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer) でこれを試し、以下のようなバッジを表示することがゴール。
 
 [![](http://4.bp.blogspot.com/-52QWIKXsFhY/U2d26nrHWyI/AAAAAAAAMug/euh1PvxyauU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-05-05+20.32.14.png)](http://4.bp.blogspot.com/-52QWIKXsFhY/U2d26nrHWyI/AAAAAAAAMug/euh1PvxyauU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-05-05+20.32.14.png)
 
-カバレッジが35％しかないですが、低いのは理由があり、
-デモアプリでの動作である程度カバーしていたのが今は計測できていないというため。
-ライブラリプロジェクトでは単純なJUnitテスト(あるいはInstrumentationTestCase)
-ならできるものの、ActivityやR(リソース)を絡めたテストがうまく実行できず。
+カバレッジが35％しかないですが、低いのは理由があり、デモアプリでの動作である程度カバーしていたのが今は計測できていないというため。
+ライブラリプロジェクトでは単純なJUnitテスト(あるいはInstrumentationTestCase)ならできるものの、ActivityやR(リソース)を絡めたテストがうまく実行できず。
 これは今後の課題ということで。。。
 
 ### Android Gradle Pluginプラグインのアップデート
 
 0.10を適用する。
-Gradleを使っていれば、おそらく、プロジェクトのトップレベルのbuild.gradleで
-次のような指定をしているはずなのでバージョンを「0.10.+」に変更する。
+Gradleを使っていれば、おそらく、プロジェクトのトップレベルのbuild.gradleで次のような指定をしているはずなのでバージョンを「0.10.+」に変更する。
 
 ```groovy
 buildscript {
@@ -46,9 +38,7 @@ buildscript {
 }
 ```
 
-上述のAndroidのサイトの内容より、
-Gradleは1.10から1.12がサポートされているとのことなので、
-ラッパーを使っている場合は以下のようにgradle/wrapper/gradle-wrapper.propertiesでのバージョン指定を確認する。
+上述のAndroidのサイトの内容より、Gradleは1.10から1.12がサポートされているとのことなので、ラッパーを使っている場合は以下のようにgradle/wrapper/gradle-wrapper.propertiesでのバージョン指定を確認する。
 
 ```
 distributionUrl=http\://services.gradle.org/distributions/gradle-1.10-all.zip
@@ -57,8 +47,7 @@ distributionUrl=http\://services.gradle.org/distributions/gradle-1.10-all.zip
 ### JaCoCoの適用
 
 ビルド対象のプロジェクト(Gradleでのプロジェクトの意味。
-今回の場合はAndroid Studioでのプロジェクトではなくサブプロジェクト)の
-build.gradleでJaCoCoを適用する。
+今回の場合はAndroid Studioでのプロジェクトではなくサブプロジェクト)のbuild.gradleでJaCoCoを適用する。
 JaCoCoプラグインのバージョンは [Mavenリポジトリ](http://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin) から最新のものを選んだ。
 
 ```groovy
@@ -181,8 +170,7 @@ buildscript {
 }
 ```
 
-さらに、このままだとJaCoCo単独でのレポート出力先を見に行ってしまうので
-パスをAndroid用に修正する。
+さらに、このままだとJaCoCo単独でのレポート出力先を見に行ってしまうのでパスをAndroid用に修正する。
 
 ```
 coveralls.jacocoReportPath = 'build/reports/coverage/debug/report.xml'
@@ -214,17 +202,12 @@ With coverage file: /.../AndroidFormEnhancer/library/build/reports/coverage/debu
 ```
 
 レポートファイルが出力されているが対応するソースコードが見つからず失敗している様子(pluginのソースコードから確認)。
-プラグインを修正しても良いが、Pluginの種類を見てソースフォルダを振り分けており、
-Android Pluginをインポートするくらいしか解決策が見つからなかったので
-別の方法を探すことに。
+プラグインを修正しても良いが、Pluginの種類を見てソースフォルダを振り分けており、Android Pluginをインポートするくらいしか解決策が見つからなかったので別の方法を探すことに。
 
 ### 別のgradleファイルからのカバレッジ送信
 
-pluginを修正するとか、mvnでcoveralls-maven-pluginを実行する、
-というのはかなり骨が折れそうな気がしたので、
-思い切ってandroid-libraryプラグインとの共存をあきらめた。
-そもそも問題はandroidあるいはandroid-libraryプラグインがjavaプラグインと共存できないことにあるので、
-依存関係を切り離せないか？と調べたところgradlewにはbuild.gradle以外のファイルを指定してビルドするオプションがあった。
+pluginを修正するとか、mvnでcoveralls-maven-pluginを実行する、というのはかなり骨が折れそうな気がしたので、思い切ってandroid-libraryプラグインとの共存をあきらめた。
+そもそも問題はandroidあるいはandroid-libraryプラグインがjavaプラグインと共存できないことにあるので、依存関係を切り離せないか？と調べたところgradlewにはbuild.gradle以外のファイルを指定してビルドするオプションがあった。
 これで、別のファイルにjavaプラグインに依存するタスクの設定を書き、単独で実行すれば問題なくcoverallsを実行できる。
 結果的に.travis.ymlに書いた、ちゃんと動く書き方は以下。
 

@@ -30,18 +30,15 @@ Android SDKが使えるコンテナ。Jenkinsでのビルドに使えそう。
 
 Android SDKとエミュレータ(ARM)が使えるコンテナ。
 [https://github.com/ksoichiro/dockerfiles/tree/master/android-emulator](https://github.com/ksoichiro/dockerfiles/tree/master/android-emulator)
-エミュレータを実行するスクリプトはENTRYPOINTになっているだけなので、
-docker runしてからしばらくは起動待ち。。。
-それでも、ホスト側の環境を汚さずにAndroid上でのテストができるので
-これもCIに使えそう。
+エミュレータを実行するスクリプトはENTRYPOINTになっているだけなので、docker runしてからしばらくは起動待ち。。。
+それでも、ホスト側の環境を汚さずにAndroid上でのテストができるのでこれもCIに使えそう。
 (頻繁な実行は厳しいが・・・)
 
 こちらに登録中。
 [https://index.docker.io/u/ksoichiro/android-emulator/](https://index.docker.io/u/ksoichiro/android-emulator/)
 "docker pull ksoichiro/android-emulator" でプルできます。
 
-エミュレータについては、例えばGradleでビルドしているプロジェクトなら
-以下のように使える。
+エミュレータについては、例えばGradleでビルドしているプロジェクトなら以下のように使える。
 
 ```
 cd /path/to/project

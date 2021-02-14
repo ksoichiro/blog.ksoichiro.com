@@ -26,8 +26,7 @@ Lighthouse の Chrome Extension での計測で、以下のように改善。
 <!--more-->
 ## 共有ボタンを消す
 
-Blogger 特有のメール/Blog this!/Facebook/Twitter/Google+のボタンのセットは、シンプルに見えて意外に時間がかかっているようだったため、思い切って除去してみた。これで
-59 リクエスト、624KB、4.1秒に削減。
+Blogger 特有のメール/Blog this!/Facebook/Twitter/Google+のボタンのセットは、シンプルに見えて意外に時間がかかっているようだったため、思い切って除去してみた。これで 59 リクエスト、624KB、4.1秒に削減。
 
 ## +1ボタンの廃止
 

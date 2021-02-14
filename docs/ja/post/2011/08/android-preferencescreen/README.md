@@ -41,8 +41,7 @@ private void showDialog(Bundle state) {
 }
 ```
 
-これを見ると、Dialogに適用されるテーマは
-デフォルトのThemeかTheme\_NoTitleBarとなっていて、外から変えられません。
+これを見ると、Dialogに適用されるテーマはデフォルトのThemeかTheme\_NoTitleBarとなっていて、外から変えられません。
 ではこのdialogを操作できるかというと、ローカル変数なので操作できません。
 それならshowDialog()の呼び出し元をオーバーライドして書き換えてしまえば…と思いましたが、これもダメです。
 PreferenceScreenはfinalなので継承できません。
@@ -51,8 +50,7 @@ PreferenceScreenはfinalなので継承できません。
 これはあまり良い方法に思えませんでしたので、別の方法を探りました。
 他にも方法はあるかもしれませんが、Activityを分ける方法でうまくいきました。
 
-PreferenceActivityの本体のタイトルバーは変更できるので、PreferenceScreenの代わりにPreferenceを使い、
-そのPreferenceにOnClickListenerを設定して、クリック時に次の画面のPreferenceActivityを呼び出すという方式です。
+PreferenceActivityの本体のタイトルバーは変更できるので、PreferenceScreenの代わりにPreferenceを使い、そのPreferenceにOnClickListenerを設定して、クリック時に次の画面のPreferenceActivityを呼び出すという方式です。
 
 以下、具体的な方法です。( [BasicWall](https://market.android.com/details?id=com.sika524.android.livewallpaper.basicwall) に適用しています。)
 ソースコードは重要な部分を抜粋・改変したものなので、そのままでは動かないかもしれません。

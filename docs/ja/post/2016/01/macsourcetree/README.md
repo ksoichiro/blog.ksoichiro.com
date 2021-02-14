@@ -5,8 +5,7 @@ tags: ["SourceTree","Mac","Git"]
 ---
 新年最初のエントリ、大したことのない内容ですが・・
 
-Gitの操作ではコマンドとSourceTreeを併用しているのだが
-最近SourceTreeが異常に重たかった。
+Gitの操作ではコマンドとSourceTreeを併用しているのだが最近SourceTreeが異常に重たかった。
 
 下記にあるように、内臓GitではなくシステムGitを使うように設定することで改善した。
 [Source tree painfully slow on mac](https://answers.atlassian.com/questions/13419722/source-tree-painfully-slow-on-mac)

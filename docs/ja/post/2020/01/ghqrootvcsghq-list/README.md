@@ -3,7 +3,7 @@ title: "ghqのroot配下ではVCS導入しないとghq listが遅くなる"
 created: 2020-01-11T23:36:00.002+09:00
 tags: ["ghq","Git"]
 ---
-今さらながら ghq を使うのをデフォルトにしようと考えてローカルにあるリポジトリをすべて ghq の root に移したところ、ghq list がだいぶ遅くなったように感じた。
+今さらながら ghq を使うのをデフォルトにしようと考えてローカルにあるリポジトリをすべて ghq の root に移したところ、`ghq list` がだいぶ遅くなったように感じた。
 
 以下が原因＆解決策であった。  
 https://hirakiuc.hatenablog.com/entry/2017/05/06/205846

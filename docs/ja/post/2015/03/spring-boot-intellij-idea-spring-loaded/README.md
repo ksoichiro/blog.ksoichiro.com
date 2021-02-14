@@ -5,8 +5,7 @@ tags: ["IntelliJ","Spring Boot"]
 ---
 ソースコードの修正に合わせて実行中のSpring Bootアプリケーションを自動的にリロードさせる方法（ホットスワップ）について。
 <!--more-->
-基本的な方法は[Spring Bootのドキュメント](http://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html)に書いてあるのだが、
-実際に試してみて、bootRunの実行中に修正してもロードされず、困っていた。
+基本的な方法は[Spring Bootのドキュメント](http://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html)に書いてあるのだが、実際に試してみて、bootRunの実行中に修正してもロードされず、困っていた。
 このとき実は、bootRunをIntelliJ IDEA CE (14.0)のGradleビューのタスクをダブルクリックすることで実行していたのだが、これがいけなかった。
 IntelliJのGradleビューからbootRunを実行してしまうと自動ビルドの対象外になってしまう。
 

@@ -15,5 +15,4 @@ IntelliJ や Eclipse のプラグインの他、Gradle や Maven との統合も
 
 あとは保存や pre-commit のタイミングで対象ファイルのみフォーマットすることができるかどうかだが、IntelliJ の場合は Reformat Code を実行しないと作動しないように見える。
 
-pre-commitに関しては、npm を導入して Prettier と同様に husky などと組み合わせるか、上記のライブラリからもリンクされている
-[google-style-precommit-hook](https://github.com/maltzj/google-style-precommit-hook) を使うのが良さそう。
+pre-commitに関しては、npm を導入して Prettier と同様に husky などと組み合わせるか、上記のライブラリからもリンクされている [google-style-precommit-hook](https://github.com/maltzj/google-style-precommit-hook) を使うのが良さそう。

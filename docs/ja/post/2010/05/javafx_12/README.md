@@ -17,7 +17,6 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
 2. 新しいJavaFXプロジェクトを作成します。メニューから[File] > [New] > [Project]を選びます。
 3. [JavaFX]のフォルダを展開し、[JavaFX Project]を選択して[Next]をクリックします。
 
-
     [![](http://4.bp.blogspot.com/_rtlYXd55yO0/S-l6p5QBmuI/AAAAAAAAFOM/MLc7IhcS1Kw/s320/WS000024.BMP)](http://4.bp.blogspot.com/_rtlYXd55yO0/S-l6p5QBmuI/AAAAAAAAFOM/MLc7IhcS1Kw/s1600/WS000024.BMP)
 
 4. 匿名の利用情報を送信してもよいか、尋ねられます。送信しない場合は[Do not send anonymous usage data.]にチェックを入れます。[OK]をクリックします。
@@ -38,7 +37,6 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
 15. [Insert]をクリックします。
 16. コードが入力されます。
 
-
     [![](http://2.bp.blogspot.com/_rtlYXd55yO0/S-l_DbrxhSI/AAAAAAAAFOU/86AH9CT9spM/s320/WS000025.BMP)](http://2.bp.blogspot.com/_rtlYXd55yO0/S-l_DbrxhSI/AAAAAAAAFOU/86AH9CT9spM/s1600/WS000025.BMP)
     StageスニペットにはStageとSceneが含まれています。Stageは、JavaFXオブジェクトを表示するのに必要なトップレベルコンテナウィンドウです。Sceneはグラフィカルなコンテンツを描画するのに必要なオブジェクトです。
 17. Sceneオブジェクトを修正していきます。まずは、ファイルの先頭部のimport文に続いて以下のコードを入力します。
@@ -48,8 +46,6 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
     ```
 
 18. Sceneオブジェクトのcontentについて以下のようにコードを入力します。
-
-
 
     ```java
     package gstutorial;
@@ -77,27 +73,16 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
 19. 次に、円形のCircleオブジェクトを追加します。Snippetビューから、[Basic Shapes]の[Circle]をドラッグし、コードのTextの上の行でドロップします。[radius]に[90]を入力し、[Insert]をクリックします。
 20. 追加したCircleにカーソルを合わせると、ドキュメントを参照できます。
 
-
-
-
     [![](http://3.bp.blogspot.com/_rtlYXd55yO0/S-mDDIuXxgI/AAAAAAAAFOc/EAOrtlRC6zM/s320/WS000026.BMP)](http://3.bp.blogspot.com/_rtlYXd55yO0/S-mDDIuXxgI/AAAAAAAAFOc/EAOrtlRC6zM/s1600/WS000026.BMP)
     描画のイメージまで見られるのが良いですね。
 
 21. Circleの設定にRadialGradientを追加します。以下のimport文を追加します。
-
-
-
-
 
     ```java
     import javafx.scene.paint.RadialGradient;import javafx.scene.paint.Stop;
     ```
 
 22. Circleのfill変数のコードを以下のように修正します。
-
-
-
-
 
     ```java
     package gstutorial;
@@ -151,7 +136,6 @@ JavaFXをEclipseで開発する環境が整ったので、最初のアプリケ�
 24. パッケージエクスプローラからMain.fxを右クリックし、[Run As] > [JavaFX Application]を選択します。
 25. 起動設定のダイアログで、[Profile]に適切なプロファイルを指定します。ここでは[Desktop profile - Run as Application]を選択します。アプレットやモバイル用の設定も選べるようです。
 26. [Run]をクリックします。以下のように表示されましたか？
-
 
     [![](http://4.bp.blogspot.com/_rtlYXd55yO0/S-mF6ZGT54I/AAAAAAAAFOk/NAqf7fCKTWw/s320/WS000027.BMP)](http://4.bp.blogspot.com/_rtlYXd55yO0/S-mF6ZGT54I/AAAAAAAAFOk/NAqf7fCKTWw/s1600/WS000027.BMP)
 

@@ -3,8 +3,7 @@ title: "Spring Bootで静的コンテンツにフィンガープリントをつ�
 created: 2015-04-14T01:37:00.001+09:00
 tags: ["Spring Framework","Spring Boot"]
 ---
-Spring BootではRuby on Railsのアセットパイプラインのようなものを
-どうやって実現するのか？というのを調べていた。
+Spring BootではRuby on Railsのアセットパイプラインのようなものをどうやって実現するのか？というのを調べていた。
 Sprinb Bootのバージョンは1.2.3-RELEASE。
 
 以下のSpringのブログによれば、静的コンテンツのハンドリングはSpring Framework 4.1で改善されたらしい。
@@ -17,14 +16,12 @@ JavaScriptの開発については、grunt、gulp、Dart、TypeScriptなどネ�
 あとは、リソースにフィンガープリントをつける(app-ハッシュ値.cssなど)方法だが、これは"Resource versioning"と呼んでいる。
 (知らなかったが、こういうのを"Cache busting"というらしい。)
 
-[Showcase application](https://github.com/bclozel/spring-resource-handling)があるよ、と紹介されており、
-こちらを動かしてみれば期待しているものかわかりだったが、
-上手く動かず・・・。
+[Showcase application](https://github.com/bclozel/spring-resource-handling)があるよ、と紹介されており、こちらを動かしてみれば期待しているものかわかりだったが、上手く動かず・・・。
 見よう見まねで、作成中のサンプルアプリに組み込んでみた。
 
 結論から言うと、以下のようなクラスを追加するだけだった。簡単。
 
-```
+```java
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
@@ -54,14 +51,10 @@ Gitのコミットハッシュ値を自動的につけられるなら利用し�
 (**2016/03追記**: ライブラリのバージョニングについてはこちら → [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](http://ksoichiro.blogspot.jp/2016/03/spring-bootjavascriptcss.html))
 
 `addResourceLocations()`がバージョニングしたファイルを配置する場所を指定する(と思われる)。
-上記はバージョニングができることを確認したいだけだったので
-ごく簡潔な内容にとどめたが、実際にはアプリケーションのProfileによって
-キャッシュの設定を切り替えるのが良いようだ。
+上記はバージョニングができることを確認したいだけだったのでごく簡潔な内容にとどめたが、実際にはアプリケーションのProfileによってキャッシュの設定を切り替えるのが良いようだ。
 ([Showcaseアプリを見るとわかる](https://github.com/bclozel/spring-resource-handling/blob/master/server/src/main/java/org/springframework/samples/resources/WebConfig.java#L87-L101))
 
 `resourceUrlEncodingFilter()`については、ただnewしているだけだが、これがないとバージョニングが適用されなかった。
 
 HTML側で、CSSやJSの指定の仕方が変わるかというと、そのままだった。
-ShowcaseアプリはGroovyのテンプレートを使っており
-Thymeleafだとどう書くのだろうと考えてしまったが、
-通常通り`th:href="@{/css/main.css}"`などと書けば自動的に変換される。
+ShowcaseアプリはGroovyのテンプレートを使っておりThymeleafだとどう書くのだろうと考えてしまったが、通常通り`th:href="@{/css/main.css}"`などと書けば自動的に変換される。

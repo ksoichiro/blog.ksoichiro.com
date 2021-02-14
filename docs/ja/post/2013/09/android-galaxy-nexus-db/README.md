@@ -9,12 +9,9 @@ Dropboxでファイルがダウンロードできません。
 QuickPicでサムネイルが作れません。
 <!--more-->
 アンインストールして再インストールしても解消しないことから、
-どうやらSDカード配下のファイルがおかしいかもしれないと思い
-確認したところSDカード以下の該当アプリのディレクトリを削除することすらできませんでした。
+どうやらSDカード配下のファイルがおかしいかもしれないと思い確認したところSDカード以下の該当アプリのディレクトリを削除することすらできませんでした。
 (もちろんsuしています。)
-そこで、
-[http://coosee.blog.fc2.com/blog-entry-8.html](http://coosee.blog.fc2.com/blog-entry-8.html)
-でヒントを得て、CWMを使えるようにした上で
+そこで、[http://coosee.blog.fc2.com/blog-entry-8.html](http://coosee.blog.fc2.com/blog-entry-8.html)でヒントを得て、CWMを使えるようにした上で
 
 ```
 adb recovery

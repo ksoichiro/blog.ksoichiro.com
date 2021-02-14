@@ -21,9 +21,7 @@ android {
 }
 ```
 
-ディレクトリ構造を変えたくて上記を変更しようとしたとき、
-上記のうち`res`と`resources`は何が違うのか？という点が
-すぐには分からなかったのでメモ。
+ディレクトリ構造を変えたくて上記を変更しようとしたとき、上記のうち`res`と`resources`は何が違うのか？という点がすぐには分からなかったのでメモ。
 [Gradle Plugin User Guide](http://tools.android.com/tech-docs/new-build-system/user-guide) には以下のように書いてある。
 
 > To replace the default source folders, you will want to use srcDirs
@@ -41,8 +39,6 @@ android {
 > here.
 
 `sourceSets`で設定できるものはすべてAndroidプラグイン独自のものなのではなくJavaプラグイン由来のものとAndroid独自のものがある。
-つまり、`resources.srcDirs`はJavaでいうリソースなので
-`.properties`ファイルなどを配置するディレクトリのこと。
+つまり、`resources.srcDirs`はJavaでいうリソースなので`.properties`ファイルなどを配置するディレクトリのこと。
 
-なので、Androidでいうリソースファイル(`res`フォルダ以下のXMLなど)の配置は
-`sourceSets.main.res.srcDirs`で設定するのが正しい。
+なので、Androidでいうリソースファイル(`res`フォルダ以下のXMLなど)の配置は`sourceSets.main.res.srcDirs`で設定するのが正しい。

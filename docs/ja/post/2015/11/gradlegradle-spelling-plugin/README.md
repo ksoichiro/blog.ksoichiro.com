@@ -3,8 +3,7 @@ title: "Gradleで表記ゆれをチェックするプラグインgradle-spelling
 created: 2015-11-26T22:36:00.001+09:00
 tags: ["Gradle"]
 ---
-[GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin](http://ksoichiro.blogspot.jp/2015/10/gradlecoffeescriptlessbowergradle-web.html)
-に続き、Javaプロジェクトの開発で使えるGradleプラグイン [gradle-spelling-plugin](https://github.com/ksoichiro/gradle-spelling-plugin) を作ったので紹介。
+[GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin](http://ksoichiro.blogspot.jp/2015/10/gradlecoffeescriptlessbowergradle-web.html)に続き、Javaプロジェクトの開発で使えるGradleプラグイン [gradle-spelling-plugin](https://github.com/ksoichiro/gradle-spelling-plugin) を作ったので紹介。
 
 これで何ができるかというと、ブラックリストに単語、表現を登録して、それを探していくだけ。
 見つけた場合は、代わりにこれを使ってね、と警告する。
@@ -13,14 +12,11 @@ tags: ["Gradle"]
 
 Gradleを使い出すと、Gradleですべてチェックできるようにしたいと考えるようになる(たぶん)。
 そして自動化したいと考える。
-だから、grepしたりIDEで検索すればいいものだったとしても
-Gradleで使える形になっていることが大事。
+だから、grepしたりIDEで検索すればいいものだったとしてもGradleで使える形になっていることが大事。
 <!--more-->
 
 内容的には以前Goで作った[fint](https://github.com/ksoichiro/fint)とほぼ同じ。
-fintの方はLintツール的な発想で作ったが、
-今回のものは似たような用語がバラバラとコメントなどに
-書かれていくのを人がレビューで見つけて修正していくのを避けたかった、という点で微妙に着想・目的が違う。
+fintの方はLintツール的な発想で作ったが、今回のものは似たような用語がバラバラとコメントなどに書かれていくのを人がレビューで見つけて修正していくのを避けたかった、という点で微妙に着想・目的が違う。
 
 組み込みは、Gradle 2.1以降なら以下をbuild.gradleに書けばOK。
 
@@ -45,8 +41,7 @@ spelling {
 ```
 
 などとする。
-チェックは`inspectSpelling`というタスクで実行できるので、
-もしcheckタスクですべてチェックさせるルールにしているのであれば
+チェックは`inspectSpelling`というタスクで実行できるので、もしcheckタスクですべてチェックさせるルールにしているのであれば
 
 ```
 check.dependsOn 'inspectSpelling`

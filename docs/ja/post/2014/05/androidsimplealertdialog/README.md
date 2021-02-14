@@ -4,8 +4,7 @@ created: 2014-05-11T13:38:00.001+09:00
 tags: ["SimpleAlertDialog","Android"]
 ---
 少し前に作ったものの、紹介エントリを書いていなかったことに気づき今更ながら書いてみる。。。
-[SimpleAlertDialog-for-Android](https://github.com/ksoichiro/SimpleAlertDialog-for-Android)という、
-Androidでダイアログを簡単に作成できるライブラリを公開しています。
+[SimpleAlertDialog-for-Android](https://github.com/ksoichiro/SimpleAlertDialog-for-Android)という、Androidでダイアログを簡単に作成できるライブラリを公開しています。
 ![SimpleAlertDialog-for-Android][1]
 
 この手のライブラリは色々あるが、特長は以下の通り(READMEから抜粋)。
@@ -21,27 +20,22 @@ Androidでダイアログを簡単に作成できるライブラリを公開し�
 
 <!--more-->
 
-ダイアログの取り扱いは慣れないと意外と難しく、
-スリープから復帰したときに`IllegalStateException`でクラッシュする
-ということも普通に起こる。
+ダイアログの取り扱いは慣れないと意外と難しく、スリープから復帰したときに`IllegalStateException`でクラッシュするということも普通に起こる。
 
-また、[Android Holo Colors](http://android-holo-colors.com/)を使って
-アプリのカラーテーマに合わせてHoloスタイルをカスタマイズしても
-ダイアログのラインや部品が変わらなかったりする。
+また、[Android Holo Colors](http://android-holo-colors.com/)を使ってアプリのカラーテーマに合わせてHoloスタイルをカスタマイズしてもダイアログのラインや部品が変わらなかったりする。
 
-というわけで、SimpleAlertDialogは
-ダイアログ共通の問題を吸収し、アプリデザインの統一感を持たせやすくするためのライブラリ。
+というわけで、SimpleAlertDialogはダイアログ共通の問題を吸収し、アプリデザインの統一感を持たせやすくするためのライブラリ。
 
-基本的に古いAlertDialogと同じ扱い方なので、
-例えば、ダイアログを表示したい場所で以下のように書けば表示できる。
+基本的に古いAlertDialogと同じ扱い方なので、例えば、ダイアログを表示したい場所で以下のように書けば表示できる。
 
-    new SimpleAlertDialogFragment.Builder()
-            .setMessage("Hello world!")
-            .setPositiveButton(android.R.string.ok)
-            .create().show(getFragmentManager(), "dialog");
+```java
+new SimpleAlertDialogFragment.Builder()
+        .setMessage("Hello world!")
+        .setPositiveButton(android.R.string.ok)
+        .create().show(getFragmentManager(), "dialog");
+```
 
-配色などはスタイルとしてXMLで指定できるので、
-以下のようにラインをグラデーションに変えることもできる。
+配色などはスタイルとしてXMLで指定できるので、以下のようにラインをグラデーションに変えることもできる。
 
 ![スクリーンショット][2]
 

@@ -3,8 +3,7 @@ title: "Springのテストを速くする工夫"
 created: 2016-10-09T21:24:00.001+09:00
 tags: ["Spring Boot"]
 ---
-Spring BootでControllerを含めたテストをする場合に、
-`MockMvcBuilders.webAppContextSetup()` でセットアップして `@WebIntegrationTests` にすると通常のアプリケーションとしてテストできるが、数が多くなってくると重い。
+Spring BootでControllerを含めたテストをする場合に、`MockMvcBuilders.webAppContextSetup()` でセットアップして `@WebIntegrationTests` にすると通常のアプリケーションとしてテストできるが、数が多くなってくると重い。
 
 いくつか改善できそうなポイントを調べたので記録しておく。
 
@@ -96,8 +95,7 @@ public class NoElasticsearchTestApp {
 
 ### WebAppConfigurationを使わない
 
-Controller が全てスキャンされてしまうのも避けたいが、
-上記のように ComponentScan の excludeFilter を調整しても `@WebAppConfiguration`をつけただけで結局スキャンされてしまう。
+Controller が全てスキャンされてしまうのも避けたいが、上記のように ComponentScan の excludeFilter を調整しても `@WebAppConfiguration`をつけただけで結局スキャンされてしまう。
 
 `@WebAppConfiguration` を使わないと色々DIに失敗するため、自分で `@Bean` を定義してやる必要がある。
 

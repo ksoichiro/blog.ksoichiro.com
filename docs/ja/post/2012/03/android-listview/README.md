@@ -42,19 +42,18 @@ ListView#setOnItemClickListener()を使っても、クリックのイベント�
 ```
 
 試行錯誤した挙げ句、原因は最後の TextView に指定している android:inputType だとわかりました。
-これが設定されていると、この TextView が focusable になり、
-ListViewではクリックイベントを拾えなくなるようです。
+これが設定されていると、この TextView が focusable になり、ListViewではクリックイベントを拾えなくなるようです。
 
 対策は、以下のように focusable="false" とすることです。
 これで、ListView#setOnItemClickListener() が有効になります。
 
 ```xml
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/title"
-        android:inputType="text"
-        android:focusable="false"  />
+<TextView
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@id/title"
+    android:inputType="text"
+    android:focusable="false"  />
 ```

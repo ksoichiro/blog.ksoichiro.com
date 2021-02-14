@@ -3,14 +3,12 @@ title: "rdotm - Resource access code generator for Objective-C"
 created: 2014-08-10T16:51:00.001+09:00
 tags: ["iOS","Android"]
 ---
-[Qiitaにも投稿しましたが](http://qiita.com/ksoichiro/items/4befb2695b1efdff72dd)、
-iOSアプリ開発でもAndroidのR.javaのような仕組みでリソースに安全にアクセスする仕組みを作りました。
+[Qiitaにも投稿しましたが](http://qiita.com/ksoichiro/items/4befb2695b1efdff72dd)、iOSアプリ開発でもAndroidのR.javaのような仕組みでリソースに安全にアクセスする仕組みを作りました。
 **[rdotm - GitHub](https://github.com/ksoichiro/rdotm)**
 
 R.mというファイルを自動生成し、XMLに定義した文字列を「文字列ではなくコードで」アクセスできるようにします。
 
-"R.java iOS"などと検索すると、
-以下のように海外でも探している人がいるようなので(3年前ですけどね...)
+"R.java iOS"などと検索すると、以下のように海外でも探している人がいるようなので(3年前ですけどね...)
 [Equivalent to R in iOS - Stackoverflow](http://stackoverflow.com/questions/7082336/equivalent-to-r-in-ios)
 試しに英語でも書いておこうと思います。
 
@@ -36,7 +34,7 @@ Because misspelling the resource name causes compile errors, so we can never rel
 
 For example, the following code generates a constant `R.string.app_name`.
 
-```
+```xml
 <resources>
     <string name="app_name">Foo</string>
 </resources>

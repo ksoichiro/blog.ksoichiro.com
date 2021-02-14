@@ -38,12 +38,10 @@ tags: ["MySQL","H2","Querydsl","Spring Boot"]
 JPAを使ったままでgroup byを使って何とかできないかと考えたもののうまくいかない。  
 特にページネーションが絡むと正しいページ数を算出できなくなる。
 
-ネイティブクエリでもいいので何とかならないと探ったところ
-`GROUP_CONCAT`がよさそうだった。  
+ネイティブクエリでもいいので何とかならないと探ったところ`GROUP_CONCAT`がよさそうだった。  
 http://d.hatena.ne.jp/kkz_tech/20100803/1280802260
 
-MySQL, MariaDB, H2でサポートされているため、
-ネイティブクエリを扱えるようにQuerydslの `JPAQuery` クラスの代わりに`JPASQLQuery` クラスを使いつつ、`GROUP_CONCAT`関数を埋め込んでみる。
+MySQL, MariaDB, H2でサポートされているため、ネイティブクエリを扱えるようにQuerydslの `JPAQuery` クラスの代わりに`JPASQLQuery` クラスを使いつつ、`GROUP_CONCAT`関数を埋め込んでみる。
 
 GROUP_CONCAT:  
 https://mariadb.com/kb/en/mariadb/group_concat/  
@@ -86,16 +84,14 @@ public class H2SQLTemplatesServiceImpl implements SQLTemplatesService {
 
 ### GROUP_CONCAT用のフィールドを追加
 
-`GROUP_CONCAT`で結合した文字列は、テーブルのカラムではないので
-これをプロジェクションするためのフィールドを用意する。
+`GROUP_CONCAT`で結合した文字列は、テーブルのカラムではないのでこれをプロジェクションするためのフィールドを用意する。
 
 ここでは部署を表すクラス `Department`クラスに`@Transient private String employeesList`などというフィールドを追加しておく。  
 (テーブルのカラムではないので `@Transient` が必要。)  
 なおこのテストプロジェクトではLombokを使っているのでフィールドに対応するgetter/setterは自動生成される想定。
 
 そして、`GROUP_CONCAT`を含むクエリを組み立て。
-`Projections.constructor()`でフィールドを対応付け、
-最後に`SQLTemplatesService#groupConcat()`を割り当てているところがポイント。
+`Projections.constructor()`でフィールドを対応付け、最後に`SQLTemplatesService#groupConcat()`を割り当てているところがポイント。
 
 ```java
 JPASQLQuery query = querydsl.applyPagination(pageable, createQuery(predicate));
@@ -115,11 +111,9 @@ List<Department> content =
 
 パスの情報がJPA用に定義されており、純粋なSQLとして実行させると不正なSQLになってしまう。
 
-`leftJoin()`のon句を省略してしまうと、条件なしに結合されてしまい
-`GROUP_CONCAT`した内容が全ての行で同じになってしまう。
+`leftJoin()`のon句を省略してしまうと、条件なしに結合されてしまい`GROUP_CONCAT`した内容が全ての行で同じになってしまう。
 
-正しく設定するには、やはりQuerydsl SQLのために
-別の自動生成クラス(`S*`)を生成しなければならないらしい。
+正しく設定するには、やはりQuerydsl SQLのために別の自動生成クラス(`S*`)を生成しなければならないらしい。
 https://github.com/querydsl/querydsl/blob/0cfeeb5595e8f8924122bb1b341abce08827b07e/querydsl-jpa/src/test/java/com/querydsl/jpa/domain/sql/SAnimal.java
 
 `S*`の生成には、生成時にDBに接続する必要がある。
@@ -136,14 +130,11 @@ https://github.com/jamescarr/h2-gradle-plugin
 
 あれこれ試行錯誤した結果、H2は普通にインメモリで起動すれば十分だとわかった。
 Groovyの`Sql`クラスが使える。
-注意点としては、H2のドライバをSqlクラスに渡して動かす必要があるが
-そのまま起動するとクラスローダがドライバを読み込んでいない。
-以下を参考にして、適当な専用の`configuration`を用意して
-そこでドライバ(org.h2.Driver)をロードさせることで認識するようになった。
+注意点としては、H2のドライバをSqlクラスに渡して動かす必要があるがそのまま起動するとクラスローダがドライバを読み込んでいない。
+以下を参考にして、適当な専用の`configuration`を用意してそこでドライバ(org.h2.Driver)をロードさせることで認識するようになった。
 https://discuss.gradle.org/t/jdbc-driver-class-cannot-be-loaded-with-gradle-2-0-but-worked-with-1-12/2277/3
 
-スキーマ情報は`src/main/resources/schema.sql`ファイルにあるので、Sqlクラスに`schema.sql`を読ませてメタ情報を取得し、
-`MetaDataExporter`を実行すれば`S*`を作成できる。
+スキーマ情報は`src/main/resources/schema.sql`ファイルにあるので、Sqlクラスに`schema.sql`を読ませてメタ情報を取得し、`MetaDataExporter`を実行すれば`S*`を作成できる。
 
 ```groovy
 configurations {
@@ -191,8 +182,7 @@ JPASQLQuery query = createBaseQuery(predicate)
 
 ページネーションをするためには`Pageable`, `PageImpl`などを使い、件数をカウントするクエリも必要になる。
 
-JPA(JPQLQuery)の場合は単に`JPQLQuery#count()`を使えば良かったが、
-JPASQLQueryを使っても、`GROUP_CONCAT` を使うために `groupBy()` をつけているせいで`JPASQLQuery#count()`ではユニークな結果が得られず失敗する。  
+JPA(JPQLQuery)の場合は単に`JPQLQuery#count()`を使えば良かったが、JPASQLQueryを使っても、`GROUP_CONCAT` を使うために `groupBy()` をつけているせいで`JPASQLQuery#count()`ではユニークな結果が得られず失敗する。  
 `select count(*)`でなく`select count(department.id)` とできればいいのだがやり方が見つからない。
 
 そこで `groupBy` を外した`JPASQLQuery`を用意しておき、カウントはそちらで取得するように修正。
@@ -221,8 +211,7 @@ private JPASQLQuery createQuery(Predicate predicate) {
 }
 ```
 
-なお、limit/offsetやソートの調整は`JPAQuery`の場合は
-Spring Data JPAが提供する`Querydsl`クラスで行っていたが、Querydsl SQL 用のものがない。
+なお、limit/offsetやソートの調整は`JPAQuery`の場合はSpring Data JPAが提供する`Querydsl`クラスで行っていたが、Querydsl SQL 用のものがない。
 これには、Querydslクラスを参考に独自に`QuerydslSQL` クラスを作成した。
 
 全体のソースコードはGitHubに登録。

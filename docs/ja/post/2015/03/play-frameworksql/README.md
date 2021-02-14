@@ -3,9 +3,7 @@ title: "Play FrameworkでSQLで初期データ投入する方法"
 created: 2015-03-28T16:00:00.001+09:00
 tags: ["Java","Play Framework"]
 ---
-Play Frameworkでは、EBeanを使い
-YAMLで初期データを書くようだが、
-SpringのようにSQLファイルで初期化したい場合。
+Play Frameworkでは、EBeanを使いYAMLで初期データを書くようだが、SpringのようにSQLファイルで初期化したい場合。
 Scalaだとanormが使えるようだが、Javaだと以下のような感じに作るしかなさそう。
 Play Frameworkは2.3.8。JavaはOracle JDK 7。
 
@@ -54,12 +52,10 @@ public class Global extends GlobalSettings {
 
 ```
 
-注意点としては、上記のコード中のコメントでも書いているように
-リロードしただけでも流れてしまうので
-実行条件を限定するように何か書く必要がありそう。
+注意点としては、上記のコード中のコメントでも書いているようにリロードしただけでも流れてしまうので実行条件を限定するように何か書く必要がありそう。
 
 ### Java 8
 
 上記はJava 7の範囲で書いたが、Java 8のAPIを使えばもっと簡単になる(はず)。
- Groovyで書いてももっと簡単になるはず。
+Groovyで書いてももっと簡単になるはず。
  

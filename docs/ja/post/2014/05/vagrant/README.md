@@ -3,8 +3,7 @@ title: "[Vagrant] 開発環境用のテンプレート"
 created: 2014-05-02T21:29:00.002+09:00
 tags: ["Ubuntu","VIM","Vagrant","Android"]
 ---
-Vagrantfileやセットアップ用のスクリプトを
-テンプレートとしてGitHubにいくつか登録してみた。
+Vagrantfileやセットアップ用のスクリプトをテンプレートとしてGitHubにいくつか登録してみた。
 [https://github.com/ksoichiro/vagrant-templates](https://github.com/ksoichiro/vagrant-templates)
 <!--more-->
 セットアップは基本的にすべてシェルスクリプト。
@@ -12,8 +11,7 @@ Vagrantfileやセットアップ用のスクリプトを
 
 ## Ubuntu上でDockerが使えるテンプレート
 
-Macならboot2dockerがあるのでメリットはないが、
-Windowsでも使えるようにしたい場合に役立つかも？
+Macならboot2dockerがあるのでメリットはないが、Windowsでも使えるようにしたい場合に役立つかも？
 [https://github.com/ksoichiro/vagrant-templates/tree/master/templates/precise64-docker](https://github.com/ksoichiro/vagrant-templates/tree/master/templates/precise64-docker)
 
 ## Ubuntu上でGitLabが使えるテンプレート

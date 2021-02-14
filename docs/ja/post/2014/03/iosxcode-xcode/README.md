@@ -47,7 +47,11 @@ exit $has_error
 [![](http://2.bp.blogspot.com/-Qzv1mRDoz9g/UxCxRnFPIiI/AAAAAAAAMfU/MQZ7gLC-UBI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.40.54.png)](http://2.bp.blogspot.com/-Qzv1mRDoz9g/UxCxRnFPIiI/AAAAAAAAMfU/MQZ7gLC-UBI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.40.54.png)
 
 上記のチェック内容でビルドすると、
+
+```java
 }else{
+```
+
 と書いた箇所に以下のように警告が表示されます。
 警告が出たら「Build Failed」、出なければ「Build Succeeded」となります。
 

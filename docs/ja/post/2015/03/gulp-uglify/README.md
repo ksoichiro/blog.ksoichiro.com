@@ -56,14 +56,11 @@ npm ERR!    /xxx/npm-debug.log
 npm ERR! not ok code 0
 ```
 
-それぞれ最新版を使うように変更したのがいけなかったのだと思い、
-Saganが使っているバージョンに合わせたものの、うまくいかず。
-Saganをcloneしてビルドして出力をよく見ると、
-`npm install`したときのバージョンがbower.jsonに書かれているものと違う。
+それぞれ最新版を使うように変更したのがいけなかったのだと思い、Saganが使っているバージョンに合わせたものの、うまくいかず。
+Saganをcloneしてビルドして出力をよく見ると、`npm install`したときのバージョンがbower.jsonに書かれているものと違う。
 npm-shrinkwrap.jsonに書かれたバージョンが適用されているらしい。
 そこで、gulp-uglifyはこれと同じ0.2.1に変更してみた。
-するとエラーは相変わらず出ているもののsaganと同じような内容で、
-処理自体は続行されminifyできた。
+するとエラーは相変わらず出ているもののsaganと同じような内容で、処理自体は続行されminifyできた。
 
 ```sh
 $ npm run build

@@ -3,8 +3,7 @@ title: "Spring Bootのバージョン定義の集約"
 created: 2015-04-01T23:52:00.001+09:00
 tags: ["Gradle","Spring Boot"]
 ---
-Spring Boot 1.2.3.RELEASEが出ていたので、
-早速todoサンプルプロジェクトに適用してみた。
+Spring Boot 1.2.3.RELEASEが出ていたので、早速todoサンプルプロジェクトに適用してみた。
 
 Spring Bootはstarterなどで複数の同じバージョンのdependencyを使うので、バージョンは集約して定義しておいた方がメンテナンスしやすそう。
 
@@ -18,7 +17,7 @@ SPRING_BOOT_VERSION=1.2.3.RELEASE
 などと書いておき、
 
 build.gradle(抜粋):
-```
+```groovy
 buildscript {
     repositories {
         jcenter()
@@ -32,7 +31,7 @@ buildscript {
 ```
 
 app-site/build.gradle(抜粋):
-```
+```groovy
 dependencies {
     compile project(':app-client')
     compile "org.springframework.boot:spring-boot-starter-web:${SPRING_BOOT_VERSION}"
@@ -53,9 +52,8 @@ dependencies {
 
 最初はルートプロジェクトの`build.gradle`に
 
-```
+```groovy
 def vSpringBootVersion = '1.2.3.RELEASE'
 ```
 
-などと書いてみたが、これだとサブプロジェクトから参照できず、
-各プロジェクトで定義しなくてはならなくなるため、良い方法とは言えない。
+などと書いてみたが、これだとサブプロジェクトから参照できず、各プロジェクトで定義しなくてはならなくなるため、良い方法とは言えない。

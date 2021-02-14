@@ -13,8 +13,8 @@ ActivityではActivityMonitor#getLastActivity()などでモニタしているAct
 
 Activityの場合はActivityMonitor#getHits()で呼び出されたかどうかを確認できますが、 Fragmentの場合で考えられるのは以下のようなものでしょうか。
 
-・BackStackの数が期待通りに増減しているか
-・findFragmentByTag()で取得できる(＝前面にある)Fragmentが期待通りのクラスか
+- BackStackの数が期待通りに増減しているか
+- findFragmentByTag()で取得できる(＝前面にある)Fragmentが期待通りのクラスか
 
 ## サンプル
 

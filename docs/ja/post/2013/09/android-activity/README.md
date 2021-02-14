@@ -9,12 +9,9 @@ tags: ["Android"]
 <!--more-->
 ユーザからすればスプラッシュ画面は操作するまでの時間が長くなるだけなので避けるべきですが、
 
-・Application#onCreate()で重たい処理が必要(何かのSDKの初期化等)で、
-　Activityの起動まで時間がどうしても長くなってしまう
-・ActivityのsetContentView()完了までの時間が長く、
-　それまでの間にデフォルトのActionBarが表示されてしまうのが嫌
-・アプリ内でテーマを選べるようにしたいが、Activity起動直後はデフォルトのテーマのスタイルで
-　画面が表示されてしまうのが嫌
+- Application#onCreate()で重たい処理が必要(何かのSDKの初期化等)で、Activityの起動まで時間がどうしても長くなってしまう
+- ActivityのsetContentView()完了までの時間が長く、それまでの間にデフォルトのActionBarが表示されてしまうのが嫌
+- アプリ内でテーマを選べるようにしたいが、Activity起動直後はデフォルトのテーマのスタイルで画面が表示されてしまうのが嫌
 
 などなど、初期画面を表示するまでの時間だけスプラッシュを表示しておきたいという場合があると思います。 そんな場合の対処方法です。
 起動直後、こんな画面を表示させます。(小さいアイコンだけで寂しいですが、サンプルですので…)
@@ -33,8 +30,7 @@ AndroidManifest.xmlのapplicationタグ(android:theme)に、起動時のみ使�
 </style>
 ```
 
-ActionBarSherlockを使っているためTheme.Sherlock.Light.NoActionBarとなっていますが
-以下のような、ActionBarもTitleもないスタイルであれば良いはずです。
+ActionBarSherlockを使っているためTheme.Sherlock.Light.NoActionBarとなっていますが以下のような、ActionBarもTitleもないスタイルであれば良いはずです。
 
 ```xml
 <item name="android:windowActionBar">false</item>

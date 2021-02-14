@@ -6,8 +6,7 @@ tags: ["GitLab","CoffeeScript","Chrome Extension"]
 GitLabを使っていると、モニタを用意できない場所で打ち合わせや作業をするときに、MarkdownのドキュメントやIssueなどの内容を印刷したいシーンがある。
 しかしGitLabのレイアウトは印刷用には作られていないので、印刷しようとすると余白や不要な部品だらけになってしまう。そのため、レイアウト調整をする [gitlab-print](https://github.com/ksoichiro/gitlab-print) というChrome Extensionを作った。
 
-以下のイメージの左側のように余白がかなり入ってしまうのだが、
-これを除去して(右側)きれいに印刷できるようにする。
+以下のイメージの左側のように余白がかなり入ってしまうのだが、これを除去して(右側)きれいに印刷できるようにする。
 
 ![イメージ](https://lh3.googleusercontent.com/-IygQDuaLuLo/VvtY_psv0rI/AAAAAAAAQSo/xrl44WgtyDAgPcuz5xjPiEjtuoyEgxYpA/s600/screenshot.png "screenshot.png")
 
@@ -25,9 +24,7 @@ GitLabを使っていると、モニタを用意できない場所で打ち合�
 今回初めてChrome Extensionを作ったのだが、Web上の情報も豊富なので割とすんなりと作ることができた。
 最初はJavaScriptで書いてみたが、ごちゃごちゃしてきそうだったので途中でCoffeeScriptに書き換えた。
 
-jQueryを使いたかったのだが npm で管理することにし、
-リリース時のzip化なども考えるとビルドもnpmにしておくか、
-ということでnpmのscriptsを使った。
+jQueryを使いたかったのだが npm で管理することにし、リリース時のzip化なども考えるとビルドもnpmにしておくか、ということでnpmのscriptsを使った。
 Gulpなどを使うのはやりすぎな感じがしたし、[こんなブログ](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.b2fqnm2pf)もあったのでそれでやってみることにした。
 
 しかし`mkdir -p`とか`cp -pR`とかコマンドを組み合わせていたせいで、AppVeyorでビルドすると見事に失敗してしまった上、scriptsの中身が複雑になってきたので最終的に上のブログにもあった別のJavaScriptファイルに移してnpmのパッケージを使う方法に切り替えた。

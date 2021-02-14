@@ -41,10 +41,8 @@ afterEvaluate { Project project ->
 }
 ```
 
-特に後者の”推移的依存関係が判定できる版”をGradleプラグインで使う場合、
-Gradle TestKitでないと正しくテストできないので注意が必要。
-普通のProjectBuilderを使ったテストでは
-project.evaluate()などとしても正しい結果が得られない模様。
+特に後者の”推移的依存関係が判定できる版”をGradleプラグインで使う場合、Gradle TestKitでないと正しくテストできないので注意が必要。
+普通のProjectBuilderを使ったテストではproject.evaluate()などとしても正しい結果が得られない模様。
 
 2015/12/16 23:36 追記
 

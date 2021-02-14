@@ -33,7 +33,7 @@ nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.1
 ### LayoutDialect
 
 次に、以下のようなコードを追加する必要があるとのことだったが
-```
+```java
 @Bean
 public SpringTemplateEngine templateEngine() {
     SpringTemplateEngine templateEngine = new SpringTemplateEngine();
@@ -47,10 +47,9 @@ public SpringTemplateEngine templateEngine() {
 ### layout.html
 
 共通レイアウトとして、今回は`templates/layout.html`を作成した。
-XMLネームスペースとして`layout`を定義し、
-コンテンツを埋め込みたい部分のタグに`layout:fragment="fragment名"`を定義する。
+XMLネームスペースとして`layout`を定義し、コンテンツを埋め込みたい部分のタグに`layout:fragment="fragment名"`を定義する。
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
@@ -73,7 +72,7 @@ XMLネームスペースとして`layout`を定義し、
 埋め込む側のページでは、例えば以下のようにしてレイアウトを適用する。
 `layout:decorator`の部分で、どのレイアウトを使うかを指定している。
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
@@ -95,7 +94,7 @@ XMLネームスペースとして`layout`を定義し、
 
 以上の記述で実行すると、以下のようにレイアウトが適用される。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 :

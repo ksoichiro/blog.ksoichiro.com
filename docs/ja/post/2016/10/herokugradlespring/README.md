@@ -106,8 +106,7 @@ Gradleを使うため、`app.json` を追加して `heroku/gradle` を設定し�
 
 #### dynoを再起動
 
-このままpushしてもrejectされてしまい困ったのだが、
-一度dynoを再起動してpushしたらうまくいった。
+このままpushしてもrejectされてしまい困ったのだが、一度dynoを再起動してpushしたらうまくいった。
 (管理画面右上のメニューから `Restart all dynos` を選択)
 
 ---

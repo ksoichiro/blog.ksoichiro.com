@@ -7,6 +7,8 @@ JavaFXプロジェクトをEclipseで作成する際、パッケージはあら�
 <!--more-->
 存在しないパッケージを指定してJavaFX Scriptを作成すると、以下のようなメッセージが出てしまいます。
 
-- Resource '/～' does not exist.
+```
+Resource '/～' does not exist.
+```
 
 通常のJavaプロジェクトとは勝手が違うところがあるようです。

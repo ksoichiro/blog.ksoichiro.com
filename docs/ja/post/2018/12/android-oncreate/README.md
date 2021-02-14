@@ -3,8 +3,7 @@ title: "Android ナイトモードを起動時に設定するとonCreateが二�
 created: 2018-12-29T18:14:00.001+09:00
 tags: ["Android"]
 ---
-シンプル単語帳にナイトモードを導入してほしいリクエストがあり、
-確かにあったほうが良さそうだと思ったため実装している。
+シンプル単語帳にナイトモードを導入してほしいリクエストがあり、確かにあったほうが良さそうだと思ったため実装している。
 (現時点ではまだリリースしていない)
 
 ただ、どうもアプリの起動が遅くなっているように見える。
@@ -24,11 +23,9 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 ナイトモードが変更されたことによって再度 onCreate が呼び出されてしまっている。
 
-onCreate が複数回呼び出されるというところでピンとくるべきだったが、
-よく調べてみると [設定変更のイベント](https://developer.android.com/guide/topics/manifest/activity-element?hl=ja#config) によって発生しているのだった。
+onCreate が複数回呼び出されるというところでピンとくるべきだったが、よく調べてみると [設定変更のイベント](https://developer.android.com/guide/topics/manifest/activity-element?hl=ja#config) によって発生しているのだった。
 
-この設定変更が必要ないなら以下のようにすると解決するが、
-今回のケースではナイトモードが反映されなくなってしまう。
+この設定変更が必要ないなら以下のようにすると解決するが、今回のケースではナイトモードが反映されなくなってしまう。
 
 ```xml
 <activity android:name=".app.MainActivity"

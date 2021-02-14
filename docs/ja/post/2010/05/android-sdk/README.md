@@ -7,9 +7,7 @@ AndroidのSDKをダウンロードし、開発環境を構築します。
 
 今回は、xperia向けのアプリということでAndroid 1.6用のSDKをダウンロードします。
 <!--more-->
-あれ、Downloadableとあるがファイルが見つからない…と思い探していると
-
-こんな注意がありました。
+あれ、Downloadableとあるがファイルが見つからない…と思い探しているとこんな注意がありました。
 
 > If you are just starting to develop applications for Android, please download the current Android SDK. With the current Android SDK, you can add any current and previous version of the Android platform as a component and use it for development and testing.
 

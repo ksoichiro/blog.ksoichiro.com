@@ -11,14 +11,12 @@ GitHubでのような開発がしたい！ということでGitLabを利用。
 **追記(2014/05/11)**
 
 現時点で最新の6.8.1にも対応しています。
-以前はインストールするのも大変だったが、今では
-GitLab Omnibus Packageというパッケージが出ており
+以前はインストールするのも大変だったが、今ではGitLab Omnibus Packageというパッケージが出ており
 これで簡単にインストールできるようになっている。
 [https://www.gitlab.com/downloads/](https://www.gitlab.com/downloads/)
 CentOS, Ubuntu, Debianに対応している。
 
-これをサーバにインストールして、gitlab-ctl reconfigureなどすれば
-GitLabは(ほぼ)セットアップ完了。
+これをサーバにインストールして、gitlab-ctl reconfigureなどすればGitLabは(ほぼ)セットアップ完了。
 
 上記の日本語化パッチは、この中のアプリ部分である gitlab-rails に適用する。
 
@@ -37,9 +35,6 @@ export PATH=$PATH:/opt/gitlab/embedded/bin
 rake assets:precompile RAILS_ENV=production
 ```
 
-普通に使っていて見える部分を日本語化することを目的にしており、
-動かなくなっている部分もあるかもしれないので、
-もし利用してみたい方がいれば自己責任でご利用ください。
+普通に使っていて見える部分を日本語化することを目的にしており、動かなくなっている部分もあるかもしれないので、もし利用してみたい方がいれば自己責任でご利用ください。
 
-なお、各種文言の一部はDBに保存されたりするものもあるので、
-日英が混ざった感じになることにも注意。
+なお、各種文言の一部はDBに保存されたりするものもあるので、日英が混ざった感じになることにも注意。

@@ -11,4 +11,4 @@ tags: ["ghq"]
 
 README には最初の root に clone されると説明されていたので、修正の pull request を送ったところすぐに修正を取り込んでいただけた。
 
-というわけで、README の説明の通り ghq.root が複数定義されている場合は最後のものが clone に使われるので、ghq list に Go の GOPATH のような固有のパスを含めたい場合は ghq get で使ってほしいパスを最後に書くと良い。
+というわけで、README の説明の通り `ghq.root` が複数定義されている場合は最後のものが clone に使われるので、`ghq list` に Go の `GOPATH` のような固有のパスを含めたい場合は `ghq get` で使ってほしいパスを最後に書くと良い。

@@ -3,8 +3,7 @@ title: "AndroidのCIでbuild-toolsの新しいバージョンが見つからな�
 created: 2015-12-06T17:55:00.001+09:00
 tags: ["wercker","Travis CI","Android"]
 ---
-久しぶりにAndroid-ObservableScrollViewのAndroid SDKのバージョンなどを
-アップデートしたが、Travis CIでもwerckerでもビルドが失敗してしまった。
+久しぶりにAndroid-ObservableScrollViewのAndroid SDKのバージョンなどをアップデートしたが、Travis CIでもwerckerでもビルドが失敗してしまった。
 
 もちろんローカルでは成功している。
 
@@ -15,16 +14,13 @@ API Levelの問題などではなく、build-tools-23.0.2が見つからなか�
 
 ### Travis CI
 
-Travis CIの場合はlanguageをandroidにしておけば、
-toolsをアップデート対象に含めておくだけで良さそう。  
+Travis CIの場合はlanguageをandroidにしておけば、toolsをアップデート対象に含めておくだけで良さそう。  
 (参考: https://github.com/travis-ci/travis-ci/issues/5036)
 
-しかしAndroid-ObservableScrollViewでは
-ドキュメントのWebサイトもTravis CIでビルドしているので、
+しかしAndroid-ObservableScrollViewではドキュメントのWebサイトもTravis CIでビルドしているので、
 languageにandroidを指定していない。  
 そのため Travis CI が用意している `android-update-sdk` を使っている。  
-.travis.ymlから`install:`の問題部分だけ抜粋すると、
-失敗したビルドでは
+.travis.ymlから`install:`の問題部分だけ抜粋すると、失敗したビルドでは
 
 ```yaml
 install:
@@ -44,8 +40,7 @@ install:
 
 ### wercker
 
-こちらも同様。YAMLで `android-sdk-update` を指定することで
-アップデートできるが、`wercker.yml` にはもともと
+こちらも同様。YAMLで `android-sdk-update` を指定することでアップデートできるが、`wercker.yml` にはもともと
 
 ```yaml
     - android-sdk-update:

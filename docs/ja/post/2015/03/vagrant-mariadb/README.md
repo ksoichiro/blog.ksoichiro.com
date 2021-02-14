@@ -11,8 +11,7 @@ tags: ["MariaDB","Vagrant"]
 
 ### ファイル
 
-以下のような`Vagrantfile`と`bootstrap.sh`を置けば、
-`vagrant up`でUbuntu(Trusty)サーバでDBがセットアップされ、アクセスできるようになる。
+以下のような`Vagrantfile`と`bootstrap.sh`を置けば、`vagrant up`でUbuntu(Trusty)サーバでDBがセットアップされ、アクセスできるようになる。
 
 JDBCなら`jdbc:mysql://192.168.33.11:3306/test`のようなURL。
 MySQLクライアントなら`mysql -h 192.168.33.11 -usa -p test`でログインできる。

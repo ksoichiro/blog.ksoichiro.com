@@ -40,7 +40,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 この回答では `/resources/**` に静的リソースが全て配置されている想定だが、`/css/**`, `/js/**`, `/lib/**` に配置している場合は `new AntPathRequestMatcher("/resources/**")` ではカバーできないので [OrRequestMatcher](http://docs.spring.io/spring-security/site/docs/4.0.3.RELEASE/apidocs/org/springframework/security/web/util/matcher/OrRequestMatcher.html) を使ってみる。
 
-```
+```java
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired

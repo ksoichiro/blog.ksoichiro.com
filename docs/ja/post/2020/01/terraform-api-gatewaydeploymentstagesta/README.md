@@ -5,7 +5,7 @@ tags: ["AWS","Terraform"]
 ---
 プライベートでVPSを借りて動かしている古いAPIがある。これをAWSに移行しようと考えており、その過程でTerraformを使ってコード化を進めている。
 
-その中で API Gateway を使っているのだが、stage、deploymentのresourceを普通に定義していったところ、conflictしてしまい正常に実行できなかった。
+その中で API Gateway を使っているのだが、`stage`、`deployment` のresourceを普通に定義していったところ、conflictしてしまい正常に実行できなかった。
 <!--more-->
 GitHub でも issue が見つかり `stage_name` を `”"` とするという解法も見つけた。
 [Error creating API Gateway Stage: ConflictException: Stage already exists #2918](https://github.com/terraform-providers/terraform-provider-aws/issues/2918)
@@ -29,7 +29,7 @@ resource  "aws_api_gateway_deployment"  "api-gateway-deployment"  {
 
 一見これで解決するようにも思えたが、API Gateway の設定を変更してデプロイしなければならないときには deploymentを更新する必要があり、そのときには `stage_name` が空では動かない。
 
-対策として、stageの定義自体は実はdeploymentにも情報が含まれているため、stageに含まれていた depends_on を deployment に移し、deployment に統合してstageのresource定義を廃止した。
+対策として、stageの定義自体は実は `deployment` にも情報が含まれているため、stageに含まれていた `depends_on` を `deployment` に移し、`deployment` に統合してstageのresource定義を廃止した。
 
 ```
 resource "aws_api_gateway_deployment" "api-gateway-deployment" {
@@ -43,4 +43,4 @@ resource "aws_api_gateway_deployment" "api-gateway-deployment" {
 }
 ```
 
-なお、設定変更しても deploy してくれない問題を避けるため、deployment の stage_description は tf ファイルの内容が変わったら変更が入ったとみなされるようにしている。
+なお、設定変更しても deploy してくれない問題を避けるため、`deployment` の `stage_description` は tf ファイルの内容が変わったら変更が入ったとみなされるようにしている。

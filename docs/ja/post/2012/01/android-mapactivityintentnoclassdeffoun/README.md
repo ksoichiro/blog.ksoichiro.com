@@ -15,11 +15,11 @@ Intent intent = new Intent().setClass(this, SampleMapActivity.class);
 具体的には以下のようにapplicationタグの子としてuses-libraryを書きます。
 
 ```xml
-    <application
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/Theme" >
-        <uses-library android:name="com.google.android.maps" />
+<application
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/Theme" >
+    <uses-library android:name="com.google.android.maps" />
 ```
 
 uses-libraryがなくてもコンパイルは成功するので、注意が必要です。

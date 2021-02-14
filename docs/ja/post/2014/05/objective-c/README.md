@@ -3,9 +3,7 @@ title: "Objective-Cコードのフォーマットチェック"
 created: 2014-05-18T18:06:00.001+09:00
 tags: ["Objective-C","iOS","静的解析","OCLint","Xcode","フォーマッタ","fint"]
 ---
-Objective-CにはLintツールとして既にOCLintがあるが、  
-OS Xでなくても手軽にチェックできる仕組みが  
-欲しいと考えて作ってみた。  
+Objective-CにはLintツールとして既にOCLintがあるが、OS Xでなくても手軽にチェックできる仕組みが欲しいと考えて作ってみた。  
 [fint](https://github.com/ksoichiro/fint)
 <!--more-->
 以前に[Run Scriptを利用して簡単なチェックができる](http://ksoichiro.blogspot.jp/2014/03/iosxcode-xcode.html)
@@ -22,9 +20,8 @@ Go言語環境をセットアップしてあれば、以下でインストール
 go get github.com/ksoichiro/fint
 ```
 
-lint用のTARGETを追加し、Build Phaseを追加してRun Scriptにfintを
-呼び出す設定を記述する。  
-以下は、設定例。  
+lint用のTARGETを追加し、Build Phaseを追加してRun Scriptにfintを呼び出す設定を記述する。  
+以下は、設定例。
 
 ![enter image description here][2]
 

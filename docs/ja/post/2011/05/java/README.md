@@ -19,4 +19,4 @@ Javaの標準的な機能ではフィールドの定義順でフィールド情�
 
 これを使って、AndroidのParcelableの実装を汎用化しようと思います。
 
-\# Parcelable#writeToParcel(Parcel, int)やコンストラクタにフィールドを列挙するのを毎回書かずに済むようにします。
+> Parcelable#writeToParcel(Parcel, int)やコンストラクタにフィールドを列挙するのを毎回書かずに済むようにします。

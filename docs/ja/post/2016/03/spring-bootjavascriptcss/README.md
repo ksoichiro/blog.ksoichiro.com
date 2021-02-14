@@ -54,7 +54,7 @@ buildInfo {
 
 他にもやり方はいろいろあると思うが、例えばこんな感じでコミットIDを読み込めるようにする。
 
-```
+```java
 @Component
 @PropertySource("classpath:/git.properties")
 public class GitProperties {
@@ -75,7 +75,7 @@ public class GitProperties {
 
 そのため`/lib/**`に対してGitコミットIDでバージョニングしてやれば、アプリリリース時に必ず更新されるようになる。
 
-```
+```java
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
     // ↓追加
@@ -129,6 +129,5 @@ Spring Bootで上記を試して一通り動かせるようにしてあるソー
 - gradle-web-resource-plugin と gradle-build-info-plugin を使えば簡単に適用できる。
 
 (2016/03/23 追記)
-今回の実装だと、パスのパターンが変わってしまうことにより
-認証対象外としたいリソースが認証対象になってしまう可能性がある。
+今回の実装だと、パスのパターンが変わってしまうことにより認証対象外としたいリソースが認証対象になってしまう可能性がある。
 これについては次のエントリ [Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける (2)](http://ksoichiro.blogspot.com/2016/03/spring-bootjavascriptcss-2.html) で補足。
