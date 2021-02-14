@@ -4,8 +4,8 @@ created: 2016-10-30T21:22:00.001+09:00
 tags: ["Spring Security","Spring Boot"]
 ---
 以前のエントリ
-[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](https://blog.ksoichiro.com/ja/post/2016/03/spring-bootjavascriptcss/)
-[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける (2)](https://blog.ksoichiro.com/ja/post/2016/03/spring-bootjavascriptcss-2/)
+[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](/ja/post/2016/03/spring-bootjavascriptcss/)
+[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける (2)](/ja/post/2016/03/spring-bootjavascriptcss-2/)
 の方法だけだと、フィンガープリントを付けることはできてもSpring Securityによりキャッシュ無効化のヘッダが付いてしまうためキャッシュされない。
 そこで静的リソースについてはキャッシュヘッダを無効化してみて、一見 `Cache-Control: no-cache` のようなヘッダはなくなったかのように見えたが、Font Awesomeのアイコンがどうもちらつくな…と思って調べた。
 

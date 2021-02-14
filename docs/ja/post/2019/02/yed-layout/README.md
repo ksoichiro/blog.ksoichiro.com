@@ -4,7 +4,7 @@ created: 2019-02-19T00:23:00.001+09:00
 tags: ["yEd"]
 ---
 [yEd](https://www.yworks.com/products/yed) でどこまで描けるか？本当に良いかを確認するためいくつか図を描いてみる。以下の続編。
-[yEdでジョブフロー図っぽいものを描く: Edge Routing](https://blog.ksoichiro.com/ja/post/2019/02/yed-edge-routing/)
+[yEdでジョブフロー図っぽいものを描く: Edge Routing](/ja/post/2019/02/yed-edge-routing/)
 
 ## ベースとなる図
 

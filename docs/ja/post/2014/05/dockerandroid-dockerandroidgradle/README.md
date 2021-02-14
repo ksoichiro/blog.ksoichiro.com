@@ -3,7 +3,7 @@ title: "[Docker][Android] DockerでAndroidエミュレータを動かしGradle�
 created: 2014-05-02T21:58:00.005+09:00
 tags: ["Dockerfile","Docker","Android"]
 ---
-[前のエントリ](https://blog.ksoichiro.com/ja/post/2014/05/docker-dockerfile/) で書いたように、Dockerを使ってAndroidのテストをすることができる。
+[前のエントリ](/ja/post/2014/05/docker-dockerfile/) で書いたように、Dockerを使ってAndroidのテストをすることができる。
 さらに色々なパターンのテストを試していこうとVagranfile, Dockerfileに続きAndroidのテスト集を作成(以前からあったがいくつか追加)。
 [https://github.com/ksoichiro/android-tests](https://github.com/ksoichiro/android-tests)
 <!--more-->

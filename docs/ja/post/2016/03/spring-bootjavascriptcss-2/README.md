@@ -3,8 +3,8 @@ title: "Spring BootでJavaScript/CSSライブラリにフィンガープリン�
 created: 2016-03-23T02:27:00.001+09:00
 tags: ["Spring Framework","Spring Boot"]
 ---
-[Spring Bootで静的コンテンツにフィンガープリントをつける](https://blog.ksoichiro.com/ja/post/2015/04/spring-boot_14/),
-[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](https://blog.ksoichiro.com/ja/post/2016/03/spring-bootjavascriptcss/)の続き。
+[Spring Bootで静的コンテンツにフィンガープリントをつける](/ja/post/2015/04/spring-boot_14/),
+[Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける](/ja/post/2016/03/spring-bootjavascriptcss/)の続き。
 
 前回の内容だと、外部ライブラリに対してGitコミットハッシュを固定のバージョンとして付与できるが、これだと例えば`/lib/`というリソースに対して`/バージョン/lib/`というパスが生成される。
 

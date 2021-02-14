@@ -3,7 +3,7 @@ title: "Concourse CI チュートリアルの実践"
 created: 2018-12-24T22:36:00.001+09:00
 tags: ["CI","Concourse CI"]
 ---
-[前回のエントリ](https://blog.ksoichiro.com/ja/post/2018/12/ci/) でふれた Concourse CI について。
+[前回のエントリ](/ja/post/2018/12/ci/) でふれた Concourse CI について。
 チュートリアルを試したのだが、いくつか躓くポイントがあったため記録しておく。
 ※Concourse CI を批判するわけではなく、単なる記録。
 <!--more-->

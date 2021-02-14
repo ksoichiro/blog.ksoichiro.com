@@ -3,7 +3,7 @@ title: "GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-we
 created: 2015-10-30T02:48:00.001+09:00
 tags: ["CoffeeScript","LESS","Bower","npm","gulp","Gradle"]
 ---
-[前のエントリ](https://blog.ksoichiro.com/ja/post/2015/10/gradle-28spock/)で少し触れてしまったけど、少し前に作り、最近大幅に改造してひとまず仕上げたGradleプラグイン[gradle-web-resource-plugin](https://github.com/ksoichiro/gradle-web-resource-plugin)の紹介です。
+[前のエントリ](/ja/post/2015/10/gradle-28spock/)で少し触れてしまったけど、少し前に作り、最近大幅に改造してひとまず仕上げたGradleプラグイン[gradle-web-resource-plugin](https://github.com/ksoichiro/gradle-web-resource-plugin)の紹介です。
 というか、開発の経緯の説明という感じですが・・
 
 このプラグインで何ができるのかというと、GradleのタスクでCoffeeScriptやLESSのソースをコンパイルでき、Bowerで利用できるライブラリを組み込むことができる。

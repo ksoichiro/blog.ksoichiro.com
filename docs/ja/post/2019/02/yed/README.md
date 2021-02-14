@@ -6,8 +6,8 @@ tags: ["yEd"]
 [yEd](https://www.yworks.com/products/yed) の基本操作を確認する。
 内容は独立しているが、一応以下の続き。
 
-[yEdでジョブフロー図っぽいものを描く: Edge Routing](https://blog.ksoichiro.com/ja/post/2019/02/yed-edge-routing/)
-[yEdでジョブフロー図っぽいものを描く: Layout](https://blog.ksoichiro.com/ja/post/2019/02/yed-layout/)
+[yEdでジョブフロー図っぽいものを描く: Edge Routing](/ja/post/2019/02/yed-edge-routing/)
+[yEdでジョブフロー図っぽいものを描く: Layout](/ja/post/2019/02/yed-layout/)
 
 yEdをすごく気に入っているような感じになってきているが…あくまで評価の過程。
 なお、操作は Windows 10 で行っている。

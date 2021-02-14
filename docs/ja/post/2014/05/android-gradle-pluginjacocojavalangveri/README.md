@@ -75,7 +75,7 @@ buildTypes {
 すると、なんとテストが成功！
 しかしカバレッジを上げるためのテストなのにカバレッジを取らない場合でしか実行できないのでは意味がない。。。
 JaCoCo(もしくはAndroid Gradle Plugin？)が問題である可能性は高い。
-[以前のエントリ](https://blog.ksoichiro.com/ja/post/2014/05/androidgradle-jacoco/)でのように別のGradleファイルに記述することでうまく回避したいが、、、
+[以前のエントリ](/ja/post/2014/05/androidgradle-jacoco/)でのように別のGradleファイルに記述することでうまく回避したいが、、、
 前回はカバレッジ取得＋カバレッジ送信だったので分けられたが今回は同一の操作(テスト＆カバレッジ取得)なので分割しようがない。
 
 さらに見ていくと、Javassist関連でも`VerifyError`の情報が見つかる。
