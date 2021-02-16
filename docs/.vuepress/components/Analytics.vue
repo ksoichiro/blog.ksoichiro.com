@@ -21,7 +21,7 @@ export default {
       return new Promise(resolve => {
         let externalScript = document.createElement('script')
         externalScript.src = src
-        externalScript.defer = true
+        externalScript.async = true
         document.head.appendChild(externalScript)
         externalScript.onload = function () {
           resolve()
