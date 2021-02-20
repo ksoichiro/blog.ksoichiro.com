@@ -1,4 +1,5 @@
 /node_modules/
+/.nuxt/
 /docs/.vuepress/dist/
 .firebaserc
 /.firebase/

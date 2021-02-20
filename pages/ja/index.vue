@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page {
   margin-top: 2em;
 }

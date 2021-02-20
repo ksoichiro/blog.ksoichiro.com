@@ -1,14 +1,21 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vuepress dev docs",
-        "build": "vuepress build docs",
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
         "deploy": "firebase deploy",
-        "start": "npm run dev",
+        "start": "nuxt start",
         "blogger:convert": "cd tools/converter; go run main.go -f blogger.xml"
     },
     "devDependencies": {
+        "@nuxtjs/eslint-config": "^5.0.0",
+        "@nuxtjs/eslint-module": "^3.0.2",
+        "babel-eslint": "^10.1.0",
         "dayjs": "^1.10.4",
+        "eslint": "^7.20.0",
+        "eslint-plugin-nuxt": "^2.0.0",
+        "eslint-plugin-vue": "^7.6.0",
         "firebase-tools": "^9.3.0",
         "sass": "^1.32.8",
         "sass-loader": "^10.1.1",
@@ -20,7 +27,7 @@
     "dependencies": {
         "@nuxt/content": "^1.13.1",
         "core-js": "^3.9.0",
-        "nuxt": "^2.15.1",
+        "nuxt": "^2.14.12",
         "remark-breaks": "^2.0.1"
     }
 }
