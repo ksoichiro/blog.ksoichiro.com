@@ -1,0 +1,223 @@
+html, body {
+  background-color: $backgroundColor;
+}
+
+body {
+  font-family: Rubik,'M PLUS 1p','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Verdana, Meiryo, "M+ 1p", sans-serif;;
+  font-display: swap;
+}
+
+code, kbd, .line-number {
+  font-family: 'Roboto Mono',source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-display: swap;
+}
+
+.sidebar,
+.navbar
+.navbar div.links {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+}
+
+div.search-box {
+  input {
+    color: $inputTextColor;
+    background-color: $inputBackgroundColor;
+    &:focus {
+      border-color: $inputBorderColor;
+    }
+  }
+  ul.suggestions {
+    background-color: $secondaryBackgroundColor;
+  }
+  li.suggestion.focused {
+    background-color: $tertiaryBackgroundColor;
+  }
+}
+
+.dropdown-wrapper ul.nav-dropdown {
+  background-color: $secondaryBackgroundColor;
+  border-color: $secondaryBorderColor;
+}
+
+.home {
+  .hero {
+    p.description {
+      color: $homeDescriptionTextColor;
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 90%;
+    }
+  }
+}
+
+.footer-home {
+  margin-top: 2rem;
+}
+
+.page-attributes {
+  color: $secondaryTextColor;
+  font-size: smaller;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ion__svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.theme-default-content code {
+  color: $codeTextColor;
+  background-color: $codeBackgroundColor;
+  padding: 0.15rem 0.3rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.pagination > li {
+  display: inline;
+  margin: 8px 0;
+  a {
+    padding: 6px 12px;
+    outline: none;
+  }
+  &.active {
+    a {
+      color: $nord4;
+      background-color: $nord2;
+      border-radius: 4px;
+    }
+  }
+  &:not(.active) {
+    a:hover {
+      background-color: $nord1;
+      border-radius: 4px;
+    }
+  }
+}
+
+.footer {
+  color: $secondaryTextColor;
+  .copyright {
+    font-size: smaller;
+  }
+  .links {
+    a {
+      color: $secondaryTextColor;
+      font-size: 1.4rem;
+    }
+    a:hover {
+      color: $accentColor;
+    }
+  }
+}
+
+.ion {
+  display: inline;
+  svg {
+    fill: currentColor;
+  }
+}
+
+li a.sidebar-link {
+  font-weight: 300;
+  &.active {
+    font-weight: 500;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+ul li::marker {
+  color: $listBulletColor;
+}
+
+tr, th, td {
+  border-color: $tableBorderColor;
+}
+
+tr:nth-child(2n) {
+  background-color: $tableSecondaryBackgroundColor;
+}
+
+blockquote {
+  border-color: $blockquoteBorderColor;
+  color: $blockquoteTextColor;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbarThumbColor;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $scrollbarTrackColor;
+}
+
+// Palette
+
+// https://www.nordtheme.com/
+$nord0: #2E3440;
+$nord1: #3B4252;
+$nord2: #434C5E;
+$nord3: #4C566A;
+$nord4: #D8DEE9;
+$nord5: #E5E9F0;
+$nord6: #ECEFF4;
+$nord7: #8FBCBB;
+$nord8: #88C0D0;
+$nord9: #81A1C1;
+$nord10: #5E81AC;
+$nord11: #BF616A;
+$nord12: #D08770;
+$nord13: #EBCB8B;
+$nord14: #A3BE8C;
+$nord15: #B48EAD;
+
+// light
+// $accentColor: $nord10;
+// $textColor: $nord1;
+// $secondaryTextColor: $nord3;
+
+// dark
+$accentColor: $nord9;
+$textColor: $nord4;
+$secondaryTextColor: $nord5;
+$backgroundColor: $nord0;
+$secondaryBackgroundColor: $nord1;
+$tertiaryBackgroundColor: $nord2;
+$borderColor: $nord1;
+$secondaryBorderColor: $nord2;
+$homeDescriptionTextColor: $nord4;
+$inputTextColor: $nord5;
+$inputBackgroundColor: $nord3;
+$inputBorderColor: $nord2;
+$codeTextColor: $nord4;
+$codeBackgroundColor: $nord1;
+$scrollbarTrackColor: $nord2;
+$scrollbarThumbColor: $nord3;
+$listBulletColor: $nord3;
+$tableSecondaryBackgroundColor: $nord1;
+$tableBorderColor: $nord3;
+$blockquoteBorderColor: $nord3;
+$blockquoteTextColor: $nord4;
