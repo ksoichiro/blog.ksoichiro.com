@@ -12,14 +12,15 @@ export default {
     await this.insertScript('/__/firebase/8.2.6/firebase-analytics.js')
     // Initialize Firebase
     await this.insertScript('/__/firebase/init.js')
-    if (typeof firebase !== "undefined") {
-      firebase.analytics();
+    if (typeof firebase !== 'undefined') {
+      /* eslint no-undef: 0 */
+      firebase.analytics()
     }
   },
   methods: {
     insertScript (src) {
-      return new Promise(resolve => {
-        let externalScript = document.createElement('script')
+      return new Promise((resolve) => {
+        const externalScript = document.createElement('script')
         externalScript.src = src
         externalScript.async = true
         document.head.appendChild(externalScript)
