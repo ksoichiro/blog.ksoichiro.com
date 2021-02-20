@@ -1,6 +1,6 @@
 ---
 title: "[iOS][Xcode] OCLintでXcode5プロジェクトのObjective-Cソースコードを静的解析"
-createdAt: 2014-02-28T23:52:00.003+09:00
+originalCreatedAt: 2014-02-28T23:52:00.003+09:00
 tags: ["ビルド","iOS","静的解析","CMake","OCLint","Xcode","xctool"]
 ---
 Xcodeでは標準でもAnalyzeでClangによる静的解析ができますが、OCLintというツールでさらに多くのチェックができます。

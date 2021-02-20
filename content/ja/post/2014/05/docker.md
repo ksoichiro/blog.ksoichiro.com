@@ -1,6 +1,6 @@
 ---
 title: "[Docker] &lt;none&gt;のimageを一括削除"
-createdAt: 2014-05-02T21:04:00.001+09:00
+originalCreatedAt: 2014-05-02T21:04:00.001+09:00
 tags: ["Docker"]
 ---
 Dockerでいろいろ試していたら、いつの間にかREPOSITORY, TAGが "&lt;none&gt;"のimageばかりに。。。

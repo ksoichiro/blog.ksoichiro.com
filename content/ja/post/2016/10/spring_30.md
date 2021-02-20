@@ -1,6 +1,6 @@
 ---
 title: "Springのバリデーションエラーメッセージを通常メッセージに統合する"
-createdAt: 2016-10-30T19:11:00.001+09:00
+originalCreatedAt: 2016-10-30T19:11:00.001+09:00
 tags: ["Spring Boot"]
 ---
 Bean ValidationのエラーメッセージはValidationMessages.propertiesもしくはValidationMessages_ja.propertiesに書かなければならないと思っていたが、そうではなかった。

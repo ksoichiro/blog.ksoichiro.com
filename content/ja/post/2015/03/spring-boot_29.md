@@ -1,6 +1,6 @@
 ---
 title: "Spring Bootでのフロントエンド開発"
-createdAt: 2015-03-29T22:47:00.001+09:00
+originalCreatedAt: 2015-03-29T22:47:00.001+09:00
 tags: ["Bower","npm","wro4j","Spring Framework","gulp","Gradle","Spring Boot"]
 ---
 Springに[Project Sagan](https://github.com/spring-io/sagan)というのがある。

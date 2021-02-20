@@ -1,6 +1,6 @@
 ---
 title: "MacのSourceTree が異常に重たい場合の対処"
-createdAt: 2016-01-04T23:25:00.001+09:00
+originalCreatedAt: 2016-01-04T23:25:00.001+09:00
 tags: ["SourceTree","Mac","Git"]
 ---
 新年最初のエントリ、大したことのない内容ですが・・

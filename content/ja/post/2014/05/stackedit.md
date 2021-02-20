@@ -1,6 +1,6 @@
 ---
 title: "StackEditで投稿してみる"
-createdAt: 2014-05-06T02:57:00.001+09:00
+originalCreatedAt: 2014-05-06T02:57:00.001+09:00
 tags: ["StackEdit","Blogger"]
 ---
 [![](http://3.bp.blogspot.com/-mh9tel09olk/U2i7G93YPJI/AAAAAAAAMvQ/47PTRDs7jSg/s320/2014-05-06+14.00.42.png)](http://3.bp.blogspot.com/-mh9tel09olk/U2i7G93YPJI/AAAAAAAAMvQ/47PTRDs7jSg/s1600/2014-05-06+14.00.42.png)

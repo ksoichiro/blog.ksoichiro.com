@@ -1,6 +1,6 @@
 ---
 title: "Concourse CI チュートリアルの実践"
-createdAt: 2018-12-24T22:36:00.001+09:00
+originalCreatedAt: 2018-12-24T22:36:00.001+09:00
 tags: ["CI","Concourse CI"]
 ---
 [前回のエントリ](/ja/post/2018/12/ci/) でふれた Concourse CI について。

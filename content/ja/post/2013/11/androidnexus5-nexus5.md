@@ -1,6 +1,6 @@
 ---
 title: "[Android][Nexus5] Nexus5購入"
-createdAt: 2013-11-07T23:12:00.000+09:00
+originalCreatedAt: 2013-11-07T23:12:00.000+09:00
 tags: ["Nexus5","Android"]
 ---
 Nexus5を購入しました。2013/11/2の8時半にGoogle Playで購入し、11/7に届きました。

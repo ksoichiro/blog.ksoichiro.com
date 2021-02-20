@@ -1,6 +1,6 @@
 ---
 title: "Gradleで依存関係が含まれているかを判定する方法"
-createdAt: 2015-12-16T23:00:00.001+09:00
+originalCreatedAt: 2015-12-16T23:00:00.001+09:00
 tags: ["Gradle"]
 ---
 Gradleのあるプロジェクトが、あるdependencyを**直接**持っているかどうかは以下で確認できる。

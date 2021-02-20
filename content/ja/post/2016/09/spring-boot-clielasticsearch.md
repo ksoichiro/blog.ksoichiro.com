@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot CLIでElasticsearchにアクセスするクライアントを作る"
-createdAt: 2016-09-26T23:27:00.001+09:00
+originalCreatedAt: 2016-09-26T23:27:00.001+09:00
 tags: ["sdkman","Elasticsearch","Spring Boot"]
 ---
 Elasticsearchのデータ操作をサーバ上で行いたい場合に、curlでアクセすれば良いが、ちょっと複雑なことをやろうとするとシェルスクリプトでは面倒だったりする。

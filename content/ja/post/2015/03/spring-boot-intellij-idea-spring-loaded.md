@@ -1,6 +1,6 @@
 ---
 title: "Spring BootのIntelliJでのホットスワップ"
-createdAt: 2015-03-31T06:32:00.001+09:00
+originalCreatedAt: 2015-03-31T06:32:00.001+09:00
 tags: ["IntelliJ","Spring Boot"]
 ---
 ソースコードの修正に合わせて実行中のSpring Bootアプリケーションを自動的にリロードさせる方法（ホットスワップ）について。

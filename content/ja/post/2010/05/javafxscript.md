@@ -1,6 +1,6 @@
 ---
 title: "JavaFXプロジェクトでの新規Script作成"
-createdAt: 2010-05-12T20:22:00.000+09:00
+originalCreatedAt: 2010-05-12T20:22:00.000+09:00
 tags: ["JavaFX"]
 ---
 JavaFXプロジェクトをEclipseで作成する際、パッケージはあらかじめ作成しておかなければならないようです。

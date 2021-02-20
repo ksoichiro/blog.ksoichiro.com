@@ -1,6 +1,6 @@
 ---
 title: "EclipseからSubversionリポジトリにアクセスできない"
-createdAt: 2011-03-07T23:44:00.000+09:00
+originalCreatedAt: 2011-03-07T23:44:00.000+09:00
 tags: ["eclipse","Subversion"]
 ---
 PCを新しく購入したのですが(Windows7)、以前のPC(Windows XP)で使っていたNAS上のSVNリポジトリにEclipseからアクセスすることができませんでした。以下のようなエラーが発生してしまいます。

@@ -1,6 +1,6 @@
 ---
 title: "Android adbコマンドで特定端末を簡単に指定"
-createdAt: 2012-09-09T15:14:00.000+09:00
+originalCreatedAt: 2012-09-09T15:14:00.000+09:00
 tags: ["adb","Android"]
 ---
 Androidでテストやデバッグをするとき、複数の端末をつないでadbコマンドを何度も叩くことがあると思います。

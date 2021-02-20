@@ -1,6 +1,6 @@
 ---
 title: "WhatsAppにライブラリが採用された！"
-createdAt: 2015-10-25T22:41:00.001+09:00
+originalCreatedAt: 2015-10-25T22:41:00.001+09:00
 tags: ["GitHub","Android"]
 ---
 夜遅くに仕事から帰り、夜中にいつも通り(？)コーディングをしていると、意味不明な通知メールが・・・"Milestone achieved"  

@@ -1,6 +1,6 @@
 ---
 title: "Thymeleafの部品化"
-createdAt: 2016-12-31T19:10:00.001+09:00
+originalCreatedAt: 2016-12-31T19:10:00.001+09:00
 tags: ["Thymeleaf"]
 ---
 `th:fragment` によって部品を作るのは比較的簡単にできるが、類似の部品が出てきた時に、その中の一部を変更したい場合にどうするか？

@@ -1,6 +1,6 @@
 ---
 title: "Android ViewPagerを使った円形のインジケータ"
-createdAt: 2012-08-03T01:01:00.000+09:00
+originalCreatedAt: 2012-08-03T01:01:00.000+09:00
 tags: ["ViewPager","UI","Android"]
 ---
 左右にスワイプしてページを切り替えるViewPagerというものがありますが、円形のインジケータを使用したサンプルを作成しました。

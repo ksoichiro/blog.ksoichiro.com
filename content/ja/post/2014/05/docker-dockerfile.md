@@ -1,6 +1,6 @@
 ---
 title: "[Docker] Dockerfileのサンプル"
-createdAt: 2014-05-02T21:44:00.000+09:00
+originalCreatedAt: 2014-05-02T21:44:00.000+09:00
 tags: ["Java","Dockerfile","JDK","Docker","Android"]
 ---
 勉強のために、そしてCIやら色々使い方を考えるためにテンプレートとして

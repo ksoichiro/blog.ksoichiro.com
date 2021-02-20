@@ -1,6 +1,6 @@
 ---
 title: "SAStruts ボタンのラベル"
-createdAt: 2011-06-11T22:19:00.000+09:00
+originalCreatedAt: 2011-06-11T22:19:00.000+09:00
 tags: ["Java","JSP","SAStruts"]
 ---
 急にSAStrutsです。

@@ -88,11 +88,19 @@ export default {
     'content:file:beforeInsert': (document) => {
       const filePath = 'content' + document.path + document.extension
       try {
-        document.createdAt = parseInt(spawn.sync(
-          'git',
-          ['log', '-1', '--format=%at', '--follow', '--diff-filter=A', path.basename(filePath)],
-          { cwd: path.dirname(filePath) }
-        ).stdout.toString('utf-8')) * 1000
+        if (document.originalCreatedAt) {
+          // nuxt already has a feature to honor the original createdAt frontmatter,
+          // but it's impossible to distinguish where did the createdAt comes from in this hook,
+          // so I use another custom frontmatter instead.
+          document.createdAt = document.originalCreatedAt
+          delete document.originalCreatedAt
+        } else {
+          document.createdAt = parseInt(spawn.sync(
+            'git',
+            ['log', '-1', '--format=%at', '--follow', '--diff-filter=A', path.basename(filePath)],
+            { cwd: path.dirname(filePath) }
+          ).stdout.toString('utf-8')) * 1000
+        }
       } catch (e) { /* do not handle for now */ }
 
       try {

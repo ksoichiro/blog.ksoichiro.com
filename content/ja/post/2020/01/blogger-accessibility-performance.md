@@ -1,6 +1,6 @@
 ---
 title: "Blogger Accessibility Performance改善"
-createdAt: 2020-01-13T16:19:00.001+09:00
+originalCreatedAt: 2020-01-13T16:19:00.001+09:00
 tags: ["Blogger"]
 ---
 以前改善してからまた時間がたったので、改めてLighthouseの点数改善にチャレンジ。

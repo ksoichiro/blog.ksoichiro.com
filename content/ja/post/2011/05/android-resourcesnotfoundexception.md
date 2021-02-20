@@ -1,6 +1,6 @@
 ---
 title: "Android 見つけにくいResources$NotFoundExceptionの原因"
-createdAt: 2011-05-05T22:25:00.000+09:00
+originalCreatedAt: 2011-05-05T22:25:00.000+09:00
 tags: ["UI","Android"]
 ---
 TextViewに文字列や数値を表示する画面を作りました。

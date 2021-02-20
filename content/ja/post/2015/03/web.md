@@ -1,6 +1,6 @@
 ---
 title: "Webアプリケーションフレームワークを調べてみる"
-createdAt: 2015-03-27T00:53:00.001+09:00
+originalCreatedAt: 2015-03-27T00:53:00.001+09:00
 tags: ["Thymeleaf","Gradle","SBT","Spring Boot","Play Framework"]
 ---
 最近、Webアプリケーションフレームワークを使ってみながら比較している。比較、といっても深い考察ができているわけではなく素人レベルで色々試しているだけ。

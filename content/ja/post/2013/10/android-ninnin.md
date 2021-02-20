@@ -1,6 +1,6 @@
 ---
 title: "[Android] 新しいアプリを公開しました: NinNin"
-createdAt: 2013-10-15T23:13:00.000+09:00
+originalCreatedAt: 2013-10-15T23:13:00.000+09:00
 tags: ["自作アプリ","Android"]
 ---
 新しいAndroidアプリ、「情報忍者NinNin」を公開しました。

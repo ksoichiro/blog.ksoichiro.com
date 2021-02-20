@@ -1,6 +1,6 @@
 ---
 title: "Gradleプラグインのup-to-dateを確認するテスト"
-createdAt: 2016-12-31T17:47:00.001+09:00
+originalCreatedAt: 2016-12-31T17:47:00.001+09:00
 tags: ["Gradle","Spock"]
 ---
 GradleプラグインのTaskにInputとOutputを設定して、いずれかが変化した時にだけタスクが再実行されるようにしたいとき。

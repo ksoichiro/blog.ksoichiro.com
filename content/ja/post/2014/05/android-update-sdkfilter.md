@@ -1,6 +1,6 @@
 ---
 title: "android update sdkのfilterで指定できる項目名の確認方法"
-createdAt: 2014-05-10T16:56:00.001+09:00
+originalCreatedAt: 2014-05-10T16:56:00.001+09:00
 tags: ["Travis CI","Android SDK","Android"]
 ---
 [Travis CI](https://travis-ci.org)でビルドする場合などではコマンドラインでAndroid SDKをアップデートする必要がある。

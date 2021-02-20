@@ -1,6 +1,6 @@
 ---
 title: "SpringのAOPでSQLエラーをハンドリングする"
-createdAt: 2016-10-30T22:19:00.001+09:00
+originalCreatedAt: 2016-10-30T22:19:00.001+09:00
 tags: ["Spring Framework","AOP","Spring Boot"]
 ---
 Spring BootでJDBCを使っていてSQLExceptionが発生した場合に、HibernateのSqlExceptionHelperが以下のようにERRORログを出力してしまう。

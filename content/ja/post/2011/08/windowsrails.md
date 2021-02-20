@@ -1,6 +1,6 @@
 ---
 title: "WindowsでRails開発するなら…"
-createdAt: 2011-08-19T12:14:00.000+09:00
+originalCreatedAt: 2011-08-19T12:14:00.000+09:00
 tags: ["Linux","Ubuntu","Ruby on Rails","VMware Player"]
 ---
 Ruby on Railsの開発をWindowsでしようとすると、速度の遅さが気になります。

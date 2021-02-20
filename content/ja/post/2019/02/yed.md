@@ -1,6 +1,6 @@
 ---
 title: "yEdの基本的な操作方法＋α"
-createdAt: 2019-02-20T00:54:00.001+09:00
+originalCreatedAt: 2019-02-20T00:54:00.001+09:00
 tags: ["yEd"]
 ---
 [yEd](https://www.yworks.com/products/yed) の基本操作を確認する。

@@ -1,6 +1,6 @@
 ---
 title: "VSCode Extension"
-createdAt: 2020-12-21T00:42:00.002+09:00
+originalCreatedAt: 2020-12-21T00:42:00.002+09:00
 tags: ["VSCode"]
 ---
 少し前に [Status Bar Title](https://marketplace.visualstudio.com/items?itemName=ksoichiro.vscode-status-bar-title) という VSCode Extension を作った。全然大したことないのだが、2020年ももう終わりに近づくのに今年は全然書いていなかったので記録しておく。

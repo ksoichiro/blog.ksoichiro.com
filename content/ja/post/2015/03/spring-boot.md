@@ -1,6 +1,6 @@
 ---
 title: "Spring Bootでユーザ認証"
-createdAt: 2015-03-28T16:59:00.001+09:00
+originalCreatedAt: 2015-03-28T16:59:00.001+09:00
 tags: ["Java","Spring Boot"]
 ---
 Spring Bootで(というかSpring Securityのような気もするが)

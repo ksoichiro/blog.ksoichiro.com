@@ -1,6 +1,6 @@
 ---
 title: "Android Fragmentを含む画面遷移のテスト方法(JUnit)"
-createdAt: 2013-02-16T12:41:00.001+09:00
+originalCreatedAt: 2013-02-16T12:41:00.001+09:00
 tags: ["JUnit","Android"]
 ---
 Androidの画面遷移の自動テストをする方法として、ActivityInstrumentationTestCase2を使うサンプルを紹介してくださっているブログなどは見かけるのですが、 Fragmentを使った場合のものが見つからなかったのでサンプルを作ってみました。

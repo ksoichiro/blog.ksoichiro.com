@@ -1,6 +1,6 @@
 ---
 title: "[Inkscape][Android][iOS][Mac] 全サイズのアイコンファイル生成ツール"
-createdAt: 2013-09-15T16:45:00.003+09:00
+originalCreatedAt: 2013-09-15T16:45:00.003+09:00
 tags: ["Inkscape","iOS","iPad","Mac","Android","iPhone"]
 ---
 MacでInkscapeを使ってSVGのアイコンを作り、AndroidとiOSアプリを開発している人向けのツールを作りました。

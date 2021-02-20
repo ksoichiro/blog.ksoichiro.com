@@ -1,6 +1,6 @@
 ---
 title: "Spockのthenで使える表現"
-createdAt: 2015-03-28T21:40:00.001+09:00
+originalCreatedAt: 2015-03-28T21:40:00.001+09:00
 tags: ["Spock Framework","Groovy"]
 ---
 Groovyのテスティングフレームワーク[Spock Framework](https://code.google.com/p/spock/)ではthenの部分に合格条件を記述するが、一行で一つのbooleanを表現する必要がある。

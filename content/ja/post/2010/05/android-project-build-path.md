@@ -1,6 +1,6 @@
 ---
 title: "Android Project - Build Pathエラー"
-createdAt: 2010-05-07T22:59:00.000+09:00
+originalCreatedAt: 2010-05-07T22:59:00.000+09:00
 tags: ["eclipse","Android"]
 ---
 Android Projectを作成すると、早速エラーが出ました。

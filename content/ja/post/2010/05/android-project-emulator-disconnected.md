@@ -1,6 +1,6 @@
 ---
 title: "Android Project - emulator disconnected"
-createdAt: 2010-05-08T00:11:00.003+09:00
+originalCreatedAt: 2010-05-08T00:11:00.003+09:00
 tags: ["eclipse","Android"]
 ---
 Android Projectを作成して、デフォルトの状態のまま実行してみたのですが、何度実行しても下記のようなメッセージが表示され実行できません。

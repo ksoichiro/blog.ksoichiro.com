@@ -1,6 +1,6 @@
 ---
 title: "Thymeleafのlayoutを使う"
-createdAt: 2015-04-14T01:09:00.001+09:00
+originalCreatedAt: 2015-04-14T01:09:00.001+09:00
 tags: ["Spring Framework","Thymeleaf"]
 ---
 Spring BootとThymeleafの組み合わせにおいて、`th:fragment`などの使い方は分かったが、共通のレイアウト（`<head>`なども含めて）を集約するにはどうすればいいのかわからなかった。

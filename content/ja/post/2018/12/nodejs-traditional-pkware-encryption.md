@@ -1,6 +1,6 @@
 ---
 title: "Node.js での Traditional PKWARE encryption 実装の記録"
-createdAt: 2018-12-31T10:08:00.001+09:00
+originalCreatedAt: 2018-12-31T10:08:00.001+09:00
 tags: ["ライブラリ","Node.js"]
 ---
 少し前、従来のパスワードつきのZIP圧縮(Traditional PKWARE encryption)をNode.js (Lambda)で使いたかったが、ちょうどよいものが見当たらなかったので [node-archiver-zip-encryptable](https://github.com/ksoichiro/node-archiver-zip-encryptable) というものを作成したので記録しておく。

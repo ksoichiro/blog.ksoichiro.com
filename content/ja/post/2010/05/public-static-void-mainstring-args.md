@@ -1,6 +1,6 @@
 ---
 title: "Blogger Syntax Highlighter"
-createdAt: 2010-05-07T19:08:00.004+09:00
+originalCreatedAt: 2010-05-07T19:08:00.004+09:00
 tags: []
 ---
 色々と投稿する前に、コードをハイライト表示できるようにしておきたいと思います。

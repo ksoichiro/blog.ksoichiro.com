@@ -1,6 +1,6 @@
 ---
 title: "Android XMLだけでできたボタン"
-createdAt: 2013-04-06T18:52:00.001+09:00
+originalCreatedAt: 2013-04-06T18:52:00.001+09:00
 tags: ["ライブラリ","GitHub","UI","Android"]
 ---
 画像でなくXMLのみで作ったボタンを集めたAndroid用のライブラリをGitHubに公開しました。

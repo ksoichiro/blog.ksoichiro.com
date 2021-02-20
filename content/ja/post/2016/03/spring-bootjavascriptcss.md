@@ -1,6 +1,6 @@
 ---
 title: "Spring BootでJavaScript/CSSライブラリにフィンガープリントをつける"
-createdAt: 2016-03-21T22:37:00.001+09:00
+originalCreatedAt: 2016-03-21T22:37:00.001+09:00
 tags: ["Spring Framework","Git","Gradle","Spring Boot"]
 ---
 もう1年近く経ってしまうが、[Spring Bootで静的コンテンツにフィンガープリントをつける](/ja/post/2015/04/spring-boot_14/) の続き。

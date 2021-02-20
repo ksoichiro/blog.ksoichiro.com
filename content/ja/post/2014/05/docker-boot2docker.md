@@ -1,6 +1,6 @@
 ---
 title: "[Docker] boot2dockerでの共有フォルダ設定を忘れずに実行する"
-createdAt: 2014-05-02T22:57:00.001+09:00
+originalCreatedAt: 2014-05-02T22:57:00.001+09:00
 tags: ["boot2docker","Docker"]
 ---
 [boot2docker](https://github.com/boot2docker/boot2docker) がすごく便利。

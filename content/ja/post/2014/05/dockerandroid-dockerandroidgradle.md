@@ -1,6 +1,6 @@
 ---
 title: "[Docker][Android] DockerでAndroidエミュレータを動かしGradleによるビルド＆テストを実行"
-createdAt: 2014-05-02T21:58:00.005+09:00
+originalCreatedAt: 2014-05-02T21:58:00.005+09:00
 tags: ["Dockerfile","Docker","Android"]
 ---
 [前のエントリ](/ja/post/2014/05/docker-dockerfile/) で書いたように、Dockerを使ってAndroidのテストをすることができる。

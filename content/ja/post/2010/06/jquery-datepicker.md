@@ -1,6 +1,6 @@
 ---
 title: "jQuery DatePicker"
-createdAt: 2010-06-20T16:12:00.001+09:00
+originalCreatedAt: 2010-06-20T16:12:00.001+09:00
 tags: ["Ajax","jQuery"]
 ---
 jQueryを使ってみましたが、日付を選択できる「DatePicker」について調べてみたところ、紹介されているサイトは少し情報が古いようだったのでまとめておきます。

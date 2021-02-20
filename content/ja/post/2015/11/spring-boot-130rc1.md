@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot 1.3.0.RC1を試してみて"
-createdAt: 2015-11-06T02:33:00.001+09:00
+originalCreatedAt: 2015-11-06T02:33:00.001+09:00
 tags: ["Spring Security","Spring Boot"]
 ---
 現在Spring Bootを使ったWebアプリを開発しているのだが、Spring Boot 1.3.0のリリースを心待ちにしていて、実際にMilestone/RC版を取り込んでみている。

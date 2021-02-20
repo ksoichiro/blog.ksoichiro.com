@@ -1,6 +1,6 @@
 ---
 title: "フォーマッタの自動適用"
-createdAt: 2018-12-31T18:22:00.001+09:00
+originalCreatedAt: 2018-12-31T18:22:00.001+09:00
 tags: ["Java","フォーマッタ","Prettier"]
 ---
 前のエントリでも紹介した [node-archiver-zip-encryptable](https://github.com/ksoichiro/node-archiver-zip-encryptable) の開発では [Prettier](https://prettier.io) を適用したが、フォーマットの統一に注意を払わなくて済むのは非常に快適だった。

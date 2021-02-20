@@ -1,6 +1,6 @@
 ---
 title: "Android ioschedのDashboardLayoutをタイトルなしのダイアログで使う"
-createdAt: 2011-09-23T23:53:00.002+09:00
+originalCreatedAt: 2011-09-23T23:53:00.002+09:00
 tags: ["Google","UI","Android"]
 ---
 Google I/Oのアプリ [iosched](http://code.google.com/p/iosched/) に含まれているDashboardLayoutをカスタムダイアログで適用しようとしましたが、タイトルバーを非表示にしたところ、レイアウトが崩れてしまいました。

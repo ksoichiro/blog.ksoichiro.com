@@ -1,6 +1,6 @@
 ---
 title: "Android Preferenceの内容が他の項目に変わる"
-createdAt: 2011-05-21T16:11:00.000+09:00
+originalCreatedAt: 2011-05-21T16:11:00.000+09:00
 tags: ["Preference","UI","Android"]
 ---
 カスタマイズしたPreferenceを作りました。

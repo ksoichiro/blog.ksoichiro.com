@@ -1,6 +1,6 @@
 ---
 title: "Android Gradle PluginでJaCoCoを有効にしてテストするとjava.lang.VerifyError発生 (2)"
-createdAt: 2014-05-11T17:08:00.001+09:00
+originalCreatedAt: 2014-05-11T17:08:00.001+09:00
 tags: ["Gradle","JaCoCo","Android"]
 ---
 Android Gradle PluginでJaCoCoを使ったカバレッジ計測を試したが[java.lang.VerifyErrorが発生したというエントリ](/ja/post/2014/05/android-gradle-pluginjacocojavalangveri/)を書いた。

@@ -1,6 +1,6 @@
 ---
 title: "[Android][Gradle] ライブラリプロジェクトのJaCoCoでのカバレッジ計測"
-createdAt: 2014-05-05T21:31:00.000+09:00
+originalCreatedAt: 2014-05-05T21:31:00.000+09:00
 tags: ["Gradle","Travis CI","JaCoCo","Android","AndroidFormEnhancer"]
 ---
 Android Studioがリリースされて以来、Gradleプラグインをしばらく使っていたものの androidプラグインがjavaプラグインと共存できないせいでいろいろとできないことがあった。

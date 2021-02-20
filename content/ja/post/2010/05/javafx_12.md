@@ -1,6 +1,6 @@
 ---
 title: "最初のJavaFXプロジェクト"
-createdAt: 2010-05-12T01:33:00.000+09:00
+originalCreatedAt: 2010-05-12T01:33:00.000+09:00
 tags: ["eclipse","サンプル","JavaFX"]
 ---
 JavaFXをEclipseで開発する環境が整ったので、最初のアプリケーションを作成します。

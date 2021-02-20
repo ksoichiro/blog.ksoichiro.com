@@ -1,6 +1,6 @@
 ---
 title: "AndroidのCIでbuild-toolsの新しいバージョンが見つからない場合の対処"
-createdAt: 2015-12-06T17:55:00.001+09:00
+originalCreatedAt: 2015-12-06T17:55:00.001+09:00
 tags: ["wercker","Travis CI","Android"]
 ---
 久しぶりにAndroid-ObservableScrollViewのAndroid SDKのバージョンなどをアップデートしたが、Travis CIでもwerckerでもビルドが失敗してしまった。

@@ -1,6 +1,6 @@
 ---
 title: "ダークモードに対応"
-createdAt: 2020-01-14T22:33:00.002+09:00
+originalCreatedAt: 2020-01-14T22:33:00.002+09:00
 tags: ["Blogger"]
 ---
 このサイトもダークモードに対応しておこうと思い、`prefers-color-scheme` を使って配色を分けるようにしてみた。

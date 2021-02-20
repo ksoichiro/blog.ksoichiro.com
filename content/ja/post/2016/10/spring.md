@@ -1,6 +1,6 @@
 ---
 title: "Springのテストを速くする工夫"
-createdAt: 2016-10-09T21:24:00.001+09:00
+originalCreatedAt: 2016-10-09T21:24:00.001+09:00
 tags: ["Spring Boot"]
 ---
 Spring BootでControllerを含めたテストをする場合に、`MockMvcBuilders.webAppContextSetup()` でセットアップして `@WebIntegrationTests` にすると通常のアプリケーションとしてテストできるが、数が多くなってくると重い。
