@@ -31,7 +31,9 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const pages = await $content('post', { deep: true }).fetch()
+    const pages = await $content('post', { deep: true })
+      .sortBy('createdAt', 'desc')
+      .fetch()
     return {
       pages
     }
