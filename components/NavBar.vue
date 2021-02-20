@@ -2,7 +2,7 @@
   <div id="nav" :class="{'is-open': isMenuOpen }">
     <div class="nav-item">
       <NuxtLink :to="localePath">
-        Blog
+        memorandum
       </NuxtLink>
     </div>
     <div class="nav-item">
