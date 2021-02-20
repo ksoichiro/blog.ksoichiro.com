@@ -1,6 +1,6 @@
 ---
 title: "ElasticsearchのBouncing Results問題"
-created: 2016-12-31T22:46:00.001+09:00
+createdAt: 2016-12-31T22:46:00.001+09:00
 tags: ["Elasticsearch","Spring Boot"]
 ---
 Boucing Resultsという問題がある。検索結果に重複・欠落が起きる問題。

@@ -1,6 +1,6 @@
 ---
 title: "Constructor Injectionに変えてみる"
-created: 2017-01-05T23:23:00.001+09:00
+createdAt: 2017-01-05T23:23:00.001+09:00
 tags: ["Spring Framework"]
 ---
 [SpringでField InjectionよりConstructor Injectionが推奨される理由](http://pppurple.hatenablog.com/entry/2016/12/29/233141) を読んで、Springにおいて@Autowiredをフィールドに付与するField Injection、普通に使ってしまっているなぁ…と考えつつ、Constructor Injectionの方が確かに良さそうなので試してみた。これ自体は補足することはないが、Spring 4.2以前+Gradle+Querydslという点で少し躓いたのでメモ。

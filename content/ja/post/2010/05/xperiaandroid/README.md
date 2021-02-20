@@ -1,6 +1,6 @@
 ---
 title: "Xperia購入をきっかけにAndroidアプリ開発へ"
-created: 2010-05-07T02:19:00.004+09:00
+createdAt: 2010-05-07T02:19:00.004+09:00
 tags: ["xperia","Android"]
 ---
 先日、DocomoのスマートフォンXperiaを購入しました。

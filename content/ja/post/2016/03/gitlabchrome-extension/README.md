@@ -1,6 +1,6 @@
 ---
 title: "GitLabのページをきれいに印刷するためのChrome Extension"
-created: 2016-03-30T14:04:00.001+09:00
+createdAt: 2016-03-30T14:04:00.001+09:00
 tags: ["GitLab","CoffeeScript","Chrome Extension"]
 ---
 GitLabを使っていると、モニタを用意できない場所で打ち合わせや作業をするときに、MarkdownのドキュメントやIssueなどの内容を印刷したいシーンがある。

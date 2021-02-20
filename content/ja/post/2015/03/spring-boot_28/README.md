@@ -1,6 +1,6 @@
 ---
 title: "Spring Bootのアプリ内にパスワード生成タスクを追加"
-created: 2015-03-28T17:42:00.001+09:00
+createdAt: 2015-03-28T17:42:00.001+09:00
 tags: ["Java","Spring Boot"]
 ---
 以前のエントリ [Play Frameworkのアプリ内にパスワード生成プロジェクトを追加](/ja/post/2015/03/play-framework/)のようなことをSpring Bootで行う方法について。

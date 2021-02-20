@@ -1,6 +1,6 @@
 ---
 title: "Android (ソースコード解説) SlidingDrawerでwrap_contentを効かせつつ表示/非表示での高さを切り替える"
-created: 2011-05-04T01:08:00.001+09:00
+createdAt: 2011-05-04T01:08:00.001+09:00
 tags: ["UI","Android"]
 ---
 SlidingDrawerを使って、「Gmailアプリでチェックボックスにチェックを入れたときに表示されるボタン群」のようなものをきれいに実現する方法です。

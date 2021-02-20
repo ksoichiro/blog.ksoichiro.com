@@ -1,6 +1,6 @@
 ---
 title: "Android アノテーションでRadioButtonの値をコード値として取得"
-created: 2011-05-03T13:14:00.000+09:00
+createdAt: 2011-05-03T13:14:00.000+09:00
 tags: ["UI","Android"]
 ---
 Androidのラジオボタンは、HTMLのラジオボタンのようなvalueを持っていません。

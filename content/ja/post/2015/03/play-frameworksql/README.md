@@ -1,6 +1,6 @@
 ---
 title: "Play FrameworkでSQLで初期データ投入する方法"
-created: 2015-03-28T16:00:00.001+09:00
+createdAt: 2015-03-28T16:00:00.001+09:00
 tags: ["Java","Play Framework"]
 ---
 Play Frameworkでは、EBeanを使いYAMLで初期データを書くようだが、SpringのようにSQLファイルで初期化したい場合。

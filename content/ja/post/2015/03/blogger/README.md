@@ -1,6 +1,6 @@
 ---
 title: "Bloggerでモバイル表示時に横スクロールが発生..."
-created: 2015-03-29T18:22:00.001+09:00
+createdAt: 2015-03-29T18:22:00.001+09:00
 tags: ["CSS","Blogger","PageSpeed Insights"]
 ---
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)を使ってこのブログを色々改善しようと考えた。

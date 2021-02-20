@@ -1,6 +1,6 @@
 ---
 title: "AndroidライブラリSimpleAlertDialog"
-created: 2014-05-11T13:38:00.001+09:00
+createdAt: 2014-05-11T13:38:00.001+09:00
 tags: ["SimpleAlertDialog","Android"]
 ---
 少し前に作ったものの、紹介エントリを書いていなかったことに気づき今更ながら書いてみる。。。

@@ -1,6 +1,6 @@
 ---
 title: "iOS ステータスバーの扱い"
-created: 2013-04-21T23:55:00.000+09:00
+createdAt: 2013-04-21T23:55:00.000+09:00
 tags: ["EverForm","iOS","Default.png","iPad","起動画面"]
 ---
 「 [EverForm for iOS](https://itunes.apple.com/jp/app/everform-for-ios/id630680690?mt=8)」をiPad対応にした際に躓いたポイントです。

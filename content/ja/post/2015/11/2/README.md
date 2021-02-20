@@ -1,6 +1,6 @@
 ---
 title: "ライブラリが採用されてた！その2"
-created: 2015-11-26T22:05:00.001+09:00
+createdAt: 2015-11-26T22:05:00.001+09:00
 tags: ["GitHub","Android"]
 ---
 YouTubeの最近の新しい動画について、今朝通知メールがきて、ふとAndroid Developersチャンネルの動画が目に留まった。

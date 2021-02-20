@@ -1,6 +1,6 @@
 ---
 title: "[Android] Galaxy Nexus でのDB書き込みエラー"
-created: 2013-09-15T17:13:00.000+09:00
+createdAt: 2013-09-15T17:13:00.000+09:00
 tags: ["CWM","Galaxy Nexus","root","Android"]
 ---
 Galaxy NexusをAndroid 4.3のroot化済みで使っています。

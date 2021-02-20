@@ -1,6 +1,6 @@
 ---
 title: "Spring BootのプロファイルにGitコミットハッシュ値を含める"
-created: 2015-12-11T00:39:00.001+09:00
+createdAt: 2015-12-11T00:39:00.001+09:00
 tags: ["Git","Gradle","Spring Boot"]
 ---
 今起動しているSpring Bootアプリはどのコミットでビルドされたものなのか？

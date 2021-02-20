@@ -1,6 +1,6 @@
 ---
 title: "Android SDK 導入(3) コンポーネント"
-created: 2010-05-07T22:19:00.000+09:00
+createdAt: 2010-05-07T22:19:00.000+09:00
 tags: ["eclipse","インストール","Android"]
 ---
 ADTプラグインをEclipseに導入した後は、Android SDKのコンポーネントを追加する必要があります。

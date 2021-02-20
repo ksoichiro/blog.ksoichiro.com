@@ -1,6 +1,6 @@
 ---
 title: "Android Gradle Pluginにおけるresとresourcesフォルダ"
-created: 2014-05-10T12:33:00.001+09:00
+createdAt: 2014-05-10T12:33:00.001+09:00
 tags: ["Android Studio","Gradle","Android"]
 ---
 Android Gradle Pluginでは、`sourceSets`として以下のようなものが指定できる。

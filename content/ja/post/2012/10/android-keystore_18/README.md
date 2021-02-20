@@ -1,6 +1,6 @@
 ---
 title: "Android keystoreの操作"
-created: 2012-10-18T00:54:00.000+09:00
+createdAt: 2012-10-18T00:54:00.000+09:00
 tags: ["keystore","Android"]
 ---
 AndroidというよりはJDKの話ですが、前のエントリの続きのメモです。

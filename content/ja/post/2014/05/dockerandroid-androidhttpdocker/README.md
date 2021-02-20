@@ -1,6 +1,6 @@
 ---
 title: "[Docker][Android] AndroidアプリでHTTP通信を含むコードをDockerコンテナ内で完結させて自動テスト"
-created: 2014-05-02T22:36:00.000+09:00
+createdAt: 2014-05-02T22:36:00.000+09:00
 tags: ["Docker","Android"]
 ---
 [前回](/ja/post/2014/05/dockerandroid-dockerandroidgradle/) の続きで、DockerでAndroidの自動テストを試してみる。

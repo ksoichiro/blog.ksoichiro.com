@@ -1,6 +1,6 @@
 ---
 title: "Spring Bootのバージョン定義の集約"
-created: 2015-04-01T23:52:00.001+09:00
+createdAt: 2015-04-01T23:52:00.001+09:00
 tags: ["Gradle","Spring Boot"]
 ---
 Spring Boot 1.2.3.RELEASEが出ていたので、早速todoサンプルプロジェクトに適用してみた。

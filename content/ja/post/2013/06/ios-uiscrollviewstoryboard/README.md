@@ -1,6 +1,6 @@
 ---
 title: "iOS: UIScrollViewをStoryboardで使うときのスクロールのさせ方"
-created: 2013-06-27T21:59:00.000+09:00
+createdAt: 2013-06-27T21:59:00.000+09:00
 tags: ["iOS","UIScrollView","Storyboard","iPhone"]
 ---
 基本的なことかと思いますが、しばらく分からず時間を費やしてしまったのでメモします。

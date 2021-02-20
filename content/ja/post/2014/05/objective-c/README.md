@@ -1,6 +1,6 @@
 ---
 title: "Objective-Cコードのフォーマットチェック"
-created: 2014-05-18T18:06:00.001+09:00
+createdAt: 2014-05-18T18:06:00.001+09:00
 tags: ["Objective-C","iOS","静的解析","OCLint","Xcode","フォーマッタ","fint"]
 ---
 Objective-CにはLintツールとして既にOCLintがあるが、OS Xでなくても手軽にチェックできる仕組みが欲しいと考えて作ってみた。  

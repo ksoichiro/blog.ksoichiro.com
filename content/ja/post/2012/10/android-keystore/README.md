@@ -1,6 +1,6 @@
 ---
 title: "Android keystoreのエイリアス変更方法"
-created: 2012-10-18T00:17:00.000+09:00
+createdAt: 2012-10-18T00:17:00.000+09:00
 tags: ["Android"]
 ---
 keystoreのエイリアスを変更する方法です。

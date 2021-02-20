@@ -1,6 +1,6 @@
 ---
 title: "HerokuのGradleビルドパックでSpringアプリを動かす"
-created: 2016-10-09T12:41:00.001+09:00
+createdAt: 2016-10-09T12:41:00.001+09:00
 tags: ["Heroku","Gradle","Spring Boot"]
 ---
 以前、[JavaとNode.jsでSpringアプリを動かした](https://github.com/ksoichiro/sbac/tree/c2d1aadc524142eecaa196c57c163ee6eba20f8a)が、自作の gradle-web-resource-plugin を使えば既にJava/Gradleだけで済むようになっていることもあり、[Heroku の Gradle ビルドパック](https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-gradle)に切り替えてみた。

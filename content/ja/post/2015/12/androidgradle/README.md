@@ -1,6 +1,6 @@
 ---
 title: "AndroidのテストタスクだけGradleでログ出力する"
-created: 2015-12-01T23:06:00.001+09:00
+createdAt: 2015-12-01T23:06:00.001+09:00
 tags: ["Gradle","Travis CI","Android"]
 ---
 久々のAndroid関連ネタ。

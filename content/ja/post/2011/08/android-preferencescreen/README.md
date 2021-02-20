@@ -1,6 +1,6 @@
 ---
 title: "Android PreferenceScreenのタイトルバーをカスタマイズする"
-created: 2011-08-24T01:15:00.002+09:00
+createdAt: 2011-08-24T01:15:00.002+09:00
 tags: ["Preference","UI","Android"]
 ---
 Androidの設定画面では、PreferenceScreenをクリックすると次の階層の設定画面に進みます。

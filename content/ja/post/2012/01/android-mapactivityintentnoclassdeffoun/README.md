@@ -1,6 +1,6 @@
 ---
 title: "Android MapActivityをIntentで起動したときにNoClassDefFoundError発生"
-created: 2012-01-02T13:45:00.001+09:00
+createdAt: 2012-01-02T13:45:00.001+09:00
 tags: ["Google Maps","Android"]
 ---
 AndroidでGoogle Maps APIを使う場合に、次のようにIntentでMapActivityのサブクラスを起動するケースがあると思います。

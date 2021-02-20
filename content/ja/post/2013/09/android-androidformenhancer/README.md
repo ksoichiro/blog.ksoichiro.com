@@ -1,6 +1,6 @@
 ---
 title: "[Android] 入力チェックライブラリAndroidFormEnhancerのデモアプリ"
-created: 2013-09-16T09:54:00.000+09:00
+createdAt: 2013-09-16T09:54:00.000+09:00
 tags: ["Android","AndroidFormEnhancer"]
 ---
 [以前の投稿](/ja/post/2013/01/android/) で紹介した Androidの入力チェック用ライブラリ「AndroidFormEnhancer」ですが、デモのアプリをGoogle Playで公開しました。

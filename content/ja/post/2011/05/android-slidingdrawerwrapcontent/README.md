@@ -1,6 +1,6 @@
 ---
 title: "Android SlidingDrawerでwrap_contentを効かせつつ表示/非表示での高さを切り替える"
-created: 2011-05-04T00:21:00.000+09:00
+createdAt: 2011-05-04T00:21:00.000+09:00
 tags: ["UI","Android"]
 ---
 他の部品を隠さずにSlidingDrawerを使い、コンテンツの大きさに合わせてSlidingDrawerをレイアウトする方法についてです。この説明もタイトルも、一言でうまく伝えられないので、まずは完成イメージをまず載せます。

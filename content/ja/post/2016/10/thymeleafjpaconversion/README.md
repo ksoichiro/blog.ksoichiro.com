@@ -1,6 +1,6 @@
 ---
 title: "Thymeleaf/JPAのConversion"
-created: 2016-10-30T20:56:00.001+09:00
+createdAt: 2016-10-30T20:56:00.001+09:00
 tags: ["JPA","Thymeleaf","Spring Boot"]
 ---
 基本的な部分かもしれないが、Thymeleaf、JPAでの型変換を行う方法について。

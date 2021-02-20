@@ -1,6 +1,6 @@
 ---
 title: "Spring Data ElasticsearchのローカルのノードにHTTPでアクセスする"
-created: 2016-12-31T17:20:00.001+09:00
+createdAt: 2016-12-31T17:20:00.001+09:00
 tags: ["Elasticsearch","Spring Boot"]
 ---
 忘れがちなのでメモ。

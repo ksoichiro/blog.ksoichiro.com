@@ -1,6 +1,6 @@
 ---
 title: "Eclipse IDE for Java EE Developers"
-created: 2010-06-20T15:38:00.000+09:00
+createdAt: 2010-06-20T15:38:00.000+09:00
 tags: ["eclipse"]
 ---
 最近まで使ったことなかったのですが、データベースやアプリケーションサーバを使いながら開発するとき、通常のEclipseよりも遥かに便利でした。

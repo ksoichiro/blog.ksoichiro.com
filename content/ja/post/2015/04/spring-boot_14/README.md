@@ -1,6 +1,6 @@
 ---
 title: "Spring Bootで静的コンテンツにフィンガープリントをつける"
-created: 2015-04-14T01:37:00.001+09:00
+createdAt: 2015-04-14T01:37:00.001+09:00
 tags: ["Spring Framework","Spring Boot"]
 ---
 Spring BootではRuby on Railsのアセットパイプラインのようなものをどうやって実現するのか？というのを調べていた。

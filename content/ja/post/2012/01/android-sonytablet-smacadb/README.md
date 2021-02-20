@@ -1,6 +1,6 @@
 ---
 title: "Android SonyTablet SをMacのadbで認識させる"
-created: 2012-01-07T22:35:00.000+09:00
+createdAt: 2012-01-07T22:35:00.000+09:00
 tags: ["SonyTablet","Android"]
 ---
 SonyTablet Sを、Windowsでは接続できましたがMacで接続できず試行錯誤していましたが、

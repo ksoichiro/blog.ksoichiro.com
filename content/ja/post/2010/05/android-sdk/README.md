@@ -1,6 +1,6 @@
 ---
 title: "Android SDK 導入(1) スターターパッケージ"
-created: 2010-05-07T20:10:00.003+09:00
+createdAt: 2010-05-07T20:10:00.003+09:00
 tags: ["eclipse","xperia","インストール","Android"]
 ---
 AndroidのSDKをダウンロードし、開発環境を構築します。

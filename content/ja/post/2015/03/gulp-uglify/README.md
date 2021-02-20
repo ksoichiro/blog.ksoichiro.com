@@ -1,6 +1,6 @@
 ---
 title: "gulp-uglify使用時のエラー"
-created: 2015-03-31T07:10:00.001+09:00
+createdAt: 2015-03-31T07:10:00.001+09:00
 tags: ["JavaScript","gulp"]
 ---
 [Sagan](https://github.com/spring-io/sagan)を参考に、CSSとJavaScriptのminifyをしてみようとしたが、jQueryのminifyに失敗する。

@@ -1,6 +1,6 @@
 ---
 title: "Android Gradle PluginでJaCoCoを有効にしてテストするとjava.lang.VerifyError発生"
-created: 2014-05-11T09:46:00.001+09:00
+createdAt: 2014-05-11T09:46:00.001+09:00
 tags: ["Android Studio","Gradle","JaCoCo","Android","AndroidFormEnhancer"]
 ---
 [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer)は、Eclipseでの利用も可能にしているものの基本的にはAndroid Studioで開発し、Gradleでビルドしている。

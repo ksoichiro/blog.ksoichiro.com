@@ -1,6 +1,6 @@
 ---
 title: "Android Studio (Asset Studio) で扱える SVG 画像を Inkscape で作る場合の注意点 (グラデーション)"
-created: 2019-01-06T23:22:00.001+09:00
+createdAt: 2019-01-06T23:22:00.001+09:00
 tags: ["Inkscape","SVG","Android Studio","Android"]
 ---
 Asset Studio で、Inkscape で作成した SVG 画像を扱うとき、Inkscape 特有のタグなどのせいでエラーが発生する場合は「プレーンSVG」として保存すれば良さそう。

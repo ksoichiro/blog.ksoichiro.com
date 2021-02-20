@@ -1,6 +1,6 @@
 ---
 title: "Android ライブ壁紙設定画面の背景色"
-created: 2011-02-22T21:47:00.000+09:00
+createdAt: 2011-02-22T21:47:00.000+09:00
 tags: ["Android"]
 ---
 以下のページを参考に、ライブ壁紙の設定画面(PreferenceActivity)を作成しました。

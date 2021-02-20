@@ -1,6 +1,6 @@
 ---
 title: "Terraform: API Gatewayでdeploymentとstageでstage_nameがconflictする"
-created: 2020-01-12T00:01:00.002+09:00
+createdAt: 2020-01-12T00:01:00.002+09:00
 tags: ["AWS","Terraform"]
 ---
 プライベートでVPSを借りて動かしている古いAPIがある。これをAWSに移行しようと考えており、その過程でTerraformを使ってコード化を進めている。

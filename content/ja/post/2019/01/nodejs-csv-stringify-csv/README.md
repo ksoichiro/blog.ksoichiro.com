@@ -1,6 +1,6 @@
 ---
 title: "Node.js の csv-stringify で CSV レコード内の改行をダブルクォートで括る"
-created: 2019-01-08T22:59:00.001+09:00
+createdAt: 2019-01-08T22:59:00.001+09:00
 tags: ["npm","Node.js"]
 ---
 Node.js で [csv-stringify](https://www.npmjs.com/package/csv-stringify) による CSV 出力をする際、項目(レコード)に何種類かの文字があった場合はダブルクォートで括るようにしたい。

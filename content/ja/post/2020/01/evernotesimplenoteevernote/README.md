@@ -1,6 +1,6 @@
 ---
 title: "EvernoteからSimplenoteに移行しようとしたがEvernoteに戻った"
-created: 2020-01-14T23:14:00.002+09:00
+createdAt: 2020-01-14T23:14:00.002+09:00
 tags: ["UX","Evernote","Simplenote"]
 ---
 プライベートなメモは長らくEvernoteを使っていたが、ローカルのデータが大きくなりすぎるとか、コストを安くしたい(プレミアム版を使っていた)とか、Markdownを編集したいとか…そういった理由から、Evernoteの代替サービスを探していた。

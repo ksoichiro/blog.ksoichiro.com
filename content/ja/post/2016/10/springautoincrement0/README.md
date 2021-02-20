@@ -1,6 +1,6 @@
 ---
 title: "Springでauto_incrementなカラムに対して0を指定する"
-created: 2016-10-30T23:30:00.001+09:00
+createdAt: 2016-10-30T23:30:00.001+09:00
 tags: ["MySQL","MariaDB","Spring Boot"]
 ---
 ユニーク制約の一部にNullableなカラムを含めたいが、それではユニークにならないので回避したい。

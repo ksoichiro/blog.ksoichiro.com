@@ -1,6 +1,6 @@
 ---
 title: "Gradleで表記ゆれをチェックするプラグインgradle-spelling-plugin"
-created: 2015-11-26T22:36:00.001+09:00
+createdAt: 2015-11-26T22:36:00.001+09:00
 tags: ["Gradle"]
 ---
 [GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin](/ja/post/2015/10/gradlecoffeescriptlessbowergradle-web/)に続き、Javaプロジェクトの開発で使えるGradleプラグイン [gradle-spelling-plugin](https://github.com/ksoichiro/gradle-spelling-plugin) を作ったので紹介。

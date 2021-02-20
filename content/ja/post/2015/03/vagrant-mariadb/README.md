@@ -1,6 +1,6 @@
 ---
 title: "Vagrant + MariaDB"
-created: 2015-03-28T14:17:00.001+09:00
+createdAt: 2015-03-28T14:17:00.001+09:00
 tags: ["MariaDB","Vagrant"]
 ---
 今更書くほどの内容でもないが、、Vagrantで開発用のMariaDBサーバを作るためのメモ。

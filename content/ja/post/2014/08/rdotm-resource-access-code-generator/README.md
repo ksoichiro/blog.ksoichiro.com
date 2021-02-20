@@ -1,6 +1,6 @@
 ---
 title: "rdotm - Resource access code generator for Objective-C"
-created: 2014-08-10T16:51:00.001+09:00
+createdAt: 2014-08-10T16:51:00.001+09:00
 tags: ["iOS","Android"]
 ---
 [Qiitaにも投稿しましたが](http://qiita.com/ksoichiro/items/4befb2695b1efdff72dd)、iOSアプリ開発でもAndroidのR.javaのような仕組みでリソースに安全にアクセスする仕組みを作りました。

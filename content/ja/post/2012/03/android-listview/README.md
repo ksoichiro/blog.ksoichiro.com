@@ -1,6 +1,6 @@
 ---
 title: "Android ListViewがクリックできない原因の一例"
-created: 2012-03-31T12:03:00.001+09:00
+createdAt: 2012-03-31T12:03:00.001+09:00
 tags: ["UI","Android"]
 ---
 ListViewをカスタマイズして以下のような行のレイアウトを作成しましたが、

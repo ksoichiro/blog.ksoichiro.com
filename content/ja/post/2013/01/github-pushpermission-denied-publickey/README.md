@@ -1,6 +1,6 @@
 ---
 title: "GitHub pushすると「Permission denied (publickey)」"
-created: 2013-01-03T14:58:00.001+09:00
+createdAt: 2013-01-03T14:58:00.001+09:00
 tags: ["GitHub"]
 ---
 先日、GitHubにpushしようとしたところで と表示されてしまいました。

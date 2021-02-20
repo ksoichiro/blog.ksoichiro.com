@@ -1,6 +1,6 @@
 ---
 title: "GitLab v7.9.4 のサーバ移行とアップグレード"
-created: 2019-01-20T19:47:00.001+09:00
+createdAt: 2019-01-20T19:47:00.001+09:00
 tags: ["GitLab"]
 ---
 GitLab Omnibus Package でインストールして運用してきた古い GitLab を別のサーバに移行し、最新版にアップグレードしたい。

@@ -1,6 +1,6 @@
 ---
 title: "Google Chromeで複数のGoogleアカウントを同時に利用する"
-created: 2011-03-04T01:10:00.002+09:00
+createdAt: 2011-03-04T01:10:00.002+09:00
 tags: ["Google","Android"]
 ---
 Androidアプリ公開用に、普段使っているのアカウントとは別に新しいGoogleアカウントを取得しました。
