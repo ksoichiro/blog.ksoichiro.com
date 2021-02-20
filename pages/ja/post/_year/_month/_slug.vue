@@ -2,7 +2,7 @@
   <div>
     <nav-bar :path="article.path" locale-path="/ja/" />
     <h1>{{ article.title }}</h1>
-    <page-attribute :page="article" />
+    <page-attributes :page="article" />
     <nuxt-content :document="article" />
   </div>
 </template>
