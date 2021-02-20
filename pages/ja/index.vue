@@ -1,25 +1,25 @@
 <template>
   <div>
     <nav-bar path="/ja/" locale-path="/ja/" />
-    <div v-for="page of paginated" :key="page.slug" class="page">
+    <div v-for="p of paginated" :key="p.slug" class="page">
       <article>
         <h2>
-          <NuxtLink :to="page.path">
-            {{ page.title }}
+          <NuxtLink :to="p.path">
+            {{ p.title }}
           </NuxtLink>
         </h2>
-        <nuxt-content :document="{body: page.excerpt}" />
+        <nuxt-content :document="{body: p.excerpt}" />
       </article>
     </div>
     <div class="pagination">
       <ul>
         <li>
-          <a @click="setPage(page - 1)" :class="{'is-disabled': prevDisabled}">
+          <a :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)">
             &lt;
           </a>
         </li>
         <li>
-          <a @click="setPage(page + 1)" :class="{'is-disabled': nextDisabled}">
+          <a :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)">
             &gt;
           </a>
         </li>
@@ -38,8 +38,15 @@ export default {
   },
   data () {
     return {
-      perPage: 1,
+      perPage: 20,
       page: 1
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: 'ja'
+      }
     }
   },
   computed: {
@@ -56,13 +63,6 @@ export default {
   methods: {
     setPage (page) {
       this.page = page
-    }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: 'ja'
-      }
     }
   }
 }
