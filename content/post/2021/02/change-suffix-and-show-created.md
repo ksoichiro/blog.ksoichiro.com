@@ -114,4 +114,4 @@ I was using `frontmatter.date` to sort posts by setting it manually but it becam
 Finally I could show like the following screenshot.
 This is taken when I moved cursor on the created date on the left and title popup is shown.
 
-<img src="./image.png" width="300px" />
+<img src="/img/2021-02-change-suffix-and-show-created-image.png" width="300px" />

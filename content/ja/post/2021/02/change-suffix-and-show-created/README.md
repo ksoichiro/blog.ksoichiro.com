@@ -111,4 +111,4 @@ plugins: [
 
 以下のような表示にすることができた。左側の作成日時にカーソルをあてて title のポップアップが表示されている様子。
 
-<img src="../../../../../post/2021/02/change-suffix-and-show-created/image.png" width="300px" />
+<img src="/img/2021-02-change-suffix-and-show-created-image.png" width="300px" />
