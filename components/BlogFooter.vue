@@ -3,11 +3,11 @@
     <p class="copyright">
       &copy; 2021 ksoichiro
     </p>
-    <p class="links">
+    <div class="links">
       <a href="https://github.com/ksoichiro" aria-label="GitHub Profile" target="_blank" rel="noopener">
         <LogoGitHubIcon />
       </a>
-    </p>
+    </div>
     <Analytics />
   </div>
 </template>

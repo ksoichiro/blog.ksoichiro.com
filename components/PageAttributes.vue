@@ -1,9 +1,9 @@
 <template>
   <div class="page-attributes">
     <TimeOutlineIcon />
-    <span :title="'Created: ' + longDate(page.createdAt)">{{shortDate(page.createdAt)}}</span>
+    <span :title="'Created: ' + longDate(page.createdAt)">{{ shortDate(page.createdAt) }}</span>
     <CreateOutlineIcon v-if="page.createdAt !== page.updatedAt" />
-    <span :title="'Updated: ' + longDate(page.updatedAt)" v-if="page.createdAt !== page.updatedAt">{{shortDate(page.updatedAt)}}</span>
+    <span v-if="page.createdAt !== page.updatedAt" :title="'Updated: ' + longDate(page.updatedAt)">{{ shortDate(page.updatedAt) }}</span>
     <PageTags :tags="page.tags" :locale-path="localePath" />
   </div>
 </template>
@@ -20,11 +20,16 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 export default {
-  props: ['page'],
   components: {
     TimeOutlineIcon,
     CreateOutlineIcon,
     PageTags
+  },
+  props: {
+    page: {
+      type: Object,
+      required: true
+    }
   },
   computed: {
     localePath () {

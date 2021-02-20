@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar path="/" locale-path="/" />
-    <div v-for="p of paginated" :key="p.slug" class="page">
+    <div v-for="p of paginated" :key="p.path" class="page">
       <article>
         <h2>
           <NuxtLink :to="p.path">
