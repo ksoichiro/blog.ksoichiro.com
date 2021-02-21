@@ -1,10 +1,10 @@
 <template>
   <div>
-    <nav-bar path="/ja/" locale-path="/ja/" />
+    <nav-bar :path="localePath" :locale-path="localePath" />
     <div v-for="p of paginated" :key="p.path" class="page">
       <article>
         <h2>
-          <NuxtLink :to="p.path">
+          <NuxtLink :to="toPath(p.path)">
             {{ p.title }}
           </NuxtLink>
         </h2>
@@ -30,11 +30,18 @@
 
 <script>
 export default {
-  async asyncData ({ $content }) {
-    const pages = await $content('ja/post', { deep: true })
+  async asyncData ({ $content, params }) {
+    let { lang } = params
+    if (!lang) {
+      lang = 'en'
+    }
+    const localePath = lang === 'en' ? '/' : '/' + lang + '/'
+    const pages = await $content(lang + '/post', { deep: true })
       .sortBy('createdAt', 'desc')
       .fetch()
     return {
+      lang,
+      localePath,
       pages
     }
   },
@@ -47,7 +54,7 @@ export default {
   head () {
     return {
       htmlAttrs: {
-        lang: 'ja'
+        lang: this.lang
       }
     }
   },
@@ -65,6 +72,12 @@ export default {
   methods: {
     setPage (page) {
       this.page = page
+    },
+    toPath (path) {
+      if (path.startsWith('/en/')) {
+        return path.replace(/^\/en/, '')
+      }
+      return path
     }
   }
 }

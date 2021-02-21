@@ -21,6 +21,10 @@ export default {
       type: Array,
       required: true
     },
+    lang: {
+      type: String,
+      required: true
+    },
     localePath: {
       type: String,
       required: true
@@ -29,7 +33,7 @@ export default {
   computed: {
     tags () {
       const pages = this.pages
-        .filter(post => post.path.startsWith(this.localePath + 'post/'))
+        .filter(post => post.path.startsWith('/' + this.lang + '/post/'))
         .filter(post => post.draft !== true)
         .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
       const tags = {}
