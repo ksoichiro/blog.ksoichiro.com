@@ -6,3 +6,4 @@ tags: ["自作アプリ","Android"]
 最初のAndroidアプリとしてライブ壁紙を作ってみました。
 
 [Android Market](https://market.android.com/details?id=com.sika524.android.livewallpaper.basicwall)
+<!--more-->

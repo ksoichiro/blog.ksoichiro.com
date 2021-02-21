@@ -29,3 +29,4 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
 messages.propertiesはnative2asciiで変換せず直接マルチバイトのメッセージを書いていても動作するので、この方法の方がいいかもしれない。
 (コードレビューでも直接日本語のメッセージが読めるし)
+<!--more-->

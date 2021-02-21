@@ -15,3 +15,4 @@ https://hirakiuc.hatenablog.com/entry/2017/05/06/205846
 ```sh
 for i in $(ls -1); do if [ ! -f $i/.git/config ]; then echo "$i is not in vcs"; pushd $i > /dev/null; git init; popd > /dev/null; fi; done
 ```
+<!--more-->

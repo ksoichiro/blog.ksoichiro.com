@@ -14,3 +14,4 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 これを、`PlayScala`プラグインを適用していたせいで上手くいかなかったのであった。
 
 恥ずかしい話だが、誰かの役に立つかもしれないのでメモ。
+<!--more-->
