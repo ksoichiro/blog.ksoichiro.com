@@ -1,9 +1,11 @@
 <template>
   <div>
     <nav-bar :path="toPath(article.path)" :locale-path="localePath" />
-    <h1>{{ article.title }}</h1>
-    <page-attributes :page="article" />
-    <nuxt-content :document="article" />
+    <div class="content">
+      <h1>{{ article.title }}</h1>
+      <page-attributes :page="article" />
+      <nuxt-content :document="article" />
+    </div>
   </div>
 </template>
 

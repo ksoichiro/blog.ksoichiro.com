@@ -62,7 +62,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -76,12 +77,21 @@ export default {
     markdown: {
       remarkPlugins: [
         'remark-breaks',
-      ]
+      ],
+      prism: {
+        theme: 'prism-themes/themes/prism-nord.css'
+      }
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  styleResources: {
+    scss: [
+      '~assets/css/_var.scss'
+    ]
   },
 
   hooks: {

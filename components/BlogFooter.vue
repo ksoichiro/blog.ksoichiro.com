@@ -25,5 +25,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   text-align: center;
+  border-top: 1px solid $borderColor;
+  padding: 2.5rem;
 }
 </style>

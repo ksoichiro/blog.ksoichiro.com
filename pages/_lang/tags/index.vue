@@ -1,7 +1,10 @@
 <template>
   <div>
     <nav-bar :path="path" :locale-path="localePath" />
-    <tags :pages="pages" :lang="lang" :locale-path="localePath" />
+    <div class="content">
+      <h1>Tags</h1>
+      <tags :pages="pages" :lang="lang" :locale-path="localePath" />
+    </div>
   </div>
 </template>
 

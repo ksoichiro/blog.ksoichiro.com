@@ -1,7 +1,7 @@
 <template>
   <div id="nav" :class="{'is-open': isMenuOpen }">
     <div class="nav-item">
-      <NuxtLink :to="localePath">
+      <NuxtLink :to="localePath" class="site-name">
         memorandum
       </NuxtLink>
     </div>
@@ -75,8 +75,8 @@ export default {
 <style lang="scss" scoped>
 #nav {
   display: flex;
-  background-color: #333;
-  color: #fff;
+  background-color: $backgroundColor;
+  color: $textColor;
   align-items: center;
 
   a {
@@ -85,6 +85,7 @@ export default {
   .nav-item {
     display: block;
     padding: 1rem;
+    font-size: .9rem;
     &.dropdown {
       padding: 0;
     }
