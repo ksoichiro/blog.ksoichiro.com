@@ -8,13 +8,13 @@
     <div class="nav-item">
       <div>
         <NuxtLink :to="localePath('/tags')">
-          Tags
+          {{ $t('tags') }}
         </NuxtLink>
       </div>
     </div>
     <div class="nav-item dropdown">
       <div class="dropdown-btn">
-        Language
+        {{ $t('language') }}
         <span class="caret" />
       </div>
       <div class="dropdown-content">

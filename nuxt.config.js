@@ -82,10 +82,20 @@ export default {
           fallbackLocale: 'en',
           messages: {
             en: {
-              description: 'Blog of notes on IT, with a focus on web application development and other topics.'
+              description: 'Blog of notes on IT, with a focus on web application development and other topics.',
+              language: 'Language',
+              tags: 'Tags',
+              created: 'Created',
+              updated: 'Updated',
+              readMore: 'Read more...'
             },
             ja: {
-              description: 'Webアプリ開発などを中心としたITに関するメモのブログです。'
+              description: 'Webアプリ開発などを中心としたITに関するメモのブログです。',
+              language: '言語',
+              tags: 'タグ',
+              created: '作成',
+              updated: '更新',
+              readMore: '続きを読む...'
             }
           }
         },
