@@ -2,7 +2,7 @@
   <div>
     <span v-for="tag in Object.keys(tags)" :key="tag">
       <h2 :id="tag">
-        <router-link :to="{path: `${localePath}tags/#${tag}`}" class="header-anchor">#</router-link>
+        <router-link :to="{path: localePath('/tags#' + tag)}" class="header-anchor">#</router-link>
         {{ tag }}
       </h2>
       <ul>
@@ -22,10 +22,6 @@ export default {
       required: true
     },
     lang: {
-      type: String,
-      required: true
-    },
-    localePath: {
       type: String,
       required: true
     }

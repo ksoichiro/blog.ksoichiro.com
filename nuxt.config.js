@@ -69,7 +69,29 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'en', iso: 'en-US' },
+          { code: 'ja', iso: 'ja-JP' }
+        ],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            en: {
+              description: 'Blog of notes on IT, with a focus on web application development and other topics.'
+            },
+            ja: {
+              description: 'Webアプリ開発などを中心としたITに関するメモのブログです。'
+            }
+          }
+        },
+        vueI18nLoader: true
+      }
+    ]
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

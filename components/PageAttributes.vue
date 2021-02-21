@@ -4,7 +4,7 @@
     <span :title="'Created: ' + longDate(page.createdAt)">{{ shortDate(page.createdAt) }}</span>
     <CreateOutlineIcon v-if="page.createdAt !== page.updatedAt" />
     <span v-if="page.createdAt !== page.updatedAt" :title="'Updated: ' + longDate(page.updatedAt)">{{ shortDate(page.updatedAt) }}</span>
-    <PageTags :tags="page.tags" :locale-path="localePath" />
+    <PageTags :tags="page.tags" />
   </div>
 </template>
 
@@ -29,11 +29,6 @@ export default {
     page: {
       type: Object,
       required: true
-    }
-  },
-  computed: {
-    localePath () {
-      return this.page.path.startsWith('/ja') ? '/ja/' : '/'
     }
   },
   methods: {

@@ -5,7 +5,7 @@
       v-for="tag in tags"
       :key="tag"
       class="page-tag"
-      :to="{path: `${localePath}tags/#${tag}`}"
+      :to="{path: localePath('/tags#' + tag)}"
     >
       {{ tag }}
     </router-link>
@@ -22,10 +22,6 @@ export default {
   props: {
     tags: {
       type: Array,
-      required: true
-    },
-    localePath: {
-      type: String,
       required: true
     }
   }

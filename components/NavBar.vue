@@ -1,13 +1,13 @@
 <template>
   <div id="nav" :class="{'is-open': isMenuOpen }">
     <div class="nav-item">
-      <NuxtLink :to="localePath" class="site-name">
+      <NuxtLink :to="localePath('/')" class="site-name">
         memorandum
       </NuxtLink>
     </div>
     <div class="nav-item">
       <div>
-        <NuxtLink :to="localePath + 'tags'">
+        <NuxtLink :to="localePath('/tags')">
           Tags
         </NuxtLink>
       </div>
@@ -42,10 +42,6 @@
 export default {
   props: {
     path: {
-      type: String,
-      required: true
-    },
-    localePath: {
       type: String,
       required: true
     }
