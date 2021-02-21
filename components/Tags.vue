@@ -7,7 +7,7 @@
       </h2>
       <ul>
         <li v-for="page in tags[tag]" :key="page.path">
-          <router-link :to="{path: page.path}">{{ page.title }}</router-link>
+          <NuxtLink :to="toPath(page.path)">{{ page.title }}</NuxtLink>
         </li>
       </ul>
     </span>
@@ -48,6 +48,14 @@ export default {
         }
       }
       return tags
+    }
+  },
+  methods: {
+    toPath (path) {
+      if (path.startsWith('/en/')) {
+        return path.replace(/^\/en/, '')
+      }
+      return path
     }
   }
 }
