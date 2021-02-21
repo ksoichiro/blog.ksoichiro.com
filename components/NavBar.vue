@@ -19,12 +19,12 @@
       </div>
       <div class="dropdown-content">
         <div>
-          <NuxtLink :to="toEn(path)">
+          <NuxtLink :to="switchLocalePath('en')">
             English
           </NuxtLink>
         </div>
         <div>
-          <NuxtLink :to="toJa(path)">
+          <NuxtLink :to="switchLocalePath('ja')">
             Japanese
           </NuxtLink>
         </div>
@@ -54,15 +54,6 @@ export default {
   methods: {
     toggleMenu () {
       this.isMenuOpen = !this.isMenuOpen
-    },
-    toEn (path) {
-      return this.isJa(path) ? path.replace('/ja', '') : path
-    },
-    toJa (path) {
-      return this.isJa(path) ? path : '/ja' + path
-    },
-    isJa (path) {
-      return path && path.match(/^\/ja/)
     }
   }
 }
