@@ -20,12 +20,12 @@
       <div class="dropdown-content">
         <div>
           <NuxtLink :to="toEn(path)">
-            en
+            English
           </NuxtLink>
         </div>
         <div>
           <NuxtLink :to="toJa(path)">
-            ja
+            Japanese
           </NuxtLink>
         </div>
       </div>
@@ -78,19 +78,28 @@ export default {
   background-color: $backgroundColor;
   color: $textColor;
   align-items: center;
+  border-bottom: 1px solid $borderColor;
 
   a {
-    color: #fff;
+    color: $textColor;
   }
   .nav-item {
     display: block;
-    padding: 1rem;
     font-size: .9rem;
+    .site-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: block;
+    }
     &.dropdown {
       padding: 0;
     }
     &:first-child {
       margin-right: auto;
+      padding-left: 0.5rem;
+    }
+    & > * {
+      padding: 1rem;
     }
   }
   .menu {
@@ -114,7 +123,7 @@ export default {
       div {
         width: 18px;
         height: 2px;
-        background-color: #fff;
+        background-color: $textColor;
         margin: 4px 0;
         transition: .4s;
       }
@@ -124,7 +133,7 @@ export default {
       .nav-item:not(:first-child) {
         display: block;
         width: 100%;
-        background-color: #333;
+        background-color: $backgroundColor;
       }
       .menu {
         .bar1 {
@@ -145,16 +154,17 @@ export default {
 .dropdown {
   .dropdown-btn {
     padding: 1rem;
+    padding-right: 1.5rem !important;
     cursor: pointer;
     margin-right: 10px;
   }
   .dropdown-content {
     position: absolute;
     display: none;
-    background-color: #333;
+    background-color: $secondaryBackgroundColor;
+    border-radius: 3px;
     & > * {
-      padding: 0.25rem;
-      padding-left: 1.25rem;
+      padding: 0.5rem;
       width: 100%;
       min-width: 160px;
     }
@@ -172,6 +182,7 @@ export default {
   .dropdown {
     .dropdown-content {
       position: relative;
+      border-radius: 0;
     }
   }
 }
@@ -181,8 +192,8 @@ export default {
     content: '';
     position: absolute;
     top: 40%;
-    left: 4px;
-    border-top: 6px solid #fff;
+    left: 6px;
+    border-top: 6px solid $textColor;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
   }

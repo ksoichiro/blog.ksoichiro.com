@@ -1,29 +1,36 @@
 <template>
   <div>
     <nav-bar :path="localePath" :locale-path="localePath" />
-    <div v-for="p of paginated" :key="p.path" class="page">
-      <article>
-        <h2>
-          <NuxtLink :to="toPath(p.path)">
-            {{ p.title }}
-          </NuxtLink>
-        </h2>
-        <nuxt-content :document="{body: p.excerpt}" />
-      </article>
-    </div>
-    <div class="pagination">
-      <ul>
-        <li>
-          <a :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)">
-            &lt;
-          </a>
-        </li>
-        <li>
-          <a :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)">
-            &gt;
-          </a>
-        </li>
-      </ul>
+    <div class="content">
+      <header class="hero">
+        <h1>memorandum</h1>
+        <p>Webアプリ開発などを中心としたITに関するメモのブログです。</p>
+      </header>
+      <div v-for="p of paginated" :key="p.path" class="post">
+        <article>
+          <h2>
+            <NuxtLink :to="toPath(p.path)">
+              {{ p.title }}
+            </NuxtLink>
+          </h2>
+          <page-attributes :page="p" />
+          <nuxt-content :document="{body: p.excerpt}" />
+        </article>
+      </div>
+      <div class="pagination">
+        <ul>
+          <li>
+            <a :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)">
+              &lt;
+            </a>
+          </li>
+          <li>
+            <a :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)">
+              &gt;
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -84,10 +91,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page {
-  margin-top: 2em;
+.hero {
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
 }
-.page .nuxt-content-container h2 {
+.post:not(:first-of-type) {
+  margin-top: 4rem;
+}
+.post .nuxt-content-container h2 {
   font-size: 1.3em;
 }
 .is-disabled {
