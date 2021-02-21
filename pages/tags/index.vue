@@ -19,6 +19,15 @@ export default {
       lang,
       pages
     }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.lang
+      },
+      title: this.$t('tags'),
+      titleTemplate: '%s | memorandum'
+    }
   }
 }
 </script>

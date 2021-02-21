@@ -24,7 +24,9 @@ export default {
     return {
       htmlAttrs: {
         lang: this.lang
-      }
+      },
+      title: this.article.title,
+      titleTemplate: '%s | memorandum'
     }
   },
   methods: {
