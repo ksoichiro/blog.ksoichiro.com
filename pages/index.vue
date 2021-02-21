@@ -22,20 +22,7 @@
           </p>
         </article>
       </div>
-      <div class="pagination">
-        <ul>
-          <li>
-            <a :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)">
-              &lt;
-            </a>
-          </li>
-          <li>
-            <a :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)">
-              &gt;
-            </a>
-          </li>
-        </ul>
-      </div>
+      <pagination :page="page" :max-page="Math.ceil(pages.length / perPage)" @setPage="setPage" />
     </div>
   </div>
 </template>
@@ -68,12 +55,6 @@ export default {
   computed: {
     paginated () {
       return this.pages.slice((this.page - 1) * this.perPage, this.page * this.perPage)
-    },
-    prevDisabled () {
-      return this.page === 1
-    },
-    nextDisabled () {
-      return this.page === this.pages.length
     }
   },
   methods: {
@@ -102,10 +83,6 @@ export default {
 }
 .post .nuxt-content-container h2 {
   font-size: 1.3em;
-}
-.is-disabled {
-  pointer-events: none;
-  opacity: .5;
 }
 .read-more {
   font-size: smaller;
