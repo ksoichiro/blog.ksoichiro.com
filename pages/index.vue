@@ -15,6 +15,11 @@
           </h2>
           <page-attributes :page="p" />
           <nuxt-content :document="{body: p.excerpt}" />
+          <p class="read-more">
+            <NuxtLink :to="toPath(p.path)">
+              {{ $t('readMore') }}
+            </NuxtLink>
+          </p>
         </article>
       </div>
       <div class="pagination">
@@ -101,5 +106,8 @@ export default {
 .is-disabled {
   pointer-events: none;
   opacity: .5;
+}
+.read-more {
+  font-size: smaller;
 }
 </style>
