@@ -49,7 +49,14 @@ export default {
     return {
       htmlAttrs: {
         lang: this.lang
-      }
+      },
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('description') },
+        { hid: 'og:title', property: 'og:title', content: 'memorandum' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', content: this.$route.path },
+        { hid: 'og:description', property: 'og:description', content: this.$t('description') }
+      ]
     }
   },
   computed: {

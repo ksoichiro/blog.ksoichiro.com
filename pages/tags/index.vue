@@ -26,7 +26,14 @@ export default {
         lang: this.lang
       },
       title: this.$t('tags'),
-      titleTemplate: '%s | memorandum'
+      titleTemplate: '%s | memorandum',
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('description') },
+        { hid: 'og:title', property: 'og:title', content: this.$t('tags') },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:url', property: 'og:url', content: this.$route.path },
+        { hid: 'og:description', property: 'og:description', content: this.$t('description') }
+      ]
     }
   }
 }
