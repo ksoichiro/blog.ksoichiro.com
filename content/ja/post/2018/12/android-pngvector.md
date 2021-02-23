@@ -32,7 +32,7 @@ tags: ["Android"]
 
 結果は以下のような画像になる。
 
-![Arrow](https://lh3.googleusercontent.com/-UyrOp7-KVN0/XCdBgxgqoPI/AAAAAAAAluY/CmVl4pBIlr4PijZa6LcHm3cqXZVd-yDhgCE0YBhgL/s0/20181229001.png)
+![Arrow](/img/2018-12-android-pngvector_1.png)
 
 アニメーションを取り入れるのがより良い使い方と思われるが、目的は達成できた。
 

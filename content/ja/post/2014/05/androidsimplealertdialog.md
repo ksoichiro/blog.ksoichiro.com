@@ -40,5 +40,5 @@ new SimpleAlertDialogFragment.Builder()
 ![スクリーンショット][2]
 
 
-  [1]: https://lh5.googleusercontent.com/-smU86ryxQu4/U27_u9cbbyI/AAAAAAAAMwA/8_Er3p1mIG4/s0/ic_launcher.png "SimpleAlertDialog"
-  [2]: https://lh3.googleusercontent.com/-WP2UCuUaiV8/U27-pv0-xjI/AAAAAAAAMvw/TLiuEQO22JM/s0/screenshot_custom.png "ダイアログスタイルのカスタマイズ"
+  [1]: /img/2014-05-androidsimplealertdialog_1.png "SimpleAlertDialog"
+  [2]: /img/2014-05-androidsimplealertdialog_2.png "ダイアログスタイルのカスタマイズ"

@@ -36,7 +36,7 @@ $ vagrant up es1 es2 es3
 Elasticsearchが提供しているサンプルデータ accounts.json を使い、Bulk APIで投入。  
 投入後にhead pluginで確認すると以下のような状態。
 
-![クラスタ](https://lh3.googleusercontent.com/-6ULTGMPx8A4/WGexpwaZGMI/AAAAAAAAQ34/_iNifJMNmdw3QKAJnyHS3crgd-Xp0nUBgCLcB/s600/head.png "head.png")
+![クラスタ](/img/2016-12-elasticsearchbouncing-results_1.png "head.png")
 
 そして検索。
 事象が再現しやすいように、ページのサイズを1にし、データの重複が多い "age" をそーと条件にして検索。

@@ -10,7 +10,7 @@ tags: []
 
 これは現時点のコントリビューションの状況。
 
-![GitHub contribution](https://lh3.googleusercontent.com/-Q9FjQioMDQs/VaDOlF6IdHI/AAAAAAAAO7Y/-WTXCws8-DE/s600/contributions-20150711.png "contributions-20150711.png")
+![GitHub contribution](/img/2015-07-blog-post_1.png "contributions-20150711.png")
 
 思いのほか、気づきがあって良かったと思う。きっかけを与えてくれた2人に感謝。  
 自分がこんなエントリを書くとはおこがましいという感覚があるのだけれど、2人の意見を聞いて、もしかしたらこの話をオープンにしたら誰かの役に立つかもと思い、一度Secret Gistとして書いたものをもう一度時間を取って振り返り、バックグラウンドの説明を含めたりしつつ書き改めてみた。

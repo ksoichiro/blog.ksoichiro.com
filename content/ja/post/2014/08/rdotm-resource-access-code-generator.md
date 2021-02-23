@@ -227,4 +227,4 @@ Sorry for my bad English.
 If you have any questions, requests, or something
 please contact me by comment form or [GitHub issue](https://github.com/ksoichiro/rdotm/issues).
 
-  [1]: https://lh5.googleusercontent.com/-qrrNq3XyigU/U-cc9FNBnBI/AAAAAAAANZM/Xi3R9IdDHlc/s600/demo.gif "demo.gif"
+  [1]: /img/2014-08-rdotm-resource-access-code-generator_1.gif "demo.gif"

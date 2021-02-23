@@ -6,7 +6,7 @@ tags: ["VIM"]
 これもまた少し前の話になるが、vim スクリプトで簡単なタスク管理用スクリプトを作った。
 結果は以下のようなイメージ。
 
-![TODO](https://lh3.googleusercontent.com/--Afjw5aTzwY/XCl2CQ-izAI/AAAAAAAAlzI/togaeQhdca4y8gzl9DbvsWjcKmuD06quQCKgBGAs/s0/20181231001.png)
+![TODO](/img/2018-12-vim_1.png)
 `~/.vimrc`
 
 ### 要件

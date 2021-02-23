@@ -30,6 +30,6 @@ lint用のTARGETを追加し、Build Phaseを追加してRun Scriptにfintを呼
 ![enter image description here][3]
 
 
-  [1]: https://lh3.googleusercontent.com/-FpAU0Wg20Ak/U3h1XsqofuI/AAAAAAAAMxw/XCwcgukF8Fk/s600/2014-05-18+17.50.58.png "2014-05-18 17.50.58.png"
-  [2]: https://lh5.googleusercontent.com/-JgtUpvheit0/U3h2bGUAnlI/AAAAAAAAMyA/loeey1yNl7U/s600/2014-05-18+17.54.12.png "2014-05-18 17.54.12.png"
-  [3]: https://lh4.googleusercontent.com/-vjVt9vCuzqk/U3h3cHG3PTI/AAAAAAAAMyU/Nwo9DNK6loA/s600/2014-05-18+18.02.53.png "2014-05-18 18.02.53.png"
+  [1]: /img/2014-05-objective-c_1.png "2014-05-18 17.50.58.png"
+  [2]: /img/2014-05-objective-c_2.png "2014-05-18 17.54.12.png"
+  [3]: /img/2014-05-objective-c_3.png "2014-05-18 18.02.53.png"

@@ -8,14 +8,14 @@ GitLabを使っていると、モニタを用意できない場所で打ち合�
 
 以下のイメージの左側のように余白がかなり入ってしまうのだが、これを除去して(右側)きれいに印刷できるようにする。
 
-![イメージ](https://lh3.googleusercontent.com/-IygQDuaLuLo/VvtY_psv0rI/AAAAAAAAQSo/xrl44WgtyDAgPcuz5xjPiEjtuoyEgxYpA/s600/screenshot.png "screenshot.png")
+![イメージ](/img/2016-03-gitlabchrome-extension_1.png "screenshot.png")
 
 <!--more-->
 
 使い方は、印刷したいページでExtensionのボタンを押すだけ。
 適用されている間は以下のように画面上部に適用されている旨が表示されるようになっている。
 
-![適用中](https://lh3.googleusercontent.com/-Dc9VlO_q96k/VvtZi0ECywI/AAAAAAAAQS4/iJJqT_kaVVc85jweTCcjw-4z1SeODEm0w/s600/screenshot2.png "screenshot2.png")
+![適用中](/img/2016-03-gitlabchrome-extension_2.png "screenshot2.png")
 
 (以下、中身の実装、設計等のメモ)
 

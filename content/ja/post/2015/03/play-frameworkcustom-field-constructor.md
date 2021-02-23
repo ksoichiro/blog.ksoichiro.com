@@ -5,7 +5,7 @@ tags: ["Play Framework"]
 ---
 Play Framework (2.3.8)では、Scalaでテンプレートを書くようになっているが、以下のようなフォームを作りたい場合に`@helper.form`でフォームを作ると`<dd>`タグなどでレイアウトされてしまい思うようにならない。
 
-![formのイメージ](https://lh3.googleusercontent.com/-ZBWgN1qx2E8/VRZTC2RtH6I/AAAAAAAAOvI/Q29M8POJw04/s600/Screenshot+2015-03-28+16.03.14.png "Screenshot 2015-03-28 16.03.14.png")
+![formのイメージ](/img/2015-03-play-frameworkcustom-field-constructor_1.png "Screenshot 2015-03-28 16.03.14.png")
 
 そこでCustom Field Constructorを定義する。
 
