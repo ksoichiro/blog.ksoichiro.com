@@ -6,13 +6,13 @@
       <page-attributes :page="article" />
       <nuxt-content :document="article" />
       <div class="nav-pages">
-        <NuxtLink v-if="prev" :to="{path: prev.path}" class="prev" :title="prev.title">
+        <NuxtLink v-if="prev" :to="{path: toPath(prev.path)}" class="prev" :title="prev.title">
           &leftarrow;
           <span class="title">
             {{ prev.title }}
           </span>
         </NuxtLink>
-        <NuxtLink v-if="next" :to="{path: next.path}" class="next" :title="next.title">
+        <NuxtLink v-if="next" :to="{path: toPath(next.path)}" class="next" :title="next.title">
           <span class="title">
             {{ next.title }}
           </span>
