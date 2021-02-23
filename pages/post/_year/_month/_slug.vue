@@ -5,6 +5,20 @@
       <h1>{{ article.title }}</h1>
       <page-attributes :page="article" />
       <nuxt-content :document="article" />
+      <div class="nav-pages">
+        <NuxtLink v-if="prev" :to="{path: prev.path}" class="prev" :title="prev.title">
+          &leftarrow;
+          <span class="title">
+            {{ prev.title }}
+          </span>
+        </NuxtLink>
+        <NuxtLink v-if="next" :to="{path: next.path}" class="next" :title="next.title">
+          <span class="title">
+            {{ next.title }}
+          </span>
+          &rightarrow;
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
@@ -15,9 +29,16 @@ export default {
     const { year, month, slug } = params
     const lang = app.i18n.locale
     const article = await $content(lang, 'post', year, month, slug).fetch()
+    const [prev, next] = await $content(lang, 'post', { deep: true })
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .surround(article.path)
+      .fetch()
     return {
       lang,
-      article
+      article,
+      prev,
+      next
     }
   },
   head () {
@@ -46,3 +67,28 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.nav-pages {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .5rem;
+  grid-gap: .5rem;
+  margin-top: 2rem;
+  border-top: 1px solid $borderColor;
+  padding-top: 2rem;
+  a {
+    display: flex;
+    .title {
+      display: block;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &.next {
+      text-align: right;
+    }
+  }
+}
+</style>
