@@ -121,6 +121,13 @@ div.search-box {
   }
 }
 
+.post,
+.content {
+  p img {
+    max-width: 100%;
+  }
+}
+
 .theme-default-content code {
   color: $codeTextColor;
   background-color: $codeBackgroundColor;
