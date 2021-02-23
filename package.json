@@ -6,7 +6,8 @@
         "generate": "nuxt generate",
         "deploy": "firebase deploy",
         "start": "nuxt start",
-        "blogger:convert": "cd tools/converter; go run main.go -f blogger.xml"
+        "blogger:convert": "cd tools/converter; go run main.go -f blogger.xml",
+        "tools:extractimg": "cd tools/extractimg; go run main.go"
     },
     "devDependencies": {
         "@nuxtjs/eslint-config": "^5.0.0",
