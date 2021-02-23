@@ -12,6 +12,7 @@
             {{ prev.title }}
           </span>
         </NuxtLink>
+        <div v-else class="prev" />
         <NuxtLink v-if="next" :to="{path: toPath(next.path)}" class="next" :title="next.title">
           <span class="title">
             {{ next.title }}
