@@ -15,7 +15,7 @@ tags: ["eclipse","JDK","インストール","JavaFX"]
 
 [Download Now]をクリックします。
 
-[![](http://2.bp.blogspot.com/_rtlYXd55yO0/S-Vi1BBC_tI/AAAAAAAAFMQ/qm1a9L9NFeQ/s320/WS000010.BMP)](http://2.bp.blogspot.com/_rtlYXd55yO0/S-Vi1BBC_tI/AAAAAAAAFMQ/qm1a9L9NFeQ/s1600/WS000010.BMP)
+[![](/img/2010-05-javafx_1.png)](/img/2010-05-javafx_1.png)
 
 ダウンロードできるものがいくつかありますが、[JavaFX 1.3 SDK Production Suite]を使用することにします。
 

@@ -15,23 +15,23 @@ UIView
 
 以下はStoryboardでのイメージです。
 
-[![](http://4.bp.blogspot.com/-uiNBuPr6nsE/UcwyRvmDsAI/AAAAAAAALpY/Y8MeVJ_zyS0/s268/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.24.40.png)](http://4.bp.blogspot.com/-uiNBuPr6nsE/UcwyRvmDsAI/AAAAAAAALpY/Y8MeVJ_zyS0/s268/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.24.40.png)
+[![](/img/2013-06-ios-uiscrollviewstoryboard_1.png)](/img/2013-06-ios-uiscrollviewstoryboard_1.png)
 
 サイズにフォーカスしてStoryboardの内容を掲載します。
 
 まず、ルートのViewは当然ながらウィンドウのサイズになります。
 
-[![](http://3.bp.blogspot.com/-W8J2_JHuKGw/UcwyTjVJlAI/AAAAAAAALpg/LGet7LoU0oQ/s640/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.24.55.png)](http://3.bp.blogspot.com/-W8J2_JHuKGw/UcwyTjVJlAI/AAAAAAAALpg/LGet7LoU0oQ/s1480/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.24.55.png)
+[![](/img/2013-06-ios-uiscrollviewstoryboard_2.png)](/img/2013-06-ios-uiscrollviewstoryboard_2.png)
 
 その子ビューとしてUIScrollViewがあり、このサイズは親ウィンドウのサイズにしておきます。
 この中身に入るビューの大きさにしないように注意です。
 
-[![](http://3.bp.blogspot.com/-PtNyA91sWxA/UcwyT78YTOI/AAAAAAAALpk/NcE5lKlUh30/s640/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.25.01.png)](http://3.bp.blogspot.com/-PtNyA91sWxA/UcwyT78YTOI/AAAAAAAALpk/NcE5lKlUh30/s1480/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.25.01.png)
+[![](/img/2013-06-ios-uiscrollviewstoryboard_3.png)](/img/2013-06-ios-uiscrollviewstoryboard_3.png)
 
 さらにその子ですが、実際に表示したい大きさを設定します。
 (ウィンドウより大きいサイズ)
 
-[![](http://2.bp.blogspot.com/-BdojBK76eMI/UcwyVScrynI/AAAAAAAALpw/rlNi6sAiEXI/s640/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.25.06.png)](http://2.bp.blogspot.com/-BdojBK76eMI/UcwyVScrynI/AAAAAAAALpw/rlNi6sAiEXI/s1480/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2013-06-27+21.25.06.png)
+[![](/img/2013-06-ios-uiscrollviewstoryboard_4.png)](/img/2013-06-ios-uiscrollviewstoryboard_4.png)
 
 そして、ScrollViewとその子ビューのOutletを用意します。
 ViewControllerでは以下のようにcontentSizeプロパティを設定します。

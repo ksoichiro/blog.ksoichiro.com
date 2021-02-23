@@ -44,7 +44,7 @@ exit $has_error
 
 画面イメージです。
 
-[![](http://2.bp.blogspot.com/-Qzv1mRDoz9g/UxCxRnFPIiI/AAAAAAAAMfU/MQZ7gLC-UBI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.40.54.png)](http://2.bp.blogspot.com/-Qzv1mRDoz9g/UxCxRnFPIiI/AAAAAAAAMfU/MQZ7gLC-UBI/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.40.54.png)
+[![](/img/2014-03-iosxcode-xcode_1.png)](/img/2014-03-iosxcode-xcode_1.png)
 
 上記のチェック内容でビルドすると、
 
@@ -55,6 +55,6 @@ exit $has_error
 と書いた箇所に以下のように警告が表示されます。
 警告が出たら「Build Failed」、出なければ「Build Succeeded」となります。
 
-[![](http://3.bp.blogspot.com/--m8XATJMyRg/UxCxvbtdTPI/AAAAAAAAMfc/zX6PQHUA7lU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.42.13.png)](http://3.bp.blogspot.com/--m8XATJMyRg/UxCxvbtdTPI/AAAAAAAAMfc/zX6PQHUA7lU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-03-01+0.42.13.png)
+[![](/img/2014-03-iosxcode-xcode_2.png)](/img/2014-03-iosxcode-xcode_2.png)
 
 チェックのパターンは、上記ではシェルスクリプト内に直接書いていますが、別のファイルにして読み込むようにすれば、スクリプト自体のメンテナンスもしやすくなりそうです。

@@ -10,7 +10,7 @@ tags: ["yEd"]
 
 前回同様に以下をいじってみる。
 
-![](https://lh3.googleusercontent.com/wd-NNWr9nHpDcs4xsPfaiTXjuK5HIpYGXzj1-g4zIxAYIbulZDbTI41uKufhN1zxmYG-CnjDV2Jh5g=s0)
+![](/img/2019-02-yed-layout_1.png)
 
 レイアウトといいながらEdge Routingから入ってしまったが、今回はメニューのLayout直下の項目を試す。
 <!--more-->
@@ -18,64 +18,64 @@ tags: ["yEd"]
 
 階層構造。フローチャートに向いているかも。
 
-![](https://lh3.googleusercontent.com/Q9eAeZstc595ksyGyrGt4JM9GDi-4SEXqGu4gqzKveKOyl6hHP1oMFziZpmDaEv4hifiA6opP_m9DA=s0)
+![](/img/2019-02-yed-layout_2.png)
 
 ### Organic
 
 実行するたびに微妙に変わる。
 
-![](https://lh3.googleusercontent.com/QXaHxVT_VA2U-sFZBU4RpZUfqchxdDKgiGr66LvLcB8yVpMG9efLm580oW6-FiLEk6IWTG3VaUrwnQ=s0)
+![](/img/2019-02-yed-layout_3.png)
 
 ### Orthogonal > Classic
 
-![](https://lh3.googleusercontent.com/egic4Vtgfyz9KIKntKXdht5dQyRUTO2nre8COvekvchR94OBjasz77EtymwhFjwKGaEvoffCEONNzQ=s0)
+![](/img/2019-02-yed-layout_4.png)
 
 ### Orthogonal > UML Style
 
-![](https://lh3.googleusercontent.com/IPAfx75Q3bp-crrDooqEyYWUlqgEvazrL92bQX2cm7duEYFLnGQeTNzFHzFV-9Sonaog3PIhTEOTtw=s0)
+![](/img/2019-02-yed-layout_5.png)
 
 ### Orthogonal > Compact
 
 コンパクトすぎる？
 
-![](https://lh3.googleusercontent.com/RzgXXnGecYNaxfATnELLPQXl6vwPpheccjwSmHQ8D1KlTbhg6jeFdpGVezi35LgQdWWfwc-qO0qiTg=s0)
+![](/img/2019-02-yed-layout_6.png)
 
 ### Orthogonal > Circular
 
 放射状な配置。
 
-![](https://lh3.googleusercontent.com/MQdEiyF3tlwcRQD4Y-1Yl_VTzSd2I2bm55qR9NAoQ_jjGldGtKjZoh1VVV82RsiG2-jT4odzpPALiw=s0)
+![](/img/2019-02-yed-layout_7.png)
 
 ### Tree > Directed
 
 Hierarchicalと似ている。
 
-![](https://lh3.googleusercontent.com/j7XoZIFDdEI7DlnFWSfynsOsGdLCTYelHMYCGD19ijOoAyVqowDfJ4G6lNXwXZT6TaVJNBkSOH8npg=s0)
+![](/img/2019-02-yed-layout_8.png)
 
 Tree＞Directedの設定画面でDirectedタブを開き、OrientationをBottom To Topにすると以下のようになる。
 
-![](https://lh3.googleusercontent.com/O_diEuwpQ7C7CR-D1rIvrtHeK-od1nyGUMdAwdcQszaszKvvaC7fbw1CDKy4zJTpP_UX2muXwenCvg=s0)
+![](/img/2019-02-yed-layout_9.png)
 
 OrientationをRight To Leftにすると以下。
 
-![](https://lh3.googleusercontent.com/kcaCpeO_S-ekYZ3e5HcIoKmEhGfxwKRWnhvXL87k_JZKq3XlN-J1eBMe7XXnb51nia_XOEQsnZm_Cg=s0)
+![](/img/2019-02-yed-layout_10.png)
 
 ### Tree > Balloon
 
 Organicと違って何度やっても同じ配置。
 
-![](https://lh3.googleusercontent.com/W-17koIjGi5Ukll11fsWWSV5UN9FSk6zkuum2yA-b91NlDVMENhRnA5bw4Fp89prL2rV1WxzlUofig=s0)
+![](/img/2019-02-yed-layout_11.png)
 
 ### Radial
 
 こちらが本当の放射状らしい。
 
-![](https://lh3.googleusercontent.com/dAoQvI0o2Kl5G0Lef1gizk_LksXWkVLrMmL3Rfy2HWATpTiE2XsAiRM5WJLzyVkxxfSsfzdoPSAgeQ=s0)
+![](/img/2019-02-yed-layout_12.png)
 
 ### Series Parallel
 
 トーナメント表っぽい配置。
 
-![](https://lh3.googleusercontent.com/KpdHSx5U8iPrsxLwrLTuc4xR5Fqpo-KmxALPFpWBWPEfPiWofBKQAWEMAe4NYWzt_jjTY0QTa5LD2w=s0)
+![](/img/2019-02-yed-layout_13.png)
 
 パラメータを変えるとさらにいろいろできそうだが、今回はここまで。

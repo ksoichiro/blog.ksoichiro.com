@@ -13,6 +13,6 @@ tags: ["UI","Android","ListView"]
 
 というパターンです。(以下のイメージ)
 
-[![](http://2.bp.blogspot.com/-TK99ULK0m1E/UXax3LS9i-I/AAAAAAAAK_Y/fHy-_ueaS8I/s200/device-2013-04-24-010451_edited.png)](http://2.bp.blogspot.com/-TK99ULK0m1E/UXax3LS9i-I/AAAAAAAAK_Y/fHy-_ueaS8I/s1600/device-2013-04-24-010451_edited.png)
+[![](/img/2013-04-android-listview_1.png)](/img/2013-04-android-listview_1.png)
 
 リスナーの設定はsetOnItemSelectedListener()ではなくsetOnItemClickListener()であること、 項目を初期選択させるのはsetSelection()ではなくsetItemChecked()であることが注意する点でしょうか。

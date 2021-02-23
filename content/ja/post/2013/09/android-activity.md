@@ -16,7 +16,7 @@ tags: ["Android"]
 などなど、初期画面を表示するまでの時間だけスプラッシュを表示しておきたいという場合があると思います。 そんな場合の対処方法です。
 起動直後、こんな画面を表示させます。(小さいアイコンだけで寂しいですが、サンプルですので…)
 
-[![](http://2.bp.blogspot.com/-aRkJwtQO5rA/UjZPi9S8z0I/AAAAAAAALuk/6T103jFwM4c/s320/device-2013-09-16-092228.png)](http://2.bp.blogspot.com/-aRkJwtQO5rA/UjZPi9S8z0I/AAAAAAAALuk/6T103jFwM4c/s1600/device-2013-09-16-092228.png)
+[![](/img/2013-09-android-activity_1.png)](/img/2013-09-android-activity_1.png)
 
 まず、アプリ全体では背景のみのテーマを設定します。
 AndroidManifest.xmlのapplicationタグ(android:theme)に、起動時のみ使うテーマを設定します。

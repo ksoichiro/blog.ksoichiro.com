@@ -20,6 +20,6 @@ Evernoteの使い方は様々だと思いますが、Webのクリップだけで
 
 (\*)実は、前述のAndroid版ではまだ対応できていないのですが、近々対応する予定です。
 
-[![](http://3.bp.blogspot.com/-K_5_2B5JENE/UWlntk0qcDI/AAAAAAAAK-M/x4wc5tTFxIU/s200/iPhone_3.5inch_ja_1.png)](http://3.bp.blogspot.com/-K_5_2B5JENE/UWlntk0qcDI/AAAAAAAAK-M/x4wc5tTFxIU/s1600/iPhone_3.5inch_ja_1.png)[![](http://3.bp.blogspot.com/-hA4Jp67cpLk/UWlnwWffxCI/AAAAAAAAK-U/iWD3huEBdQs/s200/iPhone_3.5inch_ja_2.png)](http://3.bp.blogspot.com/-hA4Jp67cpLk/UWlnwWffxCI/AAAAAAAAK-U/iWD3huEBdQs/s1600/iPhone_3.5inch_ja_2.png)[![](http://3.bp.blogspot.com/-Yz9GOYIAEDM/UWlnxxbOBII/AAAAAAAAK-c/y8Dab2mk0Fs/s200/iPhone_3.5inch_ja_3.png)](http://3.bp.blogspot.com/-Yz9GOYIAEDM/UWlnxxbOBII/AAAAAAAAK-c/y8Dab2mk0Fs/s1600/iPhone_3.5inch_ja_3.png)[![](http://2.bp.blogspot.com/-FiCABWBtWp4/UWlnzufWpaI/AAAAAAAAK-k/m5LACp6mQLw/s200/iPhone_3.5inch_ja_4.png)](http://2.bp.blogspot.com/-FiCABWBtWp4/UWlnzufWpaI/AAAAAAAAK-k/m5LACp6mQLw/s1600/iPhone_3.5inch_ja_4.png)
+[![](/img/2013-04-everform-for-ios_1.png)](/img/2013-04-everform-for-ios_1.png)[![](/img/2013-04-everform-for-ios_2.png)](/img/2013-04-everform-for-ios_2.png)[![](/img/2013-04-everform-for-ios_3.png)](/img/2013-04-everform-for-ios_3.png)[![](/img/2013-04-everform-for-ios_4.png)](/img/2013-04-everform-for-ios_4.png)
 
 なお、ご利用になるにはEvernoteのアカウントが必要です。

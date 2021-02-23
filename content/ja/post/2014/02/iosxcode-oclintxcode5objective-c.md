@@ -106,7 +106,7 @@ oclint-json-compilation-database | sed 's/\(.*\.\m\{1,2\}:[0-9]*:[0-9]*:\)/\1 wa
 
 貼り付け後の画面は以下です。
 
-[![](http://4.bp.blogspot.com/-6P36PzvisRk/UxCdK00EbaI/AAAAAAAAMe4/DYpdxejzHXE/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.44.41.png)](http://4.bp.blogspot.com/-6P36PzvisRk/UxCdK00EbaI/AAAAAAAAMe4/DYpdxejzHXE/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.44.41.png)
+[![](/img/2014-02-iosxcode-oclintxcode5objective-c_1.png)](/img/2014-02-iosxcode-oclintxcode5objective-c_1.png)
 
 「-project」で指定しているのは、ビルド使用としているプロジェクトです。適宜名前を変更してください。
 「-scheme」で指定しているのは、対象となる Scheme です。
@@ -129,11 +129,11 @@ DuplicateしたTargetのBuild Settingsを開き、このTargetのArchitectures�
 「Standard architectures(armv7, armv7s)」に変更します。
 ※プロジェクトのArchitecturesを変えないように注意
 
-[![](http://3.bp.blogspot.com/-rtTPN3VsafI/UxCd-3YIdeI/AAAAAAAAMfE/cXrqLZ7qQ2M/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.45.33.png)](http://3.bp.blogspot.com/-rtTPN3VsafI/UxCd-3YIdeI/AAAAAAAAMfE/cXrqLZ7qQ2M/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.45.33.png)
+[![](/img/2014-02-iosxcode-oclintxcode5objective-c_2.png)](/img/2014-02-iosxcode-oclintxcode5objective-c_2.png)
 
 そして、このTargetをビルド対象にしているSchemeをOCLint TargetのScriptで「-scheme」に設定します。
 
 ここまでできたら、後はOCLint Schemeを選択してビルドです。
 すると、以下のように自動生成のままのソースコードでも見事に警告だらけになるはずです。
 
-[![](http://3.bp.blogspot.com/-MwLMtJe7m64/UxCc11BW2pI/AAAAAAAAMew/UNZJZVfecFc/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.43.22.png)](http://3.bp.blogspot.com/-MwLMtJe7m64/UxCc11BW2pI/AAAAAAAAMew/UNZJZVfecFc/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-02-28+22.43.22.png)
+[![](/img/2014-02-iosxcode-oclintxcode5objective-c_3.png)](/img/2014-02-iosxcode-oclintxcode5objective-c_3.png)

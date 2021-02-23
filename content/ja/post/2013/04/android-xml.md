@@ -6,7 +6,7 @@ tags: ["ライブラリ","GitHub","UI","Android"]
 画像でなくXMLのみで作ったボタンを集めたAndroid用のライブラリをGitHubに公開しました。
 [RichButtons](https://github.com/ksoichiro/RichButtons)
 <!--more-->
-[![](http://1.bp.blogspot.com/-kebolHwcePo/UV_ueKJghSI/AAAAAAAAK-A/RcvkQbLnkak/s320/RichButtons_screenshot_scaled.png)](http://1.bp.blogspot.com/-kebolHwcePo/UV_ueKJghSI/AAAAAAAAK-A/RcvkQbLnkak/s1600/RichButtons_screenshot_scaled.png)
+[![](/img/2013-04-android-xml_1.png)](/img/2013-04-android-xml_1.png)
 
 使い方は、RichButtons/libraryをプロジェクトとして取り込むか、中身にある実体のXMLを直接プロジェクトへコピーしていただき、 styleで定義済みのスタイルをButtonに適用します。
 

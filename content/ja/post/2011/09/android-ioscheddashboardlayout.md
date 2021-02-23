@@ -42,7 +42,7 @@ DashboardLayoutを使っているActivityのレイアウトファイルをその
 黒い空白領域ができてしまい不恰好です。
 ※タイトルらしい文字列を別に表示しているので紛らわしいですが、やりたいことは、デフォルトのタイトルバーを消した状態でDashboardLayoutを使うということです。
 
-[![](http://2.bp.blogspot.com/-JVUDMqILuUg/TnyZm-n0heI/AAAAAAAAGtU/kPagwUu48Ok/s320/device-2011-09-23-232557.png)](http://2.bp.blogspot.com/-JVUDMqILuUg/TnyZm-n0heI/AAAAAAAAGtU/kPagwUu48Ok/s1600/device-2011-09-23-232557.png)
+[![](/img/2011-09-android-ioscheddashboardlayout_1.png)](/img/2011-09-android-ioscheddashboardlayout_1.png)
 
 次にタイトルバーを消します。
 以下のようなタイトルバー非表示のダイアログ用スタイルを定義して、ダイアログのインタンス生成時に指定します。
@@ -59,7 +59,7 @@ XxxDashboardDialog dialog = new XxxDashboardDialog(this, R.style.Theme_Dialog);
 
 これを表示すると、android:layout\_height="fill\_parent"が効かず、以下のように潰れてしまいます。
 
-[![](http://1.bp.blogspot.com/-bdLPLaMgw-o/TnyapV_JiAI/AAAAAAAAGtY/mQn1zYVj9uw/s320/device-2011-09-23-232846.png)](http://1.bp.blogspot.com/-bdLPLaMgw-o/TnyapV_JiAI/AAAAAAAAGtY/mQn1zYVj9uw/s1600/device-2011-09-23-232846.png)
+[![](/img/2011-09-android-ioscheddashboardlayout_2.png)](/img/2011-09-android-ioscheddashboardlayout_2.png)
 
 これは、以下のようにandroid:layout\_weightを指定することで解決しました。
 
@@ -72,4 +72,4 @@ XxxDashboardDialog dialog = new XxxDashboardDialog(this, R.style.Theme_Dialog);
 
 以下が指定した後の表示です。
 
-[![](http://1.bp.blogspot.com/-0H72U21_BaI/TnybppyXiNI/AAAAAAAAGtc/WIJY273v7uw/s320/device-2011-09-23-233009.png)](http://1.bp.blogspot.com/-0H72U21_BaI/TnybppyXiNI/AAAAAAAAGtc/WIJY273v7uw/s1600/device-2011-09-23-233009.png)
+[![](/img/2011-09-android-ioscheddashboardlayout_3.png)](/img/2011-09-android-ioscheddashboardlayout_3.png)

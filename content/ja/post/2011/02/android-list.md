@@ -7,7 +7,7 @@ Androidでリスト表示をするサンプルを作成しました。
 <!--more-->
 実行イメージ：
 
-[![](http://2.bp.blogspot.com/-6Oo92sDduP0/TV-1YgEm-BI/AAAAAAAAFaY/nnygkswTPfA/s200/WS000003.JPG)](http://2.bp.blogspot.com/-6Oo92sDduP0/TV-1YgEm-BI/AAAAAAAAFaY/nnygkswTPfA/s1600/WS000003.JPG)
+[![](/img/2011-02-android-list_1.png)](/img/2011-02-android-list_1.png)
 
 ListActivityを継承して作成します。
 

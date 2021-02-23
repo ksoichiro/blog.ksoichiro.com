@@ -56,7 +56,7 @@ jQueryのDatePickerのドキュメントページにある以下のリンクか�
 
 以下のようになります。普通のinputタグをクリックすると、日付を選択する小さなウィンドウが表示されます。
 
-[![](http://1.bp.blogspot.com/_rtlYXd55yO0/TB29UMs961I/AAAAAAAAFR0/n6XFNo7cBTQ/s320/WS000030.BMP)](http://1.bp.blogspot.com/_rtlYXd55yO0/TB29UMs961I/AAAAAAAAFR0/n6XFNo7cBTQ/s1600/WS000030.BMP)
+[![](/img/2010-06-jquery-datepicker_1.png)](/img/2010-06-jquery-datepicker_1.png)
 
 ### カスタマイズ
 

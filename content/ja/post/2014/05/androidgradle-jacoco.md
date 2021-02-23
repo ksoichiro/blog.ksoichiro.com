@@ -16,7 +16,7 @@ Android Studioがリリースされて以来、Gradleプラグインをしばら
 <!--more-->
 Androidライブラリの [AndroidFormEnhancer](https://github.com/ksoichiro/AndroidFormEnhancer) でこれを試し、以下のようなバッジを表示することがゴール。
 
-[![](http://4.bp.blogspot.com/-52QWIKXsFhY/U2d26nrHWyI/AAAAAAAAMug/euh1PvxyauU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-05-05+20.32.14.png)](http://4.bp.blogspot.com/-52QWIKXsFhY/U2d26nrHWyI/AAAAAAAAMug/euh1PvxyauU/s1600/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88+2014-05-05+20.32.14.png)
+[![](/img/2014-05-androidgradle-jacoco_1.png)](/img/2014-05-androidgradle-jacoco_1.png)
 
 カバレッジが35％しかないですが、低いのは理由があり、デモアプリでの動作である程度カバーしていたのが今は計測できていないというため。
 ライブラリプロジェクトでは単純なJUnitテスト(あるいはInstrumentationTestCase)ならできるものの、ActivityやR(リソース)を絡めたテストがうまく実行できず。

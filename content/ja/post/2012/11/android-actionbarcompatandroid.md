@@ -37,24 +37,24 @@ EclairからJelly Beanまで動作を確認しています(エミュレータで
 
 Eclair
 
-[![](http://2.bp.blogspot.com/-bRbz8R9fgjQ/ULDseWP7QDI/AAAAAAAAKXA/5yfMaxMGzO4/s320/ActionBarCompatRev_Sample_Eclair.png)](http://2.bp.blogspot.com/-bRbz8R9fgjQ/ULDseWP7QDI/AAAAAAAAKXA/5yfMaxMGzO4/s1600/ActionBarCompatRev_Sample_Eclair.png)
+[![](/img/2012-11-android-actionbarcompatandroid_1.png)](/img/2012-11-android-actionbarcompatandroid_1.png)
 
 Froyo
 
-[![](http://4.bp.blogspot.com/-MJ49qFMOVto/ULDsfHpEupI/AAAAAAAAKXI/o-yEcUz2xW0/s320/ActionBarCompatRev_Sample_Froyo.png)](http://4.bp.blogspot.com/-MJ49qFMOVto/ULDsfHpEupI/AAAAAAAAKXI/o-yEcUz2xW0/s1600/ActionBarCompatRev_Sample_Froyo.png)
+[![](/img/2012-11-android-actionbarcompatandroid_2.png)](/img/2012-11-android-actionbarcompatandroid_2.png)
 
 Gingerbread
 
-[![](http://2.bp.blogspot.com/-FJ8aHncM1k4/ULDsfz_q-lI/AAAAAAAAKXQ/YoSoeObz0E8/s320/ActionBarCompatRev_Sample_Gingerbread.png)](http://2.bp.blogspot.com/-FJ8aHncM1k4/ULDsfz_q-lI/AAAAAAAAKXQ/YoSoeObz0E8/s1600/ActionBarCompatRev_Sample_Gingerbread.png)
+[![](/img/2012-11-android-actionbarcompatandroid_3.png)](/img/2012-11-android-actionbarcompatandroid_3.png)
 
 Honeycomb
 
-[![](http://3.bp.blogspot.com/-BbqOa0NCIeE/ULDsguU3EHI/AAAAAAAAKXY/KBISFg3bFVA/s320/ActionBarCompatRev_Sample_Honeycomb.png)](http://3.bp.blogspot.com/-BbqOa0NCIeE/ULDsguU3EHI/AAAAAAAAKXY/KBISFg3bFVA/s1600/ActionBarCompatRev_Sample_Honeycomb.png)
+[![](/img/2012-11-android-actionbarcompatandroid_4.png)](/img/2012-11-android-actionbarcompatandroid_4.png)
 
 Ice Cream Sandwich
 
-[![](http://3.bp.blogspot.com/-WmzZjyqHvpg/ULDshMDwb1I/AAAAAAAAKXg/gLVQHe69yBg/s320/ActionBarCompatRev_Sample_ICS.png)](http://3.bp.blogspot.com/-WmzZjyqHvpg/ULDshMDwb1I/AAAAAAAAKXg/gLVQHe69yBg/s1600/ActionBarCompatRev_Sample_ICS.png)
+[![](/img/2012-11-android-actionbarcompatandroid_5.png)](/img/2012-11-android-actionbarcompatandroid_5.png)
 
 Jelly Bean
 
-[![](http://4.bp.blogspot.com/-EUoaTAZnAzw/ULDsh9Kap9I/AAAAAAAAKXo/6A_WDG-075A/s320/ActionBarCompatRev_Sample_JellyBean.png)](http://4.bp.blogspot.com/-EUoaTAZnAzw/ULDsh9Kap9I/AAAAAAAAKXo/6A_WDG-075A/s1600/ActionBarCompatRev_Sample_JellyBean.png)
+[![](/img/2012-11-android-actionbarcompatandroid_6.png)](/img/2012-11-android-actionbarcompatandroid_6.png)

@@ -15,7 +15,7 @@ Android Projectを作成して、デフォルトの状態のまま実行して�
 
 Eclipseを再起動したところ、何とか起動できました。
 
-[![](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QxK5hRRAI/AAAAAAAAFLM/FfhmxHDhoHg/s320/WS000009.BMP)](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QxK5hRRAI/AAAAAAAAFLM/FfhmxHDhoHg/s1600/WS000009.BMP)
+[![](/img/2010-05-android-project-emulator-disconnected_1.png)](/img/2010-05-android-project-emulator-disconnected_1.png)
 
 以下はその時のログです。
 

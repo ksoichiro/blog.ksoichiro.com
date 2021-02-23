@@ -7,5 +7,5 @@ UINavigationBarの高さとステータスバーの高さを除いた、実際�
 
 availableWidth, availableHeightがちゃんと取れているかどうか、確かめるために少し余白を加えて背景色をつけたUITextViewを表示してみました(iPhone4S)。
 
-[![](http://2.bp.blogspot.com/-iyAdF42S6gs/UR8KkcHdVHI/AAAAAAAAKek/5h-sEaQ5S-E/s320/IMG_1153.PNG)](http://2.bp.blogspot.com/-iyAdF42S6gs/UR8KkcHdVHI/AAAAAAAAKek/5h-sEaQ5S-E/s1600/IMG_1153.PNG)
+[![](/img/2013-02-ios-uinavigationbar_1.png)](/img/2013-02-ios-uinavigationbar_1.png)
 <!--more-->

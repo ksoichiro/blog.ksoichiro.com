@@ -7,9 +7,9 @@ tags: ["サンプル","Android"]
 <!--more-->
 実行イメージ：
 
-[![](http://3.bp.blogspot.com/-hKybjVnWf_M/TV-3_XwsyFI/AAAAAAAAFag/9oWXdrRKFXY/s200/WS000004.JPG)](http://3.bp.blogspot.com/-hKybjVnWf_M/TV-3_XwsyFI/AAAAAAAAFag/9oWXdrRKFXY/s1600/WS000004.JPG)
+[![](/img/2011-02-android-menu_1.png)](/img/2011-02-android-menu_1.png)
 
-[![](http://1.bp.blogspot.com/-XobUh4WOcBQ/TV-4DzmotmI/AAAAAAAAFao/jkXTPrEL3IU/s200/WS000005.JPG)](http://1.bp.blogspot.com/-XobUh4WOcBQ/TV-4DzmotmI/AAAAAAAAFao/jkXTPrEL3IU/s1600/WS000005.JPG)
+[![](/img/2011-02-android-menu_2.png)](/img/2011-02-android-menu_2.png)
 
 構成：
 

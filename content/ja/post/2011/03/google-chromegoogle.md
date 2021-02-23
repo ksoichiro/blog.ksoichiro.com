@@ -13,13 +13,13 @@ Androidアプリ公開用に、普段使っているのアカウントとは別�
 
 いくつか方法がありそうですが、プロフィール情報を分けて保存し、それぞれを読み込むショートカットを作成する上記の方法を選びました。すぐにできました。
 
-[![](http://4.bp.blogspot.com/-z3eFXMvScC8/TW-8Xmt8wsI/AAAAAAAAFc4/o6tPFowZBUk/s200/WS000006.JPG)](http://4.bp.blogspot.com/-z3eFXMvScC8/TW-8Xmt8wsI/AAAAAAAAFc4/o6tPFowZBUk/s1600/WS000006.JPG)
+[![](/img/2011-03-google-chromegoogle_1.png)](/img/2011-03-google-chromegoogle_1.png)
 
 元々のショートカットと、このショートカットを使い分けることで、複数のアカウントを同時に利用することができます。
 
 Google Chromeにはいくつかアイコンがついているようなので、アイコンも変えておくと便利そうです。
 
-[![](http://4.bp.blogspot.com/-ogIwBBs4tfQ/TW--hXVhNnI/AAAAAAAAFdE/Lc9tWQN4TJM/s200/WS000008.JPG)](http://4.bp.blogspot.com/-ogIwBBs4tfQ/TW--hXVhNnI/AAAAAAAAFdE/Lc9tWQN4TJM/s1600/WS000008.JPG)
+[![](/img/2011-03-google-chromegoogle_2.png)](/img/2011-03-google-chromegoogle_2.png)
 
 他にも、マルチログイン機能というものを使えば同じブラウザでアカウントを切り替えられるようですが、すべてのサービスに対応しているわけではないようです。
 

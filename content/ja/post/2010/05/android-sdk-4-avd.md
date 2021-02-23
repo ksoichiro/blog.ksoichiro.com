@@ -9,13 +9,13 @@ Eclipseで作成します。
 <!--more-->
 [Android SDK and AVD Manager]から作成します。
 
-[![](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QVaEvAJpI/AAAAAAAAFJU/D0Q4hoKIjXY/s320/WS000004.BMP)](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QVaEvAJpI/AAAAAAAAFJU/D0Q4hoKIjXY/s1600/WS000004.BMP)
+[![](/img/2010-05-android-sdk-4-avd_1.png)](/img/2010-05-android-sdk-4-avd_1.png)
 
 [Create AVD]をクリックし、確認ダイアログで確認すると一覧に名前が表示されます。
 
 作成したAVDの名前を選択し、[Start]をクリックするとエミュレータが起動します。
 
-[![](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QWjV9LdzI/AAAAAAAAFJc/MHs_cRCCYvw/s320/WS000005.BMP)](http://3.bp.blogspot.com/_rtlYXd55yO0/S-QWjV9LdzI/AAAAAAAAFJc/MHs_cRCCYvw/s1600/WS000005.BMP)
+[![](/img/2010-05-android-sdk-4-avd_2.png)](/img/2010-05-android-sdk-4-avd_2.png)
 
 起動に2～3分かかりました。
 

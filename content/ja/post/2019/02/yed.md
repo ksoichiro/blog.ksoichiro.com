@@ -16,7 +16,7 @@ yEdをすごく気に入っているような感じになってきているが�
 
 Paletteからドラッグアンドドロップする。
 
-![](https://lh3.googleusercontent.com/egcY_6aWda0CG83ywcu7ZIqrl-YnIhYhyo0McudPuVaJQJ0Rl_pis8AmO5fQWL2F8jroweWavwipNQ=s0)
+![](/img/2019-02-yed_1.png)
 
 PaletteにはSectionがあり、このSectionは増やすことができる(Edit＞Manage Palette)。
 
@@ -24,27 +24,27 @@ PaletteにはSectionがあり、このSectionは増やすことができる(Edit
 
 オブジェクトから別のオブジェクトへドラッグするとコネクタがつく。以前のエントリでEdge Routingを見たとおり、コネクタのことはエッジ(Edge)と呼んでいる模様。
 
-![](https://lh3.googleusercontent.com/Wfz_v5dyOkzOzmmIVgHCbk6yJEqATuy-fYFLffG2F7nN6_NsotEO5gaCm2SOeTNgINjcw5yC8sCMPQ=s0)
+![](/img/2019-02-yed_2.png)
 
 オブジェクトを移動したいときは、オブジェクトを一度クリックしてからドラッグする。いきなりドラッグしようとするとコネクタがマウスにくっついてきて、離すと線が折れ曲がって…と以下のようにおかしなことになる。そのような状態になったらEscキーで中止できる。
 
-![](https://lh3.googleusercontent.com/RMNI-FL4pZ8IeGUL7gF_GXwB5BLclDloj0kXLRS8IB5yRRM3WBM7YDC_mne6AaWlpy6X1WAI3dmHgg=s0)
+![](/img/2019-02-yed_3.png)
 
 ## ラベル
 
 Office系のオートシェイプだとテキストのみのオブジェクトを作ることができる(以下はOpenOffice Calcでの例)が、yEdにはそのようなものがない模様。
 
-![](https://lh3.googleusercontent.com/F18A46FU58NBnSd6TARAasnuGvaMQ6Be9SOXAeaGFMlI2soK69EuTM8GlGYTJgP66FLonrEc9KQODQ=s0)
+![](/img/2019-02-yed_4.png)
 
 もし必要なら通常のノードの色を消して作る。
 
 ノードを右クリック＞Propertiesでダイアログを開き、GeneralタブのFill Colorの右側の「…」をクリック、No Colorを選択する。Line Colorも同じくNo Colorにする。Okボタンで確定。
 
-![](https://lh3.googleusercontent.com/u8Gla7hmDDt8-V2CtU6GwXLoWtV-2fxtWpysJNDzS8-Jrzl7yvfTneiOs0Un7KjO9R8GTJMrWpB1LA=s0)
+![](/img/2019-02-yed_5.png)
 
 ノード内にテキストを入れるのはノードをダブルクリックするか、ノードをクリックしてF2キーで編集開始できる。ノードからテキストがはみ出ている場合(以下)、
 
-![](https://lh3.googleusercontent.com/UaK4tTGGob3glE_g94bJH-kmHStBT5_fFwBp8ytZEXtLTIY834hzMpd9B1cgAxnoxECFWeca0hHC9w=s0)
+![](/img/2019-02-yed_6.png)
 
 メニューのTool＞Fit Node to Labelでラベルが収まる大きさに変えることができる。
 
@@ -55,7 +55,7 @@ Office系のオートシェイプだとテキストのみのオブジェクト�
 あえて取り上げるものでもないかもしれないが…デフォルトではDialogというフォントになっており、日本語だと見栄えが良くない(と個人的には思う)。
 ノードのプロパティを開いてLabelタブ＞Font Familyでフォントを変更することができる。
 
-![](https://lh3.googleusercontent.com/oe-aUPxMwmWIuAofza-y6c2HsEv8JJ-Ay9KAcER_Vr2mRPwB8a_oNRG7hZyVE6KDRi69__lDMwWE4w=s0)
+![](/img/2019-02-yed_7.png)
 
 特に文字化けのような問題は起きない。
 複数をまとめて変更したい場合は、ドラッグしてノードを複数選択した状態でノードの一つを右クリックしてPropertiesを開くか、F6キーでプロパティのダイアログを開いて変更する。
@@ -69,53 +69,53 @@ Office系のオートシェイプだとテキストのみのオブジェクト�
 
 ノード内でのラベルの配置は、Properties > Labelタブ > PlacementでModelをInternalにしてPositionで変更することができる。以下はTop Leftにした場合の例。
 
-![](https://lh3.googleusercontent.com/U1tJO5kCeteVghT2rmCVzwBH70mYCp1AECcpDRFM0X6d-F1_L6Tkg465FNDwP9JhLmZ5N2VeVtkasQ=s0)
+![](/img/2019-02-yed_8.png)
 
 ## 表示を中央に持ってくる
 
 メニューView＞Fit Content、またはツールバー上の以下のボタンを押すと、配置されているノード群が中央に来るように移動する。
 
-![](https://lh3.googleusercontent.com/Y0jTzak2PFZawAA0iacAKShHbtc-pBV9h3ZGJe9A4kfCrlHFtQm7afCM5chsbImKCcF554DBxFTRFg=s0)
+![](/img/2019-02-yed_9.png)
 
 ## 選択したものを整列する
 
 例えば以下のように配置がバラバラなノード群があるとする。
 
-![](https://lh3.googleusercontent.com/itsARD2dfBq3sDuBxhVWsOhBs01jn-Dqn6ejE-ywdgPDh8XWwuejHNsaUpPJxI6b3jJXpFEVtbSr4w=s0)
+![](/img/2019-02-yed_10.png)
 
 左の2つのノードを左揃えしたい場合、以下のようにノードを選択して…
 
-![](https://lh3.googleusercontent.com/ct9YyOR5flzYsbzHGG9fTDEVbOxeCbl6Q7ZaYp3Cx0fCFcl0XHqePzHde1xIV8_QAQ7ZX9ppQOsGRQ=s0)
+![](/img/2019-02-yed_11.png)
 
 メニューEdit＞Align Nodes＞Align Leftを選択すると整列できる。
 
-![](https://lh3.googleusercontent.com/lk_CU1NiepSzoJLs2piBRnJ1tJkvBE-vxSRaquyM3wRvICfwEV4NF5dX4c9hxuYGj7FaOkCtn65weg=s0)
+![](/img/2019-02-yed_12.png)
 
 ## 重なったノードの上下
 
 以下のように後からノードを配置して下に移したいとする。
 
-![](https://lh3.googleusercontent.com/jqxGhWHYuBd40p-PbLW4bEkNeAe2nxRFLvRBFBPDRX_GzlEyr1OgD5TKCyuKFaT9cxn-qMcURciXtA=s0)
+![](/img/2019-02-yed_13.png)
 
 対象のノードを右クリックし、Lower Selectionを選択すると一番下に移される(1つずつ下に移るのかと思いきや、おそらく一番下に移されている)。逆に、上に移動したい場合はRaise Selectionを選ぶ。
 
-![](https://lh3.googleusercontent.com/5k8F65jmpRaRO9YJcv3LgGiZmNX1HvzcRdeZNVyuQJ3jqbjNKtqHMgqTUeaBPdtC3rB01b0lnGBUog=s0)
+![](/img/2019-02-yed_14.png)
 
 ## グループ化
 
 複数のノードを選択してグループ化することができるが、Excelなどのグループ化とは違う印象。単純にグループ化されるだけではなく、グループが”見える”状態になる。
 
-![](https://lh3.googleusercontent.com/7uTikvHNcmf0N1r_jxg2s304xYGdKxaWn5kNpkI1YpHjb9eWoi6bwAEMGDHdjbtENNrhmci_BySvwQ=s0)
+![](/img/2019-02-yed_15.png)
 
 画像としてエクスポートすると、ラベルや周囲の罫線、背景色も出力されており、単にグループ化したいだけなら邪魔になる場合が多そうな気がする。
 
 プロパティでFill Color、Line ColorをNo Colorに変更すれば、枠の線や背景色は消える。ラベルを非表示にする場合はプロパティのLabelタブでVisibleのチェックを外せば良い。すると以下のようにグループとしてドラッグで移動はできるがグループそのものをノードとして表示することはなくなる。「-」の部分は画像としては出力されない。この場合、グループの範囲がどこまでなのかがわかりにくく、グループ内のノードをドラッグしそうになるかもしれない。グループ化していてもグループ内のノードを普通に操作できてしまうため、うっかりグループ内のものだけ操作してしまうこともありそう。
 
-![](https://lh3.googleusercontent.com/WXcQJtB4Mp7tJ-XD_lQHfrI3quvRDFZZZsXLu_YiupqAfQn-WouH5G592nfbGWZ6E8KkLwViVysicA=s0)
+![](/img/2019-02-yed_16.png)
 
 グループの左上の「-」をクリックするとグループが閉じられて「フォルダ」になる。
 
-![](https://lh3.googleusercontent.com/pKyUJEsOohNc3F4yxbOXgK9Uf6hnBIjfwH5mqicCDfsoWCbxWImiblCJck-o9qksApftn0dCCj5Esw=s0)
+![](/img/2019-02-yed_17.png)
 
 フォルダの色も消すことはできるが、ただの透明な領域になってしまうためあまり意味はないだろう。
 
@@ -143,23 +143,23 @@ Excelのオートシェイプで吹き出しはよく使う(と思う)。これ�
 
 yWorksのマニュアル [Custom Symbols](https://yed.yworks.com/support/manual/custom_nodes.html) の説明によると、SVGやVisioのXMLをインポートすることはできるらしい。Paletteにインポートすることもできるし、.svgファイルをドラッグアンドドロップすればそのまま取り込めるとのこと。試しに以下のような吹き出しっぽいものをInkscapeで作ってみて…
 
-![](https://lh3.googleusercontent.com/ic-ZztPYpfSMkBb6gLh1YzwzNK6QsWhjfxOM1_snhMgugtJmUYNY6xLfqH8Q4K0pDB8VFuHvOMjVHA=s0)
+![](/img/2019-02-yed_18.png)
 
 ドラッグアンドドロップすると確かに取り込める。
 
-![](https://lh3.googleusercontent.com/_nhH-H_lripDeahQk64HOVBZB9seCFKqkcwYvOj-PEX0limOrXFSB3scXSjsVU4npBQVM39P4FbWSQ=s0)
+![](/img/2019-02-yed_19.png)
 
 しかし、ラベルを入れようとすると残念なことになる。
 
-![](https://lh3.googleusercontent.com/903IXBKl-2Qxw0NnFrvzdVsFFPyWx4GhaG-PhkqqbzIGBXfloqwsOHM7aRMSlpVx1GOEzFPdx2_34Q=s0)
+![](/img/2019-02-yed_20.png)
 
 吹き出しノードを選択した上で、メニューTool＞Fit Label to Nodeを選択し、StrategyをWrap Linesに、Act On Selected Nodes Onlyにチェックを入れてOkすると折り返すことは一応できる。
 
-![](https://lh3.googleusercontent.com/i4d9x2Yfv3LX1MkhufLprSAsdKR9cSVQGjbC_p4e8dF4ueCUEyyvKFbf_BxfIk9VOdWPwTaRK6aJeA=s0)
+![](/img/2019-02-yed_21.png)
 
 ただ、あくまでノードの矩形領域全体を調整可能な範囲としてみているようなので、折り返しとフォントサイズを小さくするのを両方行うStarategy(Wrap Lines and Resize Font)を選んだとしてもはみ出してしまう。
 
-![](https://lh3.googleusercontent.com/5oSnglyycQu4Dbcr9zs-W4nuzpGmB6wLCeg1s7DiAYE9KsXl-0Gq1eTBGcXou_mf-gq44z0XrS8GeQ=s0)
+![](/img/2019-02-yed_22.png)
 
 また、吹き出しの伸びている部分をドラッグすることはできないし、背景色などを変更することもできない。SVGなのだからできるのではと期待してしまうが、以下のように現時点ではできないとマニュアル( [Custom Symbols](https://yed.yworks.com/support/manual/custom_nodes.html))に書かれている。残念。
 
@@ -167,7 +167,7 @@ yWorksのマニュアル [Custom Symbols](https://yed.yworks.com/support/manual/
 
 ただ、これに関しては吹き出し型にこだわらなくても以下のように通常のShapeで何とかすることはできるとは思う。
 
-![](https://lh3.googleusercontent.com/hp0J0o8lFowq41Z4rcyTrjMOgSLCNwVzUk-SeCvvkMe4bCKAHCKHnk_LW5msrXltce1834Dpp4GzKw=s0)
+![](/img/2019-02-yed_23.png)
 
 以上、気になった部分を中心に(かなり中途半端な感じではあるものの)確認してみた。
 

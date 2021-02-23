@@ -17,7 +17,7 @@ tags: ["yEd"]
 
 ここまでで作れたのが以下。
 
-![](https://lh3.googleusercontent.com/6kHbpHvpI5Fq7tjYBYylbP11t2RNFUVcfZiqJOriLMHqACQIk-YL83bNH9RoN_2rMmrnpzqJffCCmw=s0)
+![](/img/2019-02-yed-edge-routing_1.png)
 
 レイアウトをいろいろとうまくやってくれるのが yEd の良いところのようなので試してみる。今回はEdge Routing。
 <!--more-->
@@ -30,31 +30,31 @@ tags: ["yEd"]
 
 Orthogonal＝直交らしい。単純な操作でこれができるのはすごい。Excelではできない。線が数回折れているのがPolylineということだろうか。
 
-![](https://lh3.googleusercontent.com/Nxx1yhSjIe7JfA2Wqi01pTBA98CsOX_VFh-lk-6MEDHN6MHLqMQ2O_s0DDwhZdTV5v5AgS96tMIt0g=s0)
+![](/img/2019-02-yed-edge-routing_2.png)
 
 ### Orthogonal Channel
 
 Job4の右側に回り込んでいる点が特徴的？どういう意味の配置だろう。
 
-![](https://lh3.googleusercontent.com/sWuY-RPv83d5vWss_PNyiTHqiNPuVNVdP7LwZloQmFwzHbdn0-Z_ATcwNpgWUdXhTXFtbliNyvbJhA=s0)
+![](/img/2019-02-yed-edge-routing_3.png)
 
 ### Orthogonal Bus-style
 
 確かにBUSっぽい引き方。
 
-![](https://lh3.googleusercontent.com/fRP5IX9dz7np0ZkTyoyFH_sgX2W3pIv6soSDl7cz5kTGbMKTTcA7yh-cOmY0K5bzLy_8G7tZDPTBHg=s0)
+![](/img/2019-02-yed-edge-routing_4.png)
 
 ### Orthogonal
 
 Excelでコネクタを使うとこうなる。
 
-![](https://lh3.googleusercontent.com/KtjmlRpWgHxv54sYgloCrjj6QGjf6n4hTkxceEOgPJVCAxhNTy5S5NybIrYe5bW6zT6dMqFTa_Rmwg=s0)
+![](/img/2019-02-yed-edge-routing_5.png)
 
 ### Organic
 
 単純にオブジェクトからオブジェクトへ線を引いた場合と同じ。
 
-![](https://lh3.googleusercontent.com/wd-NNWr9nHpDcs4xsPfaiTXjuK5HIpYGXzj1-g4zIxAYIbulZDbTI41uKufhN1zxmYG-CnjDV2Jh5g=s0)
+![](/img/2019-02-yed-edge-routing_6.png)
 
 ### Straight Line
 
