@@ -116,6 +116,9 @@ export default {
         'remark-breaks',
         'remark-emoji'
       ],
+      rehypePlugins: [
+        'rehype-plugin-image-native-lazy-loading'
+      ],
       prism: {
         theme: 'prism-themes/themes/prism-nord.css'
       }
