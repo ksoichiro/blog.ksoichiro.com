@@ -8,7 +8,7 @@
     ],
     "headers": [
       {
-        "source": "assets/**/*.@(js|css|svg)",
+        "source": "_nuxt/**/*.js",
         "headers": [
           {
             "key": "Cache-Control",
