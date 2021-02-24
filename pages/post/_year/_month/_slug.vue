@@ -114,4 +114,13 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .nav-pages {
+    display: block;
+    a.next {
+      margin-top: 1rem;
+    }
+  }
+}
 </style>
