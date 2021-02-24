@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="toPath(article.path)" />
+    <nav-bar :path="toPath(article.path)" :has-english="!article.noEnglish" />
     <div class="content">
       <h1>{{ article.title }}</h1>
       <page-attributes :page="article" />

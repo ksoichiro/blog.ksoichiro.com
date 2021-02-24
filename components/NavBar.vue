@@ -19,9 +19,12 @@
       </div>
       <div class="dropdown-content">
         <div>
-          <NuxtLink :to="switchLocalePath('en')">
+          <NuxtLink v-if="hasEnglish" :to="switchLocalePath('en')">
             English
           </NuxtLink>
+          <span v-else class="is-disabled">
+            English
+          </span>
         </div>
         <div>
           <NuxtLink :to="switchLocalePath('ja')">
@@ -44,6 +47,11 @@ export default {
     path: {
       type: String,
       required: true
+    },
+    hasEnglish: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   },
   data () {
@@ -184,5 +192,9 @@ export default {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
   }
+}
+
+.is-disabled {
+  color: $disabledLinkTextColor;
 }
 </style>
