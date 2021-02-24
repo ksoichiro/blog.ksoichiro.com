@@ -114,6 +114,7 @@ export default {
     markdown: {
       remarkPlugins: [
         'remark-breaks',
+        'remark-emoji'
       ],
       prism: {
         theme: 'prism-themes/themes/prism-nord.css'
