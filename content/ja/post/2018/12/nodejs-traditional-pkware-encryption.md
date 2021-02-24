@@ -1,5 +1,6 @@
 ---
 title: "Node.js での Traditional PKWARE encryption 実装の記録"
+noEnglish: true
 originalCreatedAt: 2018-12-31T10:08:00.001+09:00
 tags: ["ライブラリ","Node.js"]
 ---

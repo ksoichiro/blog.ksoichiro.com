@@ -1,5 +1,6 @@
 ---
 title: "Android TabHostで下側にタブを表示するときにビューが隠れないようにする方法"
+noEnglish: true
 originalCreatedAt: 2011-05-03T11:53:00.002+09:00
 tags: ["UI","Android"]
 ---

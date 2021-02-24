@@ -1,5 +1,6 @@
 ---
 title: "rdotm - Resource access code generator for Objective-C"
+noEnglish: true
 originalCreatedAt: 2014-08-10T16:51:00.001+09:00
 tags: ["iOS","Android"]
 ---

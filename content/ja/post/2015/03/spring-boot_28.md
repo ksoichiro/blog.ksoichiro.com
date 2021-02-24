@@ -1,5 +1,6 @@
 ---
 title: "Spring Bootのアプリ内にパスワード生成タスクを追加"
+noEnglish: true
 originalCreatedAt: 2015-03-28T17:42:00.001+09:00
 tags: ["Java","Spring Boot"]
 ---

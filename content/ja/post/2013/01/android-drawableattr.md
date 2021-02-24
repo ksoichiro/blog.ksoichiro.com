@@ -1,5 +1,6 @@
 ---
 title: "Android Drawableのattrを定義"
+noEnglish: true
 originalCreatedAt: 2013-01-11T06:04:00.000+09:00
 tags: ["UI","Android"]
 ---

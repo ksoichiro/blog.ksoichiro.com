@@ -1,5 +1,6 @@
 ---
 title: "[iOS] APNs証明書の更新手順"
+noEnglish: true
 originalCreatedAt: 2013-09-15T17:55:00.000+09:00
 tags: ["iOS","APNs"]
 ---

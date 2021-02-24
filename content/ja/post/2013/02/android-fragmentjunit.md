@@ -1,5 +1,6 @@
 ---
 title: "Android Fragmentを含む画面遷移のテスト方法(JUnit)"
+noEnglish: true
 originalCreatedAt: 2013-02-16T12:41:00.001+09:00
 tags: ["JUnit","Android"]
 ---

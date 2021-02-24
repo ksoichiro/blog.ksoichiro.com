@@ -1,5 +1,6 @@
 ---
 title: "SpringのControllerメソッド実行時にAOPでログ出力する"
+noEnglish: true
 originalCreatedAt: 2016-10-16T23:29:00.001+09:00
 tags: ["AOP","Spring Boot"]
 ---

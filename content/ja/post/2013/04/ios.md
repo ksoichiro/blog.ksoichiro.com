@@ -1,5 +1,6 @@
 ---
 title: "iOS ステータスバーの扱い"
+noEnglish: true
 originalCreatedAt: 2013-04-21T23:55:00.000+09:00
 tags: ["EverForm","iOS","Default.png","iPad","起動画面"]
 ---

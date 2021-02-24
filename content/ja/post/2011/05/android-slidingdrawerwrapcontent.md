@@ -1,5 +1,6 @@
 ---
 title: "Android SlidingDrawerでwrap_contentを効かせつつ表示/非表示での高さを切り替える"
+noEnglish: true
 originalCreatedAt: 2011-05-04T00:21:00.000+09:00
 tags: ["UI","Android"]
 ---

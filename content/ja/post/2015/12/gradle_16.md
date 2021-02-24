@@ -1,5 +1,6 @@
 ---
 title: "Gradleで依存関係が含まれているかを判定する方法"
+noEnglish: true
 originalCreatedAt: 2015-12-16T23:00:00.001+09:00
 tags: ["Gradle"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Spring Bootでのフロントエンド開発"
+noEnglish: true
 originalCreatedAt: 2015-03-29T22:47:00.001+09:00
 tags: ["Bower","npm","wro4j","Spring Framework","gulp","Gradle","Spring Boot"]
 ---

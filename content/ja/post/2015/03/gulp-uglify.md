@@ -1,5 +1,6 @@
 ---
 title: "gulp-uglify使用時のエラー"
+noEnglish: true
 originalCreatedAt: 2015-03-31T07:10:00.001+09:00
 tags: ["JavaScript","gulp"]
 ---

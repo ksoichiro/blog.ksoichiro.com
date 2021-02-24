@@ -1,5 +1,6 @@
 ---
 title: "Android XMLだけでできたボタン"
+noEnglish: true
 originalCreatedAt: 2013-04-06T18:52:00.001+09:00
 tags: ["ライブラリ","GitHub","UI","Android"]
 ---

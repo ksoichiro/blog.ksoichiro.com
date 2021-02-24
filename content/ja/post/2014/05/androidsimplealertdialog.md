@@ -1,5 +1,6 @@
 ---
 title: "AndroidライブラリSimpleAlertDialog"
+noEnglish: true
 originalCreatedAt: 2014-05-11T13:38:00.001+09:00
 tags: ["SimpleAlertDialog","Android"]
 ---

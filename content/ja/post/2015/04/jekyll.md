@@ -1,5 +1,6 @@
 ---
 title: "Jekyllでチュートリアルを作る"
+noEnglish: true
 originalCreatedAt: 2015-04-12T14:18:00.001+09:00
 tags: ["Jekyll","GitHub"]
 ---

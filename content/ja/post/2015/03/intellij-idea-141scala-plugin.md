@@ -1,5 +1,6 @@
 ---
 title: "IntelliJ IDEA 14.1でのScala Plugin"
+noEnglish: true
 originalCreatedAt: 2015-03-26T23:50:00.001+09:00
 tags: ["IDE","Scala","IntelliJ","SBT","Play Framework"]
 ---

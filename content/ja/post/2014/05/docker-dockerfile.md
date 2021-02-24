@@ -1,5 +1,6 @@
 ---
 title: "[Docker] Dockerfileのサンプル"
+noEnglish: true
 originalCreatedAt: 2014-05-02T21:44:00.000+09:00
 tags: ["Java","Dockerfile","JDK","Docker","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android Studio (Asset Studio) で扱える SVG 画像を Inkscape で作る場合の注意点 (グラデーション)"
+noEnglish: true
 originalCreatedAt: 2019-01-06T23:22:00.001+09:00
 tags: ["Inkscape","SVG","Android Studio","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "[iOS][Xcode] OCLintでXcode5プロジェクトのObjective-Cソースコードを静的解析"
+noEnglish: true
 originalCreatedAt: 2014-02-28T23:52:00.003+09:00
 tags: ["ビルド","iOS","静的解析","CMake","OCLint","Xcode","xctool"]
 ---

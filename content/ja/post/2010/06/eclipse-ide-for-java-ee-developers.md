@@ -1,5 +1,6 @@
 ---
 title: "Eclipse IDE for Java EE Developers"
+noEnglish: true
 originalCreatedAt: 2010-06-20T15:38:00.000+09:00
 tags: ["eclipse"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Spring Boot CLIでElasticsearchにアクセスするクライアントを作る"
+noEnglish: true
 originalCreatedAt: 2016-09-26T23:27:00.001+09:00
 tags: ["sdkman","Elasticsearch","Spring Boot"]
 ---

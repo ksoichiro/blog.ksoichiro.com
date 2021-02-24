@@ -1,5 +1,6 @@
 ---
 title: "Java リフレクションで取得するフィールドの順番"
+noEnglish: true
 originalCreatedAt: 2011-05-03T12:35:00.000+09:00
 tags: ["Java"]
 ---

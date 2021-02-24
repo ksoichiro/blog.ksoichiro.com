@@ -1,5 +1,6 @@
 ---
 title: "Android Intentでテキストを共有する時のタイトル"
+noEnglish: true
 originalCreatedAt: 2012-10-27T01:20:00.004+09:00
 tags: ["Intent","Android"]
 ---

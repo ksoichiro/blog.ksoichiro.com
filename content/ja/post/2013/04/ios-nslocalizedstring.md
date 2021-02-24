@@ -1,5 +1,6 @@
 ---
 title: "iOS ローカライズが失敗してNSLocalizedStringのキーが表示される"
+noEnglish: true
 originalCreatedAt: 2013-04-21T23:34:00.000+09:00
 tags: ["ローカライズ","EverForm","iOS","NSLocalizedString"]
 ---

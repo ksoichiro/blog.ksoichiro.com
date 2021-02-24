@@ -1,5 +1,6 @@
 ---
 title: "Spring Boot 1.3.0.RC1を試してみて"
+noEnglish: true
 originalCreatedAt: 2015-11-06T02:33:00.001+09:00
 tags: ["Spring Security","Spring Boot"]
 ---

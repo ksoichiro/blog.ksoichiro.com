@@ -1,5 +1,6 @@
 ---
 title: "Webアプリケーションフレームワークを調べてみる"
+noEnglish: true
 originalCreatedAt: 2015-03-27T00:53:00.001+09:00
 tags: ["Thymeleaf","Gradle","SBT","Spring Boot","Play Framework"]
 ---

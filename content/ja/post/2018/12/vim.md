@@ -1,5 +1,6 @@
 ---
 title: "vim でタスク管理"
+noEnglish: true
 originalCreatedAt: 2018-12-31T11:36:00.001+09:00
 tags: ["VIM"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "WindowsでRails開発するなら…"
+noEnglish: true
 originalCreatedAt: 2011-08-19T12:14:00.000+09:00
 tags: ["Linux","Ubuntu","Ruby on Rails","VMware Player"]
 ---

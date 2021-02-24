@@ -1,5 +1,6 @@
 ---
 title: "Android SDK 導入(3) コンポーネント"
+noEnglish: true
 originalCreatedAt: 2010-05-07T22:19:00.000+09:00
 tags: ["eclipse","インストール","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Gradle実行時のメモリオプション指定方法"
+noEnglish: true
 originalCreatedAt: 2015-12-11T00:55:00.001+09:00
 tags: ["Gradle","Travis CI"]
 ---

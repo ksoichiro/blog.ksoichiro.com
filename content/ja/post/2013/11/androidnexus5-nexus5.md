@@ -1,5 +1,6 @@
 ---
 title: "[Android][Nexus5] Nexus5購入"
+noEnglish: true
 originalCreatedAt: 2013-11-07T23:12:00.000+09:00
 tags: ["Nexus5","Android"]
 ---

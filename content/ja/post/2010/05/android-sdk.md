@@ -1,5 +1,6 @@
 ---
 title: "Android SDK 導入(1) スターターパッケージ"
+noEnglish: true
 originalCreatedAt: 2010-05-07T20:10:00.003+09:00
 tags: ["eclipse","xperia","インストール","Android"]
 ---

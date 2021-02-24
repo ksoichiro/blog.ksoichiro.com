@@ -1,5 +1,6 @@
 ---
 title: "かなり今さらながらghqやpecoなどをきちんと使ってみる"
+noEnglish: true
 originalCreatedAt: 2020-01-12T01:05:00.002+09:00
 tags: ["Git"]
 ---

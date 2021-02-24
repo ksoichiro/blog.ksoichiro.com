@@ -1,5 +1,6 @@
 ---
 title: "GitLab CI をセットアップする"
+noEnglish: true
 originalCreatedAt: 2019-05-01T14:36:00.001+09:00
 tags: ["GitLab","CI","Docker"]
 ---

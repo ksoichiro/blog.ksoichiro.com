@@ -1,5 +1,6 @@
 ---
 title: "Spockで複数ステップのテストを書く"
+noEnglish: true
 originalCreatedAt: 2016-12-31T17:29:00.001+09:00
 tags: ["Groovy","Spock"]
 ---

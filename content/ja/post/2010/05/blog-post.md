@@ -1,5 +1,6 @@
 ---
 title: "情熱プログラマー"
+noEnglish: true
 originalCreatedAt: 2010-05-07T01:45:00.001+09:00
 tags: ["Books"]
 ---

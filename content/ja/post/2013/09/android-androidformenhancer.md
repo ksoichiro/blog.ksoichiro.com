@@ -1,5 +1,6 @@
 ---
 title: "[Android] 入力チェックライブラリAndroidFormEnhancerのデモアプリ"
+noEnglish: true
 originalCreatedAt: 2013-09-16T09:54:00.000+09:00
 tags: ["Android","AndroidFormEnhancer"]
 ---

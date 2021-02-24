@@ -1,5 +1,6 @@
 ---
 title: "再開"
+noEnglish: true
 originalCreatedAt: 2015-03-26T23:46:00.001+09:00
 tags: []
 ---

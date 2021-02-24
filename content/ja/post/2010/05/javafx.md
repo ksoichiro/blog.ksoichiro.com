@@ -1,5 +1,6 @@
 ---
 title: "JavaFX 開発環境"
+noEnglish: true
 originalCreatedAt: 2010-05-10T23:14:00.001+09:00
 tags: ["eclipse","JDK","インストール","JavaFX"]
 ---

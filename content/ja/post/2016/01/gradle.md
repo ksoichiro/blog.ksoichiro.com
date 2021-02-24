@@ -1,5 +1,6 @@
 ---
 title: "Gradleで特定の名前のサブディレクトリリストを取得する方法"
+noEnglish: true
 originalCreatedAt: 2016-01-11T20:09:00.001+09:00
 tags: ["IntelliJ IDEA","Gradle"]
 ---

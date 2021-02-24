@@ -1,5 +1,6 @@
 ---
 title: "Spockのthenで使える表現"
+noEnglish: true
 originalCreatedAt: 2015-03-28T21:40:00.001+09:00
 tags: ["Spock Framework","Groovy"]
 ---

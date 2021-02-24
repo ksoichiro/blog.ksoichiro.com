@@ -1,5 +1,6 @@
 ---
 title: "[Docker][Android] AndroidアプリでHTTP通信を含むコードをDockerコンテナ内で完結させて自動テスト"
+noEnglish: true
 originalCreatedAt: 2014-05-02T22:36:00.000+09:00
 tags: ["Docker","Android"]
 ---

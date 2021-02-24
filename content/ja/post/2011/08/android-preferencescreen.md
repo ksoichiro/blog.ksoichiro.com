@@ -1,5 +1,6 @@
 ---
 title: "Android PreferenceScreenのタイトルバーをカスタマイズする"
+noEnglish: true
 originalCreatedAt: 2011-08-24T01:15:00.002+09:00
 tags: ["Preference","UI","Android"]
 ---

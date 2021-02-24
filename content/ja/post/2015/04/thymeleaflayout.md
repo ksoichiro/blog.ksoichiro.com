@@ -1,5 +1,6 @@
 ---
 title: "Thymeleafのlayoutを使う"
+noEnglish: true
 originalCreatedAt: 2015-04-14T01:09:00.001+09:00
 tags: ["Spring Framework","Thymeleaf"]
 ---

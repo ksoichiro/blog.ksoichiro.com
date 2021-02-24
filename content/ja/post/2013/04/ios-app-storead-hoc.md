@@ -1,5 +1,6 @@
 ---
 title: "iOS App Store用とAd Hoc用のプロビジョニングプロファイル"
+noEnglish: true
 originalCreatedAt: 2013-04-24T01:58:00.002+09:00
 tags: ["iOS","プロビジョニングプロファイル","AdHoc","AppStore"]
 ---

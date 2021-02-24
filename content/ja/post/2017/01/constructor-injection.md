@@ -1,5 +1,6 @@
 ---
 title: "Constructor Injectionに変えてみる"
+noEnglish: true
 originalCreatedAt: 2017-01-05T23:23:00.001+09:00
 tags: ["Spring Framework"]
 ---

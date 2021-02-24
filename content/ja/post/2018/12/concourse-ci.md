@@ -1,5 +1,6 @@
 ---
 title: "Concourse CI チュートリアルの実践"
+noEnglish: true
 originalCreatedAt: 2018-12-24T22:36:00.001+09:00
 tags: ["CI","Concourse CI"]
 ---

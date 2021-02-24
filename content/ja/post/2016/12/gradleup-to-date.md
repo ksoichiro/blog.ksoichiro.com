@@ -1,5 +1,6 @@
 ---
 title: "Gradleプラグインのup-to-dateを確認するテスト"
+noEnglish: true
 originalCreatedAt: 2016-12-31T17:47:00.001+09:00
 tags: ["Gradle","Spock"]
 ---

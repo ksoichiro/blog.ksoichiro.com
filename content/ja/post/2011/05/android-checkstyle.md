@@ -1,5 +1,6 @@
 ---
 title: "Android CheckStyle設定"
+noEnglish: true
 originalCreatedAt: 2011-05-05T23:01:00.000+09:00
 tags: ["CheckStyle","eclipse","Android"]
 ---

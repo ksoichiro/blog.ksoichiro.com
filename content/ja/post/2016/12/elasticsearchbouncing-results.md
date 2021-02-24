@@ -1,5 +1,6 @@
 ---
 title: "ElasticsearchのBouncing Results問題"
+noEnglish: true
 originalCreatedAt: 2016-12-31T22:46:00.001+09:00
 tags: ["Elasticsearch","Spring Boot"]
 ---

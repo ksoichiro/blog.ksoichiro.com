@@ -1,5 +1,6 @@
 ---
 title: "Play FrameworkでSQLで初期データ投入する方法"
+noEnglish: true
 originalCreatedAt: 2015-03-28T16:00:00.001+09:00
 tags: ["Java","Play Framework"]
 ---

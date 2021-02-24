@@ -1,5 +1,6 @@
 ---
 title: "JavaFXプロジェクトでの新規Script作成"
+noEnglish: true
 originalCreatedAt: 2010-05-12T20:22:00.000+09:00
 tags: ["JavaFX"]
 ---

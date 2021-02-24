@@ -1,5 +1,6 @@
 ---
 title: "JavaFX + Eclipseインストール"
+noEnglish: true
 originalCreatedAt: 2010-05-12T01:32:00.001+09:00
 tags: ["eclipse","インストール","JavaFX"]
 ---

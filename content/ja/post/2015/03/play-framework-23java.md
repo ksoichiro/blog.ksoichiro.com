@@ -1,5 +1,6 @@
 ---
 title: "Play Framework 2.3をJavaで使うときに困った話(凡ミス)"
+noEnglish: true
 originalCreatedAt: 2015-03-28T16:25:00.001+09:00
 tags: ["Java","Play Framework"]
 ---

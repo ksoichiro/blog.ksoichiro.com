@@ -1,5 +1,6 @@
 ---
 title: "Android DBアクセスなどを簡略化するフレームワーク"
+noEnglish: true
 originalCreatedAt: 2011-06-05T02:09:00.001+09:00
 tags: ["Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "[Android] 最初のActivityが起動するまでの間だけスプラッシュ画面を表示する方法"
+noEnglish: true
 originalCreatedAt: 2013-09-16T09:28:00.001+09:00
 tags: ["Android"]
 ---

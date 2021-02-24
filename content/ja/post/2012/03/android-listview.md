@@ -1,5 +1,6 @@
 ---
 title: "Android ListViewがクリックできない原因の一例"
+noEnglish: true
 originalCreatedAt: 2012-03-31T12:03:00.001+09:00
 tags: ["UI","Android"]
 ---

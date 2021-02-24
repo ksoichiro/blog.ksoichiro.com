@@ -1,5 +1,6 @@
 ---
 title: "Android SDK 導入(4) AVD"
+noEnglish: true
 originalCreatedAt: 2010-05-07T22:44:00.001+09:00
 tags: ["eclipse","インストール","Android"]
 ---

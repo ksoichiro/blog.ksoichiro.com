@@ -1,5 +1,6 @@
 ---
 title: "Android MapActivityをIntentで起動したときにNoClassDefFoundError発生"
+noEnglish: true
 originalCreatedAt: 2012-01-02T13:45:00.001+09:00
 tags: ["Google Maps","Android"]
 ---

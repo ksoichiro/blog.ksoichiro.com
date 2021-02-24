@@ -1,5 +1,6 @@
 ---
 title: "Objective-Cコードのフォーマットチェック"
+noEnglish: true
 originalCreatedAt: 2014-05-18T18:06:00.001+09:00
 tags: ["Objective-C","iOS","静的解析","OCLint","Xcode","フォーマッタ","fint"]
 ---

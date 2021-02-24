@@ -1,5 +1,6 @@
 ---
 title: "Querydslで親子テーブルの複数の子レコードを親レコードの1カラムにまとめる"
+noEnglish: true
 originalCreatedAt: 2016-08-22T00:05:00.001+09:00
 tags: ["MySQL","H2","Querydsl","Spring Boot"]
 ---

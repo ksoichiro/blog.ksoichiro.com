@@ -1,5 +1,6 @@
 ---
 title: "yEdの基本的な操作方法＋α"
+noEnglish: true
 originalCreatedAt: 2019-02-20T00:54:00.001+09:00
 tags: ["yEd"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Spring Data JPAで複数テーブルを結合した結果を返すクエリを作る"
+noEnglish: true
 originalCreatedAt: 2016-12-31T23:29:00.001+09:00
 tags: ["JPA","Spring Boot"]
 ---

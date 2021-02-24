@@ -1,5 +1,6 @@
 ---
 title: "VSCode Extension"
+noEnglish: true
 originalCreatedAt: 2020-12-21T00:42:00.002+09:00
 tags: ["VSCode"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android PNG画像をVectorに変換する"
+noEnglish: true
 originalCreatedAt: 2018-12-29T18:44:00.001+09:00
 tags: ["Android"]
 ---

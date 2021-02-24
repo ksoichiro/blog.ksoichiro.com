@@ -1,5 +1,6 @@
 ---
 title: "[GitLab] GitLab6.6.4〜6.7.5 日本語化パッチ"
+noEnglish: true
 originalCreatedAt: 2014-05-02T21:17:00.003+09:00
 tags: ["GitLab"]
 ---

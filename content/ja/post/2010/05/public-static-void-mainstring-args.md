@@ -1,5 +1,6 @@
 ---
 title: "Blogger Syntax Highlighter"
+noEnglish: true
 originalCreatedAt: 2010-05-07T19:08:00.004+09:00
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android Theme.Lightでのダイアログの文字色"
+noEnglish: true
 originalCreatedAt: 2012-06-12T00:46:00.003+09:00
 tags: ["UI","Android"]
 ---

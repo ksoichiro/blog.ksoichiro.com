@@ -1,5 +1,6 @@
 ---
 title: "[Android][Gradle] ライブラリプロジェクトのJaCoCoでのカバレッジ計測"
+noEnglish: true
 originalCreatedAt: 2014-05-05T21:31:00.000+09:00
 tags: ["Gradle","Travis CI","JaCoCo","Android","AndroidFormEnhancer"]
 ---

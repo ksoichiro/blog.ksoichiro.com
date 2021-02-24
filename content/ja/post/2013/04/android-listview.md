@@ -1,5 +1,6 @@
 ---
 title: "Android 単一項目を選択させるListViewの設定"
+noEnglish: true
 originalCreatedAt: 2013-04-24T01:17:00.001+09:00
 tags: ["UI","Android","ListView"]
 ---

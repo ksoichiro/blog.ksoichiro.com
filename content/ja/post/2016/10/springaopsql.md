@@ -1,5 +1,6 @@
 ---
 title: "SpringのAOPでSQLエラーをハンドリングする"
+noEnglish: true
 originalCreatedAt: 2016-10-30T22:19:00.001+09:00
 tags: ["Spring Framework","AOP","Spring Boot"]
 ---

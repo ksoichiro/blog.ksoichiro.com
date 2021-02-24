@@ -1,5 +1,6 @@
 ---
 title: "yEdでジョブフロー図っぽいものを描く: Edge Routing"
+noEnglish: true
 originalCreatedAt: 2019-02-19T00:15:00.001+09:00
 tags: ["yEd"]
 ---

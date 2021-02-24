@@ -1,5 +1,6 @@
 ---
 title: "Android 入力チェックライブラリ"
+noEnglish: true
 originalCreatedAt: 2013-01-12T08:17:00.000+09:00
 tags: ["ライブラリ","Android","AndroidFormEnhancer"]
 ---

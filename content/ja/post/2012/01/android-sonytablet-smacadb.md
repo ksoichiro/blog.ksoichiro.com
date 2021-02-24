@@ -1,5 +1,6 @@
 ---
 title: "Android SonyTablet SをMacのadbで認識させる"
+noEnglish: true
 originalCreatedAt: 2012-01-07T22:35:00.000+09:00
 tags: ["SonyTablet","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android ViewPagerを使った円形のインジケータ"
+noEnglish: true
 originalCreatedAt: 2012-08-03T01:01:00.000+09:00
 tags: ["ViewPager","UI","Android"]
 ---

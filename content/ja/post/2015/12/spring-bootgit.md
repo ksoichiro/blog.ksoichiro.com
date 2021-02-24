@@ -1,5 +1,6 @@
 ---
 title: "Spring BootのプロファイルにGitコミットハッシュ値を含める"
+noEnglish: true
 originalCreatedAt: 2015-12-11T00:39:00.001+09:00
 tags: ["Git","Gradle","Spring Boot"]
 ---

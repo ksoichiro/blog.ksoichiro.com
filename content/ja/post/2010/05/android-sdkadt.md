@@ -1,5 +1,6 @@
 ---
 title: "Android SDK 導入(2) ADTプラグイン"
+noEnglish: true
 originalCreatedAt: 2010-05-07T21:22:00.004+09:00
 tags: ["eclipse","インストール","Android"]
 ---

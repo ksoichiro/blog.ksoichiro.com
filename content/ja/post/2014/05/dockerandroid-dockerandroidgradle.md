@@ -1,5 +1,6 @@
 ---
 title: "[Docker][Android] DockerでAndroidエミュレータを動かしGradleによるビルド＆テストを実行"
+noEnglish: true
 originalCreatedAt: 2014-05-02T21:58:00.005+09:00
 tags: ["Dockerfile","Docker","Android"]
 ---

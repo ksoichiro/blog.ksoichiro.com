@@ -1,5 +1,6 @@
 ---
 title: "GradleからCoffeeScript、LESS、Bowerを使うプラグインgradle-web-resource-plugin"
+noEnglish: true
 originalCreatedAt: 2015-10-30T02:48:00.001+09:00
 tags: ["CoffeeScript","LESS","Bower","npm","gulp","Gradle"]
 ---

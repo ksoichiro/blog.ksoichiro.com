@@ -1,5 +1,6 @@
 ---
 title: "jQuery DatePicker"
+noEnglish: true
 originalCreatedAt: 2010-06-20T16:12:00.001+09:00
 tags: ["Ajax","jQuery"]
 ---

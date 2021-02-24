@@ -1,5 +1,6 @@
 ---
 title: "Android ライブ壁紙をリリース"
+noEnglish: true
 originalCreatedAt: 2011-03-04T00:48:00.001+09:00
 tags: ["自作アプリ","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "IntelliJのインデックス対象から除外する方法"
+noEnglish: true
 originalCreatedAt: 2015-12-11T01:09:00.001+09:00
 tags: ["IntelliJ IDEA","Gradle"]
 ---

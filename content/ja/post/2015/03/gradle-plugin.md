@@ -1,5 +1,6 @@
 ---
 title: "Gradle Pluginプロジェクトをマルチプロジェクトにするときの注意点"
+noEnglish: true
 originalCreatedAt: 2015-03-28T18:09:00.001+09:00
 tags: ["ライブラリ","Gradle"]
 ---

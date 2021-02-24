@@ -1,5 +1,6 @@
 ---
 title: "iOS UINavigationBarとステータスバーの高さを除いた画面サイズ"
+noEnglish: true
 originalCreatedAt: 2013-02-16T13:36:00.002+09:00
 tags: ["iOS","iPhone"]
 ---

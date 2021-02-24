@@ -1,5 +1,6 @@
 ---
 title: "最初のJavaFXプロジェクト"
+noEnglish: true
 originalCreatedAt: 2010-05-12T01:33:00.000+09:00
 tags: ["eclipse","サンプル","JavaFX"]
 ---

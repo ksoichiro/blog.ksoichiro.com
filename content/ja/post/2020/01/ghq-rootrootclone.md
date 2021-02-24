@@ -1,5 +1,6 @@
 ---
 title: "ghq rootが複数あると最後のrootにcloneされるようになった"
+noEnglish: true
 originalCreatedAt: 2020-01-17T00:58:00.002+09:00
 tags: ["ghq"]
 ---

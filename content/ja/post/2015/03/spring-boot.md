@@ -1,5 +1,6 @@
 ---
 title: "Spring Bootでユーザ認証"
+noEnglish: true
 originalCreatedAt: 2015-03-28T16:59:00.001+09:00
 tags: ["Java","Spring Boot"]
 ---

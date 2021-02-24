@@ -1,5 +1,6 @@
 ---
 title: "ghqのroot配下ではVCS導入しないとghq listが遅くなる"
+noEnglish: true
 originalCreatedAt: 2020-01-11T23:36:00.002+09:00
 tags: ["ghq","Git"]
 ---

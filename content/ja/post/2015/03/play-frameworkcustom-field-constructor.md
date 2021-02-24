@@ -1,5 +1,6 @@
 ---
 title: "Play FrameworkのCustom Field Constructorを作る"
+noEnglish: true
 originalCreatedAt: 2015-03-28T16:16:00.001+09:00
 tags: ["Play Framework"]
 ---

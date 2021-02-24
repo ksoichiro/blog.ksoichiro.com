@@ -1,5 +1,6 @@
 ---
 title: "Vagrant + MariaDB"
+noEnglish: true
 originalCreatedAt: 2015-03-28T14:17:00.001+09:00
 tags: ["MariaDB","Vagrant"]
 ---

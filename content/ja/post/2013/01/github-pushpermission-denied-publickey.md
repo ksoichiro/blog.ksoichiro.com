@@ -1,5 +1,6 @@
 ---
 title: "GitHub pushすると「Permission denied (publickey)」"
+noEnglish: true
 originalCreatedAt: 2013-01-03T14:58:00.001+09:00
 tags: ["GitHub"]
 ---

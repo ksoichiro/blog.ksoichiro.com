@@ -1,5 +1,6 @@
 ---
 title: "Gradleスクリプトの構造化"
+noEnglish: true
 originalCreatedAt: 2015-11-06T01:49:00.001+09:00
 tags: ["Gradle"]
 ---

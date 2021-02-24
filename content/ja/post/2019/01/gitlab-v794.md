@@ -1,5 +1,6 @@
 ---
 title: "GitLab v7.9.4 のサーバ移行とアップグレード"
+noEnglish: true
 originalCreatedAt: 2019-01-20T19:47:00.001+09:00
 tags: ["GitLab"]
 ---

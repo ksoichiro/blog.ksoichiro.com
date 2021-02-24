@@ -1,5 +1,6 @@
 ---
 title: "毎日コードを書くことと、それにまつわること"
+noEnglish: true
 originalCreatedAt: 2015-07-11T17:11:00.001+09:00
 tags: []
 ---

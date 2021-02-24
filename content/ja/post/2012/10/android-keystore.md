@@ -1,5 +1,6 @@
 ---
 title: "Android keystoreのエイリアス変更方法"
+noEnglish: true
 originalCreatedAt: 2012-10-18T00:17:00.000+09:00
 tags: ["Android"]
 ---

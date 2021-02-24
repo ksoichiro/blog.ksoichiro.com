@@ -1,5 +1,6 @@
 ---
 title: "Springのテストを速くする工夫"
+noEnglish: true
 originalCreatedAt: 2016-10-09T21:24:00.001+09:00
 tags: ["Spring Boot"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "[Android] 新しいアプリを公開しました: NinNin"
+noEnglish: true
 originalCreatedAt: 2013-10-15T23:13:00.000+09:00
 tags: ["自作アプリ","Android"]
 ---

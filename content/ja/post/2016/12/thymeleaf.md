@@ -1,5 +1,6 @@
 ---
 title: "Thymeleafの部品化"
+noEnglish: true
 originalCreatedAt: 2016-12-31T19:10:00.001+09:00
 tags: ["Thymeleaf"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "SAStruts ボタンのラベル"
+noEnglish: true
 originalCreatedAt: 2011-06-11T22:19:00.000+09:00
 tags: ["Java","JSP","SAStruts"]
 ---

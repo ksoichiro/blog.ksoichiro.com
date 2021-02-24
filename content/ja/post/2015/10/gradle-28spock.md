@@ -1,5 +1,6 @@
 ---
 title: "Gradle 2.8にしたときのSpockテストコードのビルドエラー"
+noEnglish: true
 originalCreatedAt: 2015-10-30T01:51:00.001+09:00
 tags: ["Gradle","Spock Framework","Groovy"]
 ---

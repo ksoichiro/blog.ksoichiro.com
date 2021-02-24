@@ -1,5 +1,6 @@
 ---
 title: "Android 端末情報を確認・共有するアプリ"
+noEnglish: true
 originalCreatedAt: 2012-10-27T01:34:00.000+09:00
 tags: ["自作アプリ","Android"]
 ---

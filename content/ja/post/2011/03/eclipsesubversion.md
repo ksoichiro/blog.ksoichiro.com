@@ -1,5 +1,6 @@
 ---
 title: "EclipseからSubversionリポジトリにアクセスできない"
+noEnglish: true
 originalCreatedAt: 2011-03-07T23:44:00.000+09:00
 tags: ["eclipse","Subversion"]
 ---

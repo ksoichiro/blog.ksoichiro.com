@@ -1,5 +1,6 @@
 ---
 title: "Spring Security 4.0ではHeaderWriterを使って静的リソースのキャッシュヘッダを適切につける"
+noEnglish: true
 originalCreatedAt: 2016-10-30T21:22:00.001+09:00
 tags: ["Spring Security","Spring Boot"]
 ---

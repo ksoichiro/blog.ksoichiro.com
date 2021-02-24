@@ -1,5 +1,6 @@
 ---
 title: "[iOS][Xcode] Xcodeで簡易フォーマットチェック"
+noEnglish: true
 originalCreatedAt: 2014-03-01T01:02:00.004+09:00
 tags: ["iOS","静的解析","Xcode","フォーマッタ"]
 ---

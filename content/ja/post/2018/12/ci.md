@@ -1,5 +1,6 @@
 ---
 title: "個人開発のプライベートなリポジトリを CI する方法の検討"
+noEnglish: true
 originalCreatedAt: 2018-12-23T10:38:00.001+09:00
 tags: ["CI","個人開発","Jenkins","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android Gradle PluginでJaCoCoを有効にしてテストするとjava.lang.VerifyError発生 (2)"
+noEnglish: true
 originalCreatedAt: 2014-05-11T17:08:00.001+09:00
 tags: ["Gradle","JaCoCo","Android"]
 ---

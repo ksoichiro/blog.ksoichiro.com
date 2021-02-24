@@ -1,5 +1,6 @@
 ---
 title: "Xperia購入をきっかけにAndroidアプリ開発へ"
+noEnglish: true
 originalCreatedAt: 2010-05-07T02:19:00.004+09:00
 tags: ["xperia","Android"]
 ---

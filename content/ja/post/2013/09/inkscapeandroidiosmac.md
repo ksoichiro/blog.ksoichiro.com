@@ -1,5 +1,6 @@
 ---
 title: "[Inkscape][Android][iOS][Mac] 全サイズのアイコンファイル生成ツール"
+noEnglish: true
 originalCreatedAt: 2013-09-15T16:45:00.003+09:00
 tags: ["Inkscape","iOS","iPad","Mac","Android","iPhone"]
 ---

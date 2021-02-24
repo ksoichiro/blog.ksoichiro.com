@@ -1,5 +1,6 @@
 ---
 title: "[Android] Galaxy Nexus でのDB書き込みエラー"
+noEnglish: true
 originalCreatedAt: 2013-09-15T17:13:00.000+09:00
 tags: ["CWM","Galaxy Nexus","root","Android"]
 ---

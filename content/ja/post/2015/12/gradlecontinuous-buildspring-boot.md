@@ -1,5 +1,6 @@
 ---
 title: "GradleのContinuous BuildでSpring Bootアプリ実行中にリソース変更を反映する"
+noEnglish: true
 originalCreatedAt: 2015-12-20T18:40:00.001+09:00
 tags: ["Gradle","Spring Boot"]
 ---

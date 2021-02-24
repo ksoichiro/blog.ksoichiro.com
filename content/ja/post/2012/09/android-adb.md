@@ -1,5 +1,6 @@
 ---
 title: "Android adbコマンドで特定端末を簡単に指定"
+noEnglish: true
 originalCreatedAt: 2012-09-09T15:14:00.000+09:00
 tags: ["adb","Android"]
 ---

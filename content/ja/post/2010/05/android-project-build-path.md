@@ -1,5 +1,6 @@
 ---
 title: "Android Project - Build Pathエラー"
+noEnglish: true
 originalCreatedAt: 2010-05-07T22:59:00.000+09:00
 tags: ["eclipse","Android"]
 ---

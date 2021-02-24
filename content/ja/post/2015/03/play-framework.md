@@ -1,5 +1,6 @@
 ---
 title: "Play Frameworkのアプリ内にパスワード生成プロジェクトを追加"
+noEnglish: true
 originalCreatedAt: 2015-03-28T15:47:00.001+09:00
 tags: ["Java","Scala","SBT","Play Framework"]
 ---

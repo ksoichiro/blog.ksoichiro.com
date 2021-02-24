@@ -1,5 +1,6 @@
 ---
 title: "[Vagrant] 開発環境用のテンプレート"
+noEnglish: true
 originalCreatedAt: 2014-05-02T21:29:00.002+09:00
 tags: ["Ubuntu","VIM","Vagrant","Android"]
 ---

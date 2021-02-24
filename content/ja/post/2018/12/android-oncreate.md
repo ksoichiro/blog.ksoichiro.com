@@ -1,5 +1,6 @@
 ---
 title: "Android ナイトモードを起動時に設定するとonCreateが二度呼ばれる"
+noEnglish: true
 originalCreatedAt: 2018-12-29T18:14:00.001+09:00
 tags: ["Android"]
 ---

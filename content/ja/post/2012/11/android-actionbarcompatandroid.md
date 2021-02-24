@@ -1,5 +1,6 @@
 ---
 title: "Android ActionBarCompatでAndroid 2.xでもタブ+Fragmentを使う時にアクションボタンが切り替わるようにする"
+noEnglish: true
 originalCreatedAt: 2012-11-25T00:58:00.003+09:00
 tags: ["Fragment","ActionBarCompat","Android"]
 ---

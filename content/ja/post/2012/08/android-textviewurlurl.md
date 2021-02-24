@@ -1,5 +1,6 @@
 ---
 title: "Android TextViewのURLをリンクにしつつURL以外もクリック可能にする"
+noEnglish: true
 originalCreatedAt: 2012-08-19T20:43:00.000+09:00
 tags: ["LinkMovementMethod","TextView","URLSpan","UI","Android"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Heroku + Node.js + Express + Mongoose"
+noEnglish: true
 originalCreatedAt: 2012-10-27T01:00:00.000+09:00
 tags: ["Mongoose","MongoDB","Heroku","Node.js","MongoHQ","Express"]
 ---

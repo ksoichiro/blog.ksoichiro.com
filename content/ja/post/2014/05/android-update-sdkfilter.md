@@ -1,5 +1,6 @@
 ---
 title: "android update sdkのfilterで指定できる項目名の確認方法"
+noEnglish: true
 originalCreatedAt: 2014-05-10T16:56:00.001+09:00
 tags: ["Travis CI","Android SDK","Android"]
 ---

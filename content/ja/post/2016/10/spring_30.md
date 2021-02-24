@@ -1,5 +1,6 @@
 ---
 title: "Springのバリデーションエラーメッセージを通常メッセージに統合する"
+noEnglish: true
 originalCreatedAt: 2016-10-30T19:11:00.001+09:00
 tags: ["Spring Boot"]
 ---

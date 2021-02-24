@@ -1,5 +1,6 @@
 ---
 title: "WhatsAppにライブラリが採用された！"
+noEnglish: true
 originalCreatedAt: 2015-10-25T22:41:00.001+09:00
 tags: ["GitHub","Android"]
 ---

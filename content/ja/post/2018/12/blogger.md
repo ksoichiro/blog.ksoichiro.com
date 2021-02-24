@@ -1,5 +1,6 @@
 ---
 title: "Blogger 高速化"
+noEnglish: true
 originalCreatedAt: 2018-12-30T23:46:00.001+09:00
 tags: ["Blogger"]
 ---

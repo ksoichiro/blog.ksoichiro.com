@@ -1,5 +1,6 @@
 ---
 title: "StackEditからのBlogger投稿でラベルを指定"
+noEnglish: true
 originalCreatedAt: 2014-05-10T14:04:00.001+09:00
 tags: ["StackEdit"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Android フレームワークとか"
+noEnglish: true
 originalCreatedAt: 2011-05-03T12:18:00.000+09:00
 tags: ["Android"]
 ---

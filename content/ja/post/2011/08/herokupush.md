@@ -1,5 +1,6 @@
 ---
 title: "Herokuへのpushに失敗する"
+noEnglish: true
 originalCreatedAt: 2011-08-06T02:16:00.000+09:00
 tags: ["Heroku","Ruby on Rails"]
 ---

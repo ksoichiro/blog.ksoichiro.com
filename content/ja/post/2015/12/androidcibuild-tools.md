@@ -1,5 +1,6 @@
 ---
 title: "AndroidのCIでbuild-toolsの新しいバージョンが見つからない場合の対処"
+noEnglish: true
 originalCreatedAt: 2015-12-06T17:55:00.001+09:00
 tags: ["wercker","Travis CI","Android"]
 ---

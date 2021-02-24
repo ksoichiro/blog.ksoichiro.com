@@ -1,5 +1,6 @@
 ---
 title: "Gradleで表記ゆれをチェックするプラグインgradle-spelling-plugin"
+noEnglish: true
 originalCreatedAt: 2015-11-26T22:36:00.001+09:00
 tags: ["Gradle"]
 ---

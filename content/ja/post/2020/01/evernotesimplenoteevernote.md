@@ -1,5 +1,6 @@
 ---
 title: "EvernoteからSimplenoteに移行しようとしたがEvernoteに戻った"
+noEnglish: true
 originalCreatedAt: 2020-01-14T23:14:00.002+09:00
 tags: ["UX","Evernote","Simplenote"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "フォーマッタの自動適用"
+noEnglish: true
 originalCreatedAt: 2018-12-31T18:22:00.001+09:00
 tags: ["Java","フォーマッタ","Prettier"]
 ---

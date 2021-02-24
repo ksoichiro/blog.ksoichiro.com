@@ -1,5 +1,6 @@
 ---
 title: "Android 見つけにくいResources$NotFoundExceptionの原因"
+noEnglish: true
 originalCreatedAt: 2011-05-05T22:25:00.000+09:00
 tags: ["UI","Android"]
 ---

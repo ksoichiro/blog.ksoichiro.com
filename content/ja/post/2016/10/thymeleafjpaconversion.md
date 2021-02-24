@@ -1,5 +1,6 @@
 ---
 title: "Thymeleaf/JPAのConversion"
+noEnglish: true
 originalCreatedAt: 2016-10-30T20:56:00.001+09:00
 tags: ["JPA","Thymeleaf","Spring Boot"]
 ---

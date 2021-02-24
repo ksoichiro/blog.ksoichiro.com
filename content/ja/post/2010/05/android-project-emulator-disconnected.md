@@ -1,5 +1,6 @@
 ---
 title: "Android Project - emulator disconnected"
+noEnglish: true
 originalCreatedAt: 2010-05-08T00:11:00.003+09:00
 tags: ["eclipse","Android"]
 ---
