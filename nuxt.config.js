@@ -1,9 +1,14 @@
 const path = require('path')
 const spawn = require('cross-spawn')
+const baseUrl = 'https://blog.ksoichiro.com'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  env: {
+    baseUrl: baseUrl
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
