@@ -238,3 +238,14 @@ blockquote {
 ::-webkit-scrollbar-track {
   background-color: $scrollbarTrackColor;
 }
+
+.icon-external-link {
+  div {
+    display: inline;
+    font-size: smaller;
+    margin-left: .15rem;
+    svg {
+      fill: $externalLinkTextColor;
+    }
+  }
+}

@@ -121,6 +121,15 @@ export default {
       ],
       prism: {
         theme: 'prism-themes/themes/prism-nord.css'
+      },
+      remarkExternalLinks: {
+        content: {
+          type: "element",
+          tagName: "icon-external-link"
+        },
+        contentProperties: {
+          className: ["icon-external-link"],
+        },
       }
     }
   },
