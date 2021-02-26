@@ -106,7 +106,8 @@ export default {
         },
         vueI18nLoader: true
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -142,6 +143,24 @@ export default {
     scss: [
       '~assets/css/_var.scss'
     ]
+  },
+
+  sitemap: {
+    hostname: baseUrl,
+    gzip: true,
+    routes: async () => {
+      let routes = []
+      const { $content } = require('@nuxt/content')
+      const langs = ['en', 'ja']
+      for (const lang of langs) {
+        const posts = await $content(lang, 'post', { deep: true }).fetch()
+        for (const post of posts) {
+          const path = post.path.startsWith('/en/') ? post.path.replace(/^\/en/, '') : post.path
+          routes.push(path)
+        }
+      }
+      return routes
+    }
   },
 
   hooks: {
