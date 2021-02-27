@@ -1,9 +1,12 @@
 <template>
   <div id="nav" :class="{'is-open': isMenuOpen }">
     <div class="nav-item">
-      <NuxtLink :to="localePath('/')" class="site-name">
+      <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name" @click="setPage(1)">
         memorandum
-      </NuxtLink>
+      </span>
+      <router-link v-else :to="localePath('/')" class="site-name">
+        memorandum
+      </router-link>
     </div>
     <div class="nav-item">
       <div>
@@ -62,6 +65,9 @@ export default {
   methods: {
     toggleMenu () {
       this.isMenuOpen = !this.isMenuOpen
+    },
+    setPage (page) {
+      this.$emit('setPage', page)
     }
   }
 }
@@ -85,6 +91,7 @@ export default {
       font-size: 1.3rem;
       font-weight: 600;
       display: block;
+      cursor: pointer;
     }
     &.dropdown {
       padding: 0;

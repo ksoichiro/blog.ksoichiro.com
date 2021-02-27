@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="localePath('/')" />
+    <nav-bar :path="localePath('/')" @setPage="setPage" />
     <div class="content">
       <header class="hero">
         <h1>memorandum</h1>
