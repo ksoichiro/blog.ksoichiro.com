@@ -1,5 +1,9 @@
+const fs = require('fs')
 const path = require('path')
 const spawn = require('cross-spawn')
+const toHtml = require('hast-util-to-html')
+const clonedeep = require('lodash.clonedeep')
+const { Feed } = require('feed')
 const baseUrl = 'https://blog.ksoichiro.com'
 
 export default {
@@ -189,6 +193,53 @@ export default {
           { cwd: path.dirname(filePath) }
         ).stdout.toString('utf-8')) * 1000
       } catch (e) { /* do not handle for now */ }
+    },
+    'generate:done': async () => {
+      const { $content } = require('@nuxt/content')
+      const langs = ['en', 'ja']
+      for (const lang of langs) {
+        const posts = await $content(lang, 'post', { deep: true })
+          .sortBy('createdAt', 'desc')
+          .limit(20)
+          .fetch()
+        const feed = new Feed({
+          id: baseUrl,
+          title: 'memorandum',
+        })
+        for (const post of posts) {
+          const postPath = post.path.startsWith('/en/') ? post.path.replace(/^\/en/, '') : post.path
+          const url = baseUrl + postPath
+
+          // replace tag to tagName in body
+          const cloned = clonedeep(post.body)
+          function processNode(node) {
+            if (node.tag) {
+                const tag = node.tag
+                delete node.tag
+                node.tagName = tag
+            }
+            if (node.children) {
+                node.children.map(child => processNode(child))
+            }
+          }
+          cloned.children.map(child => processNode(child))
+
+          feed.addItem({
+            title: post.title,
+            description: post.description,
+            id: url,
+            link: url,
+            content: toHtml(cloned),
+            date: new Date(post.createdAt),
+            updated: new Date(post.updatedAt)
+          })
+        }
+
+        const localePath = lang === 'en' ? '' : '/' + lang
+        const dir = __dirname + '/dist' + localePath
+        fs.mkdirSync(dir, { recursive: true })
+        fs.writeFileSync(dir + '/feed.xml', feed.atom1())
+      }
     }
   }
 }

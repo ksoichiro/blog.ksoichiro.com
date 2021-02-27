@@ -80,16 +80,18 @@ Web フォントのロード中にも文字が描画されるように、display
 こちらを参考に無効化してみる: [http://blogger.weblix.net/2013/02/blogger-remove-bundle-css.html](http://blogger.weblix.net/2013/02/blogger-remove-bundle-css.html)
 
 ```html
-    <b:skin><![CDATA[
+    <b:skin><![ CDATA[
 ]]></b:skin>
 ```
+※ RSS の出力がおかしくなるため、`CDATA` の前にスペースを入れています
 
 これを以下のようにする。
 
 ```html
 &lt;style type=&quot;text/css&quot;&gt;
-&lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
+&lt;!-- /*<b:skin><![ CDATA[*/]]></b:skin>
 ```
+※ RSS の出力がおかしくなるため、`CDATA` の前にスペースを入れています
 
 うまくいかない…
 
