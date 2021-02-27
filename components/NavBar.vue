@@ -155,13 +155,13 @@ export default {
   }
   .dropdown-content {
     position: absolute;
+    right: 0;
     display: none;
     background-color: $secondaryBackgroundColor;
     border-radius: 3px;
     & > * {
       padding: 0.5rem;
       width: 100%;
-      min-width: 160px;
     }
   }
   &:hover {
