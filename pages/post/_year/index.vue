@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="toPath($route.path)" />
+    <nav-bar :path="toPath($route.path)" :has-english="hasEnglish" />
     <div class="content">
       <h1>{{ year }}</h1>
       <p>
@@ -26,16 +26,28 @@ export default {
     const { year } = params
     const lang = app.i18n.locale
     const pages = await $content(lang, 'post', year, { deep: true })
-      .only(['title'])
+      .only(['title', 'path'])
       .sortBy('createdAt', 'desc')
       .fetch()
       .catch(() => {
         error({ statusCode: 404 })
       })
+
+    let hasEnglish = true
+    if (lang !== 'en') {
+      await $content('en', 'post', year, { deep: true })
+        .only(['path'])
+        .fetch()
+        .catch(() => {
+          hasEnglish = false
+        })
+    }
+
     return {
       lang,
       pages,
-      year
+      year,
+      hasEnglish
     }
   },
   methods: {
