@@ -100,7 +100,8 @@ export default {
               pageNotFound: 'Not Found',
               errorOccurred: 'Something went wrong',
               backToHome: 'Back to home',
-              posts: '1 post | {count} posts'
+              posts: '1 post | {count} posts',
+              archives: 'Archives'
             },
             ja: {
               description: 'Webアプリ開発などを中心としたITに関するメモのブログです。',
@@ -112,7 +113,8 @@ export default {
               pageNotFound: 'ページが見つかりません',
               errorOccurred: 'エラーが発生しました',
               backToHome: 'ホームに戻る',
-              posts: '{count} 件'
+              posts: '{count} 件',
+              archives: 'アーカイブ'
             }
           }
         },
