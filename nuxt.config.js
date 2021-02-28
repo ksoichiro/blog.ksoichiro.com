@@ -99,7 +99,8 @@ export default {
               readMore: 'Read more...',
               pageNotFound: 'Not Found',
               errorOccurred: 'Something went wrong',
-              backToHome: 'Back to home'
+              backToHome: 'Back to home',
+              posts: '1 post | {count} posts'
             },
             ja: {
               description: 'Webアプリ開発などを中心としたITに関するメモのブログです。',
@@ -110,7 +111,8 @@ export default {
               readMore: '続きを読む...',
               pageNotFound: 'ページが見つかりません',
               errorOccurred: 'エラーが発生しました',
-              backToHome: 'ホームに戻る'
+              backToHome: 'ホームに戻る',
+              posts: '{count} 件'
             }
           }
         },
