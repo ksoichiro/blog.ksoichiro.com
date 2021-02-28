@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="toPath($route.path)" :has-english="hasEnglish"  />
+    <nav-bar :path="toPath($route.path)" :has-english="hasEnglish" />
     <div class="content">
       <h1>{{ year + '/' + month }}</h1>
       <p>
