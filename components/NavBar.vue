@@ -111,7 +111,6 @@ export default {
 @media screen and (max-width: 600px) {
   #nav {
     flex-direction: column;
-    position: relative;
     .nav-item:not(:first-child) {
       display: none;
     }

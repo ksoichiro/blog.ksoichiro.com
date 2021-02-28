@@ -64,10 +64,20 @@ hr {
   border-top: 1px solid $borderColor;
 }
 
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .content {
   max-width: 740px;
   margin: 0 auto;
+  margin-top: 57px;
   padding: 2rem;
+  .nuxt-content-container {
+    position: static !important;
+  }
 }
 
 .sidebar,
