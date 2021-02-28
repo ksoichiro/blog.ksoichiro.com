@@ -257,7 +257,8 @@ export default {
       margin-right: auto;
     }
     .sidebar {
-      width: calc(100% - 4rem);
+      border-top: 1px solid $borderColor;
+      width: calc(680px - 4rem);
       margin: 0 auto;
     }
   }
