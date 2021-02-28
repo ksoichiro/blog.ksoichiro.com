@@ -56,6 +56,9 @@ export default {
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:url', property: 'og:url', content: process.env.baseUrl + this.$route.path },
         { hid: 'og:description', property: 'og:description', content: this.$t('description') }
+      ],
+      link: [
+        { rel: 'alternate', type: 'application/atom+xml', title: 'Atom1.0', href: this.localePath('/feed.xml') }
       ]
     }
   },

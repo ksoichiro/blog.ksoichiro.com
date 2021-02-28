@@ -65,6 +65,9 @@ export default {
         { hid: 'og:updated_time', property: 'og:updated_time', content: this.modifiedTime() },
         { hid: 'article:published_time', property: 'article:published_time', content: this.publishedTime() },
         { hid: 'article:modified_time', property: 'article:modified_time', content: this.modifiedTime() }
+      ],
+      link: [
+        { rel: 'alternate', type: 'application/atom+xml', title: 'Atom1.0', href: this.localePath('/feed.xml') }
       ]
     }
   },
