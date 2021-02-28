@@ -71,9 +71,9 @@ export default {
   methods: {
     toPath (path) {
       if (path.startsWith('/en/')) {
-        return path.replace(/^\/en/, '')
+        return path.replace(/^\/en/, '') + '/'
       }
-      return path
+      return path + '/'
     },
     publishedTime () {
       if (!this.article.createdAt) {
