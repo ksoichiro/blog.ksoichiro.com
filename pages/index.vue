@@ -67,6 +67,7 @@ export default {
   methods: {
     setPage (page) {
       this.page = page
+      window.scrollTo({ top: 0 })
     },
     toPath (path) {
       if (path.startsWith('/en/')) {
