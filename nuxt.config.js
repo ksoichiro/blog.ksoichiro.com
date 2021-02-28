@@ -170,7 +170,7 @@ export default {
         const posts = await $content(lang, 'post', { deep: true }).fetch()
         for (const post of posts) {
           const path = post.path.startsWith('/en/') ? post.path.replace(/^\/en/, '') : post.path
-          routes.push(path)
+          routes.push(path + '/')
         }
       }
       return routes
