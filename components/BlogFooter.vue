@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <p class="copyright">
-      &copy; 2021 ksoichiro
+      &copy; 2010 ksoichiro
     </p>
     <div class="links">
       <a href="https://github.com/ksoichiro" aria-label="GitHub Profile" target="_blank" rel="noopener">
