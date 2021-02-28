@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import Meta from '@/components/Meta.vue'
+const merge = require('deepmerge')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -33,6 +35,9 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 export default {
+  mixins: [
+    Meta
+  ],
   async asyncData ({ app, $content, params }) {
     const { year, month, slug } = params
     const lang = app.i18n.locale
@@ -50,26 +55,20 @@ export default {
     }
   },
   head () {
-    return {
-      htmlAttrs: {
-        lang: this.lang
-      },
-      title: this.article.title,
-      titleTemplate: '%s | memorandum',
-      meta: [
-        { hid: 'description', name: 'description', content: this.$t('description') },
-        { hid: 'og:title', property: 'og:title', content: this.article.title },
-        { hid: 'og:type', property: 'og:type', content: 'article' },
-        { hid: 'og:url', property: 'og:url', content: process.env.baseUrl + this.$route.path },
-        { hid: 'og:description', property: 'og:description', content: this.article.description },
-        { hid: 'og:updated_time', property: 'og:updated_time', content: this.modifiedTime() },
-        { hid: 'article:published_time', property: 'article:published_time', content: this.publishedTime() },
-        { hid: 'article:modified_time', property: 'article:modified_time', content: this.modifiedTime() }
-      ],
-      link: [
-        { rel: 'alternate', type: 'application/atom+xml', title: 'Atom1.0', href: this.localePath('/feed.xml') }
-      ]
-    }
+    return merge(
+      this.meta(),
+      {
+        title: this.article.title,
+        titleTemplate: '%s | memorandum',
+        meta: [
+          { hid: 'og:title', property: 'og:title', content: this.article.title },
+          { hid: 'og:type', property: 'og:type', content: 'article' },
+          { hid: 'og:updated_time', property: 'og:updated_time', content: this.modifiedTime() },
+          { hid: 'article:published_time', property: 'article:published_time', content: this.publishedTime() },
+          { hid: 'article:modified_time', property: 'article:modified_time', content: this.modifiedTime() }
+        ]
+      }
+    )
   },
   methods: {
     toPath (path) {
