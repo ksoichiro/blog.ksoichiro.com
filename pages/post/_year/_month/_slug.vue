@@ -38,15 +38,25 @@ export default {
   mixins: [
     Meta
   ],
-  async asyncData ({ app, $content, params }) {
+  async asyncData ({ app, $content, params, error }) {
     const { year, month, slug } = params
     const lang = app.i18n.locale
-    const article = await $content(lang, 'post', year, month, slug).fetch()
-    const [prev, next] = await $content(lang, 'post', { deep: true })
-      .only(['title', 'slug'])
-      .sortBy('createdAt', 'desc')
-      .surround(article.path)
+    const article = await $content(lang, 'post', year, month, slug)
       .fetch()
+      .catch(() => {
+        error({ statusCode: 404 })
+      })
+    let prev, next
+    if (article) {
+      [prev, next] = await $content(lang, 'post', { deep: true })
+        .only(['title', 'slug'])
+        .sortBy('createdAt', 'desc')
+        .surround(article.path)
+        .fetch()
+        .catch(() => {
+          error({ statusCode: 404 })
+        })
+    }
     return {
       lang,
       article,
