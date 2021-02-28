@@ -96,7 +96,10 @@ export default {
               tags: 'Tags',
               created: 'Created',
               updated: 'Updated',
-              readMore: 'Read more...'
+              readMore: 'Read more...',
+              pageNotFound: 'Not Found',
+              errorOccurred: 'Something went wrong',
+              backToHome: 'Back to home'
             },
             ja: {
               description: 'Webアプリ開発などを中心としたITに関するメモのブログです。',
@@ -104,7 +107,10 @@ export default {
               tags: 'タグ',
               created: '作成',
               updated: '更新',
-              readMore: '続きを読む...'
+              readMore: '続きを読む...',
+              pageNotFound: 'ページが見つかりません',
+              errorOccurred: 'エラーが発生しました',
+              backToHome: 'ホームに戻る'
             }
           }
         },
