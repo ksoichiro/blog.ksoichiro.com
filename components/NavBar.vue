@@ -76,6 +76,7 @@ export default {
 <style lang="scss" scoped>
 #nav {
   display: flex;
+  z-index: 1;
   background-color: $backgroundColor;
   color: $textColor;
   align-items: center;
