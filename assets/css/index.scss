@@ -240,7 +240,8 @@ blockquote {
 }
 
 .icon-external-link {
-  div {
+  display: inline;
+  & > * {
     display: inline;
     font-size: smaller;
     margin-left: .15rem;
