@@ -141,13 +141,9 @@ export default {
         }
       }
       removeKey(keys, 'opened')
-      // removeKey(keys, 'count')
       return keys
     },
     sortPosts (posts) {
-      // posts.sort((a, b) => {
-      //   return b.createdAt - a.createdAt
-      // })
       return posts
     }
   }
