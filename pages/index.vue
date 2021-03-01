@@ -166,7 +166,6 @@ export default {
   h2:first-of-type {
     margin-top: 0;
   }
-  max-width: calc(100% - 2rem);
 }
 .post:not(:first-of-type) {
   margin-top: 4rem;
@@ -258,7 +257,8 @@ export default {
     }
     .sidebar {
       border-top: 1px solid $borderColor;
-      width: calc(680px - 4rem);
+      width: calc(100% - 4rem);
+      max-width: calc(680px - 4rem);
       margin: 0 auto;
     }
   }
