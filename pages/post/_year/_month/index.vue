@@ -21,7 +21,13 @@
 </template>
 
 <script>
+import Meta from '@/components/Meta.vue'
+const merge = require('deepmerge')
+
 export default {
+  mixins: [
+    Meta
+  ],
   async asyncData ({ app, $content, params, error }) {
     const { year, month } = params
     const lang = app.i18n.locale
@@ -50,6 +56,19 @@ export default {
       month,
       hasEnglish
     }
+  },
+  head () {
+    return merge(
+      this.meta(),
+      {
+        title: `${this.year}/${this.month}`,
+        titleTemplate: '%s | memorandum',
+        meta: [
+          { hid: 'og:title', property: 'og:title', content: `${this.year}/${this.month}` },
+          { hid: 'og:type', property: 'og:type', content: 'article' }
+        ]
+      }
+    )
   },
   methods: {
     toPath (path) {
