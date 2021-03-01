@@ -153,6 +153,10 @@ export default {
   build: {
   },
 
+  generate: {
+    fallback: true
+  },
+
   styleResources: {
     scss: [
       '~assets/css/_var.scss'
