@@ -89,6 +89,7 @@ export default {
     display: block;
     font-size: .9rem;
     .site-name {
+      font-family: $titleFontFamily;
       font-size: 1.3rem;
       font-weight: 600;
       display: block;

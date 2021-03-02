@@ -11,13 +11,13 @@ a {
 }
 
 body {
-  font-family: Rubik,'M PLUS 1p','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Verdana, Meiryo, "M+ 1p", sans-serif;;
+  font-family: $mainFontFamily;
   font-display: swap;
   margin: 0;
 }
 
 code, kbd, .line-number {
-  font-family: 'Roboto Mono',source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: $monospaceFontFamily;
   font-display: swap;
 }
 
@@ -43,6 +43,7 @@ pre[class*="language-"] {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.25;
+  font-family: $titleFontFamily;
 }
 
 h2 {
