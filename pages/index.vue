@@ -9,7 +9,7 @@
       <main class="content">
         <div v-for="p of paginated" :key="p.path" class="post">
           <article>
-            <h2>
+            <h2 class="post-title">
               <NuxtLink :to="toPath(p.path)">
                 {{ p.title }}
               </NuxtLink>
@@ -159,7 +159,7 @@ export default {
   }
 }
 .post {
-  h2:first-of-type {
+  h2.post-title {
     margin-top: 0;
   }
 }
