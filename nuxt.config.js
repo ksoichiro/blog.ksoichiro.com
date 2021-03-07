@@ -5,13 +5,15 @@ const toHtml = require('hast-util-to-html')
 const clonedeep = require('lodash.clonedeep')
 const { Feed } = require('feed')
 const baseUrl = 'https://blog.ksoichiro.com'
+const perPage = 10
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   env: {
-    baseUrl: baseUrl
+    baseUrl: baseUrl,
+    perPage: perPage
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -222,7 +224,7 @@ export default {
       for (const lang of langs) {
         const posts = await $content(lang, 'post', { deep: true })
           .sortBy('createdAt', 'desc')
-          .limit(20)
+          .limit(process.env.perPage)
           .fetch()
         const feed = new Feed({
           id: baseUrl,

@@ -99,7 +99,7 @@ export default {
   },
   data () {
     return {
-      perPage: 20,
+      perPage: process.env.perPage,
       page: 1
     }
   },
