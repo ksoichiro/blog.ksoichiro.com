@@ -28,8 +28,6 @@ export default {
     link: [
       { rel: 'apple-touch-icon', type: 'image/png', href: '/apple-touch-icon-180x180.png' },
       { rel: 'icon', type: 'image/png', href: '/icon-192x192.png' },
-      { rel: 'preload', as: 'font', href: '/fonts/20210307/MPLUS1p-Regular.woff2', crossorigin: true },
-      { rel: 'preload', as: 'font', href: '/fonts/20210307/MPLUS1p-Medium.woff2', crossorigin: true }
     ],
     script: [
       {
@@ -39,7 +37,8 @@ export default {
               families: [
                 'Rubik:400,500',
                 'Inter:400',
-                'Roboto Mono:300,500&display=swap',
+                'Roboto Mono:300,500',
+                'M PLUS 1p:400,500&display=swap',
               ]
             },
             active: function() {
