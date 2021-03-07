@@ -52,7 +52,14 @@ export default {
             s.parentNode.insertBefore(wf, s);
           })(document);
         `
-      }
+      },
+      // The core Firebase JS SDK is always required and must be listed first
+      { src: '/__/firebase/8.2.6/firebase-app.js', body: true },
+      // Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      { src: '/__/firebase/8.2.6/firebase-analytics.js', body: true },
+      // Initialize Firebase
+      { src: '/__/firebase/init.js', body: true }
     ],
     __dangerouslyDisableSanitizers: ['script'],
   },

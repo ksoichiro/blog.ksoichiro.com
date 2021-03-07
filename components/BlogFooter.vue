@@ -8,7 +8,6 @@
         <LogoGitHubIcon />
       </a>
     </div>
-    <Analytics />
   </div>
 </template>
 
