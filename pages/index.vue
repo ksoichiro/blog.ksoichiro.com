@@ -76,7 +76,7 @@ export default {
       return dir.split('/')[4]
     }
     const pages = await $content(lang + '/post', { deep: true })
-      .only(['title', 'path', 'dir', 'excerpt', 'createdAt'])
+      .only(['title', 'path', 'dir', 'excerpt', 'createdAt', 'updatedAt', 'tags'])
       .sortBy('createdAt', 'desc')
       .fetch()
     const groupBy = (xs, key, keyfn1, keyfn2) => {
