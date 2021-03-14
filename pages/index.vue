@@ -226,6 +226,7 @@ export default {
   }
   .caret {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .caret-right {
     position: relative;

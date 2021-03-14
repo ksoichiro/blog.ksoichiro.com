@@ -8,6 +8,7 @@ html, body {
 a {
   color: $accentColor;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &:hover {
     text-decoration: underline;
   }
@@ -165,6 +166,10 @@ tr:nth-child(2n) {
 blockquote {
   border-color: $blockquoteBorderColor;
   color: $blockquoteTextColor;
+}
+
+::selection {
+  background-color: $selectionBackgroundColor;
 }
 
 ::-webkit-scrollbar {

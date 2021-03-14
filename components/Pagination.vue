@@ -49,6 +49,7 @@ export default {
   padding-left: 0;
   & > * {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     a {
       display: block;
       padding: .5rem .75rem;

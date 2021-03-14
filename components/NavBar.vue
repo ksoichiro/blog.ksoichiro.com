@@ -95,6 +95,7 @@ export default {
       text-decoration: none;
       display: block;
       cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     &.dropdown {
       padding: 0;
@@ -124,6 +125,7 @@ export default {
       top: 0;
       padding: 1rem;
       cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       div {
         width: 18px;
         height: 2px;
@@ -160,6 +162,7 @@ export default {
     padding: 1rem;
     padding-right: 1.5rem !important;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin-right: 10px;
   }
   .dropdown-content {
