@@ -44,6 +44,9 @@ export default {
 <style lang="scss" scoped>
 .pagination {
   display: flex;
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
   & > * {
     cursor: pointer;
     a {

@@ -92,42 +92,6 @@ hr {
   border-color: $borderColor;
 }
 
-div.search-box {
-  input {
-    color: $inputTextColor;
-    background-color: $inputBackgroundColor;
-    &:focus {
-      border-color: $inputBorderColor;
-    }
-  }
-  ul.suggestions {
-    background-color: $secondaryBackgroundColor;
-  }
-  li.suggestion.focused {
-    background-color: $tertiaryBackgroundColor;
-  }
-}
-
-.dropdown-wrapper ul.nav-dropdown {
-  background-color: $secondaryBackgroundColor;
-  border-color: $secondaryBorderColor;
-}
-
-.home {
-  .hero {
-    p.description {
-      color: $homeDescriptionTextColor;
-      font-size: 1.2rem;
-      font-weight: 300;
-      max-width: 90%;
-    }
-  }
-}
-
-.footer-home {
-  margin-top: 2rem;
-}
-
 .page-attributes {
   color: $secondaryTextColor;
   font-size: smaller;
@@ -145,41 +109,6 @@ div.search-box {
 .content {
   p img {
     max-width: 100%;
-  }
-}
-
-.theme-default-content code {
-  color: $codeTextColor;
-  background-color: $codeBackgroundColor;
-  padding: 0.15rem 0.3rem;
-}
-
-.pagination {
-  margin-top: 2rem;
-  display: inline-block;
-  list-style: none;
-  padding-left: 0;
-}
-
-.pagination > li {
-  display: inline;
-  margin: 8px 0;
-  a {
-    padding: 6px 12px;
-    outline: none;
-  }
-  &.active {
-    a {
-      color: $nord4;
-      background-color: $nord2;
-      border-radius: 4px;
-    }
-  }
-  &:not(.active) {
-    a:hover {
-      background-color: $nord1;
-      border-radius: 4px;
-    }
   }
 }
 

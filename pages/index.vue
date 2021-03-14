@@ -3,7 +3,7 @@
     <nav-bar :path="localePath('/')" @setPage="setPage" />
     <header class="hero">
       <h1>memorandum</h1>
-      <p>{{ $t('description') }}</p>
+      <p class="description">{{ $t('description') }}</p>
     </header>
     <div class="container">
       <main class="content">
@@ -153,8 +153,13 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  color: $homeDescriptionTextColor;
+  font-size: 0.8em;
+  font-weight: 300;
   text-align: center;
   padding-top: 57px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   h1 {
     font-size: 3rem;
   }
