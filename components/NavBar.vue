@@ -92,6 +92,7 @@ export default {
       font-family: $titleFontFamily;
       font-size: 1.3rem;
       font-weight: 600;
+      text-decoration: none;
       display: block;
       cursor: pointer;
     }

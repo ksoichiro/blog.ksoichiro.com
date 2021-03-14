@@ -36,6 +36,7 @@ export default {
     }
     &:hover {
       background-color: lighten($nord2, 10%);
+      text-decoration: none;
     }
   }
 }

@@ -8,6 +8,9 @@ html, body {
 a {
   color: $accentColor;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {
