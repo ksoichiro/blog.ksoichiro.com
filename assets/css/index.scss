@@ -81,6 +81,10 @@ hr {
   margin: 0 auto;
   margin-top: 57px;
   padding: 2rem;
+  h1, h2:not(.post-title), h3, h4, h5, h6 {
+    margin-top: -3rem;
+    padding-top: 4rem;
+  }
   .nuxt-content-container {
     position: static !important;
   }
