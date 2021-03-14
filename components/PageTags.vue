@@ -1,6 +1,5 @@
 <template>
-  <span class="page-tags">
-    <PriceTagsIcon />
+  <div class="page-tags">
     <router-link
       v-for="tag in tags"
       :key="tag"
@@ -9,16 +8,11 @@
     >
       {{ tag }}
     </router-link>
-  </span>
+  </div>
 </template>
 
 <script>
-import PriceTagsIcon from 'vue-ionicons/dist/md-pricetags.vue'
-
 export default {
-  components: {
-    PriceTagsIcon
-  },
   props: {
     tags: {
       type: Array,
@@ -30,10 +24,19 @@ export default {
 
 <style lang="scss" scoped>
 .page-tags {
-  display: inline-block;
-}
-
-.page-tags > .page-tag:not(:last-of-type)::after {
-  content: ', ';
+  margin-top: 0.8rem;
+  .page-tag {
+    background-color: $nord2;
+    color: $nord4;
+    transition: background-color .2s linear;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.8rem;
+    &:not(:first-child) {
+      margin-left: 0.4em;
+    }
+    &:hover {
+      background-color: lighten($nord2, 10%);
+    }
+  }
 }
 </style>

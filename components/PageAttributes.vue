@@ -1,9 +1,11 @@
 <template>
   <div class="page-attributes">
-    <TimeOutlineIcon />
-    <span :title="$t('created') + ': ' + longDate(page.createdAt)">{{ shortDate(page.createdAt) }}</span>
-    <CreateOutlineIcon v-if="page.createdAt !== page.updatedAt" />
-    <span v-if="page.createdAt !== page.updatedAt" :title="$t('updated') + ': ' + longDate(page.updatedAt)">{{ shortDate(page.updatedAt) }}</span>
+    <div>
+      <TimeOutlineIcon />
+      <span :title="$t('created') + ': ' + longDate(page.createdAt)">{{ shortDate(page.createdAt) }}</span>
+      <CreateOutlineIcon v-if="page.createdAt !== page.updatedAt" />
+      <span v-if="page.createdAt !== page.updatedAt" :title="$t('updated') + ': ' + longDate(page.updatedAt)">{{ shortDate(page.updatedAt) }}</span>
+    </div>
     <PageTags :tags="page.tags" />
   </div>
 </template>
