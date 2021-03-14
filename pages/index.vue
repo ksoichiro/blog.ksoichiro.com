@@ -154,14 +154,16 @@ export default {
 <style lang="scss" scoped>
 .hero {
   color: $homeDescriptionTextColor;
-  font-size: 0.8em;
-  font-weight: 300;
   text-align: center;
   padding-top: 57px;
-  padding-left: 2rem;
-  padding-right: 2rem;
   h1 {
     font-size: 3rem;
+  }
+  .description {
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 .post {
