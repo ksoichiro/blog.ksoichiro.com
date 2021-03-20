@@ -142,7 +142,13 @@ export default {
         'remark-emoji'
       ],
       rehypePlugins: [
-        'rehype-plugin-image-native-lazy-loading'
+        'rehype-plugin-image-native-lazy-loading',
+        [
+          'rehype-img-size',
+          {
+            dir: 'static'
+          }
+        ]
       ],
       prism: {
         theme: 'prism-themes/themes/prism-nord.css'
