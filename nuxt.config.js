@@ -92,6 +92,7 @@ export default {
     [
       'nuxt-i18n',
       {
+        detectBrowserLanguage: false,
         locales: [
           { code: 'en', iso: 'en-US' },
           { code: 'ja', iso: 'ja-JP' }
