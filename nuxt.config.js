@@ -272,5 +272,9 @@ export default {
         fs.writeFileSync(dir + '/feed.xml', feed.atom1())
       }
     }
+  },
+
+  render: {
+    injectScripts: false
   }
 }
