@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="localePath('/')" @setPage="setPage" />
+    <nav-bar :path="localePath('/')" :has-english="hasEnglish" @setPage="setPage" />
     <header class="hero">
       <h1>memorandum</h1>
       <p class="description">{{ $t('description') }}</p>
@@ -67,7 +67,7 @@ export default {
   mixins: [
     Meta
   ],
-  async asyncData ({ app, $content, params, redirect }) {
+  async asyncData ({ app, $content, params, error }) {
     const lang = app.i18n.locale
     const getYear = (dir) => {
       return dir.split('/')[3]
@@ -86,7 +86,17 @@ export default {
     const perPage = process.env.perPage
     const maxPage = Math.ceil(pages.length / perPage)
     if (page < 1 || maxPage < page) {
-      return redirect(301, app.localePath('/'))
+      error({ statusCode: 404 })
+    }
+    let hasEnglish = true
+    if (lang === 'ja') {
+      const pages = await $content('en/post', { deep: true })
+        .only(['path'])
+        .fetch()
+      const maxPage = Math.ceil(pages.length / perPage)
+      if (page < 1 || maxPage < page) {
+        hasEnglish = false
+      }
     }
     const paginated = pages.slice((page - 1) * perPage, page * perPage)
     const groupBy = (xs, key, keyfn1, keyfn2) => {
@@ -106,6 +116,7 @@ export default {
       lang,
       page,
       maxPage,
+      hasEnglish,
       pages,
       paginated,
       archives
