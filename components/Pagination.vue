@@ -1,12 +1,18 @@
 <template>
   <div class="pagination">
     <div>
-      <a :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)">
+      <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)" :to="localePath('/page/' + (page - 1))">
+        &lt;
+      </NuxtLink>
+      <a v-else class="is-disabled">
         &lt;
       </a>
     </div>
     <div>
-      <a :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)">
+      <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)" :to="localePath('/page/' + (page + 1))">
+        &gt;
+      </NuxtLink>
+      <a v-else class="is-disabled">
         &gt;
       </a>
     </div>

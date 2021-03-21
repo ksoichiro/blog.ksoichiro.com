@@ -59,7 +59,11 @@ export default {
         innerHTML: `
           (function(d) {
             d.addEventListener('DOMContentLoaded', function() {
-              d.getElementById('toggleMenu').addEventListener('click', function() {
+              const m = d.getElementById('toggleMenu')
+              if (!m) {
+                return
+              }
+              m.addEventListener('click', function() {
                 d.getElementById('nav').classList.toggle('is-open');
               });
             });
@@ -210,6 +214,13 @@ export default {
   },
 
   hooks: {
+    'build:extendRoutes': (routes) => {
+      routes.push({
+        path: '/page/:page',
+        component: 'pages/index.vue',
+        name: 'page'
+      })
+    },
     'content:file:beforeInsert': (document) => {
       const filePath = 'content' + document.path + document.extension
       try {

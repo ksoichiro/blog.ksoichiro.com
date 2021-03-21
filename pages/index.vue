@@ -23,7 +23,7 @@
             </p>
           </article>
         </div>
-        <pagination :page="page" :max-page="Math.ceil(pages.length / perPage)" @setPage="setPage" />
+        <pagination :page="page" :max-page="maxPage" @setPage="setPage" />
       </main>
       <aside class="sidebar">
         <h3>{{ $t('archives') }}</h3>
@@ -67,7 +67,7 @@ export default {
   mixins: [
     Meta
   ],
-  async asyncData ({ app, $content, params }) {
+  async asyncData ({ app, $content, params, redirect }) {
     const lang = app.i18n.locale
     const getYear = (dir) => {
       return dir.split('/')[3]
@@ -75,10 +75,20 @@ export default {
     const getMonth = (dir) => {
       return dir.split('/')[4]
     }
+    let page = 1
+    if (typeof params.page !== 'undefined') {
+      page = parseInt(params.page)
+    }
     const pages = await $content(lang + '/post', { deep: true })
       .only(['title', 'path', 'dir', 'excerpt', 'createdAt', 'updatedAt', 'tags'])
       .sortBy('createdAt', 'desc')
       .fetch()
+    const perPage = process.env.perPage
+    const maxPage = Math.ceil(pages.length / perPage)
+    if (page < 1 || maxPage < page) {
+      return redirect(301, app.localePath('/'))
+    }
+    const paginated = pages.slice((page - 1) * perPage, page * perPage)
     const groupBy = (xs, key, keyfn1, keyfn2) => {
       return xs.reduce((rv, x) => {
         const value = x[key]
@@ -94,14 +104,16 @@ export default {
     const archives = groupBy(pages, 'dir', getYear, getMonth)
     return {
       lang,
+      page,
+      maxPage,
       pages,
+      paginated,
       archives
     }
   },
   data () {
     return {
-      perPage: process.env.perPage,
-      page: 1
+      perPage: process.env.perPage
     }
   },
   head () {
@@ -118,6 +130,9 @@ export default {
               (function(d) {
                 d.addEventListener('DOMContentLoaded', function() {
                   Array.from(d.getElementsByClassName('archive-year-caret')).forEach(function(e) {
+                    if (!e) {
+                      return
+                    }
                     const y = e.dataset.year
                     e.addEventListener('click', function() {
                       Array.from(e.parentNode.getElementsByClassName('archive-months')).forEach(function(e) {
@@ -128,6 +143,9 @@ export default {
                       c.classList.toggle('caret-down')
                     })
                     Array.from(e.parentNode.getElementsByClassName('archive-month-caret')).forEach(function(e) {
+                      if (!e) {
+                        return
+                      }
                       const m = e.dataset.month
                       e.addEventListener('click', function() {
                         Array.from(e.parentNode.getElementsByClassName('archive-posts')).forEach(function(e) {
@@ -146,11 +164,6 @@ export default {
         ]
       }
     )
-  },
-  computed: {
-    paginated () {
-      return this.pages.slice((this.page - 1) * this.perPage, this.page * this.perPage)
-    }
   },
   methods: {
     setPage (page) {
