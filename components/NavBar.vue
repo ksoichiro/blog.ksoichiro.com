@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="menu" id="toggleMenu">
+    <div id="toggleMenu" class="menu">
       <div class="bar1" />
       <div class="bar2" />
       <div class="bar3" />

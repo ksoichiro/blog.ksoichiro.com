@@ -3,7 +3,9 @@
     <nav-bar :path="localePath('/')" :has-english="hasEnglish" />
     <header class="hero">
       <h1>memorandum</h1>
-      <p class="description">{{ $t('description') }}</p>
+      <p class="description">
+        {{ $t('description') }}
+      </p>
     </header>
     <div class="container">
       <main class="content">
@@ -29,16 +31,16 @@
         <h3>{{ $t('archives') }}</h3>
         <ul v-for="y in sortKeys(archives)" :key="y" class="archive-years">
           <li>
-            <span class="caret archive-year-caret" :data-year="y" :id="'archive-year-' + y">
-              <span class="caret-right" :id="'archive-year-caret-' + y" />
+            <span :id="'archive-year-' + y" class="caret archive-year-caret" :data-year="y">
+              <span :id="'archive-year-caret-' + y" class="caret-right" />
             </span>
             <NuxtLink :to="localePath(`/post/${y}`)">
               {{ y }} ({{ archives[y].count }})
             </NuxtLink>
             <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months">
               <li>
-                <span class="caret archive-month-caret" :data-year="y" :data-month="m" :id="'archive-month-' + y + '-' + m">
-                  <span class="caret-right" :id="'archive-month-caret-' + y + '-' + m" />
+                <span :id="'archive-month-' + y + '-' + m" class="caret archive-month-caret" :data-year="y" :data-month="m">
+                  <span :id="'archive-month-caret-' + y + '-' + m" class="caret-right" />
                 </span>
                 <NuxtLink :to="localePath(`/post/${y}/${m}`)">
                   {{ m }} ({{ archives[y].months[m].posts.length }})
