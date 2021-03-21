@@ -29,16 +29,16 @@
         <h3>{{ $t('archives') }}</h3>
         <ul v-for="y in sortKeys(archives)" :key="y" class="archive-years">
           <li>
-            <span class="caret" @click="archives[y].opened = !archives[y].opened">
-              <span :class="{'caret-right': !archives[y].opened, 'caret-down': archives[y].opened}" />
+            <span class="caret archive-year-caret" @click="archives[y].opened = !archives[y].opened" :data-year="y" :id="'archive-year-' + y">
+              <span :class="{'caret-right': !archives[y].opened, 'caret-down': archives[y].opened}" :id="'archive-year-caret-' + y" />
             </span>
             <NuxtLink :to="localePath(`/post/${y}`)">
               {{ y }} ({{ archives[y].count }})
             </NuxtLink>
             <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months" :class="{'is-opened': archives[y].opened }">
               <li>
-                <span class="caret" @click="archives[y].months[m].opened = !archives[y].months[m].opened">
-                  <span :class="{'caret-right': !archives[y].months[m].opened, 'caret-down': archives[y].months[m].opened}" />
+                <span class="caret archive-month-caret" @click="archives[y].months[m].opened = !archives[y].months[m].opened" :data-year="y" :data-month="m" :id="'archive-month-' + y + '-' + m">
+                  <span :class="{'caret-right': !archives[y].months[m].opened, 'caret-down': archives[y].months[m].opened}" :id="'archive-month-caret-' + y + '-' + m" />
                 </span>
                 <NuxtLink :to="localePath(`/post/${y}/${m}`)">
                   {{ m }} ({{ archives[y].months[m].posts.length }})
@@ -111,6 +111,38 @@ export default {
         meta: [
           { hid: 'og:title', property: 'og:title', content: 'memorandum' },
           { hid: 'og:type', property: 'og:type', content: 'website' }
+        ],
+        script: [
+          {
+            innerHTML: `
+              (function(d) {
+                d.addEventListener('DOMContentLoaded', function() {
+                  Array.from(d.getElementsByClassName('archive-year-caret')).forEach(function(e) {
+                    const y = e.dataset.year
+                    e.addEventListener('click', function() {
+                      Array.from(e.parentNode.getElementsByClassName('archive-months')).forEach(function(e) {
+                        e.classList.toggle('is-opened')
+                      })
+                      const c = d.getElementById('archive-year-caret-' + y)
+                      c.classList.toggle('caret-right')
+                      c.classList.toggle('caret-down')
+                    })
+                    Array.from(e.parentNode.getElementsByClassName('archive-month-caret')).forEach(function(e) {
+                      const m = e.dataset.month
+                      e.addEventListener('click', function() {
+                        Array.from(e.parentNode.getElementsByClassName('archive-posts')).forEach(function(e) {
+                          e.classList.toggle('is-opened')
+                        })
+                        const c = d.getElementById('archive-month-caret-' + y + '-' + m)
+                        c.classList.toggle('caret-right')
+                        c.classList.toggle('caret-down')
+                      })
+                    })
+                  })
+                })
+              })(document)
+            `
+          }
         ]
       }
     )
