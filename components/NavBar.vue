@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="menu" @click="toggleMenu">
+    <div class="menu" id="toggleMenu" @click="toggleMenu">
       <div class="bar1" />
       <div class="bar2" />
       <div class="bar3" />

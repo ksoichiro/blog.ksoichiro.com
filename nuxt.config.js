@@ -55,6 +55,17 @@ export default {
           })(document);
         `
       },
+      {
+        innerHTML: `
+          (function(d) {
+            d.addEventListener('DOMContentLoaded', function() {
+              d.getElementById('toggleMenu').addEventListener('click', function() {
+                d.getElementById('nav').classList.toggle('is-open');
+              });
+            });
+          })(document);
+        `
+      },
       // The core Firebase JS SDK is always required and must be listed first
       { src: '/__/firebase/8.2.6/firebase-app.js', body: true },
       // Add SDKs for Firebase products that you want to use
