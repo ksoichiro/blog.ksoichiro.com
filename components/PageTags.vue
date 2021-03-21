@@ -24,15 +24,16 @@ export default {
 
 <style lang="scss" scoped>
 .page-tags {
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   .page-tag {
     background-color: $nord2;
     color: $nord4;
     transition: background-color .2s linear;
     padding: 0.2rem 0.6rem;
     border-radius: 0.8rem;
-    &:not(:first-child) {
-      margin-left: 0.4em;
+    line-height: 2em;
+    &:not(:last-child) {
+      margin-right: 0.4em;
     }
     &:hover {
       background-color: lighten($nord2, 10%);
