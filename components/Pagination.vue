@@ -1,7 +1,7 @@
 <template>
   <div class="pagination">
     <div>
-      <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" @click="setPage(page - 1)" :to="localePath('/page/' + (page - 1))">
+      <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" :to="localePath('/page/' + (page - 1))">
         &lt;
       </NuxtLink>
       <a v-else class="is-disabled">
@@ -9,7 +9,7 @@
       </a>
     </div>
     <div>
-      <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" @click="setPage(page + 1)" :to="localePath('/page/' + (page + 1))">
+      <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" :to="localePath('/page/' + (page + 1))">
         &gt;
       </NuxtLink>
       <a v-else class="is-disabled">
@@ -37,11 +37,6 @@ export default {
     },
     nextDisabled () {
       return this.page === this.maxPage
-    }
-  },
-  methods: {
-    setPage (page) {
-      this.$emit('setPage', page)
     }
   }
 }

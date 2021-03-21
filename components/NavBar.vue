@@ -1,7 +1,7 @@
 <template>
-  <div id="nav" :class="{'is-open': isMenuOpen }">
+  <div id="nav">
     <div class="nav-item">
-      <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name" @click="setPage(1)">
+      <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name">
         memorandum
       </span>
       <router-link v-else :to="localePath('/')" class="site-name">
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="menu" id="toggleMenu" @click="toggleMenu">
+    <div class="menu" id="toggleMenu">
       <div class="bar1" />
       <div class="bar2" />
       <div class="bar3" />
@@ -47,27 +47,10 @@
 <script>
 export default {
   props: {
-    path: {
-      type: String,
-      required: true
-    },
     hasEnglish: {
       type: Boolean,
       required: false,
       default: true
-    }
-  },
-  data () {
-    return {
-      isMenuOpen: false
-    }
-  },
-  methods: {
-    toggleMenu () {
-      this.isMenuOpen = !this.isMenuOpen
-    },
-    setPage (page) {
-      this.$emit('setPage', page)
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar :path="localePath('/')" :has-english="hasEnglish" @setPage="setPage" />
+    <nav-bar :path="localePath('/')" :has-english="hasEnglish" />
     <header class="hero">
       <h1>memorandum</h1>
       <p class="description">{{ $t('description') }}</p>
@@ -23,27 +23,27 @@
             </p>
           </article>
         </div>
-        <pagination :page="page" :max-page="maxPage" @setPage="setPage" />
+        <pagination :page="page" :max-page="maxPage" />
       </main>
       <aside class="sidebar">
         <h3>{{ $t('archives') }}</h3>
         <ul v-for="y in sortKeys(archives)" :key="y" class="archive-years">
           <li>
-            <span class="caret archive-year-caret" @click="archives[y].opened = !archives[y].opened" :data-year="y" :id="'archive-year-' + y">
-              <span :class="{'caret-right': !archives[y].opened, 'caret-down': archives[y].opened}" :id="'archive-year-caret-' + y" />
+            <span class="caret archive-year-caret" :data-year="y" :id="'archive-year-' + y">
+              <span class="caret-right" :id="'archive-year-caret-' + y" />
             </span>
             <NuxtLink :to="localePath(`/post/${y}`)">
               {{ y }} ({{ archives[y].count }})
             </NuxtLink>
-            <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months" :class="{'is-opened': archives[y].opened }">
+            <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months">
               <li>
-                <span class="caret archive-month-caret" @click="archives[y].months[m].opened = !archives[y].months[m].opened" :data-year="y" :data-month="m" :id="'archive-month-' + y + '-' + m">
-                  <span :class="{'caret-right': !archives[y].months[m].opened, 'caret-down': archives[y].months[m].opened}" :id="'archive-month-caret-' + y + '-' + m" />
+                <span class="caret archive-month-caret" :data-year="y" :data-month="m" :id="'archive-month-' + y + '-' + m">
+                  <span class="caret-right" :id="'archive-month-caret-' + y + '-' + m" />
                 </span>
                 <NuxtLink :to="localePath(`/post/${y}/${m}`)">
                   {{ m }} ({{ archives[y].months[m].posts.length }})
                 </NuxtLink>
-                <ul v-for="p of sortPosts(archives[y].months[m].posts)" :key="p.path" class="archive-posts" :class="{'is-opened': archives[y].months[m].opened }">
+                <ul v-for="p of sortPosts(archives[y].months[m].posts)" :key="p.path" class="archive-posts">
                   <li>
                     <NuxtLink :to="toPath(p.path)">
                       {{ p.title }}
@@ -104,8 +104,8 @@ export default {
         const value = x[key]
         const prop = keyfn1(value)
         const prop2 = keyfn2(value)
-        const r = rv[prop] = rv[prop] || { opened: false, months: {} }
-        r.months[prop2] = r.months[prop2] || { opened: false, posts: [] }
+        const r = rv[prop] = rv[prop] || { months: {} }
+        r.months[prop2] = r.months[prop2] || { posts: [] }
         r.months[prop2].posts.push(x)
         rv[prop].count = rv[prop].count ? rv[prop].count + 1 : 1
         return rv
@@ -177,10 +177,6 @@ export default {
     )
   },
   methods: {
-    setPage (page) {
-      this.page = page
-      window.scrollTo({ top: 0 })
-    },
     toPath (path) {
       if (path.startsWith('/en/')) {
         return path.replace(/^\/en/, '') + '/'
