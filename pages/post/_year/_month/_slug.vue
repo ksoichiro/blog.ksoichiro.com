@@ -26,6 +26,7 @@
 
 <script>
 import Meta from '@/components/Meta.vue'
+import MetaNoCache from '@/components/MetaNoCache.vue'
 const merge = require('deepmerge')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -36,7 +37,8 @@ dayjs.extend(timezone)
 
 export default {
   mixins: [
-    Meta
+    Meta,
+    MetaNoCache
   ],
   async asyncData ({ app, $content, params, error }) {
     const { year, month, slug } = params
@@ -65,8 +67,9 @@ export default {
     }
   },
   head () {
-    return merge(
+    return merge.all([
       this.meta(),
+      this.metaNoCache(),
       {
         title: this.article.title,
         titleTemplate: '%s | memorandum',
@@ -78,7 +81,7 @@ export default {
           { hid: 'article:modified_time', property: 'article:modified_time', content: this.modifiedTime() }
         ]
       }
-    )
+    ])
   },
   methods: {
     toPath (path) {

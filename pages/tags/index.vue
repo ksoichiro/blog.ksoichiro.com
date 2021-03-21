@@ -10,11 +10,13 @@
 
 <script>
 import Meta from '@/components/Meta.vue'
+import MetaNoCache from '@/components/MetaNoCache.vue'
 const merge = require('deepmerge')
 
 export default {
   mixins: [
-    Meta
+    Meta,
+    MetaNoCache
   ],
   async asyncData ({ app, $content, params }) {
     const lang = app.i18n.locale
@@ -27,8 +29,9 @@ export default {
     }
   },
   head () {
-    return merge(
+    return merge.all([
       this.meta(),
+      this.metaNoCache(),
       {
         title: this.$t('tags'),
         titleTemplate: '%s | memorandum',
@@ -37,7 +40,7 @@ export default {
           { hid: 'og:type', property: 'og:type', content: 'article' }
         ]
       }
-    )
+    ])
   }
 }
 </script>

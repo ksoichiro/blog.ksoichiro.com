@@ -63,11 +63,13 @@
 
 <script>
 import Meta from '@/components/Meta.vue'
+import MetaNoCache from '@/components/MetaNoCache.vue'
 const merge = require('deepmerge')
 
 export default {
   mixins: [
-    Meta
+    Meta,
+    MetaNoCache
   ],
   async asyncData ({ app, $content, params, error }) {
     const lang = app.i18n.locale
@@ -130,8 +132,9 @@ export default {
     }
   },
   head () {
-    return merge(
+    return merge.all([
       this.meta(),
+      this.metaNoCache(),
       {
         meta: [
           { hid: 'og:title', property: 'og:title', content: 'memorandum' },
@@ -176,7 +179,7 @@ export default {
           }
         ]
       }
-    )
+    ])
   },
   methods: {
     toPath (path) {

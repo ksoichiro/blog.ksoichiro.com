@@ -22,11 +22,13 @@
 
 <script>
 import Meta from '@/components/Meta.vue'
+import MetaNoCache from '@/components/MetaNoCache.vue'
 const merge = require('deepmerge')
 
 export default {
   mixins: [
-    Meta
+    Meta,
+    MetaNoCache
   ],
   async asyncData ({ app, $content, params, error }) {
     const { year, month } = params
@@ -58,8 +60,9 @@ export default {
     }
   },
   head () {
-    return merge(
+    return merge.all([
       this.meta(),
+      this.metaNoCache(),
       {
         title: `${this.year}/${this.month}`,
         titleTemplate: '%s | memorandum',
@@ -68,7 +71,7 @@ export default {
           { hid: 'og:type', property: 'og:type', content: 'article' }
         ]
       }
-    )
+    ])
   },
   methods: {
     toPath (path) {
