@@ -4,17 +4,17 @@
       <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" :to="localePath('/page/' + (page - 1))">
         &lt;
       </NuxtLink>
-      <a v-else class="is-disabled">
+      <span v-else class="is-disabled">
         &lt;
-      </a>
+      </span>
     </div>
     <div>
       <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" :to="localePath('/page/' + (page + 1))">
         &gt;
       </NuxtLink>
-      <a v-else class="is-disabled">
+      <span v-else class="is-disabled">
         &gt;
-      </a>
+      </span>
     </div>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default {
   & > * {
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    a {
+    a, span {
       display: block;
       padding: .5rem .75rem;
       border-radius: 4px;
