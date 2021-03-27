@@ -88,6 +88,23 @@ hr {
   .nuxt-content-container {
     position: static !important;
   }
+  .nuxt-content, &.tags {
+    h1, h2, h3, h4, h5, h6 {
+      a {
+        margin-left: -1.2rem;
+        padding-right: .2rem;
+        position: relative;
+        display: inline-block;
+        visibility: hidden;
+      }
+      &:hover a {
+        visibility: visible;
+      }
+      .icon-link::before {
+        content: '#';
+      }
+    }
+  }
 }
 
 .sidebar,

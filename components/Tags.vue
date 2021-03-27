@@ -2,8 +2,7 @@
   <div>
     <span v-for="tag in Object.keys(tags)" :key="tag">
       <h2 :id="tag">
-        <router-link :to="{path: localePath('/tags#' + tag)}" class="header-anchor">#</router-link>
-        {{ tag }}
+        <router-link :to="{path: localePath('/tags#' + tag)}" class="icon-link"></router-link>{{ tag }}
       </h2>
       <ul>
         <li v-for="page in tags[tag]" :key="page.path">
