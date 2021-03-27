@@ -85,7 +85,7 @@ export default {
 この `toggleMenu` を使った JavaScript はナビゲーションバーの Component に書くのが良いかもしれないが、ハンバーガーメニューを含んでいるナビゲーションバーは全ページで使われるので今回は `nuxt.config.js` に埋め込んだ。
 このコードを minify するなどの最適化をしても良いかもしれないが、そこまでパフォーマンスに影響するようには思えなかったのでこのままにしている。
 
-```js
+```js:nuxt.config.js
 export default {
   // ...
   head: {

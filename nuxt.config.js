@@ -155,7 +155,8 @@ export default {
     markdown: {
       remarkPlugins: [
         'remark-breaks',
-        'remark-emoji'
+        'remark-emoji',
+        'remark-code-titles'
       ],
       rehypePlugins: [
         'rehype-plugin-image-native-lazy-loading',

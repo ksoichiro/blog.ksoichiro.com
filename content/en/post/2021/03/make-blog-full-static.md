@@ -85,7 +85,7 @@ export default {
 This JavaScript with `toggleMenu` might be written in the Component of the navigation bar, but this navigation bar that includes the hamburger menu is used in all pages, so I've just embedded it in the `nuxt.config.js`.
 You can optimize this script such as minifying but I thought it doesn't affect to performance so much, so left it as is.
 
-```js
+```js:nuxt.config.js
 export default {
   // ...
   head: {
