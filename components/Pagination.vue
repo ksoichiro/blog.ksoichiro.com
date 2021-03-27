@@ -1,6 +1,6 @@
 <template>
   <div class="pagination">
-    <div>
+    <div class="navigation">
       <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" :to="localePath('/page/' + (page - 1))">
         &lt;
       </NuxtLink>
@@ -8,7 +8,10 @@
         &lt;
       </span>
     </div>
-    <div>
+    <div class="pages">
+      <span>{{ page }} / {{ maxPage }}</span>
+    </div>
+    <div class="navigation">
       <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" :to="localePath('/page/' + (page + 1))">
         &gt;
       </NuxtLink>
@@ -48,17 +51,26 @@ export default {
   margin-top: 2rem;
   list-style: none;
   padding-left: 0;
-  & > * {
+  .navigation {
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    a, span {
+      &:hover {
+        background-color: $secondaryBackgroundColor;
+        text-decoration: none;
+      }
+    }
+  }
+  .navigation, .pages {
     a, span {
       display: block;
       padding: .5rem .75rem;
       border-radius: 4px;
-      &:hover {
-        background-color: $secondaryBackgroundColor;
-      }
+      font-size: .9em;
     }
+  }
+  .pages {
+    color: $secondaryTextColor;
   }
 }
 .is-disabled {
