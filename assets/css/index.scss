@@ -45,7 +45,7 @@ pre[class*="language-"] {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
   font-family: $titleFontFamily;
 }
@@ -156,10 +156,6 @@ li a.sidebar-link {
   &.active {
     font-weight: 500;
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
 }
 
 p {

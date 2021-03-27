@@ -37,8 +37,7 @@ export default {
           WebFontConfig = {
             google: {
               families: [
-                'Rubik:400,500',
-                'Inter:400',
+                'Inter:400,500',
                 'Roboto Mono:300,500',
                 'M PLUS 1p:400,500&display=swap',
               ]
