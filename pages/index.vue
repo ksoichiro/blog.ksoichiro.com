@@ -243,13 +243,13 @@ export default {
   justify-content: center;
   .content {
     margin: 0;
-    width: calc(680px - 4rem);
-    max-width: calc(100% - 4rem);
+    width: calc(680px - #{$contentPadding} * 2);
+    max-width: calc(100% - #{$contentPadding} * 2);
     margin-left: auto;
   }
   .sidebar {
-    width: calc(260px - 4rem);
-    padding: 2rem;
+    width: calc(260px - #{$contentPadding} * 2);
+    padding: $contentPadding;
     margin-right: auto;
     h3:first-of-type {
       margin-top: 0;
@@ -319,8 +319,8 @@ export default {
     }
     .sidebar {
       border-top: 1px solid $borderColor;
-      width: calc(100% - 4rem);
-      max-width: calc(680px - 4rem);
+      width: calc(100% - #{$contentPadding} * 2);
+      max-width: calc(680px - #{$contentPadding} * 2);
       margin: 0 auto;
     }
   }
