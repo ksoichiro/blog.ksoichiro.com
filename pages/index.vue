@@ -64,12 +64,14 @@
 <script>
 import Meta from '@/components/Meta.vue'
 import MetaNoCache from '@/components/MetaNoCache.vue'
+import WebFont from '@/components/WebFont.vue'
 const merge = require('deepmerge')
 
 export default {
   mixins: [
     Meta,
-    MetaNoCache
+    MetaNoCache,
+    WebFont
   ],
   async asyncData ({ app, $content, params, error }) {
     const lang = app.i18n.locale
@@ -135,6 +137,7 @@ export default {
     return merge.all([
       this.meta(),
       this.metaNoCache(),
+      this.webFontScripts(),
       {
         meta: [
           { hid: 'og:title', property: 'og:title', content: 'memorandum' },

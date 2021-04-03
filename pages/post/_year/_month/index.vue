@@ -23,12 +23,14 @@
 <script>
 import Meta from '@/components/Meta.vue'
 import MetaNoCache from '@/components/MetaNoCache.vue'
+import WebFont from '@/components/WebFont.vue'
 const merge = require('deepmerge')
 
 export default {
   mixins: [
     Meta,
-    MetaNoCache
+    MetaNoCache,
+    WebFont
   ],
   async asyncData ({ app, $content, params, error }) {
     const { year, month } = params
@@ -63,6 +65,7 @@ export default {
     return merge.all([
       this.meta(),
       this.metaNoCache(),
+      this.webFontScripts(),
       {
         title: `${this.year}/${this.month}`,
         titleTemplate: '%s | memorandum',

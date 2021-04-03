@@ -27,6 +27,7 @@
 <script>
 import Meta from '@/components/Meta.vue'
 import MetaNoCache from '@/components/MetaNoCache.vue'
+import WebFont from '@/components/WebFont.vue'
 const merge = require('deepmerge')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -38,7 +39,8 @@ dayjs.extend(timezone)
 export default {
   mixins: [
     Meta,
-    MetaNoCache
+    MetaNoCache,
+    WebFont
   ],
   async asyncData ({ app, $content, params, error }) {
     const { year, month, slug } = params
@@ -70,6 +72,7 @@ export default {
     return merge.all([
       this.meta(),
       this.metaNoCache(),
+      this.webFontScripts(),
       {
         title: this.article.title,
         titleTemplate: '%s | memorandum',
