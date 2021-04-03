@@ -3,8 +3,33 @@
 export default {
   methods: {
     webFontScripts () {
+      let styles = [
+        {
+           hid: 'style-inter-regular',
+           innerHTML: `
+             @font-face {
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 400;
+               font-display: swap;
+               src: url('/font/20210403/Inter-Regular.woff2') format('woff2');
+             }
+           `,
+         },
+         {
+           hid: 'style-inter-medium',
+           innerHTML: `
+             @font-face {
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 500;
+               font-display: swap;
+               src: url('/font/20210403/Inter-Medium.woff2') format('woff2');
+             }
+           `
+         }
+      ]
       const families = [
-        'Inter:400,500',
         'Roboto Mono:300,500'
       ]
       if (this.lang === 'ja') {
@@ -35,7 +60,8 @@ export default {
             `
           }
         ],
-        __dangerouslyDisableSanitizers: ['script']
+        style: styles,
+        __dangerouslyDisableSanitizers: ['script', 'style']
       }
     }
   }
