@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="fixed top-0 w-full">
     <div class="nav-item">
       <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name">
         memorandum
