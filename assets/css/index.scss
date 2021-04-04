@@ -89,22 +89,6 @@
   }
 }
 
-.footer {
-  color: $secondaryTextColor;
-  .copyright {
-    font-size: smaller;
-  }
-  .links {
-    a {
-      color: $secondaryTextColor;
-      font-size: 1.4rem;
-    }
-    a:hover {
-      color: $accentColor;
-    }
-  }
-}
-
 .ion {
   display: inline;
   svg {

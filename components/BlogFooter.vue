@@ -1,11 +1,11 @@
 <template>
-  <div class="footer">
-    <p class="copyright">
+  <div class="text-nord5 text-center border-t border-nord1 p-10">
+    <p class="text-sm mb-2.5">
       &copy; 2010 ksoichiro
     </p>
-    <div class="links">
-      <a href="https://github.com/ksoichiro" aria-label="GitHub Profile" target="_blank" rel="noopener">
-        <LogoGitHubIcon />
+    <div>
+      <a class="text-nord5 text-2xl hover:text-nord9 text-center" href="https://github.com/ksoichiro" aria-label="GitHub Profile" target="_blank" rel="noopener">
+        <LogoGitHubIcon class="inline" />
       </a>
     </div>
   </div>
@@ -20,11 +20,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.footer {
-  text-align: center;
-  border-top: 1px solid $borderColor;
-  padding: 2.5rem;
-}
-</style>

@@ -80,7 +80,12 @@
     @apply border-nord3 text-nord4;
   }
 
+  /* generated classes */
   .footnotes {
     @apply text-xs;
+  }
+
+  svg.ion__svg {
+    @apply inline;
   }
 }
