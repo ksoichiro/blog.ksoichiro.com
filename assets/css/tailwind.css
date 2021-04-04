@@ -86,6 +86,6 @@
   }
 
   svg.ion__svg {
-    @apply inline;
+    @apply inline-block align-middle;
   }
 }

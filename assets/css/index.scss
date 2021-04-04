@@ -58,19 +58,6 @@
   border-color: $borderColor;
 }
 
-.page-attributes {
-  color: $secondaryTextColor;
-  font-size: smaller;
-  span {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .ion__svg {
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-
 .post,
 .content {
   p img {
