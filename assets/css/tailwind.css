@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-nord0 text-nord4;
+  }
+
+  body {
+    @apply font-main m-0;
+  }
+
+  a {
+    @apply text-nord9 no-underline hover:underline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  code {
+    @apply font-mono text-sm;
+  }
+
+  :not(pre) > code {
+    @apply bg-nord1 px-1 py-0.5 m-0 rounded;
+  }
+
+  pre code {
+    @apply bg-transparent;
+  }
+
+  pre[class*="language-"] {
+    @apply bg-nord0-dark !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium leading-tight;
+  }
+
+  h1 {
+    @apply text-3xl mb-5;
+  }
+
+  h2 {
+    @apply text-2xl pb-1 mb-5 border-b border-nord1;
+  }
+
+  h3 {
+    @apply text-xl mb-4;
+  }
+
+  h2, h3, h4, h5, h6, p {
+    @apply break-words;
+  }
+
+  ol, p, ul {
+    @apply leading-relaxed;
+  }
+
+  hr {
+    @apply border-t border-nord1;
+  }
+
+  ul {
+    @apply list-disc pl-8;
+  }
+
+  ul li::marker {
+    @apply text-nord3;
+  }
+
+  tr, th, td {
+    @apply border-nord3;
+  }
+
+  tr:nth-child(2n) {
+    @apply bg-nord1;
+  }
+
+  blockquote {
+    @apply border-nord3 text-nord4;
+  }
+
+  .footnotes {
+    @apply text-xs;
+  }
+}

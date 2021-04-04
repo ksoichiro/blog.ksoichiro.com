@@ -1,74 +1,5 @@
 @import '_var.scss';
 
-html, body {
-  background-color: $backgroundColor;
-  color: $textColor;
-}
-
-a {
-  color: $accentColor;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-body {
-  font-family: $mainFontFamily;
-  font-display: swap;
-  margin: 0;
-}
-
-code, kbd, .line-number {
-  font-family: $monospaceFontFamily;
-  font-display: swap;
-}
-
-code {
-  font-size: .85em;
-}
-
-:not(pre) > code {
-  background-color: $codeBackgroundColor;
-  padding: .15rem .3rem;
-  margin: 0;
-  border-radius: 3px;
-}
-
-pre code {
-  background-color: transparent;
-}
-
-pre[class*="language-"] {
-  background-color: darken($nord0, 4%) !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  line-height: 1.25;
-  font-family: $titleFontFamily;
-}
-
-h2 {
-  font-size: 1.65rem;
-  padding-bottom: .3rem;
-  border-bottom: 1px solid $borderColor;
-}
-
-h2, h3, h4, h5, h6, p {
-  overflow-wrap: break-word;
-}
-
-ol, p, ul {
-  line-height: 1.7;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid $borderColor;
-}
-
 #nav {
   position: fixed;
   top: 0;
@@ -188,27 +119,6 @@ li a.sidebar-link {
   }
 }
 
-p {
-  overflow-wrap: break-word;
-}
-
-ul li::marker {
-  color: $listBulletColor;
-}
-
-tr, th, td {
-  border-color: $tableBorderColor;
-}
-
-tr:nth-child(2n) {
-  background-color: $tableSecondaryBackgroundColor;
-}
-
-blockquote {
-  border-color: $blockquoteBorderColor;
-  color: $blockquoteTextColor;
-}
-
 ::selection {
   background-color: $selectionBackgroundColor;
 }
@@ -227,20 +137,4 @@ blockquote {
 
 ::-webkit-scrollbar-track {
   background-color: $scrollbarTrackColor;
-}
-
-.icon-external-link {
-  display: inline;
-  & > * {
-    display: inline;
-    font-size: smaller;
-    margin-left: .15rem;
-    svg {
-      fill: $externalLinkTextColor;
-    }
-  }
-}
-
-.footnotes {
-  font-size: 0.7em;
 }
