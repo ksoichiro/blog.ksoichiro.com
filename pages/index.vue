@@ -1,24 +1,24 @@
 <template>
   <div>
     <nav-bar :path="localePath('/')" :has-english="hasEnglish" />
-    <header class="hero">
-      <h1>memorandum</h1>
-      <p class="description">
+    <header class="text-nord4 text-center pt-16">
+      <h1 class="text-5xl my-8">memorandum</h1>
+      <p class="text-sm font-light px-8 my-4">
         {{ $t('description') }}
       </p>
     </header>
-    <div class="container">
-      <main class="content">
-        <div v-for="p of paginated" :key="p.path" class="post">
+    <div class="container flex mx-auto my-0 justify-center lg:flex-col">
+      <main class="content m-0 ml-auto max-w-2xl w-full lg:mr-auto">
+        <div v-for="p of paginated" :key="p.path" class="post mt-16 first:mt-0">
           <article>
-            <h2 class="post-title">
+            <h2 class="post-title mt-0">
               <NuxtLink :to="toPath(p.path)">
                 {{ p.title }}
               </NuxtLink>
             </h2>
             <page-attributes :page="p" />
             <nuxt-content :document="{body: p.excerpt}" />
-            <p class="read-more">
+            <p class="text-sm">
               <NuxtLink :to="toPath(p.path)">
                 {{ $t('readMore') }}
               </NuxtLink>
@@ -27,25 +27,27 @@
         </div>
         <pagination :page="page" :max-page="maxPage" />
       </main>
-      <aside class="sidebar">
-        <h3>{{ $t('archives') }}</h3>
-        <ul v-for="y in sortKeys(archives)" :key="y" class="archive-years">
+      <aside class="sidebar text-sm w-80 p-4 mr-auto lg:border-t lg:border-nord1 lg:mx-auto lg:my-0 lg:max-w-2xl lg:w-full">
+        <h3 class="text-lg">{{ $t('archives') }}</h3>
+        <ul v-for="y in sortKeys(archives)" :key="y" class="archive-years list-none pl-0">
           <li>
-            <span :id="'archive-year-' + y" class="caret archive-year-caret" :data-year="y">
-              <span :id="'archive-year-caret-' + y" class="caret-right" />
+            <span :id="'archive-year-' + y" class="caret cursor-pointer archive-year-caret" :data-year="y">
+              <icon-arrow-dropright :class="'archive-year-caret-' + y" class="inline" />
+              <icon-arrow-dropdown :class="'archive-year-caret-' + y" class="hidden" />
             </span>
             <NuxtLink :to="localePath(`/post/${y}`)">
               {{ y }} ({{ archives[y].count }})
             </NuxtLink>
-            <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months">
+            <ul v-for="m in sortKeys(archives[y].months)" :key="m" class="archive-months list-none pl-5 hidden">
               <li>
-                <span :id="'archive-month-' + y + '-' + m" class="caret archive-month-caret" :data-year="y" :data-month="m">
-                  <span :id="'archive-month-caret-' + y + '-' + m" class="caret-right" />
+                <span :id="'archive-month-' + y + '-' + m" class="caret cursor-pointer archive-month-caret" :data-year="y" :data-month="m">
+                  <icon-arrow-dropright :class="'archive-month-caret-' + y + '-' + m" class="inline" />
+                  <icon-arrow-dropdown :class="'archive-month-caret-' + y + '-' + m" class="hidden" />
                 </span>
                 <NuxtLink :to="localePath(`/post/${y}/${m}`)">
                   {{ m }} ({{ archives[y].months[m].posts.length }})
                 </NuxtLink>
-                <ul v-for="p of sortPosts(archives[y].months[m].posts)" :key="p.path" class="archive-posts">
+                <ul v-for="p of sortPosts(archives[y].months[m].posts)" :key="p.path" class="archive-posts hidden">
                   <li>
                     <NuxtLink :to="toPath(p.path)">
                       {{ p.title }}
@@ -155,11 +157,13 @@ export default {
                     const y = e.dataset.year
                     e.addEventListener('click', function() {
                       Array.from(e.parentNode.getElementsByClassName('archive-months')).forEach(function(e) {
-                        e.classList.toggle('is-opened')
+                        e.classList.toggle('hidden')
+                        e.classList.toggle('block')
                       })
-                      const c = d.getElementById('archive-year-caret-' + y)
-                      c.classList.toggle('caret-right')
-                      c.classList.toggle('caret-down')
+                      Array.from(e.getElementsByClassName('archive-year-caret-' + y)).forEach(function(e2) {
+                        e2.classList.toggle('hidden')
+                        e2.classList.toggle('inline')
+                      })
                     })
                     Array.from(e.parentNode.getElementsByClassName('archive-month-caret')).forEach(function(e) {
                       if (!e) {
@@ -168,11 +172,13 @@ export default {
                       const m = e.dataset.month
                       e.addEventListener('click', function() {
                         Array.from(e.parentNode.getElementsByClassName('archive-posts')).forEach(function(e) {
-                          e.classList.toggle('is-opened')
+                          e.classList.toggle('hidden')
+                          e.classList.toggle('block')
                         })
-                        const c = d.getElementById('archive-month-caret-' + y + '-' + m)
-                        c.classList.toggle('caret-right')
-                        c.classList.toggle('caret-down')
+                        Array.from(e.getElementsByClassName('archive-month-caret-' + y + '-' + m)).forEach(function(e2) {
+                          e2.classList.toggle('hidden')
+                          e2.classList.toggle('inline')
+                        })
                       })
                     })
                   })
@@ -212,120 +218,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero {
-  color: $homeDescriptionTextColor;
-  text-align: center;
-  padding-top: 57px;
-  h1 {
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 0.8em;
-    font-weight: 300;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-.post {
-  h2.post-title {
-    margin-top: 0;
-  }
-}
-.post:not(:first-of-type) {
-  margin-top: 4rem;
-}
 .post .nuxt-content-container h2 {
+  // generated class
   font-size: 1.3em;
 }
-.read-more {
-  font-size: smaller;
-}
 .container {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  .content {
-    margin: 0;
-    width: calc(680px - #{$contentPadding} * 2);
-    max-width: calc(100% - #{$contentPadding} * 2);
-    margin-left: auto;
-  }
   .sidebar {
-    width: calc(260px - #{$contentPadding} * 2);
-    padding: $contentPadding;
-    margin-right: auto;
+    // generated class
     h3:first-of-type {
       margin-top: 0;
     }
   }
 }
 .sidebar {
-  font-size: 0.8em;
-  .archive-years {
-    list-style: none;
-    padding-left: 1.2rem;
-  }
-  .archive-months {
-    list-style: none;
-    padding-left: 1.2rem;
-    &.is-opened {
-      display: block;
-    }
-    &:not(.is-opened) {
-      display: none;
-    }
-  }
-  .archive-posts {
-    padding-left: 1.2rem;
-    &.is-opened {
-      display: block;
-    }
-    &:not(.is-opened) {
-      display: none;
-    }
-  }
   .caret {
-    cursor: pointer;
+    // There is no class on TailwindCSS
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  .caret-right {
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 15%;
-      right: 6px;
-      border-left: 6px solid $listBulletColor;
-      border-top: 6px solid transparent;
-      border-bottom: 6px solid transparent;
-    }
-  }
-  .caret-down {
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 40%;
-      right: 6px;
-      border-top: 6px solid $listBulletColor;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-    }
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .container {
-    flex-direction: column;
-    .content {
-      margin-right: auto;
-    }
-    .sidebar {
-      border-top: 1px solid $borderColor;
-      width: calc(100% - #{$contentPadding} * 2);
-      max-width: calc(680px - #{$contentPadding} * 2);
-      margin: 0 auto;
-    }
   }
 }
 </style>

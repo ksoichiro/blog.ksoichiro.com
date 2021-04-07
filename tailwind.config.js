@@ -33,10 +33,28 @@ module.exports = {
     fontFamily: {
       main: ['Inter', '"M PLUS 1p"','"Noto Sans JP"', '-apple-system', 'BlinkMacSystemFont', '"Helvetica Neue"', '"Segoe UI"', '"Yu Gothic"', 'YuGothic', '"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', '"ヒラギノ角ゴ ProN W3"', 'Verdana', 'Meiryo', '"M+ 1p"', 'sans-serif'],
       mono: ['"Roboto Mono"', 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', '"Courier New"', 'monospace'],
+    },
+    screens: {
+      '2xl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'xl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ['first'],
+    }
   },
   plugins: [],
 }
