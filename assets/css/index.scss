@@ -1,11 +1,6 @@
 @import '_var.scss';
 
 .content {
-  width: 740px;
-  max-width: calc(100% - #{$contentPadding} * 2);
-  margin: 0 auto;
-  margin-top: 57px;
-  padding: $contentPadding;
   h1, h2:not(.post-title), h3, h4, h5, h6 {
     margin-top: -3rem;
     padding-top: 4rem;

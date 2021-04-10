@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar :path="localePath('/tags')" />
-    <div class="content tags">
+    <div class="content tags mx-auto mt-16 p-4 max-w-2xl">
       <h1>{{ $t('tags') }}</h1>
       <tags :pages="pages" :lang="lang" />
     </div>

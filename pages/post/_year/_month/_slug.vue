@@ -1,20 +1,20 @@
 <template>
   <div>
     <nav-bar :path="toPath(article.path)" :has-english="!article.noEnglish" />
-    <div class="content">
+    <div class="content mx-auto mt-16 p-4 max-w-2xl">
       <h1>{{ article.title }}</h1>
       <page-attributes :page="article" />
       <nuxt-content :document="article" />
-      <div class="nav-pages">
-        <NuxtLink v-if="prev" :to="{path: toPath(prev.path)}" class="prev" :title="prev.title">
+      <div class="nav-pages grid sm:block grid-cols-2 gap-2 mt-8 pt-8 border-t border-nord1">
+        <NuxtLink v-if="prev" :to="{path: toPath(prev.path)}" class="prev flex" :title="prev.title">
           &leftarrow;
-          <span class="title">
+          <span class="block w-full overflow-ellipsis overflow-hidden whitespace-nowrap">
             {{ prev.title }}
           </span>
         </NuxtLink>
         <div v-else class="prev" />
-        <NuxtLink v-if="next" :to="{path: toPath(next.path)}" class="next" :title="next.title">
-          <span class="title">
+        <NuxtLink v-if="next" :to="{path: toPath(next.path)}" class="next flex text-right sm:mt-4" :title="next.title">
+          <span class="block w-full overflow-ellipsis overflow-hidden whitespace-nowrap">
             {{ next.title }}
           </span>
           &rightarrow;
@@ -111,34 +111,7 @@ export default {
 
 <style lang="scss" scoped>
 .nav-pages {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: .5rem;
+  // no class in TailwindCSS
   grid-gap: .5rem;
-  margin-top: 2rem;
-  border-top: 1px solid $borderColor;
-  padding-top: 2rem;
-  a {
-    display: flex;
-    .title {
-      display: block;
-      width: 100%;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    &.next {
-      text-align: right;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav-pages {
-    display: block;
-    a.next {
-      margin-top: 1rem;
-    }
-  }
 }
 </style>

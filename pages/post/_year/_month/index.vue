@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar :path="toPath($route.path)" :has-english="hasEnglish" />
-    <div class="content">
+    <div class="content mx-auto mt-16 p-4 max-w-2xl">
       <h1>{{ year + '/' + month }}</h1>
       <p>
         {{ $tc('posts', pages.length ) }}
