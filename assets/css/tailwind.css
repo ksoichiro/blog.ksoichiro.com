@@ -88,4 +88,26 @@
   svg.ion__svg {
     @apply inline-block align-middle;
   }
+
+  /* generated element */
+  .content p img {
+    @apply max-w-full h-full;
+  }
+
+  .content p {
+    @apply my-4;
+  }
+
+  /* generated element */
+  .ion {
+    @apply inline;
+  }
+  .ion svg {
+    @apply fill-current;
+  }
+
+  /* generated element */
+  .remark-code-title {
+    @apply bg-nord1 font-mono text-xs absolute px-4 py-2;
+  }
 }

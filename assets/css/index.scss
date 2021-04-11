@@ -40,42 +40,11 @@
   }
 }
 
-.sidebar,
-.navbar
-.navbar div.links {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-}
-
 .post,
 .content {
-  p img {
-    max-width: 100%;
-    height: 100%;
-  }
-  .remark-code-title {
-    background-color: $nord1;
-    font-family: $monospaceFontFamily;
-    font-size: .6em;
-    position: absolute;
-    padding: .4rem 1rem;
-    & + * > pre[class*="language-"] {
-      padding-top: 2rem;
-    }
-  }
-}
-
-.ion {
-  display: inline;
-  svg {
-    fill: currentColor;
-  }
-}
-
-li a.sidebar-link {
-  font-weight: 300;
-  &.active {
-    font-weight: 500;
+  // cannot apply with TailwindCSS
+  .remark-code-title  + * > pre[class*="language-"] {
+    padding-top: 2rem;
   }
 }
 

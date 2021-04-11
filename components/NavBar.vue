@@ -1,45 +1,45 @@
 <template>
-  <div id="nav" class="fixed top-0 w-full">
-    <div class="nav-item">
-      <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name">
+  <div id="nav" class="fixed top-0 w-full z-10 flex sm:flex-col items-center text-nord4 bg-nord0 border-b border-nord1">
+    <div class="nav-item block text-sm mr-auto pl-2">
+      <span v-if="$route.path == '/' || $route.path == '/ja/'" class="site-name text-xl font-semibold block cursor-pointer p-4">
         memorandum
       </span>
-      <router-link v-else :to="localePath('/')" class="site-name">
+      <router-link v-else :to="localePath('/')" class="site-name text-xl font-semibold hover:no-underline block cursor-pointer text-nord4 p-4">
         memorandum
       </router-link>
     </div>
-    <div class="nav-item">
-      <div>
-        <NuxtLink :to="localePath('/tags')">
+    <div class="nav-item block text-sm sm:hidden">
+      <div class="p-4">
+        <NuxtLink :to="localePath('/tags')" class="text-nord4">
           {{ $t('tags') }}
         </NuxtLink>
       </div>
     </div>
-    <div class="nav-item dropdown">
-      <div class="dropdown-btn">
+    <div class="nav-item dropdown p-0 group block text-sm sm:hidden">
+      <div class="dropdown-btn p-4 cursor-pointer">
         {{ $t('language') }}
-        <span class="caret" />
+        <icon-arrow-dropdown classes="text-nord4" />
       </div>
-      <div class="dropdown-content">
-        <div>
-          <NuxtLink v-if="hasEnglish" :to="switchLocalePath('en')">
+      <div class="dropdown-content bg-nord1 absolute right-0 hidden rounded group-hover:block sm:relative sm:rounded-none p-4">
+        <div class="p-2 w-full">
+          <NuxtLink v-if="hasEnglish" :to="switchLocalePath('en')" class="text-nord4">
             English
           </NuxtLink>
-          <span v-else class="is-disabled">
+          <span v-else class="text-nord3-light">
             English
           </span>
         </div>
-        <div>
-          <NuxtLink :to="switchLocalePath('ja')">
+        <div class="p-2 w-full">
+          <NuxtLink :to="switchLocalePath('ja')" class="text-nord4">
             Japanese
           </NuxtLink>
         </div>
       </div>
     </div>
-    <div id="toggleMenu" class="menu">
-      <div class="bar1" />
-      <div class="bar2" />
-      <div class="bar3" />
+    <div id="toggleMenu" class="menu hidden sm:block absolute right-0 top-0 p-4 cursor-pointer">
+      <div class="bar1 w-4 h-0.5 bg-nord4 mx-0 my-1 duration-300" />
+      <div class="bar2 w-4 h-0.5 bg-nord4 mx-0 my-1 duration-300" />
+      <div class="bar3 w-4 h-0.5 bg-nord4 mx-0 my-1 duration-300" />
     </div>
   </div>
 </template>
@@ -58,71 +58,22 @@ export default {
 
 <style lang="scss" scoped>
 #nav {
-  display: flex;
-  z-index: 1;
-  background-color: $backgroundColor;
-  color: $textColor;
-  align-items: center;
-  border-bottom: 1px solid $borderColor;
-
-  a {
-    color: $textColor;
-  }
   .nav-item {
-    display: block;
-    font-size: .9rem;
     .site-name {
-      font-family: $titleFontFamily;
-      font-size: 1.3rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: block;
-      cursor: pointer;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    &.dropdown {
-      padding: 0;
-    }
-    &:first-child {
-      margin-right: auto;
-      padding-left: 0.5rem;
-    }
-    & > * {
-      padding: 1rem;
-    }
-  }
-  .menu {
-    display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 639px) {
   #nav {
-    flex-direction: column;
-    .nav-item:not(:first-child) {
-      display: none;
-    }
     .menu {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 1rem;
-      cursor: pointer;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      div {
-        width: 18px;
-        height: 2px;
-        background-color: $textColor;
-        margin: 4px 0;
-        transition: .4s;
-      }
     }
 
     &.is-open {
       .nav-item:not(:first-child) {
         display: block;
         width: 100%;
-        background-color: $backgroundColor;
       }
       .menu {
         .bar1 {
@@ -142,54 +93,7 @@ export default {
 }
 .dropdown {
   .dropdown-btn {
-    padding: 1rem;
-    padding-right: 1.5rem !important;
-    cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    margin-right: 10px;
   }
-  .dropdown-content {
-    position: absolute;
-    right: 0;
-    display: none;
-    background-color: $secondaryBackgroundColor;
-    border-radius: 3px;
-    & > * {
-      padding: 0.5rem;
-      width: 100%;
-    }
-  }
-  &:hover {
-    .dropdown-content {
-      display: block;
-      & > * {
-        display: block;
-      }
-    }
-  }
-}
-@media screen and (max-width: 600px) {
-  .dropdown {
-    .dropdown-content {
-      position: relative;
-      border-radius: 0;
-    }
-  }
-}
-.caret {
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 6px;
-    border-top: 6px solid $textColor;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-  }
-}
-
-.is-disabled {
-  color: $disabledLinkTextColor;
 }
 </style>

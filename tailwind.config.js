@@ -17,6 +17,7 @@ module.exports = {
       nord1: '#3B4252',
       nord2: '#434C5E',
       nord3: '#4C566A',
+      'nord3-light': '#7b88a1',
       nord4: '#D8DEE9',
       nord5: '#E5E9F0',
       nord6: '#ECEFF4',
@@ -54,6 +55,7 @@ module.exports = {
   variants: {
     extend: {
       margin: ['first'],
+      display: ['group-hover'],
     }
   },
   plugins: [],

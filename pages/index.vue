@@ -8,7 +8,7 @@
       </p>
     </header>
     <div class="container flex mx-auto my-0 justify-center lg:flex-col">
-      <main class="content m-0 ml-auto max-w-2xl w-full lg:mr-auto">
+      <main class="content m-0 ml-auto p-4 max-w-2xl w-full lg:mr-auto">
         <div v-for="p of paginated" :key="p.path" class="post mt-16 first:mt-0">
           <article>
             <h2 class="post-title mt-0">
