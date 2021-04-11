@@ -16,8 +16,9 @@ module.exports = {
       'nord0-dark': '#252a34', // darken($nord0, 4%) by scss
       nord1: '#3B4252',
       nord2: '#434C5E',
+      'nord2-light': '#58647c', // lighten($nord2, 10%) by scss
       nord3: '#4C566A',
-      'nord3-light': '#7b88a1',
+      'nord3-light': '#7b88a1', // lighten($nord3, 20%) by scss
       nord4: '#D8DEE9',
       nord5: '#E5E9F0',
       nord6: '#ECEFF4',
@@ -54,7 +55,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      margin: ['first'],
+      margin: ['first', 'last'],
       display: ['group-hover'],
     }
   },

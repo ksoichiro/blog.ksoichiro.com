@@ -1,21 +1,21 @@
 <template>
-  <div class="pagination">
-    <div class="navigation">
-      <NuxtLink v-if="!prevDisabled" :class="{'is-disabled': prevDisabled}" :to="localePath('/page/' + (page - 1))" class="hover:bg-nord1 hover:no-underline">
+  <div class="pagination flex mt-8 pl-0">
+    <div class="navigation cursor-pointer">
+      <NuxtLink v-if="!prevDisabled" :to="localePath('/page/' + (page - 1))" class="block rounded px-3 py-2 text-sm hover:bg-nord1 hover:no-underline">
         &lt;
       </NuxtLink>
-      <span v-else class="is-disabled">
+      <span v-else class="is-disabled opacity-50 block rounded px-3 py-2 text-sm">
         &lt;
       </span>
     </div>
     <div class="pages text-nord5">
-      <span>{{ page }} / {{ maxPage }}</span>
+      <span class="block rounded px-3 py-2 text-sm">{{ page }} / {{ maxPage }}</span>
     </div>
-    <div class="navigation">
-      <NuxtLink v-if="!nextDisabled" :class="{'is-disabled': nextDisabled}" :to="localePath('/page/' + (page + 1))" class="hover:bg-nord1 hover:no-underline">
+    <div class="navigation cursor-pointer">
+      <NuxtLink v-if="!nextDisabled" :to="localePath('/page/' + (page + 1))" class="block rounded px-3 py-2 text-sm hover:bg-nord1 hover:no-underline">
         &gt;
       </NuxtLink>
-      <span v-else class="is-disabled">
+      <span v-else class="is-disabled opacity-50 block rounded px-3 py-2 text-sm">
         &gt;
       </span>
     </div>
@@ -44,28 +44,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.pagination {
-  display: flex;
-  margin-top: 2rem;
-  list-style: none;
-  padding-left: 0;
-  .navigation {
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  .navigation, .pages {
-    a, span {
-      display: block;
-      padding: .5rem .75rem;
-      border-radius: 4px;
-      font-size: .9em;
-    }
-  }
-}
-.is-disabled {
-  pointer-events: none;
-  opacity: .5;
-}
-</style>

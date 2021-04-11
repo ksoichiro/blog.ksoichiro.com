@@ -57,19 +57,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#nav {
-  .nav-item {
-    .site-name {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-  }
-}
 @media screen and (max-width: 639px) {
   #nav {
-    .menu {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-
     &.is-open {
       .nav-item:not(:first-child) {
         display: block;
@@ -89,11 +78,6 @@ export default {
         }
       }
     }
-  }
-}
-.dropdown {
-  .dropdown-btn {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 }
 </style>

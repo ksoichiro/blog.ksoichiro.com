@@ -230,10 +230,4 @@ export default {
     }
   }
 }
-.sidebar {
-  .caret {
-    // There is no class on TailwindCSS
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-}
 </style>

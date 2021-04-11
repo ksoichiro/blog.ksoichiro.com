@@ -1,9 +1,9 @@
 <template>
-  <div class="page-tags">
+  <div class="page-tags mt-2 flex flex-row flex-wrap items-start">
     <router-link
       v-for="tag in tags"
       :key="tag"
-      class="page-tag"
+      class="page-tag bg-nord2 text-nord4 py-2 px-3 mt-1 mb-2 mr-2 last:mr-0 rounded-xl transition-colors hover:no-underline hover:bg-nord2-light"
       :to="{path: localePath('/tags#' + tag)}"
     >
       {{ tag }}
@@ -21,28 +21,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.page-tags {
-  margin-top: 0.4rem;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  .page-tag {
-    background-color: $nord2;
-    color: $nord4;
-    transition: background-color .2s linear;
-    padding: 0.4rem 0.6rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.4rem;
-    border-radius: 0.8rem;
-    &:not(:last-child) {
-      margin-right: 0.6em;
-    }
-    &:hover {
-      background-color: lighten($nord2, 10%);
-      text-decoration: none;
-    }
-  }
-}
-</style>

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
   html, body {
     @apply bg-nord0 text-nord4;
   }
@@ -13,7 +17,6 @@
 
   a {
     @apply text-nord9 no-underline hover:underline;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   code {
