@@ -40,6 +40,12 @@
   }
 }
 
+pre[class*="language-"] {
+  // Doesn't work on TailwindCSS on production (seems purged)
+  // @apply bg-nord0-dark !important;
+  background-color: darken($nord0, 4%) !important;
+}
+
 .post,
 .content {
   // cannot apply with TailwindCSS

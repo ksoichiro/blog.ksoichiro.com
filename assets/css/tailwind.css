@@ -31,10 +31,6 @@
     @apply bg-transparent;
   }
 
-  pre[class*="language-"] {
-    @apply bg-nord0-dark !important;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     @apply font-medium leading-tight;
   }
