@@ -8,7 +8,7 @@ tags: ["IntelliJ IDEA","Gradle"]
 Gradle＋IntelliJ IDEAで開発している時、idea.module.excludeDirsプロパティにディレクトリのfileオブジェクトのリストを設定すると、そのディレクトリはスキャンの対象から外され、内容が変化してもIntelliJの動作がもたつくことがなくなる。
 参考：[IntelliJのインデックス対象から除外する方法](/ja/post/2015/12/intellij/)
 
-このとき、excludeDirsはただのリストなので、a, b, c, というディレクトリの下にあるbuild/というディレクトリをまとめて無視したいと思っても、a/build, b/build, c/build をそれぞれ設定する必要がある。
+このとき、excludeDirsはただのリストなので、a, b, c, というディレクトリの下にあるbuild/というディレクトリをまとめて無視したいと思っても、a/build, b/build, c/build をそれぞれ設定する必要がある。
 これをbuildという名前で一括する方法の話。
 <!--more-->
 
