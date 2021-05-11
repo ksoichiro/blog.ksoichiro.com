@@ -10,7 +10,7 @@ export default {
               font-family: 'Inter';
               font-style: normal;
               font-weight: 400;
-              font-display: swap;
+              font-display: optional;
               src: url('/font/20210403/Inter-Regular.woff2') format('woff2');
             }
           `,
@@ -22,7 +22,7 @@ export default {
               font-family: 'Inter';
               font-style: normal;
               font-weight: 500;
-              font-display: swap;
+              font-display: optional;
               src: url('/font/20210403/Inter-Medium.woff2') format('woff2');
             }
           `
@@ -34,7 +34,7 @@ export default {
                font-family: 'Roboto Mono';
                font-style: normal;
                font-weight: 400;
-               font-display: swap;
+               font-display: optional;
                src: url('/font/20210403/RobotoMono-Regular.woff2') format('woff2');
              }
            `,
@@ -46,7 +46,7 @@ export default {
               font-family: 'Roboto Mono';
               font-style: normal;
               font-weight: 500;
-              font-display: swap;
+              font-display: optional;
               src: url('/font/20210403/RobotoMono-Medium.woff2') format('woff2');
             }
           `
