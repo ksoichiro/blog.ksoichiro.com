@@ -52,7 +52,7 @@
   }
 
   ol, p, ul {
-    @apply leading-relaxed;
+    @apply leading-relaxed my-2;
   }
 
   hr {
