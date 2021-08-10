@@ -59,6 +59,10 @@
     @apply border-t border-nord1;
   }
 
+  ol {
+    @apply list-decimal pl-8;
+  }
+
   ul {
     @apply list-disc pl-8;
   }
