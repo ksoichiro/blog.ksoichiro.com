@@ -72,7 +72,7 @@
   }
 
   tr, th, td {
-    @apply border-nord3;
+    @apply border border-nord3 p-2;
   }
 
   tr:nth-child(2n) {
