@@ -26,7 +26,7 @@
         "hast-util-to-html": "^7.1.2",
         "lodash.clonedeep": "^4.5.0",
         "postcss": "^7.0.35",
-        "rehype-img-size": "^0.0.1",
+        "rehype-img-size": "^1.0.1",
         "sass": "^1.32.8",
         "sass-loader": "^10.1.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
